@@ -152,3 +152,7 @@ ul {
   text-decoration: none;
   margin-top: 20px;
 }
+
+a:hover {
+  text-decoration: none;
+}
