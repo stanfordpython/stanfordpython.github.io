@@ -8,7 +8,6 @@ var $splashPage = $('.splash.page'); // The login page
 var $detailPage = $('.detail.page'); // The chatroom page
 
 $('#learn-more').click(function() {
-  console.log("yo");
   $splashPage.fadeOut();
   $detailPage.show();
 })
