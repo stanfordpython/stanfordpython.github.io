@@ -156,3 +156,13 @@ ul {
 a:hover {
   text-decoration: none;
 }
+
+ul.class-links {
+  padding: 0;
+  margin-top: -10px;
+  list-style: none;
+}
+.class-links li {
+  display: inline;
+  margin-right: 2em;
+}
