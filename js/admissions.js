@@ -13,7 +13,7 @@ $(document).ready(function() {
    */
   var codes = {
     // Sample Codes
-    'sredmond': 012345,
+    'sredmond': 123456,
 
     // First round acceptance
     "aansong": 371402,
