@@ -21,7 +21,7 @@ $(document).ready(function() {
     "bryanmcl": 75453,
     "christyg": 695467,
     "disaza": 702661,
-    "divya": 939247,
+    "divya1": 939247,
     "dookeran": 821902,
     "drenz": 215451,
     "eburke3": 955746,
@@ -46,9 +46,18 @@ $(document).ready(function() {
     "thaas19": 494851,
     "tlanham": 129579,
     "yhindy": 529298,
-    "yueli1": 952505
+    "yueli1": 952505,
 
     // Second round acceptance
+    'cmramsey': 417113,
+    'jcbuena': 307375,
+    'knazir': 398001,
+    'nborus': 21898,
+    'rgtsimon': 318733,
+    'sgoddijn': 294831,
+    'stollman': 923364,
+    'thao2605': 290817,
+    'ztaylor': 419645
   }
 
   $("#search-form").submit(function(event) {
