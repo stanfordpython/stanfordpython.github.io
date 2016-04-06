@@ -1,12 +1,12 @@
 [
 	{
 		"week": 1,
-		"subpart": 1,
-		"href": ""
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab1-warmup.md",
+		"solutions": "#"
 	},
 	{
-		"week": 1,
-		"subpart": 1,
-		"href": ""
+		"week": 2,
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab2-datastructures.md",
+		"solutions": "#"
 	}
 ]
