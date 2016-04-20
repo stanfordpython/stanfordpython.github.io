@@ -57,7 +57,7 @@ $(document).ready(function() {
     'sgoddijn': 294831,
     'stollman': 923364,
     'thao2605': 290817,
-    'ztaylor': 419645
+    'ztaylor': 419645,
   }
 
   $("#search-form").submit(function(event) {
