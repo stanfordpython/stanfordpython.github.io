@@ -58,6 +58,15 @@ $(document).ready(function() {
     'stollman': 923364,
     'thao2605': 290817,
     'ztaylor': 419645,
+
+    // last round acceptance
+    'ehalac' : 155746,
+    'cmakridi' : 125751,
+    'poornak' : 135136,
+    'rcholla' : 135137,
+    'yeonjaek' : 635241,
+    'bdbianco' : 125138,
+    'crgomes' : 134139
   }
 
   $("#search-form").submit(function(event) {
