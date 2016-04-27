@@ -2,22 +2,15 @@
 	{
 		"uid": "ccb1ee56-b0c5-4c43-9e6a-15293cc4aee6",
 		"title": "A New Look and Feel",
-		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu. I've retroactively added old announcements, that were previously distributed via Piazza or email.",
-		"date": "2016-04-27",
-		"visible": true
-	},
-	{
-		"uid": "d218bcd6-ecaa-459b-98ef-7004429a5688",
-		"title": "Auditing Policies",
-		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu.",
+		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu. I've retroactively added old announcements that were previously distributed via Piazza or email.",
 		"date": "2016-04-27",
 		"visible": true
 	},
 	{
 		"uid": "1e95171f-7b02-4c37-bbe7-f08753b24f4d",
 		"title": "Enrollment Update and Auditing Policies",
-		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu.",
-		"date": "2016-04-27",
+		"content": "If you haven't yet received an enrollment code but have been accepted into CS41, use the admissions page linked from the course info tab to generate your personal code. If you would like to audit the course but not enroll for credit, great! Auditors are welcome to attend lecture, access our materials, ask questions on Piazza, and complete labs and assignments on their own, but work is not handed in or graded.",
+		"date": "2016-04-13",
 		"visible": true
 	},
 	{
