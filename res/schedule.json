@@ -6,7 +6,13 @@
 			{
 				"title": "Welcome to Python",
 				"date": "2016-03-27",
-				"description": "Hello world! Welcome to CS41..."
+				"description": "Hello world! Welcome to CS41... This is a really long description just to test it
+				oh and how does JSON handle lnog lines?
+
+
+				and line breaks too?
+				idk
+				but maybe explicit escapes \n\n will be okay"
 			},
 			{
 				"title": "1.2",
