@@ -2,11 +2,49 @@
 	{
 		"week": 1,
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab1-warmup.md",
-		"solutions": "#"
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2solutions.py",
+		"visible": true
 	},
 	{
 		"week": 2,
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab2-datastructures.md",
-		"solutions": "#"
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2solutions.py",
+		"visible": true
+	},
+	{
+		"week": 3,
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab3-functions.md",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3solutions.py",
+		"visible": true
+	},
+	{
+		"week": 4,
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-functions.md",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab4solutions.py",
+		"visible": true
+	},
+	{
+		"week": 5,
+		"href": "#",
+		"solutions": "#",
+		"visible": false
+	},
+	{
+		"week": 6,
+		"href": "#",
+		"solutions": "#",
+		"visible": false
+	},
+	{
+		"week": 7,
+		"href": "#",
+		"solutions": "#",
+		"visible": false
+	},
+	{
+		"week": 8,
+		"href": "#",
+		"solutions": "#",
+		"visible": false
 	}
 ]
