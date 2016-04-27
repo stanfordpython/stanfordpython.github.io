@@ -1,6 +1,7 @@
 [
 	{
 		"uid": "d40efea9-a284-445e-921b-a7a3ab02f56f",
+		"num": 8,
 		"title": "Python Execution Model (warning: long, dense)",
 		"href": "https://docs.python.org/3.4/reference/executionmodel.html",
 		"credit": "PSF",
@@ -8,6 +9,7 @@
 	},
 	{
 		"uid": "2d37af66-6421-4bdb-8370-0eec1b924191",
+		"num": 7,
 		"title": "Python Data Model (warning: long, dense)",
 		"href": "https://docs.python.org/3.4/reference/datamodel.html",
 		"credit": "PSF",
@@ -15,6 +17,7 @@
 	},
 	{
 		"uid": "ac75f7f9-35ac-4d12-82d9-e29608f3669c",
+		"num": 6,
 		"title": "Thoughts on Code Style",
 		"href": "http://docs.python-guide.org/en/latest/writing/style/",
 		"credit": "Kenneth Reitz",
@@ -22,6 +25,7 @@
 	},
 	{
 		"uid": "03723a90-aeb6-4b64-b677-c311743e3a7a",
+		"num": 5,
 		"title": "Using the Python Interpreter",
 		"href": "https://docs.python.org/3.4/tutorial/interpreter.html",
 		"credit": "PSF",
@@ -29,6 +33,7 @@
 	},
 	{
 		"uid": "8373cba0-e705-4e2a-88e5-9c163dd570ce",
+		"num": 4,
 		"title": "Python in One Easy Lesson",
 		"href": "http://cs.stanford.edu/people/nick/python-in-one-easy-lesson/",
 		"credit": "Nick Parlante",
@@ -36,6 +41,7 @@
 	},
 	{
 		"uid": "914b50cc-7969-4199-a719-a96a43b58619",
+		"num": 3,
 		"title": "PEP 257: Python Docstring Conventions",
 		"href": "https://www.python.org/dev/peps/pep-0257/",
 		"credit": "David Goodger",
@@ -43,6 +49,7 @@
 	},
 	{
 		"uid": "ea4c4512-4acb-401b-bc4b-c7ef188aacd9",
+		"num": 2,
 		"title": "PEP 8: Python Style Guide",
 		"href": "https://www.python.org/dev/peps/pep-0008/",
 		"credit": "Guido van Rossum",
@@ -50,6 +57,7 @@
 	},
 	{
 		"uid": "23c79df9-bee0-4b5e-b258-9445417bb1fd",
+		"num": 1,
 		"title": "PEP 20: The Zen of Python",
 		"href": "https://www.python.org/dev/peps/pep-0020/",
 		"credit": "Tim Peters",
