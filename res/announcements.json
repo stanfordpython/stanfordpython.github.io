@@ -7,6 +7,13 @@
 		"visible": true
 	},
 	{
+		"uid": "109956c4-48b3-49ef-b77d-b701e4865d8c",
+		"title": "Assignment 1 Feedback Released",
+		"content": "We've just made feedback on Assignment 1 available to everyone. You should have received an email with a link to your feedback page. If not, please let us know so we can give you your feedback and grades. As a reminder, you can schedule optional 1-on-1s (like IGs) to review your assignment if you are unhappy with it. The mode grade was a check-plus for functionality and a check for style.",
+		"date": "2016-04-26",
+		"visible": true
+	},
+	{
 		"uid": "1e95171f-7b02-4c37-bbe7-f08753b24f4d",
 		"title": "Enrollment Update and Auditing Policies",
 		"content": "If you haven't yet received an enrollment code but have been accepted into CS41, use the admissions page linked from the course info tab to generate your personal code. If you would like to audit the course but not enroll for credit, great! Auditors are welcome to attend lecture, access our materials, ask questions on Piazza, and complete labs and assignments on their own, but work is not handed in or graded.",

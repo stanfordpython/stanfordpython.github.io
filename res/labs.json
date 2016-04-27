@@ -34,17 +34,17 @@
 	{
 		"week": 5,
 		"topic": "Object-Oriented Python",
-		"href": "#",
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab5-oop.md",
 		"solutions": "#",
 		"visible": true,
 		"active": true
 	},
 	{
 		"week": 6,
-		"topic": "TBD",
+		"topic": "Standard Library",
 		"href": "#",
 		"solutions": "#",
-		"visible": false,
+		"visible": true,
 		"active": false
 	},
 	{
