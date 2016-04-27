@@ -1,8 +1,14 @@
 [
 	{
+		"uuid": "4f032476-2860-4cb1-84ed-52835ab40bf1",
+		"title": "Announcement 2",
+		"content": "Hello world! This is the second test announcement.",
+		"visible": true
+	},
+	{
 		"uuid": "3cd6aa62-e023-40e7-a2d8-c5988dfd6ea0",
-		"order": 1,
 		"title": "Welcome to Python!",
-		"content": "Hello world! This is the first test announcement."
+		"content": "Hello world! This is the first test announcement.",
+		"visible": true
 	}
 ]
