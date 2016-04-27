@@ -67,8 +67,8 @@
 		"condensed": "#",
 		"full": "#",
 		"video": "#",
-		"visible": false,
-		"active": true
+		"visible": true,
+		"active": false
 	},
 	{
 		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
