@@ -106,7 +106,7 @@
 				"title": "OOP Lab",
 				"date": "2016-04-27",
 				"active": true,
-				"description": ""
+				"description": "After seeing mostly conceptual rules and definitions in lecture, this lab will focus more on writing code and building classes to solve a variety of problems. We'll also briefly look at exceptions and practice good exceptional control flow."
 			}
 		],
 		"dates": {
@@ -220,7 +220,7 @@
 			{
 				"title": "Final Project Presentations",
 				"date": "2016-06-01",
-				"active": false,
+				"active": false,1
 				"description": ""
 			}
 		],
