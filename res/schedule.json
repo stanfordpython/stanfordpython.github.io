@@ -4,12 +4,16 @@
 		"title": "Welcome to Python!",
 		"days": [
 			{
-				"title": "1.1",
-				"date": "2016-03-27"
+				"title": "Welcome to Python",
+				"date": "2016-03-27",
+				"description": "Hello world! Welcome to CS41..."
 			},
 			{
 				"title": "1.2",
-				"date": "2016-03-29"
+				"date": "2016-03-29",
+				"description": "test 2"
+				// "type": "lecture",
+				// "uid": "787e1fb9-f764-42cc-abd6-81895fcb5454"
 			}
 		],
 		"dates": {
@@ -19,7 +23,7 @@
 	},
 	{
 		"num": 2,
-		"title": "Intro to Data Structures",
+		"title": "Data Structures",
 		"days": [
 			{
 				"title": "2.1",
