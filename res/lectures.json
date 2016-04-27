@@ -2,22 +2,29 @@
 	{
 		"week": 1,
 		"subpart": 1,
-		"condensed": "",
-		"full": "",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDbU5INU9wcy1zN0U",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDTFpDdUh3eTBxVjg",
 		"video": "#"
 	},
 	{
 		"week": 1,
 		"subpart": 2,
-		"condensed": "",
-		"full": "",
-		"video": ""
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDaFVLZnRxVGg1RWc",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMXRfZjNOanpHNXM",
+		"video": "#"
 	},
 	{
 		"week": 2,
 		"subpart": 1,
-		"condensed": "",
-		"full": "",
-		"video": ""
+		"condensed": "https://drive.google.com/open?id=0B6rwNya1p7r4TGo1eXhkbWpXVHM",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDT3VTU0swdEZVY1U",
+		"video": "#"
+	},
+	{
+		"week": 3,
+		"subpart": 1,
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcW9rTnZ5cGNUVlk",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDQ01lb2dMRkhnQU0",
+		"video": "#"
 	}
 ]

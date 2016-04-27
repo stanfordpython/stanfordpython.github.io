@@ -1,3 +1,7 @@
 [
-	
+	{
+		"uuid":"2b200f15-eb7d-4d98-b31c-ec4e5445e694",
+		"title": "Installing Python",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python.md"
+	}	
 ]

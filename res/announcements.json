@@ -3,6 +3,6 @@
 		"uuid": "3cd6aa62-e023-40e7-a2d8-c5988dfd6ea0",
 		"order": 1,
 		"title": "Welcome to Python!",
-		"content": "Python announcements"
+		"content": "Hello world! This is the first test announcement."
 	}
 ]
