@@ -2,15 +2,16 @@
 	{
 		"num": 1,
 		"title": "Welcome to Python!",
+		"visible": true,
 		"days": [
 			{
 				"title": "Welcome to Python",
-				"date": "2016-03-27",
+				"date": "2016-03-28",
 				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			},
 			{
 				"title": "1.2",
-				"date": "2016-03-29",
+				"date": "2016-03-30",
 				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
 		],
@@ -22,14 +23,17 @@
 	{
 		"num": 2,
 		"title": "Data Structures",
+		"visible": true,
 		"days": [
 			{
-				"title": "2.1",
-				"date": "2016-04-04"
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			},
 			{
-				"title": "2.2",
-				"date": "2016-04-06"
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
 		],
 		"dates": {
@@ -40,14 +44,17 @@
 	{
 		"num": 3,
 		"title": "Functions",
+		"visible": true,
 		"days": [
 			{
-				"title": "3.1",
-				"date": "2016-04-11"
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			},
 			{
-				"title": "3.2",
-				"date": "2016-04-13"
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
 		],
 		"dates": {
@@ -58,19 +65,148 @@
 	{
 		"num": 4,
 		"title": "Functional Programming",
+		"visible": true,
 		"days": [
 			{
-				"title": "4.1",
-				"date": "2016-04-18"
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			},
 			{
-				"title": "4.2",
-				"date": "2016-04-20"
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
 		],
 		"dates": {
 			"start": "2016-04-17",
 			"end": "2016-04-23"
+		}
+	},
+	{
+		"num": 5,
+		"title": "Object-Oriented Python",
+		"visible": true,
+		"days": [
+			{
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			},
+			{
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			}
+		],
+		"dates": {
+			"start": "2016-04-24",
+			"end": "2016-04-30"
+		}
+	},
+	{
+		"num": 6,
+		"title": "The Python Standard Library",
+		"visible": true,
+		"days": [
+			{
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			},
+			{
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			}
+		],
+		"dates": {
+			"start": "2016-05-01",
+			"end": "2016-05-07"
+		}
+	},
+	{
+		"num": 7,
+		"title": "Third-Party Tools",
+		"visible": false,
+		"days": [
+			{
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			},
+			{
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			}
+		],
+		"dates": {
+			"start": "2016-05-08",
+			"end": "2016-05-14"
+		}
+	},
+	{
+		"num": 8,
+		"title": "The Python Ecosystem",
+		"visible": false,
+		"days": [
+			{
+				"title": "Welcome to Python",
+				"date": "2016-03-28",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			},
+			{
+				"title": "1.2",
+				"date": "2016-03-30",
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+			}
+		],
+		"dates": {
+			"start": "2016-05-15",
+			"end": "2016-05-21"
+		}
+	},
+	{
+		"num": 9,
+		"title": "Advanced Topics",
+		"visible": false,
+		"days": [
+			{
+				"title": "Advanced Topics",
+				"date": "2016-05-23",
+				"description": "Advanced topics in Python that the class finds interesting. Possible topics include: alternate implementations of Python, contributing to Python open-source tools, how to get a job using Python, Python for programming competitions, or anything else."
+			},
+			{
+				"title": "Final Project Presentations",
+				"date": "2016-05-25",
+				"description": ""
+			}
+		],
+		"dates": {
+			"start": "2016-05-22",
+			"end": "2016-05-28"
+		}
+	},
+	{
+		"num": 10,
+		"title": "Final Projects",
+		"visible": false,
+		"days": [
+			{
+				"title": "Final Project Presentations",
+				"date": "2016-05-30",
+				"description": ""
+			},
+			{
+				"title": "Final Project Presentations",
+				"date": "2016-06-01",
+				"description": ""
+			}
+		],
+		"dates": {
+			"start": "2016-05-29",
+			"end": "2016-06-04"
 		}
 	}
 ]
