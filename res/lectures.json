@@ -2,29 +2,46 @@
 	{
 		"week": 1,
 		"subpart": 1,
+		"title": "Welcome to Python!",
+		"date": null,
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDbU5INU9wcy1zN0U",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDTFpDdUh3eTBxVjg",
-		"video": "#"
+		"video": "#",
+		"visible": true,
+		"active": false
+
 	},
 	{
 		"week": 1,
 		"subpart": 2,
+		"title": "Welcome to Python!",
+		"date": null,
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDaFVLZnRxVGg1RWc",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMXRfZjNOanpHNXM",
-		"video": "#"
+		"video": "#",
+		"visible": true,
+		"active": false
 	},
 	{
 		"week": 2,
 		"subpart": 1,
+		"title": "Welcome to Python!",
+		"date": null,
 		"condensed": "https://drive.google.com/open?id=0B6rwNya1p7r4TGo1eXhkbWpXVHM",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDT3VTU0swdEZVY1U",
-		"video": "#"
+		"video": "#",
+		"visible": true,
+		"active": false
 	},
 	{
 		"week": 3,
 		"subpart": 1,
+		"title": "Welcome to Python!",
+		"date": null,
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcW9rTnZ5cGNUVlk",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDQ01lb2dMRkhnQU0",
-		"video": "#"
+		"video": "#",
+		"visible": true,
+		"active": false
 	}
 ]
