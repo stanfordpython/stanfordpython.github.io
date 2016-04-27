@@ -1,14 +1,16 @@
 [
 	{
 		"uuid": "4f032476-2860-4cb1-84ed-52835ab40bf1",
-		"title": "Announcement 2",
-		"content": "Hello world! This is the second test announcement.",
+		"title": "A New Look",
+		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu.",
+		"date": "2016-04-27",
 		"visible": true
 	},
 	{
 		"uuid": "3cd6aa62-e023-40e7-a2d8-c5988dfd6ea0",
 		"title": "Welcome to Python!",
-		"content": "Hello world! This is the first test announcement.",
+		"content": "Hello world! Welcome to 'CS 41: hap.py code', covering the fundamentals and contemporary usage of the Python programming language. This quarter is going to be amazing and I hope that you'll come along for the ride.",
+		"date": "2016-03-27",
 		"visible": true
 	}
 ]
