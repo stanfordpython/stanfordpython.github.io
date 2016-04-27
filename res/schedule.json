@@ -7,12 +7,12 @@
 			{
 				"title": "Welcome to Python",
 				"date": "2016-03-28",
-				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+				"description": "Hello world! Welcome to CS41. Topics covered: why take CS41, history and context of Python, zen and philosophy of Python, who uses Python, and lots of Python basics (using the interpreter, comments, variables, types, numbers, math, booleans, logic, strings, lists, slicing, console I/O, control flow, loops, range, functions)"
 			},
 			{
-				"title": "1.2",
+				"title": "Python Fundamentals",
 				"date": "2016-03-30",
-				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format(), file I/O (using a context manager), running Python as a script, and the basics of imports. The remainder of class was used to set up (and troubleshoot) Python installations, as well as start work on Lab 1."
 			}
 		],
 		"dates": {
@@ -26,12 +26,12 @@
 		"visible": true,
 		"days": [
 			{
-				"title": "Welcome to Python",
+				"title": "Intro to Data Structures",
 				"date": "2016-03-28",
-				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
+				"description": "Hello world! Welcome to CS41. Topics covered: why take CS41, history and context of Python, zen and philosophy of Python, who uses Python, and lots of Python basics (using the interpreter, comments, variables, types, numbers, math, booleans, logic, strings, lists, slicing, console I/O, control flow, loops, range, functions)"
 			},
 			{
-				"title": "1.2",
+				"title": "Python Fundamentals",
 				"date": "2016-03-30",
 				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
