@@ -6,12 +6,12 @@
 			{
 				"title": "Welcome to Python",
 				"date": "2016-03-27",
-				"description": "Hello world! Welcome to CS41... This is a really long description just to test it oh and how does JSON handle lnog lines?and line breaks too?idkbut maybe explicit escapes \\n\\n will be okay"
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			},
 			{
 				"title": "1.2",
 				"date": "2016-03-29",
-				"description": "test 2"
+				"description": "Hello world! Welcome to CS41... Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming Long description incoming"
 			}
 		],
 		"dates": {
