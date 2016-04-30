@@ -60,6 +60,10 @@ function create_assignment_tr(assn) {
     $('<td>').append(
       create_anchor(assn.starter_code, "Starter Code", "None")
     )
+  ).append(
+    $('<td>').append(assn.released)
+  ).append(
+    $('<td>').append(assn.due)
   );
   if (assn.active) {
     $tr.addClass('success');
