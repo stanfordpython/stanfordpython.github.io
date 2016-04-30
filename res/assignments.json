@@ -4,9 +4,39 @@
 		"title": "Cryptography",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
-		"released": "",
+		"released": "TBD",
 		"due": "midnight Wed Apr 13",
 		"visible": true,
+		"active": false
+	},
+	{
+		"num": 2,
+		"title": "Quest for the Holy Grail",
+		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
+		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
+		"released": "TBD",
+		"due": "midnight Wed Apr 13",
+		"visible": true,
+		"active": true
+	},
+	{
+		"num": 3,
+		"title": "Wallscraper",
+		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign3/README.md",
+		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign3",
+		"released": "TBD",
+		"due": "TBD",
+		"visible": false,
+		"active": false
+	},
+	{
+		"num": 4,
+		"title": "Final Project",
+		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign4/README.md",
+		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign4",
+		"released": "TBD",
+		"due": "TBD",
+		"visible": false,
 		"active": false
 	}
 ]
