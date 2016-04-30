@@ -50,8 +50,8 @@ function create_assignment_tr(assn) {
   */
   if (!assn.visible) return null;
 
-  var released = moment(assn.released);
-  var due = moment(assn.due);
+  var released = moment(assn.released, "YYYY-MM-DD");
+  var due = moment(assn.due, "YYYY-MM-DD hh:mm:ss A");
   var releasedf = released.format('ddd MMM Do');
   var duef = due.format('ddd MMM Do [at] h:mm A') + ' (' + due.fromNow() + ')';
 
