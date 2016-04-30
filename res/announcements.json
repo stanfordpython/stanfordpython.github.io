@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "dc942bfc-9d7c-40f2-89f7-b28ab32ecb2b",
+		"title": "Assignment 2 Released",
+		"content": "Assignment 2 is out! Gather your fellow knights and get ready to find the holy grail!",
+		"date": "2016-04-29",
+		"visible": true
+	},
+	{
 		"uid": "ccb1ee56-b0c5-4c43-9e6a-15293cc4aee6",
 		"title": "A New Look and Feel",
 		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu. I've retroactively added old announcements that were previously distributed via Piazza or email.",
