@@ -4,8 +4,8 @@
 		"title": "Cryptography",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
-		"released": "TBD",
-		"due": "midnight Wed Apr 13",
+		"released": "2016-04-06",
+		"due": "2016-04-13 11:59:59 PM",
 		"visible": true,
 		"active": false
 	},
@@ -14,8 +14,8 @@
 		"title": "Quest for the Holy Grail",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
-		"released": "TBD",
-		"due": "midnight Wed Apr 13",
+		"released": "2016-04-29",
+		"due": "2016-05-07 4:59:59 PM",
 		"visible": true,
 		"active": true
 	},

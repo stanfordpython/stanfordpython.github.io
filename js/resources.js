@@ -44,9 +44,18 @@ function create_assignment_tr(assn) {
     <th scope="row">1</th>
     <td><a href=...>README</a></td>
     <td><a href=...>Starter Code</a></td>
+    <td>Released</td>
+    <td>Due</td>
   </tr>
   */
   if (!assn.visible) return null;
+
+  var released = new Date(assn.released);
+  var due = new Date(assn.due);
+  var h = due.getHours();
+  var m = due.getMinutes();
+  var releasedf = (released.getMonth() + 1) + '/' + (released.getDate() + 1);
+  var duef = (due.getMonth() + 1) + '/' + (due.getDate() + 1) + ' at ' + (h % 12) + ':' + m + (h > 12 ? ' PM' : ' AM');
 
   var $tr = $('<tr>').append(
     $('<th>').attr('scope', 'row').append(assn.num)
@@ -61,9 +70,9 @@ function create_assignment_tr(assn) {
       create_anchor(assn.starter_code, "Starter Code", "None")
     )
   ).append(
-    $('<td>').append(assn.released)
+    $('<td>').append(releasedf)
   ).append(
-    $('<td>').append(assn.due)
+    $('<td>').append(duef)
   );
   if (assn.active) {
     $tr.addClass('success');
