@@ -50,12 +50,10 @@ function create_assignment_tr(assn) {
   */
   if (!assn.visible) return null;
 
-  var released = new Date(assn.released);
-  var due = new Date(assn.due);
-  var h = due.getHours();
-  var m = due.getMinutes();
-  var releasedf = (released.getMonth() + 1) + '/' + (released.getDate() + 1);
-  var duef = (due.getMonth() + 1) + '/' + (due.getDate() + 1) + ' at ' + (h % 12) + ':' + m + (h > 12 ? ' PM' : ' AM');
+  var released = moment(assn.released);
+  var due = moment(assn.due);
+  var releasedf = released.format('ddd MMM Do');
+  var duef = due.format('ddd MMM Do [at] h:mm A') + ' (' + due.fromNow() + ')';
 
   var $tr = $('<tr>').append(
     $('<th>').attr('scope', 'row').append(assn.num)
@@ -174,11 +172,13 @@ function create_announcement(announcement) {
   */
   if (!announcement.visible) return null;
 
+  var date = moment(announcement.date);
+
   var $panel = $('<div>').addClass('panel panel-default').append(
     $('<div>').addClass('panel-heading').append(
       $('<h2>').addClass('panel-title').append(announcement.title)
     ).append(
-      $('<small>').append(announcement.date)
+      $('<small>').append(date.fromNow())
     )
   ).append(
     $('<div>').addClass('panel-body').append(announcement.content)
