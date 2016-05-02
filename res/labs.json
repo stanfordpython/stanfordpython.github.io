@@ -49,7 +49,7 @@
 	},
 	{
 		"week": 7,
-		"topic": "TBD",
+		"topic": "Third-Party Tools",
 		"href": "#",
 		"solutions": "#",
 		"visible": false,
@@ -57,7 +57,7 @@
 	},
 	{
 		"week": 8,
-		"topic": "TBD",
+		"topic": "Python Ecosystem",
 		"href": "#",
 		"solutions": "#",
 		"visible": false,

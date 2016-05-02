@@ -105,7 +105,7 @@
 			{
 				"title": "OOP Lab",
 				"date": "2016-04-27",
-				"active": true,
+				"active": false,
 				"description": "After seeing mostly conceptual rules and definitions in lecture, this lab will focus more on writing code and building classes to solve a variety of problems. We'll also briefly look at exceptions and practice good exceptional control flow."
 			}
 		],
@@ -117,19 +117,19 @@
 	{
 		"num": 6,
 		"title": "The Python Standard Library",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "The Python Standard Library",
 				"date": "2016-05-02",
-				"active": false,
-				"description": "TODO"
+				"active": true,
+				"description": "Survey of the utilities provided by the Python standard library, including sys, re, collections, random, itertools, and many, many more. These slides are intended as reference material to anyone interested in seeing the power and breadth of the standard library."
 			},
 			{
-				"title": "TODO",
+				"title": "Standard Library Lab",
 				"date": "2016-05-04",
 				"active": false,
-				"description": "TODO"
+				"description": "The first half, and perhaps all, of this lab is dedicated to reading the documentation of the standard library. The reference material is well-written, and it would be impossible to address everyone's interests with one lab. Instead, students direct their own learning by reviewing the modules they find personally fascinating. The remainder of the lab gives practice with the common standard library modules for those who need it."
 			}
 		],
 		"dates": {
@@ -146,13 +146,13 @@
 				"title": "Third-Party Tools",
 				"date": "2016-05-09",
 				"active": false,
-				"description": "TODO"
+				"description": "Survey of the most common 3rd party packages in use. These include: requests, numpy/scipy, matplotlib/pyplot, pandas, pillow, flask/django/twisted, pep8, scikit-learn/nltk, stanford-corenlp, bcrypt, beatifulsoup, and more."
 			},
 			{
-				"title": "TODO",
+				"title": "Third-Party Tools Lab",
 				"date": "2016-05-11",
 				"active": false,
-				"description": "TODO"
+				"description": "Experiment with some of the 3rd party tools discussed in lecture. In particular, you'll choose one or two of the packages that most interest you and go into a deep dive, walking through the developer's tutorial pages and getting practical experience with those particular tools."
 			}
 		],
 		"dates": {
@@ -172,10 +172,10 @@
 				"description": "TODO"
 			},
 			{
-				"title": "TODO",
+				"title": "Work Time for Project",
 				"date": "2016-05-18",
 				"active": false,
-				"description": "TODO"
+				"description": "Get going on your final projects! Now is better than never, and we'll be floating around to suggest helpful tools or answer any questions about getting started."
 			}
 		],
 		"dates": {
@@ -198,7 +198,7 @@
 				"title": "Final Project Presentations",
 				"date": "2016-05-25",
 				"active": false,
-				"description": ""
+				"description": "Watch your classmates put on a show in the first day dedicated to project presentations!"
 			}
 		],
 		"dates": {
