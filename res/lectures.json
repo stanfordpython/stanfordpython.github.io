@@ -58,7 +58,7 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDVDFOcjRxLU1mMDg",
 		"video": "https://drive.google.com/file/d/0B88M8v_g6nIMeE14ZlhsMnRydWs/view?usp=sharing",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "5cf135f4-ed01-4edf-92a6-08c3ba4f5a4f",
@@ -68,7 +68,7 @@
 		"full": "#",
 		"video": "#",
 		"visible": true,
-		"active": false
+		"active": true
 	},
 	{
 		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",

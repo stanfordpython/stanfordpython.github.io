@@ -37,7 +37,7 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab5-oop.md",
 		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 6,
@@ -45,7 +45,7 @@
 		"href": "#",
 		"solutions": "#",
 		"visible": true,
-		"active": false
+		"active": true
 	},
 	{
 		"week": 7,
