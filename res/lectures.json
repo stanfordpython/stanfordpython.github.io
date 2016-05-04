@@ -66,7 +66,7 @@
 		"date": "2016-05-02",
 		"condensed": "#",
 		"full": "#",
-		"video": "#",
+		"video": "https://drive.google.com/file/d/0B88M8v_g6nIMQVFjaDE0NXJ6RkE/view?usp=sharing",
 		"visible": true,
 		"active": true
 	},
@@ -99,5 +99,5 @@
 		"video": "#",
 		"visible": false,
 		"active": false
-	}
+	},
 ]
