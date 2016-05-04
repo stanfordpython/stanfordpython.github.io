@@ -42,7 +42,7 @@
 	{
 		"week": 6,
 		"topic": "Standard Library",
-		"href": "#",
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab6-standardlibrary.md",
 		"solutions": "#",
 		"visible": true,
 		"active": true
