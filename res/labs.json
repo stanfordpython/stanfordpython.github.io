@@ -26,7 +26,7 @@
 	{
 		"week": 4,
 		"topic": "Functional Programming",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-functions.md",
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-fp.md",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab4solutions.py",
 		"visible": true,
 		"active": false
