@@ -68,7 +68,7 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDNFp2R1R5UGhjMHc",
 		"video": "https://drive.google.com/file/d/0B88M8v_g6nIMQVFjaDE0NXJ6RkE/view?usp=sharing",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
@@ -77,8 +77,8 @@
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDdzM0SFM1QUNuRnc",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMXJBc3lWMlUwUFk",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "a64dfc79-8da0-4c8f-aa0e-f2c09cd5ed4c",
