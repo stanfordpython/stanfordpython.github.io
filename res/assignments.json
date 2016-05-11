@@ -17,17 +17,17 @@
 		"released": "2016-04-29",
 		"due": "2016-05-07 04:59:59 PM",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"num": 3,
 		"title": "Wallscraper",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign3/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign3",
-		"released": "TBD",
-		"due": "TBD",
-		"visible": false,
-		"active": false
+		"released": "2016-05-11",
+		"due": "2016-01-01 04:59:59 PM",
+		"visible": true,
+		"active": true
 	},
 	{
 		"num": 4,

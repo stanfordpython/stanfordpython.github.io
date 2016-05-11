@@ -45,15 +45,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab6-standardlibrary.md",
 		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 7,
 		"topic": "Third-Party Tools",
-		"href": "#",
-		"solutions": "#",
-		"visible": false,
-		"active": false
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab7-thirdparty.md",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab7solutions.py",
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 8,
