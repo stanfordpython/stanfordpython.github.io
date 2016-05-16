@@ -78,17 +78,17 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMXJBc3lWMlUwUFk",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "a64dfc79-8da0-4c8f-aa0e-f2c09cd5ed4c",
 		"title": "The Python Ecosystem",
 		"date": "2016-05-16",
-		"condensed": "#",
-		"full": "#",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcVhhNk1KN3I5UFk",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDaEZ2YWdQVHR6cWc",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "599b8465-88ff-4168-86b1-1a9c0411d94b",
