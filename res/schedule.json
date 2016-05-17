@@ -122,7 +122,7 @@
 			{
 				"title": "The Python Standard Library",
 				"date": "2016-05-02",
-				"active": true,
+				"active": false,
 				"description": "Survey of the utilities provided by the Python standard library, including sys, re, collections, random, itertools, and many, many more. These slides are intended as reference material to anyone interested in seeing the power and breadth of the standard library."
 			},
 			{
@@ -140,7 +140,7 @@
 	{
 		"num": 7,
 		"title": "Third-Party Tools",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Third-Party Tools",
@@ -163,19 +163,19 @@
 	{
 		"num": 8,
 		"title": "The Python Ecosystem",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "The Python Ecosystem",
 				"date": "2016-05-16",
 				"active": false,
-				"description": "TODO"
+				"description": "A conceptual overview of the state of the Python ecosystem, focusing on the differences between Python 2 and Python 3. This is a light lecture, and should leave time at the end to work on projects."
 			},
 			{
-				"title": "Work Time for Project",
+				"title": "Final Project Work Sesh",
 				"date": "2016-05-18",
 				"active": false,
-				"description": "Get going on your final projects! Now is better than never, and we'll be floating around to suggest helpful tools or answer any questions about getting started."
+				"description": "Get going on your final projects and proposals! Now is better than never, and the course staff will be floating around to suggest helpful tools or answer any questions about getting started."
 			}
 		],
 		"dates": {
@@ -186,19 +186,19 @@
 	{
 		"num": 9,
 		"title": "Advanced Topics",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Advanced Topics",
 				"date": "2016-05-23",
 				"active": false,
-				"description": "Advanced topics in Python that the class finds interesting. Possible topics include: alternate implementations of Python, contributing to Python open-source tools, how to get a job using Python, Python for programming competitions, or anything else."
+				"description": "Any advanced topics in Python that the class finds interesting. Possible topics include: optimizations, web app development, practical data science, or anything else. Check the poll on Piazza for more information!"
 			},
 			{
-				"title": "Final Project Presentations",
+				"title": "Final Project Work Sesh",
 				"date": "2016-05-25",
 				"active": false,
-				"description": "Watch your classmates put on a show in the first day dedicated to project presentations!"
+				"description": "Work time for final projects. At this point, you should be through most of your major milestones. The course staff will, as always, be around to help debug any problems or suggest extensions."
 			}
 		],
 		"dates": {
@@ -209,19 +209,19 @@
 	{
 		"num": 10,
 		"title": "Final Projects",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
-				"title": "Final Project Presentations",
+				"title": "Memorial Day",
 				"date": "2016-05-30",
 				"active": false,
-				"description": ""
+				"description": "No classes - enjoy the day off!"
 			},
 			{
-				"title": "Final Project Presentations",
+				"title": "Top Presentations, Party, Python Bee",
 				"date": "2016-06-01",
 				"active": false,
-				"description": ""
+				"description": "The top few groups will briefly present and demo their projects, and then we'll celebrate the end of the quarter with a pizza party and Python bee! What is a Python bee? It's like a spelling bee... but better. Come to find out more!"
 			}
 		],
 		"dates": {
