@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "88c211c8-3cb4-4eaa-8c7c-bfe333b51bc4",
+		"title": "Assignment 4 Released!",
+		"content": "(Cross-posted to Piazza) The full specification for Assignment 4, the final project, is officially released! You can read about it on GitHub by following the links on the course website. If you have any questions, please don't hesitate to reach out to a member of the course staff! P.S. If you haven't yet, please vote in the Piazza poll for which topics you'd like me to talk about next Monday in the Advanced Topics lecture.",
+		"date": "2016-05-17",
+		"visible": true
+	},
+	{
 		"uid": "4f7d9b7a-5847-4ce9-8632-e947999702cc",
 		"title": "+1 Late Day",
 		"content": "(Cross-posted to Piazza) As announced in class, we are giving everyone an extra late day to compensate for the rolling release of updates and bug fixes to the Assignment 2 starter code. If you didn't use any late days on Cryptography, you now have three 24-hour late days.",
