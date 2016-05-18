@@ -53,14 +53,14 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab7-thirdparty.md",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab7solutions.py",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 8,
 		"topic": "Python Ecosystem",
-		"href": "#",
-		"solutions": "#",
-		"visible": false,
-		"active": false
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab8-pythonecosystem.md",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab8solutions.py",
+		"visible": true,
+		"active": true
 	}
 ]
