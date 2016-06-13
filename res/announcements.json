@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "f35da99e-468b-415f-8b99-3ff5b1632fa1",
+		"title": "Course Evaluations",
+		"content": "If you haven't yet, make sure to fill out course evaluations on Axess and at http://goo.gl/forms/4ZUrQiHd5jK10AhJ2!",
+		"date": "2016-06-12",
+		"visible": true
+	},
+	{
 		"uid": "b4c11350-9efc-495b-a58d-677ff46c4aa9",
 		"title": "Final Project Feedback",
 		"content": "(Cross-posted to Piazza) Final project feedback is available at https://drive.google.com/drive/folders/0B-eHIhYpHrGDdHJzclFoem1rR1E",
