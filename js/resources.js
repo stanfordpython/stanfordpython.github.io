@@ -1,3 +1,11 @@
+/* File: resources.js
+ * ------------------
+ * Load resources into the CS41 content page.
+ *
+ * Revision history:
+ * @sredmond  2016-??-?? Created
+ */
+
 function create_anchor(href, title, backup) {
   // No outgoing link, so just replace it with whatever the backup text is
   if (href === '#') {
@@ -238,32 +246,33 @@ function create_week_heading_tr(week) {
   return $tr.append($monday).append($wednesday);
 }
 
+// Actually fetch all the resources
+var RESOURCES_DIR = 'http://stanfordpython.com/res'
+
 $.when(
   // Before we can do anything, make sure we have the proper data!
-  $.getJSON('http://stanfordpython.com/res/announcements.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/announcements.json', function(data) {
       announcements = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/assignments.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/assignments.json', function(data) {
       assignments = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/handouts.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/handouts.json', function(data) {
       handouts = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/labs.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/labs.json', function(data) {
       labs = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/lectures.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/lectures.json', function(data) {
       lectures = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/readings.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/readings.json', function(data) {
       readings = data;
   }),
-  $.getJSON('http://stanfordpython.com/res/schedule.json', function(data) {
+  $.getJSON(RESOURCES_DIR + '/schedule.json', function(data) {
       schedule = data;
   })
 ).then(function() {
-
-
 
   for (var i = 0; i < labs.length; i++) {
     var lab = labs[i];
@@ -322,8 +331,6 @@ $.when(
     days = week.days
     for (var j = 0; j < days.length; j++) {
       var day = days[j];
-
     }
   }
-
 });

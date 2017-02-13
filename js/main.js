@@ -3,8 +3,8 @@
  * Initialization and tab switching for CS41's home page.
  *
  * Revision history:
- * @sredmond 2017-02-13 removed unused code
- * @skleung  2015-??-?? created
+ * @sredmond 2017-02-13 Removed unused code
+ * @skleung  2015-??-?? Created
  */
 
 $(document).ready(function() {
@@ -32,8 +32,8 @@ $(document).ready(function() {
     // Hide the splash page and show the content page.
     var showContent = function() {
       if ($splashPage.is(":visible")) {
-        $contentPage.show(/* duration = */ 100, function() {
-          // When the content page finishes showing
+        $contentPage.show(/* duration_ms = */ 100, function() {
+          // Only when the content page finishes showing, fade out
           $splashPage.fadeOut();
         });
         
