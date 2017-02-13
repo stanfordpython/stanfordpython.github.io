@@ -1,57 +1,66 @@
 /* File: main.js
  * -------------
- * Initialization code for the main page
+ * Initialization and tab switching for CS41's home page.
+ *
+ * Revision history:
+ * @sredmond 2017-02-13 removed unused code
+ * @skleung  2015-??-?? created
  */
 
 $(document).ready(function() {
   // Initialize varibles
   var $window = $(window);
-  var $usernameInput = $('.usernameInput'); // Input for username
-  var $messages = $('.messages'); // Messages area
-  var $inputMessage = $('.inputMessage'); // Input message input box
-
   var $splashPage = $('.splash.page'); // The login page
-  var $detailPage = $('.detail.page'); // The chatroom page   
+  var $detailPage = $('.detail.page'); // The chatroom page
 
   $('#learn-more').click(function() {
     $splashPage.fadeOut();
     $detailPage.show();
   });
 
-  $window.keyup(function(e) {
-    if (e.keyCode === 13 || e.keyCode === 32 || e.keyCode === 40 || e.keyCode === 39) {
+  // Fade the splash page out on key press.
+  var ENTER_KEYCODE = 13;
+  var SPACE_KEYCODE = 32;
+  var RIGHT_ARROW_KEYCODE = 39;
+  var DOWN_ARROW_KEYCODE = 40;
+  $window.keyup(function(event) {
+    if (event.keyCode === ENTER_KEYCODE ||
+        event.keyCode === SPACE_KEYCODE ||
+        event.keyCode === RIGHT_ARROW_KEYCODE ||
+        event.keyCode === DOWN_ARROW_KEYCODE) {
       if ($splashPage.is(":visible")) {
-        $splashPage.fadeOut();
-        $detailPage.show();
+        $splashPage.fadeOut('fast');
+        $detailPage.show('fast');
       }
     }
   });
 
-  $('#navigation a[data-toggle="tab"]').click(function (e) {
-    $(this).tab('show');
-    e.preventDefault();
-  })
+  /* Tab Switching */
 
-  // TODO: better tab switching!
+  var DEFAULT_TAB_HASH = '#overview';
+
+  var getTabFromHref = function(href) {
+    return $('#navigation a[href="' + href + '"]');
+  };
 
   // Switch to active tab on reload
-  if (window.location.hash !== '') {
-    $('#navigation a[href="' + window.location.hash + '"]').tab('show');
-  }
+  var hash = window.location.hash || DEFAULT_TAB_HASH;
+  getTabFromHref(hash).tab('show');
 
-  // Add hash to URL and push to browser history
-  $('#navigation a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-     if(history.pushState) {
-          history.pushState(null, null, '#' + $(e.target).attr('href').substr(1));
-     } else {
-          window.location.hash = '#' + $(e.target).attr('href').substr(1);
-     }
+  // Show content tabs on click
+  $('#navigation a[data-toggle="tab"]').click(function (event) {
+    var $tab = $(this);
+    var currentlyActive = $tab.parent().hasClass('active');
+    // We changed the active tab and have a history object
+    if (!currentlyActive && window.history && window.history.pushState) {
+      window.history.pushState(null, null, $tab.attr('href'));
+    }
+    event.preventDefault();
   });
-});
 
-// Switch to the active tab when the browser jumps backwards in state.
-$(window).on('popstate', function() {
-  if (window.location.hash !== '') {
-    $('#navigation a[href="' + window.location.hash + '"]').tab('show');
-  }
+  // Switch to the active tab when the browser jumps backwards in state.
+  $window.on('popstate', function(event) {
+    var hash = window.location.hash || DEFAULT_TAB_HASH;
+    getTabFromHref(hash).tab('show');
+  });
 });

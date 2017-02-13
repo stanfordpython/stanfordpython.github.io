@@ -1,23 +1,14 @@
-/* Fix user-agent */
-
-* {
-  box-sizing: border-box;
-}
+/* File: styles.css
+ * ----------------
+ * Customized style sheet for CS41
+ * 
+ * Revision History:
+ * @sredmond 2017-02-13 removed dead styles
+ * @skleung  2015-??-?? created
+ */
 
 html {
-  font-weight: 350;
   -webkit-font-smoothing: antialiased;
-}
-
-html, input {
-  font-family:
-    "HelveticaNeue-Light",
-    "Helvetica Neue Light",
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    "Lucida Grande",
-    sans-serif;
 }
 
 html, body {
@@ -46,7 +37,7 @@ ul {
   width: 100%;
 }
 
-/* Login Page */
+/* Splash Page */
 
 .splash.page {
   background-color: #fff;
@@ -85,48 +76,6 @@ ul {
 
 .splash.page .title, .splash.page .usernameInput {
   font-weight: 100;
-}
-
-/* Chat page */
-
-.chat.page {
-  display: none;
-}
-
-/* Font */
-
-.messages {
-  font-size: 150%;
-}
-
-.inputMessage {
-  font-size: 100%;
-}
-
-/* Messages */
-
-.chatArea {
-  height: 100%;
-  padding-bottom: 60px;
-}
-
-.messages {
-  height: 100%;
-  margin: 0;
-  overflow-y: scroll;
-  padding: 10px 20px 10px 20px;
-}
-
-.message.typing .messageBody {
-  color: gray;
-}
-
-.username {
-  float: left;
-  font-weight: 700;
-  overflow: hidden;
-  padding-right: 15px;
-  text-align: right;
 }
 
 /* Input */
