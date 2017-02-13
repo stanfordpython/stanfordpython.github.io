@@ -1,8 +1,8 @@
 ## CS41 Course Website
 
-Course website for CS41, Stanford's Python class.
+Course website for CS41, Stanford's introductory Python course.
 
-[!Course Website](asdfjasdf)
+[!Course Website](https://apply.stanfordpython.com)
 
 This README was last updated 2016-05-03, and the information may be out of date. When in doubt, look at the source!
 
