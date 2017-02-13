@@ -8,32 +8,53 @@
  */
 
 $(document).ready(function() {
-  // Initialize varibles
   var $window = $(window);
-  var $splashPage = $('.splash.page'); // The login page
-  var $detailPage = $('.detail.page'); // The chatroom page
 
-  $('#learn-more').click(function() {
-    $splashPage.fadeOut();
-    $detailPage.show();
-  });
+  /* Splash Page */
 
-  // Fade the splash page out on key press.
+  // Whether to force users through a splash page.
+  // Set to true at the start of the quarter, during applications.
+  // Set to false during the quarter.
+  var SHOW_SPLASH_PAGE = true;
+
+  // Keycodes to leave the splash page.
   var ENTER_KEYCODE = 13;
   var SPACE_KEYCODE = 32;
   var RIGHT_ARROW_KEYCODE = 39;
   var DOWN_ARROW_KEYCODE = 40;
-  $window.keyup(function(event) {
-    if (event.keyCode === ENTER_KEYCODE ||
-        event.keyCode === SPACE_KEYCODE ||
-        event.keyCode === RIGHT_ARROW_KEYCODE ||
-        event.keyCode === DOWN_ARROW_KEYCODE) {
+
+  var $splashPage = $('.splash.page'); // Splash page w/ link to application
+  var $contentPage = $('.content.page'); // Main course content 
+  
+  if (SHOW_SPLASH_PAGE) {
+    $contentPage.hide();
+
+    // Hide the splash page and show the content page.
+    var showContent = function() {
       if ($splashPage.is(":visible")) {
-        $splashPage.fadeOut('fast');
-        $detailPage.show('fast');
+        $contentPage.show(/* duration = */ 100, function() {
+          // When the content page finishes showing
+          $splashPage.fadeOut();
+        });
+        
       }
     }
-  });
+    
+    // Show the content page when a user clicks the learn-more button.
+    $('#learn-more').click(showContent);
+    
+    // Show the content page when a user hits any of the following keys.
+    $window.keyup(function(event) {
+      if (event.keyCode === ENTER_KEYCODE ||
+          event.keyCode === SPACE_KEYCODE ||
+          event.keyCode === RIGHT_ARROW_KEYCODE ||
+          event.keyCode === DOWN_ARROW_KEYCODE) {
+        showContent()
+      }
+    });
+  } else {
+    $splashPage.hide()
+  }
 
   /* Tab Switching */
 
