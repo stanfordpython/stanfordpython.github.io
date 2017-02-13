@@ -40,78 +40,21 @@ ul {
 /* Splash Page */
 
 .splash.page {
+  /* We need this to be explicit or else Bootstrap
+   * drops the background opacity on fadeOut */
   background-color: #fff;
 }
 
-.splash.page .form {
-  height: 100px;
-  margin-top: -100px;
-  position: absolute;
-
-  top: 50%;
-  width: 100%;
-}
-
-.splash.page .form .usernameInput {
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #fff;
-  outline: none;
-  padding-bottom: 15px;
-  width: 400px;
+.splash.page .container {
+  position: relative;
+  top: 45%;
+  transform: perspective(1px) translateY(-50%);
 }
 
 .splash.page .title {
-  font-size: 60px;
+  font-size: 64px;
 }
 
 .splash.page .subtitle {
-  font-size: 26px;
-}
-
-.splash.page .usernameInput {
-  font-size: 200%;
-  letter-spacing: 3px;
-}
-
-.splash.page .title, .splash.page .usernameInput {
-  font-weight: 100;
-}
-
-/* Input */
-
-.inputMessage {
-  border: 10px solid #000;
-  bottom: 0;
-  height: 60px;
-  left: 0;
-  outline: none;
-  padding-left: 10px;
-  position: absolute;
-  right: 0;
-  width: 100%;
-}
-
-.button {
-  height: 20px;
-  padding: 10px 20px 10px 20px;
-  border: 2px solid rgba(0,0,0,0.8);
-  background-color: rgba(255,255,255,0.7);
-  color: rgba(0,0,0,0.8);
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul.class-links {
-  padding: 0;
-  margin-top: -10px;
-  list-style: none;
-}
-.class-links li {
-  display: inline;
-  margin-right: 2em;
+  font-size: 32px;
 }
