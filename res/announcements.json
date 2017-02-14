@@ -1,72 +1,9 @@
 [
 	{
-		"uid": "f35da99e-468b-415f-8b99-3ff5b1632fa1",
-		"title": "Course Evaluations",
-		"content": "If you haven't yet, make sure to fill out course evaluations on Axess and at http://goo.gl/forms/4ZUrQiHd5jK10AhJ2!",
-		"date": "2016-06-12",
-		"visible": true
-	},
-	{
-		"uid": "b4c11350-9efc-495b-a58d-677ff46c4aa9",
-		"title": "Final Project Feedback",
-		"content": "(Cross-posted to Piazza) Final project feedback is available at https://drive.google.com/drive/folders/0B-eHIhYpHrGDdHJzclFoem1rR1E",
-		"date": "2016-05-22",
-		"visible": true
-	},
-	{
-		"uid": "88c211c8-3cb4-4eaa-8c7c-bfe333b51bc4",
-		"title": "Assignment 4 Released!",
-		"content": "(Cross-posted to Piazza) The full specification for Assignment 4, the final project, is officially released! You can read about it on GitHub by following the links on the course website. If you have any questions, please don't hesitate to reach out to a member of the course staff! P.S. If you haven't yet, please vote in the Piazza poll for which topics you'd like me to talk about next Monday in the Advanced Topics lecture.",
-		"date": "2016-05-17",
-		"visible": true
-	},
-	{
-		"uid": "4f7d9b7a-5847-4ce9-8632-e947999702cc",
-		"title": "+1 Late Day",
-		"content": "(Cross-posted to Piazza) As announced in class, we are giving everyone an extra late day to compensate for the rolling release of updates and bug fixes to the Assignment 2 starter code. If you didn't use any late days on Cryptography, you now have three 24-hour late days.",
-		"date": "2016-05-04",
-		"visible": true
-	},
-	{
-		"uid": "daf30279-c53d-4020-8446-5594af667933",
-		"title": "Updates to Assignment 2: Quest for the Holy Grail",
-		"content": "(Cross-posted to Piazza) The major kinks in older versions of Assignment 2 are now all cleaned up. If you have already started the assignment, we ask that you: (1) re-download and read through the new starter code and (2) fill out the Google forms linked in the new zip files, even if you filled out the forms in the old starter code. If you haven't started the assignment yet, make sure to start soon! You will need to run around campus to find the final holy grail, so leave some time for the last puzzle piece. Thank you to everyone who has provided feedback on the sometimes-problematic starter code or ambiguous READMEs. We think we've fixed the common bugs, but if you see any more, please let us know on Piazza. Most of all, thank you for your flexibility and willingness to bear with us as we update Assignment 2.",
-		"date": "2016-05-04",
-		"visible": true
-	},
-	{
-		"uid": "dc942bfc-9d7c-40f2-89f7-b28ab32ecb2b",
-		"title": "Assignment 2 Released",
-		"content": "Assignment 2 is out! Gather your fellow knights and get ready to find the holy grail!",
-		"date": "2016-04-29",
-		"visible": true
-	},
-	{
-		"uid": "ccb1ee56-b0c5-4c43-9e6a-15293cc4aee6",
-		"title": "A New Look and Feel",
-		"content": "Check out our snazzy new website! This class is starting to look good :) There are lots of new features too, including this handy announcements feed. You can click through the tabs at the top of the page to navigate. If there are any feature requests you'd like to see added to the website, or perhaps bugs to report (especially on different screen sizes or browsers), please email me directly at sredmond@stanford.edu. I've retroactively added old announcements that were previously distributed via Piazza or email.",
-		"date": "2016-04-27",
-		"visible": true
-	},
-	{
-		"uid": "109956c4-48b3-49ef-b77d-b701e4865d8c",
-		"title": "Assignment 1 Feedback Released",
-		"content": "We've just made feedback on Assignment 1 available to everyone. You should have received an email with a link to your feedback page. If not, please let us know so we can give you your feedback and grades. As a reminder, you can schedule optional 1-on-1s (like IGs) to review your assignment if you are unhappy with it. The mode grade was a check-plus for functionality and a check for style.",
-		"date": "2016-04-26",
-		"visible": true
-	},
-	{
-		"uid": "1e95171f-7b02-4c37-bbe7-f08753b24f4d",
-		"title": "Enrollment Update and Auditing Policies",
-		"content": "If you haven't yet received an enrollment code but have been accepted into CS41, use the admissions page linked from the course info tab to generate your personal code. If you would like to audit the course but not enroll for credit, great! Auditors are welcome to attend lecture, access our materials, ask questions on Piazza, and complete labs and assignments on their own, but work is not handed in or graded.",
-		"date": "2016-04-13",
-		"visible": true
-	},
-	{
-		"uuid": "4f032476-2860-4cb1-84ed-52835ab40bf1",
-		"title": "Assignment 1 Released",
-		"content": "The first assignment is a cryptography suite, covering the commonly-known Caesar and Vigenere ciphers along with the more challenging Merkle-Hellman Knapsack Cryptosystem.",
-		"date": "2016-04-06",
+		"uid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
+		"title": "Course Application",
+		"content": "We are now accepting applications for CS41! You can apply at http://apply.stanfordpython.com/. Applications close on March 17th.",
+		"date": "2017-02-12",
 		"visible": true
 	},
 	{

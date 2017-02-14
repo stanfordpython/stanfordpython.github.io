@@ -1,12 +1,22 @@
 [
 	{
+		"num": 0,
+		"title": "Hello World",
+		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
+		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign0",
+		"released": "2016-04-06",
+		"due": "2016-04-13 11:59:59 PM",
+		"visible": false,
+		"active": false
+	},
+	{
 		"num": 1,
 		"title": "Cryptography",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
 		"released": "2016-04-06",
 		"due": "2016-04-13 11:59:59 PM",
-		"visible": true,
+		"visible": false,
 		"active": false
 	},
 	{
@@ -16,7 +26,7 @@
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
 		"released": "2016-04-29",
 		"due": "2016-05-07 04:59:59 PM",
-		"visible": true,
+		"visible": false,
 		"active": false
 	},
 	{
@@ -26,7 +36,7 @@
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign3",
 		"released": "2016-05-11",
 		"due": "2016-05-18 01:30:00 PM",
-		"visible": true,
+		"visible": false,
 		"active": false
 	},
 	{
@@ -36,8 +46,8 @@
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign4",
 		"released": "2016-05-16",
 		"due": "2016-05-29 11:59:59 PM",
-		"visible": true,
-		"active": true
+		"visible": false,
+		"active": false
 	}
 ]
 
