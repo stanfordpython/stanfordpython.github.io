@@ -1,7 +1,7 @@
 [
 	{
-		"uid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
-		"title": "Course Application",
+		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
+		"title": "Course Applications",
 		"content": "We are now accepting applications for CS41! You can apply at http://apply.stanfordpython.com/. Applications close on March 17th.",
 		"date": "2017-02-12",
 		"visible": true
@@ -9,8 +9,8 @@
 	{
 		"uuid": "3cd6aa62-e023-40e7-a2d8-c5988dfd6ea0",
 		"title": "Welcome to Python!",
-		"content": "Hello world! Welcome to 'CS 41: hap.py code,' covering the fundamentals and contemporary usage of the Python programming language. This quarter is going to be amazing and I hope that you'll come along for the ride!",
-		"date": "2016-03-27",
+		"content": "Hello world! Welcome to \"CS 41: hap.py code.\" This course covers the fundamentals and contemporary usage of the Python programming language. This quarter is going to be amazing and I hope that you'll come along for the ride!",
+		"date": "2017-02-12",
 		"visible": true
 	}
 ]
