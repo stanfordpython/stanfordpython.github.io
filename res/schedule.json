@@ -98,7 +98,7 @@
 		"days": [
 			{
 				"title": "Object-Oriented Python",
-				"date": "2016-05-04",
+				"date": "2016-05-02",
 				"active": false,
 				"description": "After last week's foray into FP, we're back in the comfortable land of OOP, covering: differences between class objects and instance objects, how attribute resolution works, methods vs. functions, single and multiple inheritance, as well as 'magic' dunderbar methods in Python for operator overloading, with an emphasis on masquerading as builtin types. In the latter half of class, we'll explore the hierarchy of Exceptions, and then cover proper exceptional control flow using try/except/else/finally."
 			},
