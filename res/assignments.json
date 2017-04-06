@@ -1,13 +1,13 @@
 [
 	{
 		"num": 0,
-		"title": "Hello World",
+		"title": "Welcome to Python",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign0",
-		"released": "2016-04-06",
-		"due": "2016-04-13 11:59:59 PM",
-		"visible": false,
-		"active": false
+		"released": "2017-04-06",
+		"due": "2017-04-111 11:59:59 PM",
+		"visible": true,
+		"active": true
 	},
 	{
 		"num": 1,
