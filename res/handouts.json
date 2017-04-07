@@ -1,17 +1,17 @@
 [
 	{
-		"uid": "834eebcc-5f74-4af8-a547-ac300bd79735",
-		"num": 6,
-		"title": "How to Submit Assignment 1",
-		"href": "https://github.com/stanfordpython/python-handouts/blob/master/submitting-assignments.md",
-		"visible": false
-	},
-	{
 		"uid": "0d686d7e-a33c-48ae-9426-5749a30e2c9a",
-		"num": 5,
+		"num": 6,
 		"title": "What is a Virtual Environment?",
 		"href": "https://github.com/stanfordpython/python-handouts/blob/master/virtualenv.md",
 		"visible": false
+	},
+	{
+		"uid": "834eebcc-5f74-4af8-a547-ac300bd79735",
+		"num": 5,
+		"title": "How to Submit Assignments",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/submitting-assignments.md",
+		"visible": true
 	},
 	{
 		"uid": "480d5b4a-8730-497d-a54a-84a20598964e",
