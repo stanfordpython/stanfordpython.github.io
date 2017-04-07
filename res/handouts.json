@@ -25,7 +25,7 @@
 		"num": 3,
 		"title": "Installing Python",
 		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python.md",
-		"visible": false
+		"visible": true
 	},
 	{
 		"uid": "dc81c8d1-56ac-4fe8-844d-78fd95177081",
