@@ -7,7 +7,7 @@
 			{
 				"title": "Welcome to Python",
 				"date": "2017-04-04",
-				"active": true,
+				"active": false,
 				"description": "Hello world! Welcome to CS41. Topics covered: why take CS41, history and context of Python, zen and philosophy of Python, who uses Python, and lots of Python basics (using the interpreter, comments, variables, types, numbers, math, booleans, logic, strings, lists, slicing, console I/O, control flow, loops, range, functions)"
 			},
 			{
