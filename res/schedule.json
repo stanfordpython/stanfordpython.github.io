@@ -25,12 +25,12 @@
 	{
 		"num": 2,
 		"title": "Data Structures",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Intro to Data Structures",
 				"date": "2017-04-11",
-				"active": false,
+				"active": true,
 				"description": "Python's numerous tools for data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
 			},
 			{
