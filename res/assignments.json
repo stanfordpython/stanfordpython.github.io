@@ -7,17 +7,17 @@
 		"released": "2017-04-06",
 		"due": "2017-04-111 11:59:59 PM",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"num": 1,
 		"title": "Cryptography",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
-		"released": "2016-04-06",
-		"due": "2016-04-13 11:59:59 PM",
-		"visible": false,
-		"active": false
+		"released": "2017-04-18",
+		"due": "2016-04-27 11:59:59 PM",
+		"visible": true,
+		"active": true
 	},
 	{
 		"num": 2,
