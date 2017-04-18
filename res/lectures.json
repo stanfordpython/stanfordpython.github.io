@@ -27,17 +27,17 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDRUZ5NjIyem9UQmM",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "6a2fb3a1-2a8f-4af7-b805-75e89f189b4d",
 		"title": "Functions",
-		"date": "2016-04-18",
-		"condensed": "#",
-		"full": "#",
+		"date": "2017-04-18",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDazltOGpGUmhPWEU",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMGdRRjhJc3lhVmM",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "e829c370-2813-4d10-aa5f-076f3ce8e296",

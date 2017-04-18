@@ -36,7 +36,7 @@
 			{
 				"title": "Data Structures Lab",
 				"date": "2017-04-13",
-				"active": true,
+				"active": false,
 				"description": "The first full-length lab of CS41 features a wide collection of small problems, chosen to practice the many, many topics covered in the first three days of lecture and solidify concepts that may not have been absorbed on the first pass."
 			}
 		],
@@ -48,12 +48,12 @@
 	{
 		"num": 3,
 		"title": "Functions",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Functions",
 				"date": "2017-04-18",
-				"active": false,
+				"active": true,
 				"description": "We've seen functions in other languages, but Python gives us additional tools in defining and calling functions. After reviewing some nuances in the function execution model regarding return values, scope, and pass-by semantics, we'll see keyword arguments alongside their familiar positional counterparts. We'll discuss variadic positional arguments and variadic keyword arguments, and their relation to str.format. Lastly, we peek into an odd quirk of Python - that functions are indeed objects, and can be treated as such."
 			},
 			{
