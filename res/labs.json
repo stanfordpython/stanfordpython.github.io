@@ -19,7 +19,7 @@
 		"week": 3,
 		"topic": "Functions",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab3-functions.md",
-		"solutions": "#", //https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3solutions.py",
+		"solutions": "#",
 		"visible": true,
 		"active": true
 	},
