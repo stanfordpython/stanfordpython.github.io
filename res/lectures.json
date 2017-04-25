@@ -37,17 +37,17 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMGdRRjhJc3lhVmM",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "e829c370-2813-4d10-aa5f-076f3ce8e296",
 		"title": "Functional Programming",
-		"date": "2016-04-25",
+		"date": "2017-04-25",
 		"condensed": "#",
 		"full": "#",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "d7caa8df-b4a5-4376-9002-d38921aef026",

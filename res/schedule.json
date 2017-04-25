@@ -59,7 +59,7 @@
 			{
 				"title": "Functions Lab",
 				"date": "2017-04-20",
-				"active": true,
+				"active": false,
 				"description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. The lab closes with a thorough investigation of function objects and their attributes, at least in CPython."
 			}
 		],
@@ -71,12 +71,12 @@
 	{
 		"num": 4,
 		"title": "Functional Programming",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Functional Programming",
 				"date": "2017-04-25",
-				"active": false,
+				"active": true,
 				"description": "This is, by far, my favorite lecture to give. We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
 			},
 			{
