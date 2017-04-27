@@ -21,14 +21,14 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab3-functions.md",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3solutions.py",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 4,
 		"topic": "Functional Programming",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-fp.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab4solutions.py",
-		"visible": false,
+		"solutions": "#",
+		"visible": true,
 		"active": false
 	},
 	{
