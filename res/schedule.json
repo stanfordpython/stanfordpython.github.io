@@ -82,7 +82,7 @@
 			{
 				"title": "Functional Programming Lab",
 				"date": "2017-04-27",
-				"active": true,
+				"active": false,
 				"description": "Practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
 			}
 		],
@@ -94,12 +94,12 @@
 	{
 		"num": 5,
 		"title": "Object-Oriented Python",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Object-Oriented Python",
-				"date": "2016-05-02",
-				"active": false,
+				"date": "2017-05-02",
+				"active": true,
 				"description": "After last week's foray into FP, we're back in the comfortable land of OOP, covering: differences between class objects and instance objects, how attribute resolution works, methods vs. functions, single and multiple inheritance, as well as 'magic' dunderbar methods in Python for operator overloading, with an emphasis on masquerading as builtin types. In the latter half of class, we'll explore the hierarchy of Exceptions, and then cover proper exceptional control flow using try/except/else/finally."
 			},
 			{
