@@ -1,6 +1,13 @@
 [
 	{
 		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
+		"title": "Assignment 2 Released",
+		"content": "The Quest for the Holy Grail has begun!",
+		"date": "2017-05-03",
+		"visible": true
+	},
+	{
+		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
 		"title": "Course Applications",
 		"content": "We are now accepting applications for CS41! Applications close on March 17th. You can apply at http://apply.stanfordpython.com/",
 		"date": "2017-02-12",

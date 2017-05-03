@@ -17,17 +17,17 @@
 		"released": "2017-04-18",
 		"due": "2017-04-27 11:59:59 PM",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"num": 2,
 		"title": "Quest for the Holy Grail",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
-		"released": "2016-04-29",
-		"due": "2016-05-07 04:59:59 PM",
-		"visible": false,
-		"active": false
+		"released": "2016-05-02",
+		"due": "2016-05-11 11:59:59 PM",
+		"visible": true,
+		"active": true
 	},
 	{
 		"num": 3,
