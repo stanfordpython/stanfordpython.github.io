@@ -29,15 +29,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-fp.md",
 		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 5,
 		"topic": "Object-Oriented Python",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab5-oop.md",
 		"solutions": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 6,
