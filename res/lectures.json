@@ -47,7 +47,7 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDcG9ieGpsRTNnZ1E",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "d7caa8df-b4a5-4376-9002-d38921aef026",
@@ -62,12 +62,12 @@
 	{
 		"uid": "5cf135f4-ed01-4edf-92a6-08c3ba4f5a4f",
 		"title": "The Python Standard Library",
-		"date": "2016-05-09",
-		"condensed": "#",
-		"full": "#",
+		"date": "2017-05-09",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDUmJKTkkzdHVLUUk",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTBPTDRwSmF1cWc",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
