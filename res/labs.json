@@ -37,15 +37,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab5-oop.md",
 		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 6,
 		"topic": "Standard Library",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab6-standardlibrary.md",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab6solutions.py",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 7,
