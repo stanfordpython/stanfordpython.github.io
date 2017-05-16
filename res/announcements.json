@@ -1,5 +1,12 @@
 [
 	{
+		"uuid": "fa1ea285-f574-4848-97fa-asdfasdfnasd",
+		"title": "Assignment 2 Finished",
+		"content": "Congratulations to our brave knights who recovered the Holy Grail!",
+		"date": "2017-05-13",
+		"visible": true
+	},
+	{
 		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
 		"title": "Assignment 2 Released",
 		"content": "The Quest for the Holy Grail has begun!",

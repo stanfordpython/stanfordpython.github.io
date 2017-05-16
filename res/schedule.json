@@ -122,7 +122,7 @@
 			{
 				"title": "The Python Standard Library",
 				"date": "2017-05-09",
-				"active": true,
+				"active": false,
 				"description": "Survey of the utilities provided by the Python standard library, including sys, re, collections, random, itertools, and many, many more. These slides are intended as reference material to anyone interested in seeing the power and breadth of the standard library."
 			},
 			{
@@ -140,12 +140,12 @@
 	{
 		"num": 7,
 		"title": "Third-Party Tools",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Third-Party Tools",
 				"date": "2017-05-16",
-				"active": false,
+				"active": true,
 				"description": "Survey of the most common 3rd party packages in use. These include: requests, numpy/scipy, matplotlib/pyplot, pandas, pillow, flask/django/twisted, pep8, scikit-learn/nltk, stanford-corenlp, bcrypt, beatifulsoup, and more."
 			},
 			{
