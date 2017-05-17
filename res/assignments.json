@@ -27,7 +27,7 @@
 		"released": "2017-05-02",
 		"due": "2017-05-11 11:59:59 PM",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"num": 3,
@@ -44,10 +44,10 @@
 		"title": "Final Project",
 		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign4/README.md",
 		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign4",
-		"released": "2016-05-16",
-		"due": "2016-05-29 11:59:59 PM",
-		"visible": false,
-		"active": false
+		"released": "2017-05-16",
+		"due": "2017-12-12 11:59:59 PM",
+		"visible": true,
+		"active": true
 	}
 ]
 
