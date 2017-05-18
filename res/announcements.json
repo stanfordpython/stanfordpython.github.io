@@ -1,9 +1,16 @@
 [
 	{
-		"uuid": "fa1ea285-f574-4848-97fa-asdfasdfnasd",
-		"title": "Assignment 2 Finished",
-		"content": "Congratulations to our brave knights who recovered the Holy Grail!",
-		"date": "2017-05-13",
+		"uuid": "b47b086b-6c6a-4546-976b-f0ecca8667b7",
+		"title": "Final Project Proposals Open",
+		"content": "It's time to begin thinking about final projects! When you (and possibly a group) have come to a decision, submit a project proposal. Instructions can be found from the assignments tab.",
+		"date": "2017-05-17",
+		"visible": true
+	},
+	{
+		"uuid": "589d65ed-f409-4e44-b019-c29e4e196665",
+		"title": "Assignment 3 Released",
+		"content": "Get ready to explore some terribly written Python code and look for ways to improve it!",
+		"date": "2017-05-17",
 		"visible": true
 	},
 	{
