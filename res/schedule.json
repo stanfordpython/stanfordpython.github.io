@@ -151,7 +151,7 @@
 			{
 				"title": "Third-Party Tools Lab",
 				"date": "2017-05-18",
-				"active": true,
+				"active": false,
 				"description": "Experiment with some of the 3rd party tools discussed in lecture. In particular, you'll choose one or two of the packages that most interest you and go into a deep dive, walking through the developer's tutorial pages and getting practical experience with those particular tools."
 			}
 		],
@@ -168,7 +168,7 @@
 			{
 				"title": "The Python Ecosystem",
 				"date": "2017-05-23",
-				"active": false,
+				"active": true,
 				"description": "A conceptual overview of the state of the Python ecosystem, focusing on the differences between Python 2 and Python 3. This is a light lecture, and should leave time at the end to work on projects."
 			},
 			{
