@@ -87,7 +87,7 @@
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDLWRxUUVsTl9JNU0",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "599b8465-88ff-4168-86b1-1a9c0411d94b",
@@ -96,7 +96,7 @@
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDMkpiSTJZZDRpaVU",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDWWVjV09FZVY5cW8",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	}
 ]
