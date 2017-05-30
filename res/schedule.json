@@ -168,7 +168,7 @@
 			{
 				"title": "The Python Ecosystem",
 				"date": "2017-05-23",
-				"active": true,
+				"active": false,
 				"description": "A conceptual overview of the state of the Python ecosystem, focusing on the differences between Python 2 and Python 3. This is a light lecture, and should leave time at the end to work on projects."
 			},
 			{
@@ -186,7 +186,7 @@
 	{
 		"num": 9,
 		"title": "Advanced Topics",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Advanced Topics",
