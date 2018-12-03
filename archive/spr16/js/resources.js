@@ -239,7 +239,7 @@ function create_week_heading_tr(week) {
 }
 
 // Changed to archive 2017-02-12
-var RESOURCES_DIR = 'http://stanfordpython.com/archive/spr16/res'
+var RESOURCES_DIR = 'https://stanfordpython.com/archive/spr16/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
