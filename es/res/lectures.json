@@ -1,0 +1,102 @@
+[
+	{
+		"uid": "7270fd96-4d21-4fea-a8f8-aac046bb4f5b",
+		"title": "Welcome to Python!",
+		"date": "2016-04-04",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcHltdTZPeXNabGs",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDVVBuMVRBd1A4ZHc",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "787e1fb9-f764-42cc-abd6-81895fcb5454",
+		"title": "Python Fundamentals",
+		"date": "2017-04-06",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTkwVkh6aHNXT0E",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDX2hRVVUwOHRaVDQ",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "f8c44df5-339a-427a-bf89-1c4f6a463c74",
+		"title": "Data Structures",
+		"date": "2017-04-11",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDSmQtQ0VKU2VGa0E",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDRUZ5NjIyem9UQmM",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "6a2fb3a1-2a8f-4af7-b805-75e89f189b4d",
+		"title": "Functions",
+		"date": "2017-04-18",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDazltOGpGUmhPWEU",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMGdRRjhJc3lhVmM",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "e829c370-2813-4d10-aa5f-076f3ce8e296",
+		"title": "Functional Programming",
+		"date": "2017-04-25",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDX1JrZXJKamwyZXc",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDcG9ieGpsRTNnZ1E",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "d7caa8df-b4a5-4376-9002-d38921aef026",
+		"title": "Object-Oriented Python",
+		"date": "2017-05-02",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDUTNGbTZZQW5UTjA",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDWUtObjZ5MDI0dHc",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "5cf135f4-ed01-4edf-92a6-08c3ba4f5a4f",
+		"title": "The Python Standard Library",
+		"date": "2017-05-09",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDUmJKTkkzdHVLUUk",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTBPTDRwSmF1cWc",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
+		"title": "Third-Party Tools",
+		"date": "2017-05-16",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDMG82Q1pkb2ZiYW8",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDc3BYMjEtck1sODA",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "a64dfc79-8da0-4c8f-aa0e-f2c09cd5ed4c",
+		"title": "The Python Ecosystem",
+		"date": "2017-05-23",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcDJfVjdwNzZUazA",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDLWRxUUVsTl9JNU0",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "599b8465-88ff-4168-86b1-1a9c0411d94b",
+		"title": "Advanced Topics",
+		"date": "2017-05-30",
+		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDMkpiSTJZZDRpaVU",
+		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDWWVjV09FZVY5cW8",
+		"video": "#",
+		"visible": true,
+		"active": true
+	}
+]
