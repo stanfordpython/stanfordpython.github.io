@@ -15,7 +15,7 @@ $(document).ready(function() {
   // Whether to force users through a splash page.
   // Set to true at the start of the quarter, during applications.
   // Set to false during the quarter.
-  var SHOW_SPLASH_PAGE = false;
+  var SHOW_SPLASH_PAGE = true;
 
   // Keycodes to leave the splash page.
   var ENTER_KEYCODE = 13;
