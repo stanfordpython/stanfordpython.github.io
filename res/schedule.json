@@ -6,26 +6,26 @@
 		"days": [
 			{
 				"title": "Welcome to Python",
-				"date": "2017-04-04",
-				"active": false,
+				"date": "2019-01-08",
+				"active": true,
 				"description": "Hello world! Welcome to CS41. Topics covered: why take CS41, history and context of Python, zen and philosophy of Python, who uses Python, and lots of Python basics (using the interpreter, comments, variables, types, numbers, math, booleans, logic, strings, lists, slicing, console I/O, control flow, loops, range, functions)"
 			},
 			{
 				"title": "Python Fundamentals",
-				"date": "2017-04-06",
+				"date": "2019-01-10",
 				"active": false,
 				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format(), file I/O (using a context manager), running Python as a script, and the basics of imports. The remainder of class was used to set up (and troubleshoot) Python installations, as well as start work on Lab 1."
 			}
 		],
 		"dates": {
-			"start": "2017-04-02",
-			"end": "2017-04-08"
+			"start": "2019-01-07",
+			"end": "2019-01-11"
 		}
 	},
 	{
 		"num": 2,
 		"title": "Data Structures",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Intro to Data Structures",
@@ -48,7 +48,7 @@
 	{
 		"num": 3,
 		"title": "Functions",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Functions",
@@ -71,7 +71,7 @@
 	{
 		"num": 4,
 		"title": "Functional Programming",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Functional Programming",
@@ -94,7 +94,7 @@
 	{
 		"num": 5,
 		"title": "Object-Oriented Python",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Object-Oriented Python",
@@ -117,7 +117,7 @@
 	{
 		"num": 6,
 		"title": "The Python Standard Library",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "The Python Standard Library",
@@ -140,7 +140,7 @@
 	{
 		"num": 7,
 		"title": "Third-Party Tools",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Third-Party Tools",
@@ -186,12 +186,12 @@
 	{
 		"num": 9,
 		"title": "Advanced Topics",
-		"visible": true,
+		"visible": false,
 		"days": [
 			{
 				"title": "Advanced Topics",
 				"date": "2017-05-30",
-				"active": true,
+				"active": false,
 				"description": "Any advanced topics in Python that the class finds interesting. Possible topics include: optimizations, web app development, practical data science, or anything else. Check the poll on Piazza for more information!"
 			},
 			{
