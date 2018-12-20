@@ -1,37 +1,9 @@
 [
 	{
-		"uuid": "b47b086b-6c6a-4546-976b-f0ecca8667b7",
-		"title": "Final Project Proposals Open",
-		"content": "It's time to begin thinking about final projects! When you (and possibly a group) have come to a decision, submit a project proposal. Instructions can be found from the assignments tab.",
-		"date": "2017-05-17",
-		"visible": true
-	},
-	{
-		"uuid": "589d65ed-f409-4e44-b019-c29e4e196665",
-		"title": "Assignment 3 Released",
-		"content": "Get ready to explore some terribly written Python code and look for ways to improve it!",
-		"date": "2017-05-17",
-		"visible": true
-	},
-	{
-		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
-		"title": "Assignment 2 Released",
-		"content": "The Quest for the Holy Grail has begun!",
-		"date": "2017-05-03",
-		"visible": true
-	},
-	{
-		"uuid": "fa1ea285-f574-4848-97fa-2b550f84d1c6",
-		"title": "Course Applications",
-		"content": "We are now accepting applications for CS41! Applications close on March 17th. You can apply at https://apply.stanfordpython.com/",
-		"date": "2017-02-12",
-		"visible": true
-	},
-	{
-		"uuid": "3cd6aa62-e023-40e7-a2d8-c5988dfd6ea0",
-		"title": "Welcome to Python!",
-		"content": "Hello world! Welcome to \"CS 41: hap.py code.\" This course covers the fundamentals and contemporary usage of the Python programming language. This quarter is going to be amazing and I hope that you'll come along for the ride!",
-		"date": "2017-02-12",
+		"uuid": "c18a6b2c-e6e6-4bbd-bbd9-6aab7fcf5cda",
+		"title": "¡Bienvenido a Python!",
+		"content": "¡Hola, mundo! Bienvenido a \"Principios básicos de Python.\" Este curso cubrirá los principios básicos y uso contemporáneo del lenguaje de programación \"Python.\" Nos da muchísima ilusión poder compartir el curso con vosotros, y esperamos que vengáis con nosotros. Para empezar, ir a la pestaña de información y leed el enlace llamado \"Información del curso.",
+		"date": "2019-01-07",
 		"visible": true
 	}
 ]
