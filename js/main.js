@@ -72,9 +72,14 @@ $(document).ready(function() {
   $('#navigation a[data-toggle="tab"]').click(function (event) {
     var $tab = $(this);
     var currentlyActive = $tab.parent().hasClass('active');
+    var href = $tab.attr('href');href
+    if (!currentlyActive) {
+      gtag_trackTabPaneToggle(href);
+    }
+
     // We changed the active tab and have a history object
     if (!currentlyActive && window.history && window.history.pushState) {
-      window.history.pushState(null, null, $tab.attr('href'));
+      window.history.pushState(null, null, href);
     }
     event.preventDefault();
   });
