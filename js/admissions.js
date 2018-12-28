@@ -34,7 +34,7 @@ $(document).ready(function() {
       if (code === undefined) {
         $output.text("No enrollment code found for SUNet ID '" + sunet + "'.");
       } else {
-        $output.text("Hello " + sunet + ": your enrollment code is " + code ". Welcome to CS41!");
+        $output.text("Hello " + sunet + ": your enrollment code is " + code + ". Welcome to CS41!");
       }
     }
 
