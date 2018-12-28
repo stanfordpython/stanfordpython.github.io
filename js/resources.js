@@ -24,14 +24,15 @@ function create_anchor(href, title, backup, tracker) {
   if (href === '#') {
     return $('<span>').append(backup);
   }
+  console.log(tracker);
 
   // Otherwise, build an anchor tag around the given information
-  var anchor = $('<a>').attr('href', href).attr('target', '_blank').append(title);
-  anchor.onclick = function() {
+  var $anchor = $('<a>').attr('href', href).attr('target', '_blank').append(title);
+  $anchor.onclick = function() {
     tracker(href);
     return true;  // Do take the default click action.
   }
-  return anchor;
+  return $anchor;
 }
 
 function create_lab_tr(lab) {
