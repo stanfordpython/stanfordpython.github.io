@@ -31,7 +31,7 @@ function create_anchor(href, title, backup, tracker) {
     tracker(href);
     return true;  // Do take the default click action.
   }
-  return anchor;s
+  return anchor;
 }
 
 function create_lab_tr(lab) {

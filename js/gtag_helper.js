@@ -7,17 +7,17 @@
  *
  * We track the following categories of events:
  *   outbound links
- *     click application link from splash page DONE
- *     click application link from alert DONE
- *     click application link from course info page DONE
+ *     click application link from splash page CONFIRMED
+ *     click application link from alert CONFIRMED
+ *     click application link from course info page CONFIRMED
  *     click on a link to lecture slides or video
  *     click on a link to lab materials
  *     click on a link to assignment materials
  *     click on a link to resource materials
- *     click on a link to course info, syllabus, piazza
+ *     click on a link to course info, syllabus, piazza CONFIRMED
  *   internal links
- *     navigate to a different tab panel DONE
- *     click through the splash screen DONE
+ *     navigate to a different tab panel CONFIRMED
+ *     click through the splash screen CONFIRMED
  *     navigating to weird pages
  *       iamhere.stanfordpython.com IMPOSSIBLE?
  *       stanfordpython.com/admissions.html DONE
