@@ -19,14 +19,19 @@ var trackOutboundLink = function(url) {
    });
 }
 
-function create_anchor(href, title, backup) {
+function create_anchor(href, title, backup, tracker) {
   // No outgoing link, so just replace it with whatever the backup text is
   if (href === '#') {
     return $('<span>').append(backup);
   }
 
   // Otherwise, build an anchor tag around the given information
-  return $('<a>').attr('href', href).attr('target', '_blank').append(title);
+  var anchor = $('<a>').attr('href', href).attr('target', '_blank').append(title);
+  anchor.onclick = function() {
+    tracker(href);
+    return false;
+  }
+  return anchor;s
 }
 
 function create_lab_tr(lab) {
@@ -45,11 +50,11 @@ function create_lab_tr(lab) {
     $('<td>').append(lab.topic)
   ).append(
     $('<td>').append(
-      create_anchor(lab.href, "Handout", "None")
+      create_anchor(lab.href, "Handout", "None", gtag_trackLabHandout)
     )
   ).append(
     $('<td>').append(
-      create_anchor(lab.solutions, "Solutions", "Unreleased")
+      create_anchor(lab.solutions, "Solutions", "Unreleased", gtag_trackLabSolution)
     )
   );
 
@@ -82,11 +87,11 @@ function create_assignment_tr(assn) {
     $('<td>').append(assn.title)
   ).append(
     $('<td>').append(
-      create_anchor(assn.spec, "README", "No Spec")
+      create_anchor(assn.spec, "README", "No Spec", gtag_trackAssignmentHandout)
     )
   ).append(
     $('<td>').append(
-      create_anchor(assn.starter_code, "Starter Code", "None")
+      create_anchor(assn.starter_code, "Starter Code", "None", gtag_trackAssignmentStarterCode)
     )
   ).append(
     $('<td>').append(releasedf)
@@ -113,13 +118,13 @@ function create_lecture_tr(lecture) {
     $('<th>').attr('scope', 'row').append(lecture.title)
   ).append(
     $('<td>').append(
-      create_anchor(lecture.condensed, "condensed", "N/A")
+      create_anchor(lecture.condensed, "condensed", "N/A", gtag_trackLectureCondensed)
     ).append(' + ').append(
-      create_anchor(lecture.full, "full", "N/A")
+      create_anchor(lecture.full, "full", "N/A", gtag_trackLectureFull)
     )
   ).append(
     $('<td>').append(
-      create_anchor(lecture.video, "video", "Currently Unavailable")
+      create_anchor(lecture.video, "video", "Currently Unavailable", gtag_trackLectureVideo)
     )
   );
 
@@ -143,7 +148,7 @@ function create_reading_tr(reading) {
     $('<th>').attr('scope', 'row').append(reading.num)
   ).append(
     $('<td>').append(
-      create_anchor(reading.href, reading.title, "None")
+      create_anchor(reading.href, reading.title, "None", gtag_trackResourceReading)
     )
   ).append(
     $('<td>').append(reading.credit)
@@ -169,7 +174,7 @@ function create_handout_tr(ho) {
     $('<th>').attr('scope', 'row').append(ho.num)
   ).append(
     $('<td>').append(
-      create_anchor(ho.href, ho.title, "None")
+      create_anchor(ho.href, ho.title, "None", gtag_trackResourceHandout)
     )
   );
 

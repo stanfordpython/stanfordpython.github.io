@@ -36,7 +36,8 @@ $(document).ready(function() {
           // Only when the content page finishes showing, fade out
           $splashPage.fadeOut();
         });
-        
+        gtag_trackSplashPageClickthrough();
+        console.log('Tracking clickthrough');
       }
     }
     

@@ -60,12 +60,12 @@ Revision History:
 
         <!-- Application Alert -->
         <div class="alert alert-success" role="alert">
-            Interested in taking CS41 in Winter 2019? <a href="http://apply.stanfordpython.com/" class="alert-link" target="_blank">Apply here</a> by January 4th.
+            Interested in taking CS41 in Winter 2019? <a href="http://apply.stanfordpython.com/" onclick="gtag_trackApplication('alert'); return false;" class="alert-link" target="_blank">Apply here</a> by January 4th.
         </div>
         <!-- End Application Alert -->
 
         <!-- Old Course Notes Alert -->
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-dismissable alert-info" role="alert">
             This website is still showing some information from the last time the class was offered.
         </div>
         <!-- End Old Course Notes Alert -->
@@ -276,22 +276,22 @@ Revision History:
                 <h4>Essential Links</h4>
                 <p class="lead">
                   <!-- TODO: Fix this janky spacing hack -->
-                  <strong class="small"><a href="https://docs.google.com/document/d/1_QcFq-swXjJjUKmxYX6CF8Dxltg7F7qaX4bsr8MrLZ4/edit?usp=sharing" target="_blank">Course Info</a></strong>
+                  <strong class="small"><a href="https://docs.google.com/document/d/1_QcFq-swXjJjUKmxYX6CF8Dxltg7F7qaX4bsr8MrLZ4/edit?usp=sharing" onclick="gtag_trackOutboundLink('course_information'); return false;" target="_blank">Course Info</a></strong>
 
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                  <strong class="small"><a href="https://docs.google.com/document/d/1soElAhBGsY288pwfiU9s8pH7xUBgdDh5WpTGyWsh1Bw/edit?usp=sharing" target="_blank">Syllabus</a></strong>
+                  <strong class="small"><a href="https://docs.google.com/document/d/1soElAhBGsY288pwfiU9s8pH7xUBgdDh5WpTGyWsh1Bw/edit?usp=sharing" onclick="gtag_trackOutboundLink('syllabus'); return false;" target="_blank">Syllabus</a></strong>
                   
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                  <strong class="small"><a href="https://piazza.com/stanford/winter2019/cs41/" target="_blank">Piazza</a></strong>
+                  <strong class="small"><a href="https://piazza.com/stanford/winter2019/cs41/" onclick="gtag_trackOutboundLink('piazza'); return false;" target="_blank">Piazza</a></strong>
                 </p>
 
                 <h4>Basic Info</h4>
 
                 <dl class="dl-horizontal lead">
                   <dt>application</dt>
-                  <dd><a href="http://apply.stanfordpython.com/" target="_blank">apply here</a></dd>
+                  <dd><a href="http://apply.stanfordpython.com/" onclick="gtag_trackApplication('info'); return false;" target="_blank">apply here</a></dd>
 
                   <dt>date / time</dt>
                   <dd>tbd</dd>
@@ -346,7 +346,7 @@ Revision History:
           <a href="#" class="btn btn-primary btn-lg text-muted" id="learn-more">
             <strong>learn more</strong>
           </a>
-          <a href="http://apply.stanfordpython.com/" onclick="gtag_trackOutboundLink('http://apply.stanfordpython.com/'); return false;" target="_blank">
+          <a href="http://apply.stanfordpython.com/" onclick="gtag_trackApplication('splash'); return false;" target="_blank">
             <strong>apply now</strong>
           </a>
         </h3>
@@ -359,8 +359,8 @@ Revision History:
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-<script type="text/javascript" src="js/resources.js"></script>
 <script type="text/javascript" src="/js/gtag_helper.js"></script>
+<script type="text/javascript" src="js/resources.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

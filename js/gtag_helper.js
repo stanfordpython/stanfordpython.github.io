@@ -7,21 +7,21 @@
  *
  * We track the following categories of events:
  *   outbound links
- *     click application link from splash page
- *     click application link from alert
- *     click application link from course info page
- *     click on a link to lecture slides
+ *     click application link from splash page DONE
+ *     click application link from alert DONE
+ *     click application link from course info page DONE
+ *     click on a link to lecture slides or video
  *     click on a link to lab materials
  *     click on a link to assignment materials
  *     click on a link to resource materials
  *     click on a link to course info, syllabus, piazza
  *   internal links
- *     navigate to a different tab panel
- *     click through the splash screen
+ *     navigate to a different tab panel DONE
+ *     click through the splash screen DONE
  *     navigating to weird pages
- *       iamhere.stanfordpython.com
- *       stanfordpython.com/admissions.html
- *       stanfordpython.com/archive.html
+ *       iamhere.stanfordpython.com IMPOSSIBLE?
+ *       stanfordpython.com/admissions.html DONE
+ *       stanfordpython.com/archive.html DONE
  * 
  */
 
@@ -43,22 +43,126 @@ var trackClickLinkEvent = function(category, label, url, external) {
 }
 
 var gtag_trackTabPaneToggle = function(url) {
+  console.log('gtag_trackTabPaneToggle');
+  // Update the page_path of the configuration details to point to a virtual page.
+  gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
   gtag('event', 'click', {
     'event_category': 'tab',
     'event_label': url,
     'transport_type': DEFAULT_TRANSPORT_TYPE,
   });
-  // Update the page_path of the configuration details to point to a virtual page.
-  gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
-  console.log('Tracking navigation to ' + url);
+  // console.log('Tracking navigation to ' + url);
 }
 
-var trackApplicationLink = function(source) {
-
+var gtag_trackLectureCondensed = function(url) {
+  console.log('trackLectureCondensed');
+  gtag('event', 'click', {
+    'event_category': 'lecture:condensed',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
 }
 
-var trackCondensedLectureLink = function(url) {
+var gtag_trackLectureFull = function(url) {
+  console.log('trackLectureFull');
+  gtag('event', 'click', {
+    'event_category': 'lecture:full',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
 
+var gtag_trackLectureVideo = function(url) {
+  console.log('trackLectureVideo');
+  gtag('event', 'click', {
+    'event_category': 'lecture:video',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackLabHandout = function(url) {
+  console.log('trackLabHandout');
+  gtag('event', 'click', {
+    'event_category': 'lab:handout',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackLabSolution = function(url) {
+  console.log('trackLabSolution');
+  gtag('event', 'click', {
+    'event_category': 'lab:solution',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackAssignmentHandout = function(url) {
+  console.log('trackAssignmentHandout');
+  gtag('event', 'click', {
+    'event_category': 'assignment:handout',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackAssignmentStarterCode = function(url) {
+  console.log('trackAssignmentStarterCode');
+  gtag('event', 'click', {
+    'event_category': 'assignment:starter_code',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackResourceHandout = function(url) {
+  console.log('trackResourceHandout');
+  gtag('event', 'click', {
+    'event_category': 'resource:handout',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackResourceReading = function(url) {
+  console.log('trackResourceReading');
+  gtag('event', 'click', {
+    'event_category': 'resource:reading',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+
+
+var gtag_trackSplashPageClickthrough = function() {
+  console.log('gtag_trackSplashPageClickthrough');
+  gtag('event', 'click', {
+    'event_category': 'splash',
+    'event_label': '#',
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+  });
+}
+
+var gtag_trackApplication = function(source) {
+  console.log('gtag_trackApplication');
+  gtag('event', 'click', {
+    'event_category': 'application',
+    'event_label': source,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
 }
 
 /**
@@ -66,10 +170,7 @@ var trackCondensedLectureLink = function(url) {
 * This function takes a valid URL string as an argument, and uses that URL string
 * as the event label. 
 */
-var gtag_trackOutboundLink = function(url, external) {
-  params = {
-
-  }
+var gtag_trackOutboundLink = function(url) {
   gtag('event', 'click', {
     'event_category': 'outbound',
     'event_label': url,
