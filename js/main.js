@@ -37,7 +37,6 @@ $(document).ready(function() {
           $splashPage.fadeOut();
         });
         gtag_trackSplashPageClickthrough();
-        console.log('Tracking clickthrough');
       }
     }
     

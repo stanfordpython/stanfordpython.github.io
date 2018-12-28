@@ -43,7 +43,6 @@ var trackClickLinkEvent = function(category, label, url, external) {
 }
 
 var gtag_trackTabPaneToggle = function(url) {
-  console.log('gtag_trackTabPaneToggle');
   // Update the page_path of the configuration details to point to a virtual page.
   gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
   gtag('event', 'click', {
@@ -51,11 +50,9 @@ var gtag_trackTabPaneToggle = function(url) {
     'event_label': url,
     'transport_type': DEFAULT_TRANSPORT_TYPE,
   });
-  // console.log('Tracking navigation to ' + url);
 }
 
 var gtag_trackLectureCondensed = function(url) {
-  console.log('trackLectureCondensed');
   gtag('event', 'click', {
     'event_category': 'lecture:condensed',
     'event_label': url,
@@ -65,7 +62,6 @@ var gtag_trackLectureCondensed = function(url) {
 }
 
 var gtag_trackLectureFull = function(url) {
-  console.log('trackLectureFull');
   gtag('event', 'click', {
     'event_category': 'lecture:full',
     'event_label': url,
@@ -75,7 +71,6 @@ var gtag_trackLectureFull = function(url) {
 }
 
 var gtag_trackLectureVideo = function(url) {
-  console.log('trackLectureVideo');
   gtag('event', 'click', {
     'event_category': 'lecture:video',
     'event_label': url,
@@ -85,7 +80,6 @@ var gtag_trackLectureVideo = function(url) {
 }
 
 var gtag_trackLabHandout = function(url) {
-  console.log('trackLabHandout');
   gtag('event', 'click', {
     'event_category': 'lab:handout',
     'event_label': url,
@@ -95,7 +89,6 @@ var gtag_trackLabHandout = function(url) {
 }
 
 var gtag_trackLabSolution = function(url) {
-  console.log('trackLabSolution');
   gtag('event', 'click', {
     'event_category': 'lab:solution',
     'event_label': url,
@@ -105,7 +98,6 @@ var gtag_trackLabSolution = function(url) {
 }
 
 var gtag_trackAssignmentHandout = function(url) {
-  console.log('trackAssignmentHandout');
   gtag('event', 'click', {
     'event_category': 'assignment:handout',
     'event_label': url,
@@ -115,7 +107,6 @@ var gtag_trackAssignmentHandout = function(url) {
 }
 
 var gtag_trackAssignmentStarterCode = function(url) {
-  console.log('trackAssignmentStarterCode');
   gtag('event', 'click', {
     'event_category': 'assignment:starter_code',
     'event_label': url,
@@ -125,7 +116,6 @@ var gtag_trackAssignmentStarterCode = function(url) {
 }
 
 var gtag_trackResourceHandout = function(url) {
-  console.log('trackResourceHandout');
   gtag('event', 'click', {
     'event_category': 'resource:handout',
     'event_label': url,
@@ -135,7 +125,6 @@ var gtag_trackResourceHandout = function(url) {
 }
 
 var gtag_trackResourceReading = function(url) {
-  console.log('trackResourceReading');
   gtag('event', 'click', {
     'event_category': 'resource:reading',
     'event_label': url,
@@ -147,7 +136,6 @@ var gtag_trackResourceReading = function(url) {
 
 
 var gtag_trackSplashPageClickthrough = function() {
-  console.log('gtag_trackSplashPageClickthrough');
   gtag('event', 'click', {
     'event_category': 'splash',
     'event_label': '#',
@@ -156,7 +144,6 @@ var gtag_trackSplashPageClickthrough = function() {
 }
 
 var gtag_trackApplication = function(source) {
-  console.log('gtag_trackApplication');
   gtag('event', 'click', {
     'event_category': 'application',
     'event_label': source,

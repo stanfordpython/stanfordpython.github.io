@@ -24,8 +24,6 @@ function create_anchor(href, title, backup, tracker) {
   if (href === '#') {
     return $('<span>').append(backup);
   }
-  console.log(tracker);
-  console.log('not tracker');
 
   // Otherwise, build an anchor tag around the given information
   var $anchor = $('<a>').attr('href', href).attr('target', '_blank').append(title);
