@@ -175,6 +175,6 @@ var gtag_trackOutboundLink = function(url) {
     'event_category': 'outbound',
     'event_label': url,
     'transport_type': DEFAULT_TRANSPORT_TYPE,
-    'event_callback': function(){document.location = url;}
+    // 'event_callback': function(){document.location = url;}
   });
 }
