@@ -29,7 +29,7 @@ function create_anchor(href, title, backup, tracker) {
 
   // Otherwise, build an anchor tag around the given information
   var $anchor = $('<a>').attr('href', href).attr('target', '_blank').append(title);
-  $anchor.on('click', function() {
+  $anchor.click(function() {
     tracker(href);
     return true;  // Do take the default click action.
   });
