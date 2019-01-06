@@ -72,7 +72,7 @@ $(document).ready(function() {
   $('#navigation a[data-toggle="tab"]').click(function (event) {
     var $tab = $(this);
     var currentlyActive = $tab.parent().hasClass('active');
-    var href = $tab.attr('href');href
+    var href = $tab.attr('href');
     if (!currentlyActive) {
       gtag_trackTabPaneToggle(href);
     }
