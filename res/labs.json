@@ -4,7 +4,7 @@
 		"topic": "Warming Up",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab1-warmup.md",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2solutions.py",
-		"visible": true,
+		"visible": false,
 		"active": true
 	},
 	{

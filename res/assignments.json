@@ -6,8 +6,8 @@
 		"starter_code": "#",
 		"released": "2017-04-06",
 		"due": "2017-04-111 11:59:59 PM",
-		"visible": true,
-		"active": true
+		"visible": false,
+		"active": false
 	},
 	{
 		"num": 1,

@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "80cfe1c9-284a-42dc-b102-2f6a9c06dfcc",
+		"title": "First Day of Class",
+		"content": "We're very excited to see you all this Tuesday for the first day of class in 380-380D!",
+		"date": "2019-01-07",
+		"visible": true
+	},
+	{
 		"uid": "a760b855-42b3-497d-8228-2beea1e8daa1",
 		"title": "Course Applications",
 		"content": "We are now accepting applications for CS41! You can apply at http://apply.stanfordpython.com/",
