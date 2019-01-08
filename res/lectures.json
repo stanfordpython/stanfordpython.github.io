@@ -5,7 +5,7 @@
 		"date": "2016-04-04",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcHltdTZPeXNabGs",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDVVBuMVRBd1A4ZHc",
-		"html": "https://stanfordpython.com/lecture-animations/Lecture1.1-WelcomeToPython/index.html",
+		"animated": "https://stanfordpython.com/lecture-animations/Lecture1.1-WelcomeToPython/",
 		"video": "#",
 		"visible": true,
 		"active": true
@@ -16,7 +16,7 @@
 		"date": "2017-04-06",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTkwVkh6aHNXT0E",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDX2hRVVUwOHRaVDQ",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -27,7 +27,7 @@
 		"date": "2017-04-11",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDSmQtQ0VKU2VGa0E",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDRUZ5NjIyem9UQmM",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -38,7 +38,7 @@
 		"date": "2017-04-18",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDazltOGpGUmhPWEU",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDMGdRRjhJc3lhVmM",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -49,7 +49,7 @@
 		"date": "2017-04-25",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDX1JrZXJKamwyZXc",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDcG9ieGpsRTNnZ1E",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -60,7 +60,7 @@
 		"date": "2017-05-02",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDUTNGbTZZQW5UTjA",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDWUtObjZ5MDI0dHc",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -71,7 +71,7 @@
 		"date": "2017-05-09",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDUmJKTkkzdHVLUUk",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTBPTDRwSmF1cWc",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -82,7 +82,7 @@
 		"date": "2017-05-16",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDMG82Q1pkb2ZiYW8",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDc3BYMjEtck1sODA",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -93,7 +93,7 @@
 		"date": "2017-05-23",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDcDJfVjdwNzZUazA",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDLWRxUUVsTl9JNU0",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false
@@ -104,7 +104,7 @@
 		"date": "2017-05-30",
 		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDMkpiSTJZZDRpaVU",
 		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDWWVjV09FZVY5cW8",
-		"html": "#",
+		"animated": "#",
 		"video": "#",
 		"visible": false,
 		"active": false

@@ -122,7 +122,7 @@ function create_lecture_tr(lecture) {
     ).append(' / ').append(
       create_anchor(lecture.full, "full", "N/A", gtag_trackLectureFull)
     ).append(' or ').append(
-      create_anchor(lecture.full, "animated", "N/A", gtag_trackLectureAnimated)
+      create_anchor(lecture.animated, "animated", "N/A", gtag_trackLectureAnimated)
     )
 
   ).append(
