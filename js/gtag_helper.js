@@ -43,13 +43,13 @@ var trackClickLinkEvent = function(category, label, url, external) {
 }
 
 var gtag_trackTabPaneToggle = function(url) {
-  // Update the page_path of the configuration details to point to a virtual page.
-  gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
   gtag('event', 'click', {
     'event_category': 'tab',
     'event_label': url,
     'transport_type': DEFAULT_TRANSPORT_TYPE,
   });
+  // Update the page_path of the configuration details to point to a virtual page.
+  gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
 }
 
 var gtag_trackLectureCondensed = function(url) {
@@ -64,6 +64,15 @@ var gtag_trackLectureCondensed = function(url) {
 var gtag_trackLectureFull = function(url) {
   gtag('event', 'click', {
     'event_category': 'lecture:full',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
+var gtag_trackLectureAnimated = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'lecture:animated',
     'event_label': url,
     'transport_type': DEFAULT_TRANSPORT_TYPE,
     // 'event_callback': function(){document.location = url;}

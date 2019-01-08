@@ -119,9 +119,12 @@ function create_lecture_tr(lecture) {
   ).append(
     $('<td>').append(
       create_anchor(lecture.condensed, "condensed", "N/A", gtag_trackLectureCondensed)
-    ).append(' + ').append(
+    ).append(' / ').append(
       create_anchor(lecture.full, "full", "N/A", gtag_trackLectureFull)
+    ).append(' or ').append(
+      create_anchor(lecture.full, "animated", "N/A", gtag_trackLectureInteractive)
     )
+
   ).append(
     $('<td>').append(
       create_anchor(lecture.video, "video", "Currently Unavailable", gtag_trackLectureVideo)
