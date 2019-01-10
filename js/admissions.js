@@ -39,16 +39,16 @@ $(document).ready(function() {
     'slowenst': 330363,
     'tnollman': 232838,
 
-    'ekim67': 'Coming soon.',
-    'wang1227': 'Coming soon.',
-    'germans': 'Coming soon.',
-    'aramire9': 'Coming soon.',
-    'tankevin': 'Coming soon.',
-    'oukm': 'Coming soon.',
-    'sander12': 'Coming soon.',
-    'css19': 'Coming soon.',
-    'hahntrn': 'Coming soon.',
-    'awvry952': 'Coming soon.',
+    'ekim67': 475410,
+    'wang1227': 213163,
+    'germans': 247689,
+    'aramire9': 891029,
+    'tankevin': 465277,
+    'oukm': 796978,
+    'sander12': 883547,
+    'css19': 458150,
+    'hahntrn': 201487,
+    'awvry952': 841287,
     // Insert other enrollment codes below.
   }
 
