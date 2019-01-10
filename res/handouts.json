@@ -8,23 +8,37 @@
 	},
 	{
 		"uid": "834eebcc-5f74-4af8-a547-ac300bd79735",
-		"num": 5,
-		"title": "How to Submit Assignments",
+		"num": 7,
+		"title": "Submitting Assignments",
 		"href": "https://github.com/stanfordpython/python-handouts/blob/master/submitting-assignments.md",
 		"visible": false
 	},
 	{
 		"uid": "480d5b4a-8730-497d-a54a-84a20598964e",
+		"num": 6,
+		"title": "Installing Python for Windows [coming soon]",
+		"href": "#",
+		"visible": true
+	},
+	{
+		"uid": "480d5b4a-8730-497d-a54a-84a20598964e",
+		"num": 5,
+		"title": "Installing Python for Windows [coming soon]",
+		"href": "#",
+		"visible": false
+	},
+	{
+		"uid":"8b8cbc2d-3c25-41d5-8bf5-e5b79a329263",
 		"num": 4,
-		"title": "Installing Python for Windows",
-		"href": "https://docs.google.com/document/d/1tlARF6fipUhwmMru-hdL-avxLrYwPg1KVEIE3L73S48/edit?usp=sharing",
+		"title": "Installing Python for Linux",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md",
 		"visible": false
 	},
 	{
 		"uid":"2b200f15-eb7d-4d98-b31c-ec4e5445e694",
 		"num": 3,
-		"title": "Installing Python for MacOS/Linux",
-		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python.md",
+		"title": "Installing Python for macOS",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python-macos.md",
 		"visible": false
 	},
 	{
