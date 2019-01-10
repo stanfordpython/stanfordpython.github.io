@@ -50,6 +50,19 @@ $(document).ready(function() {
     'hahntrn': 201487,
     'awvry952': 841287,
     // Insert other enrollment codes below.
+
+    // These people don't know they're in yet.
+    'jeportil': 552046,
+    'cynthiaj': 652553,
+    'walecka': 898217,
+    'jwha23': 613710,
+    'aapellan': 174830,
+    'trinaldo': 944306,
+    'emilyw12': 147514,
+    'maxperko': 304550,
+    'zhengl': 283574,
+    'suihong': 615000,
+    'gcheng21': 529782,
   }
 
   $("#search-form").submit(function(event) {
