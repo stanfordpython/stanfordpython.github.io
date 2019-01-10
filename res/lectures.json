@@ -6,20 +6,20 @@
 		"condensed": "https://drive.google.com/open?id=18RP_KbNdiyccx74JOiFLrJ9bS02mybnc",
 		"full": "https://drive.google.com/open?id=1d9JqaNTQwqS-zWuc4sdM5sGJartQk52W",
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture1.1-WelcomeToPython/",
-		"video": "#",
+		"video": "https://drive.google.com/open?id=1jSJeh1OZy3U8Z5-ivA6jrDhGnJNf964q",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "787e1fb9-f764-42cc-abd6-81895fcb5454",
 		"title": "Python Fundamentals",
-		"date": "2017-04-06",
-		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDOTkwVkh6aHNXT0E",
-		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDX2hRVVUwOHRaVDQ",
-		"animated": "#",
+		"date": "2019-01-10",
+		"condensed": "https://drive.google.com/open?id=1lpi9CdR4u17OprfrHH1K95Zx3__OYiLM",
+		"full": "https://drive.google.com/open?id=1mSF2QKe7im48AygNUkIR7ZcXCIaEHh9g",
+		"animated": "https://stanfordpython.com/lecture-animations/Lecture1.2-Fundamentals/",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "f8c44df5-339a-427a-bf89-1c4f6a463c74",
