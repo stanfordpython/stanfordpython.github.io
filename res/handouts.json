@@ -4,7 +4,7 @@
 		"num": 7,
 		"title": "What is a Virtual Environment?",
 		"href": "https://github.com/stanfordpython/python-handouts/blob/master/virtualenv.md",
-		"visible": true
+		"visible": false
 	},
 	{
 		"uid": "834eebcc-5f74-4af8-a547-ac300bd79735",
