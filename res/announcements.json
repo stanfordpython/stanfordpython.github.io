@@ -8,7 +8,7 @@
 	},
 	{
 		"uid": "fa079ad8-a134-47d3-9ba4-76183754c76d",
-		"title": "Python Installation Instructions (mostly) Released!",
+		"title": "Python Installation Instructions Released!",
 		"content": "We've released guided installation instructions for Python 3.7.2 and virtual environments for macOS and Linux, with Windows instructions coming soon. You can find these handouts under the Resources tab.",
 		"date": "2019-01-11",
 		"visible": true
