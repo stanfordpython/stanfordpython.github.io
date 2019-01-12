@@ -63,6 +63,8 @@ $(document).ready(function() {
     'zhengl': 283574,
     'suihong': 615000,
     'gcheng21': 529782,
+
+    'dabbonda': 674139, 
   }
 
   $("#search-form").submit(function(event) {
