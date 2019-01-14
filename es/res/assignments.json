@@ -1,19 +1,19 @@
 [
 	{
 		"num": 0,
-		"title": "Welcome to Python",
-		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
-		"starter_code": "",
-		"released": "2017-04-06",
-		"due": "2017-04-111 11:59:59 PM",
+		"title": "¡Bienvenido a Python!",
+		"spec": "#",
+		"starter_code": "#",
+		"released": "2019-01-10",
+		"due": "2017-04-11 11:59:59 PM",
 		"visible": true,
 		"active": false
 	},
 	{
 		"num": 1,
-		"title": "Cryptography",
-		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
-		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
+		"title": "Cifras",
+		"spec": "#",
+		"starter_code": "#",
 		"released": "2017-04-18",
 		"due": "2017-04-27 11:59:59 PM",
 		"visible": true,
@@ -21,9 +21,9 @@
 	},
 	{
 		"num": 2,
-		"title": "Quest for the Holy Grail",
-		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
-		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
+		"title": "La búsqueda del santo grial",
+		"spec": "#",
+		"starter_code": "#",
 		"released": "2017-05-02",
 		"due": "2017-05-11 11:59:59 PM",
 		"visible": true,
@@ -31,9 +31,9 @@
 	},
 	{
 		"num": 3,
-		"title": "Stylize",
-		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign3/README.md",
-		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign3",
+		"title": "Papeles Pintados",
+		"spec": "#",
+		"starter_code": "#",
 		"released": "2017-05-17",
 		"due": "2017-05-23 11:59:59 PM",
 		"visible": true,
@@ -41,13 +41,13 @@
 	},
 	{
 		"num": 4,
-		"title": "Final Project",
-		"spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign4/README.md",
-		"starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign4",
+		"title": "Proyecto Final",
+		"spec": "#",
+		"starter_code": "#",
 		"released": "2017-05-16",
-		"due": "2017-6-02 11:59:59 PM",
+		"due": "2017-06-02 11:59:59 PM",
 		"visible": true,
-		"active": true
+		"active": false
 	}
 ]
 

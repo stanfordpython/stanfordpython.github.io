@@ -1,66 +1,74 @@
 [
 	{
 		"week": 1,
-		"topic": "Warming Up",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab1-warmup.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2solutions.py",
+		"topic": "Calentamiento",
+		"href": "#",
+		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 2,
-		"topic": "Data Structures",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab2-datastructures.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2solutions.py",
+		"topic": "Estructuras",
+		"href": "#",
+		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 3,
-		"topic": "Functions",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab3-functions.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3solutions.py",
+		"topic": "Funciones",
+		"href": "#",
+		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 4,
-		"topic": "Functional Programming",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-fp.md",
+		"topic": "La programación funcional",
+		"href": "#",
 		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 5,
-		"topic": "Object-Oriented Python",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab5-oop.md",
+		"topic": "La progamación orientada a objetos",
+		"href": "#",
 		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 6,
-		"topic": "Standard Library",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab6-standardlibrary.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab6/",
+		"topic": "La biblioteca estándar",
+		"href": "#",
+		"solutions": "#",
 		"visible": true,
 		"active": false
 	},
 	{
 		"week": 7,
-		"topic": "Third-Party Tools",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab7-thirdparty.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab7solutions.py",
+		"topic": "Herramientas de terceros",
+		"href": "#",
+		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 8,
-		"topic": "Python Ecosystem",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab8-pythonecosystem.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab8solutions.py",
-		"visible": false,
+		"topic": "El ecosistema de Python",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 8,
+		"topic": "Temas avanzadas",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
 		"active": false
 	}
 ]
