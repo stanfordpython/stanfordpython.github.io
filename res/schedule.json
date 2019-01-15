@@ -13,7 +13,7 @@
 			{
 				"title": "Python Fundamentals",
 				"date": "2019-01-10",
-				"active": true,
+				"active": false,
 				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format()), file I/O (using a context manager), running Python as a script, the basics of imports, and virutal environments. The remainder of class is used to set up (and troubleshoot) Python installations, as well as start work on Lab 1."
 			}
 		],
@@ -25,24 +25,24 @@
 	{
 		"num": 2,
 		"title": "Data Structures",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Intro to Data Structures",
-				"date": "2017-04-11",
-				"active": false,
-				"description": "Python's numerous tools for data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
+				"date": "2019-01-15",
+				"active": true,
+				"description": "Python's numerous tools for standard data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
 			},
 			{
 				"title": "Data Structures Lab",
-				"date": "2017-04-13",
+				"date": "2019-01-17",
 				"active": false,
 				"description": "The first full-length lab of CS41 features a wide collection of small problems, chosen to practice the many, many topics covered in the first three days of lecture and solidify concepts that may not have been absorbed on the first pass."
 			}
 		],
 		"dates": {
-			"start": "2017-04-09",
-			"end": "2017-04-15"
+			"start": "2019-01-14",
+			"end": "2019-01-18"
 		}
 	},
 	{
