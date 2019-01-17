@@ -19,7 +19,7 @@
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture1.2-Fundamentals/",
 		"video": "https://drive.google.com/open?id=1V01dcM0a6_4MR6jVLnGKlk82ebXqqS2U",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "f8c44df5-339a-427a-bf89-1c4f6a463c74",
@@ -29,8 +29,8 @@
 		"full": "https://drive.google.com/open?id=1eF_MSAcRAPC9JUOr5vg76ScqDLUz6viN",
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture2.1-DataStructures/",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "6a2fb3a1-2a8f-4af7-b805-75e89f189b4d",
