@@ -10,7 +10,7 @@
 	{
 		"week": 2,
 		"topic": "Data Structures",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab2-datastructures.md",
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab2-datastructures-notebook.ipynb",
 		"solutions": "#",
 		"visible": true,
 		"active": true
