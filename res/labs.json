@@ -11,7 +11,7 @@
 		"week": 2,
 		"topic": "Data Structures",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab2-datastructures-notebook.ipynb",
-		"solutions": "#",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2/solutions.py",
 		"visible": true,
 		"active": true
 	},
