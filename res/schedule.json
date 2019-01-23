@@ -30,7 +30,7 @@
 			{
 				"title": "Intro to Data Structures",
 				"date": "2019-01-15",
-				"active": true,
+				"active": false,
 				"description": "Python's numerous tools for standard data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
 			},
 			{
@@ -48,24 +48,24 @@
 	{
 		"num": 3,
 		"title": "Functions",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Functions",
-				"date": "2017-04-18",
-				"active": false,
+				"date": "2019-01-22",
+				"active": true,
 				"description": "We've seen functions in other languages, but Python gives us additional tools in defining and calling functions. After reviewing some nuances in the function execution model regarding return values, scope, and pass-by semantics, we'll see keyword arguments alongside their familiar positional counterparts. We'll discuss variadic positional arguments and variadic keyword arguments, and their relation to str.format. Lastly, we peek into an odd quirk of Python - that functions are indeed objects, and can be treated as such."
 			},
 			{
 				"title": "Functions Lab",
-				"date": "2017-04-20",
+				"date": "2019-01-24",
 				"active": false,
 				"description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. The lab closes with a thorough investigation of function objects and their attributes, at least in CPython."
 			}
 		],
 		"dates": {
-			"start": "2017-04-16",
-			"end": "2017-04-22"
+			"start": "2019-01-21",
+			"end": "2019-01-25"
 		}
 	},
 	{
