@@ -53,13 +53,13 @@
 			{
 				"title": "Functions",
 				"date": "2019-01-22",
-				"active": true,
+				"active": false,
 				"description": "We've seen functions in other languages, but Python gives us additional tools in defining and calling functions. After reviewing some nuances in the function execution model regarding return values, scope, and pass-by semantics, we'll see keyword arguments alongside their familiar positional counterparts. We'll discuss variadic positional arguments and variadic keyword arguments, and their relation to str.format. Lastly, we peek into an odd quirk of Python - that functions are indeed objects, and can be treated as such."
 			},
 			{
 				"title": "Functions Lab",
 				"date": "2019-01-24",
-				"active": false,
+				"active": true,
 				"description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. The lab closes with a thorough investigation of function objects and their attributes, at least in CPython."
 			}
 		],
