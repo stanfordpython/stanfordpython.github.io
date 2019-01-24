@@ -13,15 +13,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab2-datastructures-notebook.ipynb",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2/solutions.py",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 3,
 		"topic": "Functions",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab3-functions.md",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3solutions.py",
-		"visible": false,
-		"active": false
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab3-functions-notebook.ipynb",
+		"solutions": "#",
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 4,
