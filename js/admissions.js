@@ -35,7 +35,7 @@ $(document).ready(function() {
     'gsamp': 383783,
     'mradhak': 812814,
     'meara': 24335,
-    'aristos': 444974,
+    // 'aristos': 444974,  # Enrolled in 1 unit CS199P
     'slowenst': 330363,
     'tnollman': 232838,
 
@@ -64,7 +64,9 @@ $(document).ready(function() {
     'suihong': 615000,
     'gcheng21': 529782,
 
-    'dabbonda': 674139, 
+    'dabbonda': 674139,
+
+    'neilsi': 444974
   }
 
   $("#search-form").submit(function(event) {
