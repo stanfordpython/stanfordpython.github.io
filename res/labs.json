@@ -19,7 +19,7 @@
 		"week": 3,
 		"topic": "Functions",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab3-functions-notebook.ipynb",
-		"solutions": "#",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab2/solutions.py",
 		"visible": true,
 		"active": true
 	},
