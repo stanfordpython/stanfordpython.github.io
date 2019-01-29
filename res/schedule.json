@@ -59,7 +59,7 @@
 			{
 				"title": "Functions Lab",
 				"date": "2019-01-24",
-				"active": true,
+				"active": false,
 				"description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. The lab closes with a thorough investigation of function objects and their attributes, at least in CPython."
 			}
 		],
@@ -71,24 +71,24 @@
 	{
 		"num": 4,
 		"title": "Functional Programming",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Functional Programming",
-				"date": "2017-04-25",
-				"active": false,
+				"date": "2019-01-29",
+				"active": true,
 				"description": "This is, by far, my favorite lecture to give. We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
 			},
 			{
 				"title": "Functional Programming Lab",
-				"date": "2017-04-27",
+				"date": "2019-01-31",
 				"active": false,
 				"description": "Practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
 			}
 		],
 		"dates": {
-			"start": "2017-04-23",
-			"end": "2017-04-29"
+			"start": "2019-01-28",
+			"end": "2019-02-01"
 		}
 	},
 	{
