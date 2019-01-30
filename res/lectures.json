@@ -41,18 +41,18 @@
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture3.1-Functions/",
 		"video": "https://drive.google.com/open?id=1q3oh04lW6dMV1Iiz2Z1g9HNDmwcQoP24",
 		"visible": true ,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "e829c370-2813-4d10-aa5f-076f3ce8e296",
 		"title": "Functional Programming",
-		"date": "2017-04-25",
-		"condensed": "https://drive.google.com/open?id=0B-eHIhYpHrGDX1JrZXJKamwyZXc",
-		"full": "https://drive.google.com/open?id=0B-eHIhYpHrGDcG9ieGpsRTNnZ1E",
-		"animated": "#",
+		"date": "2019-01-29",
+		"condensed": "https://drive.google.com/open?id=102aSMwGWJCfyzLafwmBIVP48T2oLQmPz",
+		"full": "https://drive.google.com/open?id=1_uyvDidJl7itx0z--y8_qK4HyCC7lP4T",
+		"animated": "https://stanfordpython.com/lecture-animations/Lecture4.1-FP/",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "d7caa8df-b4a5-4376-9002-d38921aef026",
