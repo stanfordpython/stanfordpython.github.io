@@ -21,15 +21,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab3-functions-notebook.ipynb",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab3/solutions.py",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 4,
 		"topic": "Functional Programming",
-		"href": "https://github.com/stanfordpython/python-labs/blob/master/lab4-fp.md",
+		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab4-fp-notebook.ipynb",
 		"solutions": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 5,
