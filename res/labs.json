@@ -27,7 +27,7 @@
 		"week": 4,
 		"topic": "Functional Programming",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab4-fp-notebook.ipynb",
-		"solutions": "#",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab4/solutions.py",
 		"visible": true,
 		"active": true
 	},
