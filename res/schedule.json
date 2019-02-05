@@ -82,7 +82,7 @@
 			{
 				"title": "Functional Programming Lab",
 				"date": "2019-01-31",
-				"active": true,
+				"active": false,
 				"description": "Practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
 			}
 		],
@@ -94,24 +94,24 @@
 	{
 		"num": 5,
 		"title": "Object-Oriented Python",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Object-Oriented Python",
-				"date": "2017-05-02",
-				"active": false,
+				"date": "2019-02-05",
+				"active": true,
 				"description": "After last week's foray into FP, we're back in the comfortable land of OOP, covering: differences between class objects and instance objects, how attribute resolution works, methods vs. functions, single and multiple inheritance, as well as 'magic' dunderbar methods in Python for operator overloading, with an emphasis on masquerading as builtin types. In the latter half of class, we'll explore the hierarchy of Exceptions, and then cover proper exceptional control flow using try/except/else/finally."
 			},
 			{
 				"title": "OOP Lab",
-				"date": "2017-05-04",
+				"date": "2019-02-07",
 				"active": false,
 				"description": "After seeing mostly conceptual rules and definitions in lecture, this lab will focus more on writing code and building classes to solve a variety of problems. We'll also briefly look at exceptions and practice good exceptional control flow."
 			}
 		],
 		"dates": {
-			"start": "2017-04-30",
-			"end": "2017-05-06"
+			"start": "2019-02-04",
+			"end": "2019-02-08"
 		}
 	},
 	{
@@ -121,20 +121,20 @@
 		"days": [
 			{
 				"title": "The Python Standard Library",
-				"date": "2017-05-09",
+				"date": "2019-02-12",
 				"active": false,
 				"description": "Survey of the utilities provided by the Python standard library, including sys, re, collections, random, itertools, and many, many more. These slides are intended as reference material to anyone interested in seeing the power and breadth of the standard library."
 			},
 			{
 				"title": "Standard Library Lab",
-				"date": "2017-05-11",
+				"date": "2019-02-14",
 				"active": false,
 				"description": "The first half, and perhaps all, of this lab is dedicated to reading the documentation of the standard library. The reference material is well-written, and it would be impossible to address everyone's interests with one lab. Instead, students direct their own learning by reviewing the modules they find personally fascinating. The remainder of the lab gives practice with the common standard library modules for those who need it."
 			}
 		],
 		"dates": {
-			"start": "2017-05-07",
-			"end": "2017-05-13"
+			"start": "2019-02-11",
+			"end": "2019-02-15"
 		}
 	},
 	{
@@ -144,20 +144,20 @@
 		"days": [
 			{
 				"title": "Third-Party Tools",
-				"date": "2017-05-16",
+				"date": "2019-02-19",
 				"active": false,
 				"description": "Survey of the most common 3rd party packages in use. These include: requests, numpy/scipy, matplotlib/pyplot, pandas, pillow, flask/django/twisted, pep8, scikit-learn/nltk, stanford-corenlp, bcrypt, beatifulsoup, and more."
 			},
 			{
 				"title": "Third-Party Tools Lab",
-				"date": "2017-05-18",
+				"date": "2019-02-21",
 				"active": false,
 				"description": "Experiment with some of the 3rd party tools discussed in lecture. In particular, you'll choose one or two of the packages that most interest you and go into a deep dive, walking through the developer's tutorial pages and getting practical experience with those particular tools."
 			}
 		],
 		"dates": {
-			"start": "2017-05-14",
-			"end": "2017-05-20"
+			"start": "2019-02-18",
+			"end": "2019-02-22"
 		}
 	},
 	{
@@ -167,20 +167,20 @@
 		"days": [
 			{
 				"title": "The Python Ecosystem",
-				"date": "2017-05-23",
+				"date": "2019-02-26",
 				"active": false,
 				"description": "A conceptual overview of the state of the Python ecosystem, focusing on the differences between Python 2 and Python 3. This is a light lecture, and should leave time at the end to work on projects."
 			},
 			{
 				"title": "Final Project Work Sesh",
-				"date": "2017-05-25",
+				"date": "2019-02-28",
 				"active": false,
 				"description": "Get going on your final projects and proposals! Now is better than never, and the course staff will be floating around to suggest helpful tools or answer any questions about getting started."
 			}
 		],
 		"dates": {
-			"start": "2017-05-21",
-			"end": "2017-05-27"
+			"start": "2019-02-25",
+			"end": "2019-03-01"
 		}
 	},
 	{
@@ -190,20 +190,20 @@
 		"days": [
 			{
 				"title": "Advanced Topics",
-				"date": "2017-05-30",
+				"date": "2019-03-05",
 				"active": false,
 				"description": "Any advanced topics in Python that the class finds interesting. Possible topics include: optimizations, web app development, practical data science, or anything else. Check the poll on Piazza for more information!"
 			},
 			{
 				"title": "Final Project Work Sesh",
-				"date": "2017-06-01",
+				"date": "2019-03-07",
 				"active": false,
 				"description": "Work time for final projects. At this point, you should be through most of your major milestones. The course staff will, as always, be around to help debug any problems or suggest extensions."
 			}
 		],
 		"dates": {
-			"start": "2017-05-28",
-			"end": "2017-06-03"
+			"start": "2019-03-04",
+			"end": "2019-03-08"
 		}
 	},
 	{
@@ -213,20 +213,20 @@
 		"days": [
 			{
 				"title": "Top Presentations, Party, Python Bee",
-				"date": "2017-06-06",
+				"date": "2019-03-12",
 				"active": false,
 				"description": "The top few groups will briefly present and demo their projects, and then we'll celebrate the end of the quarter with a pizza party and Python bee! What is a Python bee? It's like a spelling bee... but better. Come to find out more!"
 			},
 			{
 				"title": "Dead Day",
-				"date": "2017-06-08",
+				"date": "2019-03-14",
 				"active": false,
 				"description": "No class. Good luck on finals!"
 			}
 		],
 		"dates": {
-			"start": "2017-06-04",
-			"end": "2017-06-10"
+			"start": "2019-03-11",
+			"end": "2019-03-15"
 		}
 	}
 ]
