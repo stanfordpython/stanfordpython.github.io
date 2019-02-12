@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "76df5291-8a67-4180-a212-109f39506b51",
+		"title": "Assignment 1 Released",
+		"content": "Assignment 1 is now released! Thank you for your patience. It is available under the Assignments tab.",
+		"date": "2019-02-12",
+		"visible": true
+	},
+	{
 		"uid": "81980680-44c2-4185-9e6e-76358d7b8df3",
 		"title": "Assignment 0 Released",
 		"content": "Assignment 0 is now released! It is available under the Assignments tab.",
