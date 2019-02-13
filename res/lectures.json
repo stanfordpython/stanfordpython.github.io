@@ -63,18 +63,18 @@
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture5.1-OOP/",
 		"video": "https://drive.google.com/open?id=1W5iLg_U_8vVhqLTklGVUDoJihtQS8xEM",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "5cf135f4-ed01-4edf-92a6-08c3ba4f5a4f",
 		"title": "The Python Standard Library",
 		"date": "2019-02-12",
-		"condensed": "#",
-		"full": "#",
-		"animated": "#",
+		"condensed": "https://drive.google.com/open?id=1q1hgqYl-wbh6QM19qkFnx3yPeET-jd37",
+		"full": "https://drive.google.com/open?id=1WvV-qK2_K648qBZ2dRpUqpVj1C9qYxAu",
+		"animated": "https://stanfordpython.com/lecture-animations/Lecture6.1-StandardLibrary/",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
