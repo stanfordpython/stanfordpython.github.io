@@ -122,13 +122,13 @@
 			{
 				"title": "The Python Standard Library",
 				"date": "2019-02-12",
-				"active": true,
+				"active": false,
 				"description": "Survey of the utilities provided by the Python standard library, including sys, re, collections, random, itertools, and many, many more. These slides are intended as reference material to anyone interested in seeing the power and breadth of the standard library."
 			},
 			{
 				"title": "Standard Library Lab",
 				"date": "2019-02-14",
-				"active": false,
+				"active": true,
 				"description": "The first half, and perhaps all, of this lab is dedicated to reading the documentation of the standard library. The reference material is well-written, and it would be impossible to address everyone's interests with one lab. Instead, students direct their own learning by reviewing the modules they find personally fascinating. The remainder of the lab gives practice with the common standard library modules for those who need it."
 			}
 		],
