@@ -35,7 +35,7 @@
 		"week": 5,
 		"topic": "Object-Oriented Python",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab5-oop-notebook.ipynb",
-		"solutions": "#",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab5/solutions.py ",
 		"visible": true,
 		"active": false
 	},
