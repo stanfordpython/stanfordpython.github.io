@@ -37,15 +37,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab5-oop-notebook.ipynb",
 		"solutions": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 6,
 		"topic": "Standard Library",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab6-standardlibrary-notebook.ipynb",
 		"solutions": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 7,
