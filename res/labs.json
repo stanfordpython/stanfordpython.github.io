@@ -35,7 +35,7 @@
 		"week": 5,
 		"topic": "Object-Oriented Python",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab5-oop-notebook.ipynb",
-		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab5/solutions.py ",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab5/solutions.py",
 		"visible": true,
 		"active": false
 	},
@@ -43,7 +43,7 @@
 		"week": 6,
 		"topic": "Standard Library",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab6-standardlibrary-notebook.ipynb",
-		"solutions": "#",
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab6/",
 		"visible": true,
 		"active": true
 	},
