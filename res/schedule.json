@@ -128,7 +128,7 @@
 			{
 				"title": "Standard Library Lab",
 				"date": "2019-02-14",
-				"active": true,
+				"active": false,
 				"description": "The first half, and perhaps all, of this lab is dedicated to reading the documentation of the standard library. The reference material is well-written, and it would be impossible to address everyone's interests with one lab. Instead, students direct their own learning by reviewing the modules they find personally fascinating. The remainder of the lab gives practice with the common standard library modules for those who need it."
 			}
 		],
@@ -140,12 +140,12 @@
 	{
 		"num": 7,
 		"title": "Third-Party Tools",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Third-Party Tools",
 				"date": "2019-02-19",
-				"active": false,
+				"active": true,
 				"description": "Survey of the most common 3rd party packages in use. These include: requests, numpy/scipy, matplotlib/pyplot, pandas, pillow, flask/django/twisted, pep8, scikit-learn/nltk, stanford-corenlp, bcrypt, beatifulsoup, and more."
 			},
 			{
