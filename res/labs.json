@@ -45,15 +45,15 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab6-standardlibrary-notebook.ipynb",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab6/",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 7,
 		"topic": "Third-Party Tools",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab7-thirdparty-notebook.ipynb",
 		"solutions": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	},
 	{
 		"week": 8,

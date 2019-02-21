@@ -145,13 +145,13 @@
 			{
 				"title": "Third-Party Tools",
 				"date": "2019-02-19",
-				"active": true,
+				"active": false,
 				"description": "Survey of the most common 3rd party packages in use. These include: requests, numpy/scipy, matplotlib/pyplot, pandas, pillow, flask/django/twisted, pep8, scikit-learn/nltk, stanford-corenlp, bcrypt, beatifulsoup, and more."
 			},
 			{
 				"title": "Third-Party Tools Lab",
 				"date": "2019-02-21",
-				"active": false,
+				"active": true,
 				"description": "Experiment with some of the 3rd party tools discussed in lecture. In particular, you'll choose one or two of the packages that most interest you and go into a deep dive, walking through the developer's tutorial pages and getting practical experience with those particular tools."
 			}
 		],
