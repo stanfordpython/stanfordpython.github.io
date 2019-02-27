@@ -168,13 +168,13 @@
 			{
 				"title": "The Python Ecosystem",
 				"date": "2019-02-26",
-				"active": true,
+				"active": false,
 				"description": "A conceptual overview of the state of the Python ecosystem, focusing on the differences between Python 2 and Python 3. This is a light lecture, and should leave time at the end to work on projects."
 			},
 			{
 				"title": "Final Project Work Sesh",
 				"date": "2019-02-28",
-				"active": false,
+				"active": true,
 				"description": "Get going on your final projects and proposals! Now is better than never, and the course staff will be floating around to suggest helpful tools or answer any questions about getting started."
 			}
 		],
