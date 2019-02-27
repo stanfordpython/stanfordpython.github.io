@@ -53,14 +53,14 @@
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab7-thirdparty-notebook.ipynb",
 		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab7/solutions.py",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"week": 8,
 		"topic": "Python Ecosystem",
 		"href": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab8-pythonecosystem-notebook.ipynb",
-		"solutions": "#",
-		"visible": false,
-		"active": false
+		"solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab7/solutions.py",
+		"visible": true,
+		"active": true
 	}
 ]
