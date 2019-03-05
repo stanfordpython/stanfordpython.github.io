@@ -174,7 +174,7 @@
 			{
 				"title": "Final Project Work Sesh",
 				"date": "2019-02-28",
-				"active": true,
+				"active": false,
 				"description": "Get going on your final projects and proposals! Now is better than never, and the course staff will be floating around to suggest helpful tools or answer any questions about getting started."
 			}
 		],
@@ -186,12 +186,12 @@
 	{
 		"num": 9,
 		"title": "Advanced Topics",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
 				"title": "Advanced Topics",
 				"date": "2019-03-05",
-				"active": false,
+				"active": true,
 				"description": "Any advanced topics in Python that the class finds interesting. Possible topics include: optimizations, web app development, practical data science, or anything else. Check the poll on Piazza for more information!"
 			},
 			{

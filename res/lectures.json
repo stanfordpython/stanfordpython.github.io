@@ -96,7 +96,7 @@
 		"animated": "https://stanfordpython.com/lecture-animations/Lecture8.1-PythonEcosystem/",
 		"video": "#",
 		"visible": true,
-		"active": true
+		"active": false
 	},
 	{
 		"uid": "599b8465-88ff-4168-86b1-1a9c0411d94b",
@@ -104,9 +104,9 @@
 		"date": "2019-03-05",
 		"condensed": "#",
 		"full": "#",
-		"animated": "#",
+		"animated": "https://stanfordpython.com/lecture-animations/Lecture9.1-AdvancedTopics/",
 		"video": "#",
-		"visible": false,
-		"active": false
+		"visible": true,
+		"active": true
 	}
 ]
