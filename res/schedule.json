@@ -191,13 +191,13 @@
 			{
 				"title": "Advanced Topics",
 				"date": "2019-03-05",
-				"active": true,
+				"active": false,
 				"description": "Any advanced topics in Python that the class finds interesting. Possible topics include: optimizations, web app development, practical data science, or anything else. Check the poll on Piazza for more information!"
 			},
 			{
 				"title": "Final Project Work Sesh",
 				"date": "2019-03-07",
-				"active": false,
+				"active": true,
 				"description": "Work time for final projects. At this point, you should be through most of your major milestones. The course staff will, as always, be around to help debug any problems or suggest extensions."
 			}
 		],
