@@ -197,7 +197,7 @@
 			{
 				"title": "Final Project Work Sesh",
 				"date": "2019-03-07",
-				"active": true,
+				"active": false,
 				"description": "Work time for final projects. At this point, you should be through most of your major milestones. The course staff will, as always, be around to help debug any problems or suggest extensions."
 			}
 		],
@@ -209,19 +209,19 @@
 	{
 		"num": 10,
 		"title": "Final Projects",
-		"visible": false,
+		"visible": true,
 		"days": [
 			{
-				"title": "Top Presentations, Party, Python Bee",
+				"title": "Final Project Presentations",
 				"date": "2019-03-12",
-				"active": false,
-				"description": "The top few groups will briefly present and demo their projects, and then we'll celebrate the end of the quarter with a pizza party and Python bee! What is a Python bee? It's like a spelling bee... but better. Come to find out more!"
+				"active": true,
+				"description": "The floor is open for project groups will briefly present and demo their final projects. This is a super informal way to show off what you've built to the class, and we're looking forward to hearing more about the amazing things you've worked on."
 			},
 			{
-				"title": "Dead Day",
+				"title": "Mystery",
 				"date": "2019-03-14",
 				"active": false,
-				"description": "No class. Good luck on finals!"
+				"description": "A mystery awaits."
 			}
 		],
 		"dates": {
