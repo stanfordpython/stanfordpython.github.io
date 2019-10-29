@@ -3,6 +3,7 @@
  * Load resources into the CS41 content page.
  *
  * Revision history:
+ * @psarin 2019-10-28 They don't need animated slides...
  * @sredmond  2016-??-?? Created
  */
 
@@ -121,8 +122,6 @@ function create_lecture_tr(lecture) {
       create_anchor(lecture.condensed, "condensed", "N/A", gtag_trackLectureCondensed)
     ).append(' / ').append(
       create_anchor(lecture.full, "full", "N/A", gtag_trackLectureFull)
-    ).append(' or ').append(
-      create_anchor(lecture.animated, "animated (beta)", "N/A", gtag_trackLectureAnimated)
     )
 
   ).append(
@@ -268,7 +267,7 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'https://stanfordpython.com/res'
+var RESOURCES_DIR = './res/'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
@@ -279,7 +278,7 @@ $.when(
       assignments = data;
   }),
   $.getJSON(RESOURCES_DIR + '/handouts.json', function(data) {
-      handouts = data;
+      handouts = data.sort((a,b) => (a.num > b.num) ? 1 : -1);
   }),
   $.getJSON(RESOURCES_DIR + '/labs.json', function(data) {
       labs = data;
@@ -288,7 +287,7 @@ $.when(
       lectures = data;
   }),
   $.getJSON(RESOURCES_DIR + '/readings.json', function(data) {
-      readings = data;
+      readings = data.sort((a,b) => (a.num > b.num) ? 1 : -1);
   }),
   $.getJSON(RESOURCES_DIR + '/schedule.json', function(data) {
       schedule = data;
