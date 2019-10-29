@@ -1551,7 +1551,7 @@ h6 .small,
 .h6 .small {
 	font-weight: normal;
 	line-height: 1;
-	color: #bbbbbb
+	color: #6c757d
 }
 
 h1,
@@ -1695,7 +1695,7 @@ mark,
 }
 
 .text-muted {
-	color: #bbbbbb
+	color: #6c757d
 }
 
 .text-primary {
