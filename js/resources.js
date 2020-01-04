@@ -78,7 +78,7 @@ function create_assignment_tr(assn) {
   if (!assn.visible) return null;
 
   var released = moment(assn.released, "YYYY-MM-DD");
-  var due = moment(assn.due, "YYYY-MM-DD hh:mm:ss A");
+  var due = moment(assn.due, "YYYY-MM-DD hh:mm:ss A").endOf('day');
   var releasedf = released.format('ddd MMM Do');
   var duef = due.format('ddd MMM Do [at] h:mm A') + ' (' + due.fromNow() + ')';
 
@@ -267,7 +267,8 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'https://stanfordpython.com/res'
+//var RESOURCES_DIR = 'https://stanfordpython.com/res'
+var RESOURCES_DIR = 'http://localhost:8000/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!

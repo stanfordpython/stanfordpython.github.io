@@ -25,7 +25,7 @@
  * 
  */
 
-var GA_TRACKING_ID = "UA-54146031-2";
+var GA_TRACKING_ID = "UA-151814369-1";
 
 // Setting the transport method to 'beacon' lets the hit be sent
 // using 'navigator.sendBeacon' in browser that support it.

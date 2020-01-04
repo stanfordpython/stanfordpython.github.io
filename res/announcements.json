@@ -1,2 +1,9 @@
 [
+    {
+        "uid": "136ea15a-ed8d-47c3-a437-958d54d8dbe4",
+        "title": "Welcome to Stanford Python!",
+        "content": "Hello world! Welcome to \"CS 41: hap.py code.\" This course covers the fundamentals and contemporary usage of the Python programming language. This quarter is going to be amazing and I hope that you'll come along for the ride!",
+        "date": "2020-01-03",
+        "visible": true
+    }
 ]

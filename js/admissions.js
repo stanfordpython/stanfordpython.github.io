@@ -17,7 +17,7 @@ $(document).ready(function() {
    */
   var codes = {
     // Sample Codes
-    'sredmond': 123456
+    'psarin': 123456
   }
 
   $("#search-form").submit(function(event) {

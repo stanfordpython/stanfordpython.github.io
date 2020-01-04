@@ -1,3 +1,43 @@
 [
+    {
+        "num": 0,
+        "title": "Welcome to Python",
+        "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
+        "starter_code": "#",
+        "released": "2020-01-06 5:00:00 PM",
+        "due": "2020-01-21 11:59:59 PM",
+        "visible": true,
+        "active": true
+    },
+    {
+        "num": 1,
+        "title": "Cryptography",
+        "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
+        "starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign1",
+        "released": "2020-01-20 5:00:00 PM",
+        "due": "2020-02-04 11:59:59 PM",
+        "visible": false,
+        "active": false
+    },
+    {
+        "num": 2,
+        "title": "Quest for the 🦄",
+        "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
+        "starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign2",
+        "released": "2020-02-03 5:00:00 PM",
+        "due": "2020-02-21 11:59:59 PM",
+        "visible": false,
+        "active": false
+    },
+    {
+        "num": 3,
+        "title": "Final Project",
+        "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign4/README.md",
+        "starter_code": "https://github.com/stanfordpython/python-assignments/tree/master/assign4",
+        "released": "2020-02-17 5:00:00 PM",
+        "due": "2020-03-09 11:59:59 PM",
+        "visible": false,
+        "active": false
+    }
 ]
 

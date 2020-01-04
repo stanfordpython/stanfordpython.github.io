@@ -1,5 +1,6 @@
 [
 	{
+		"uid": "da11da40-623d-4aa4-b877-833feb50b17e",
 		"num": 1,
 		"title": "Welcome to Python!",
 		"visible": true,
@@ -14,7 +15,7 @@
 				"title": "Python Fundamentals",
 				"date": "2020-01-08",
 				"active": false,
-				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format()), file I/O (using a context manager), running Python as a script, the basics of imports, and virutal environments. The remainder of class is used to set up (and troubleshoot) Python installations, as well as start work on Lab 1."
+				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format()), file I/O (using a context manager), running Python as a script, the basics of imports, and virutal environments."
 			}
 		],
 		"dates": {
