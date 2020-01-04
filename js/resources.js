@@ -267,8 +267,7 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-//var RESOURCES_DIR = 'https://stanfordpython.com/res'
-var RESOURCES_DIR = 'http://localhost:8000/res'
+var RESOURCES_DIR = 'https://stanfordpython.com/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
@@ -299,7 +298,7 @@ $.when(
     var lab = labs[i];
     var markup = create_lab_tr(lab);
     if (markup !== null) {
-      $(".labs tbody").append(markup);  
+      $(".labs tbody").append(markup);
     }
   }
 
@@ -307,7 +306,7 @@ $.when(
     var assn = assignments[i];
     var markup = create_assignment_tr(assn);
     if (markup !== null) {
-      $(".assignments tbody").append(markup);  
+      $(".assignments tbody").append(markup);
     }
   }
 
@@ -315,7 +314,7 @@ $.when(
     var lec = lectures[i];
     var markup = create_lecture_tr(lec);
     if (markup !== null) {
-      $(".lectures tbody").append(markup);  
+      $(".lectures tbody").append(markup);
     }
   }
 
@@ -323,7 +322,7 @@ $.when(
     var reading = readings[i];
     var markup = create_reading_tr(reading);
     if (markup !== null) {
-      $(".readings tbody").append(markup);  
+      $(".readings tbody").append(markup);
     }
   }
 
@@ -331,7 +330,7 @@ $.when(
     var ho = handouts[i];
     var markup = create_handout_tr(ho);
     if (markup !== null) {
-      $(".handouts tbody").append(markup);  
+      $(".handouts tbody").append(markup);
     }
   }
 
