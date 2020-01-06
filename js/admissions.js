@@ -3,6 +3,7 @@
  * Distribute enrollment codes to students.
  * 
  * Revision History: 
+ * @psarin 2020-01-06 Added first iteration of W20 codes
  * @psarin 2019-10-28 Removed W19 codes
  * @sredmond 2017-02-13 Removed S16 codes
  * @sredmond 2016-??-?? Created
@@ -16,8 +17,21 @@ $(document).ready(function() {
    * We will know, and you'll get in trouble. So don't do it.
    */
   var codes = {
-    // Sample Codes
-    'psarin': 123456
+    'psarin': 123456,
+    'anshal': 639854,
+    'autumnluna': 225789,
+    'avidesh': 431914,
+    'cmoffitt': 536442,
+    'emarx1': 613690,
+    'lindseye': 529038,
+    'mateoae': 327533,
+    'mtekgurl': 732530,
+    'mpike27': 989505,
+    'iogalle': 41911,
+    'emily2h': 802961,
+    'rose2': 51555,
+    'mdqin': 539304,
+    'josencf': 590397,
   }
 
   $("#search-form").submit(function(event) {
@@ -31,9 +45,9 @@ $(document).ready(function() {
     } else {
       var code = codes[sunet];
       if (code === undefined) {
-        $output.text("No enrollment code found yet for SUNet ID '" + sunet + "'.");
+        $output.text("No enrollment code found yet for SUNet ID '" + sunet + "'. Have you sent your introduction email to Michael and Parth?");
       } else {
-        $output.text("Hello " + sunet + ": your enrollment code is " + code + ". Welcome to CS41!");
+        $output.text("Hello " + sunet + ": your enrollment code is " + code + ". Welcome to CS41! 🦄");
       }
     }
 
