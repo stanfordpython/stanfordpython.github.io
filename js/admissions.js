@@ -1,8 +1,8 @@
 /* File: admissions.js
  * -------------------
  * Distribute enrollment codes to students.
- * 
- * Revision History: 
+ *
+ * Revision History:
  * @psarin 2020-01-06 Added first iteration of W20 codes
  * @psarin 2019-10-28 Removed W19 codes
  * @sredmond 2017-02-13 Removed S16 codes
@@ -12,7 +12,7 @@
 $(document).ready(function() {
   /* Hey there!
    * These enrollment codes aren't secure. Perhaps obviously.
-   * 
+   *
    * Do not steal another student's attendance code.
    * We will know, and you'll get in trouble. So don't do it.
    */
@@ -32,6 +32,12 @@ $(document).ready(function() {
     'rose2': 51555,
     'mdqin': 539304,
     'josencf': 590397,
+    'deirdre3': 440287,
+    'rubensan': 874424,
+    'jinal': 295808,
+    'nathgoh': 300496,
+    'monaavr': 247830,
+    'cperez8': 752226,
   }
 
   $("#search-form").submit(function(event) {
