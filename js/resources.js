@@ -20,6 +20,14 @@ var trackOutboundLink = function(url) {
    });
 }
 
+function create_optional_note(note, backup) {
+    if (note === undefined || note === "#") {
+        return backup;
+    }
+
+    return ' (' + note + ')';
+}
+
 function create_anchor(href, title, backup, tracker) {
   // No outgoing link, so just replace it with whatever the backup text is
   if (href === '#') {
@@ -110,7 +118,7 @@ function create_lecture_tr(lecture) {
   <tr>
     <th scope="row">Title</th>
     <td><a href=...>Slides</a></td>
-    <td><a href=...>Video</a></td>
+    <td><a href=...>Video</a> (Video Note)</td>
   </tr>
   */
   if (!lecture.visible) return null;
@@ -127,6 +135,8 @@ function create_lecture_tr(lecture) {
   ).append(
     $('<td>').append(
       create_anchor(lecture.video, "video", "Currently Unavailable", gtag_trackLectureVideo)
+    ).append(
+      create_optional_note(lecture.video_note, '')
     )
   );
 
