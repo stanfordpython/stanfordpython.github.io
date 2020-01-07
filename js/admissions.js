@@ -48,6 +48,9 @@ $(document).ready(function() {
     'anhtle': 578728,
     'echoe720': 20971,
     'elizfitz': 622331,
+    'nicole01': 252812,
+    'erickha': 88074,
+    'jmgeller': 823690,
   }
 
   $("#search-form").submit(function(event) {
