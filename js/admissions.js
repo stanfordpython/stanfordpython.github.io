@@ -38,6 +38,11 @@ $(document).ready(function() {
     'nathgoh': 300496,
     'monaavr': 247830,
     'cperez8': 752226,
+    'danielmq': 560811,
+    'dannydu': 360101,
+    'brianc42': 590364,
+    'gsheen': 386784,
+    'k99397': 635338,
   }
 
   $("#search-form").submit(function(event) {
