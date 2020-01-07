@@ -43,6 +43,7 @@ $(document).ready(function() {
     'brianc42': 590364,
     'gsheen': 386784,
     'k99397': 635338,
+    'helenav': 32052,
   }
 
   $("#search-form").submit(function(event) {
