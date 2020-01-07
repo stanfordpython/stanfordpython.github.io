@@ -44,6 +44,10 @@ $(document).ready(function() {
     'gsheen': 386784,
     'k99397': 635338,
     'helenav': 32052,
+    'jaynavar': 842329,
+    'anhtle': 578728,
+    'echoe720': 20971,
+    'elizfitz': 622331,
   }
 
   $("#search-form").submit(function(event) {
