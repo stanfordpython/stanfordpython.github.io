@@ -8,6 +8,17 @@
         "video": "#",
         "video_note": "#",
         "visible": true,
+        "active": false
+    },
+    {
+        "uid": "63a6f062-6bfb-4b90-9f3b-70c3901b3c7c",
+        "title": "Python Basics",
+        "date": "2020-01-08",
+        "condensed": "https://drive.google.com/open?id=1JUu_bDSA08R1tNdjeJnBGq0GRY4FNc2f",
+        "full": "https://drive.google.com/open?id=1UfEtzkUNL1yNqXwnGh-CKSbCYbFlwsfV",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
         "active": true
     }
 ]
