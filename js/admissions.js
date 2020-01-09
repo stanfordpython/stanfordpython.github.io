@@ -54,6 +54,9 @@ $(document).ready(function() {
     'leilimor': 248053,
     'lilyjune': 536445,
     'snhoward': 861422,
+    'aaseev': 915641,
+    'yaronks': 587698,
+    'jgilb': 960223,
   }
 
   $("#search-form").submit(function(event) {
