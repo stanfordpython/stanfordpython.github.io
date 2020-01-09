@@ -52,6 +52,8 @@ $(document).ready(function() {
     'erickha': 88074,
     'jmgeller': 823690,
     'leilimor': 248053,
+    'lilyjune': 536445,
+    'snhoward': 861422,
   }
 
   $("#search-form").submit(function(event) {
