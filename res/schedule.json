@@ -14,7 +14,7 @@
 			{
 				"title": "Python Fundamentals",
 				"date": "2020-01-08",
-				"active": true,
+				"active": false,
 				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format()), file I/O (using a context manager), running Python as a script, the basics of imports, and virutal environments."
 			}
 		],
@@ -22,5 +22,29 @@
 			"start": "2020-01-06",
 			"end": "2020-01-10"
 		}
-	}
+	},
+    {
+    	"uid": "6daa4c3e-6c85-44e0-be87-15707909aee9",
+    	"num": 2,
+    	"title": "Data Structures",
+    	"visible": true,
+    	"days": [
+    		{
+    			"title": "Data Structures",
+    			"date": "2020-01-13",
+    			"active": true,
+    			"description": "Python's numerous tools for standard data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
+    		},
+    		{
+    			"title": "Data Structures Lab",
+    			"date": "2020-01-15",
+    			"active": false,
+    			"description": "The first full-length lab of CS41 features a wide collection of small problems, chosen to practice the many, many topics covered in the first three days of lecture and solidify concepts that may not have been absorbed on the first pass."
+    		}
+    	],
+    	"dates": {
+    		"start": "2020-01-13",
+    		"end": "2020-01-17"
+    	}
+    }
 ]
