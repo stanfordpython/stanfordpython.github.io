@@ -58,6 +58,7 @@ $(document).ready(function() {
     'yaronks': 587698,
     'jgilb': 960223,
     'ftarke': 819289,
+    'joshuaoj': 46502,
   }
 
   $("#search-form").submit(function(event) {
