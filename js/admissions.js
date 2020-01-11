@@ -57,6 +57,7 @@ $(document).ready(function() {
     'aaseev': 915641,
     'yaronks': 587698,
     'jgilb': 960223,
+    'ftarke': 819289,
   }
 
   $("#search-form").submit(function(event) {
