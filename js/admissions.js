@@ -61,6 +61,7 @@ $(document).ready(function() {
     'joshuaoj': 46502,
     'ajarno': 75229,
     'jcorbin': 973024,
+    'dylanly9': 700546,
   }
 
   $("#search-form").submit(function(event) {
