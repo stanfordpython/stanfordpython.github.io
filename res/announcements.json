@@ -1,5 +1,12 @@
 [
     {
+        "uid": "c044b1f7-1a66-48f6-9ad8-7a33961cc4e3",
+        "title": "Permission Numbers",
+        "content": "We've released permisssion numbers for people who have been admitted to CS 41. Find your permission number by visiting https://stanfordpython.com/admissions.html and entering your SUNet ID.",
+        "date": "2020-01-12",
+        "visible": true
+    },
+    {
         "uid": "bc440451-0d53-42dd-a55f-a797be6d7d6f",
         "title": "Lab Preferences Form",
         "content": "We're in the process of assigning students to TAs for lab groups. We're doing this based on your application to the class and your introduction email.\n\nIf there's something else we should keep in mind or if you have a group of people you'd like to work with during lab time, let us know by filling out this form: https://forms.gle/92y5zB9uVxdLoanm8. You only need to fill the form out if there's something we should keep in mind that you haven't yet expressed to us. You'll be informed of your assignments before class time next Wednesday!",
