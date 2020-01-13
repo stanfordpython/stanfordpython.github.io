@@ -60,6 +60,8 @@ $(document).ready(function() {
     'ftarke': 819289,
     'joshuaoj': 46502,
     'ajarno': 75229,
+    'jcorbin': 973024,
+    'dylanly9': 700546,
   }
 
   $("#search-form").submit(function(event) {
