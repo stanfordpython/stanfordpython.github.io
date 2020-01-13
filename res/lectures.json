@@ -19,6 +19,17 @@
         "video": "https://drive.google.com/open?id=1W8cziwcq40D8n70Hr716FHoURCXFQ3M9",
         "video_note": "#",
         "visible": true,
+        "active": false
+    },
+    {
+        "uid": "617766a3-fe5e-4a3b-bfb4-7146b9fbc066",
+        "title": "Data Structures",
+        "date": "2020-01-13",
+        "condensed": "https://drive.google.com/open?id=1vG_9uTcZrv9W9BdBSwnOyQPJNQ4OcD1Z",
+        "full": "https://drive.google.com/open?id=1V93b8Z-JvF1C-B8GplL29___hGcCJ59u",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
         "active": true
     }
 ]
