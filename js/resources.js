@@ -47,7 +47,8 @@ function create_lab_tr(lab) {
   /*
   <tr>
     <th scope="row">1</th>
-    <td><a href=...>Handout</a></td>
+    <td><a href=...>Part 1</a></td>
+    <td><a href=...>Part 2</a></td>
     <td><a href=...>Solutions</a></td>
   </tr>
   */
@@ -59,7 +60,11 @@ function create_lab_tr(lab) {
     $('<td>').append(lab.topic)
   ).append(
     $('<td>').append(
-      create_anchor(lab.href, "Handout", "None", gtag_trackLabHandout)
+      create_anchor(lab.part1, "Part 1", "None", gtag_trackLabHandout)
+    )
+  ).append(
+    $('<td>').append(
+      create_anchor(lab.part2, "Part 2", "None", gtag_trackLabHandout)
     )
   ).append(
     $('<td>').append(

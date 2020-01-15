@@ -1,2 +1,11 @@
 [
+    {
+        "week": 2,
+        "topic": "Data Structures",
+        "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-2/data-structures-part-1.ipynb",
+        "part2": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-2/data-structures-part-2.ipynb",
+        "solutions": "#",
+        "visible": true,
+        "active": true
+    }
 ]
