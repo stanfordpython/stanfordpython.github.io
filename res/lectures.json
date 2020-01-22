@@ -30,6 +30,16 @@
         "video": "https://drive.google.com/open?id=1UYgRALGxbs9OcECt6xxA5zAEYAaP1u3I",
         "video_note": "#",
         "visible": true,
+        "active": false
+    },
+    {
+        "uid": "a5c1679a-00c5-4384-9aa7-1fe51c7f4738",
+        "title": "Functions",
+        "date": "2020-01-22",
+        "condensed": "https://drive.google.com/open?id=1Yj2ymdqGqtoD-sLJc4yiH5aRGxW5U9-a",
+        "full": "https://drive.google.com/open?id=1T9E97rcG2Ka6bAFciZH9zs9RjsneNiAj",
+        "video_note": "#",
+        "visible": true,
         "active": true
     }
 ]
