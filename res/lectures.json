@@ -42,5 +42,16 @@
         "video_note": "#",
         "visible": true,
         "active": true
+    },
+    {
+        "uid": "ac17df12-0316-45c9-82a6-f74ba3019374",
+        "title": "Functional Programming",
+        "date": "2020-01-27",
+        "condensed": "https://drive.google.com/open?id=139bxcilkd6bKLgc766hL5anuZ7F1qtPj",
+        "full": "https://drive.google.com/open?id=19ZYjfdH4Hu1uiY8sJsTmEjICfUilQ3p5",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
+        "active": true
     }
 ]
