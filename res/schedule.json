@@ -32,7 +32,7 @@
     		{
     			"title": "Data Structures",
     			"date": "2020-01-13",
-    			"active": true,
+    			"active": false,
     			"description": "Python's numerous tools for standard data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
     		},
     		{
@@ -46,5 +46,53 @@
     		"start": "2020-01-13",
     		"end": "2020-01-17"
     	}
+    },
+    {
+        "uid": "db3a82fa-ec5f-4732-b6f5-8a0f776f06ff",
+        "num": 3,
+        "title": "Functions",
+        "visible": true,
+        "days": [
+            {
+                "title": "MLK Day",
+                "date": "2020-01-20",
+                "active": false,
+                "description": "HOLIDAY"
+            },
+            {
+                "title": "Functions",
+                "date": "2020-01-22",
+                "active": false,
+                "description": "We've seen functions in other languages, but Python gives us additional tools in defining and calling functions. After reviewing some nuances in the function execution model regarding return values, scope, and pass-by semantics, we'll see keyword arguments alongside their familiar positional counterparts. We'll discuss positional arguments, keyword arguments, default arguments, and their relation to str.format. Lastly, we peek into an odd quirk of Python - that functions are objects, and can be treated as such."
+            }
+        ],
+        "dates": {
+            "start": "2020-01-20",
+            "end": "2020-01-24"
+        }
+    },
+    {
+        "uid": "4f5f2a6a-dcda-4689-a534-b3052ef37952",
+        "num": 4,
+        "title": "Functional Programming",
+        "visible": true,
+        "days": [
+            {
+                "title": "Functional Programming",
+                "date": "2020-01-27",
+                "active": true,
+                "description": "We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
+            },
+            {
+                "title": "Functions and FP Lab",
+                "date": "2020-01-29",
+                "active": false,
+                "description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. Then, we conduct a more thorough investigation of function objects and their attributes, at least in CPython. After, we'll use functions to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
+            }
+        ],
+        "dates": {
+            "start": "2020-01-27",
+            "end": "2020-01-31"
+        }
     }
 ]
