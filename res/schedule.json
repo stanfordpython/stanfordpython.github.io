@@ -80,13 +80,13 @@
             {
                 "title": "Functional Programming",
                 "date": "2020-01-27",
-                "active": true,
+                "active": false,
                 "description": "We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
             },
             {
                 "title": "Functions and FP Lab",
                 "date": "2020-01-29",
-                "active": false,
+                "active": true,
                 "description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. Then, we conduct a more thorough investigation of function objects and their attributes, at least in CPython. After, we'll use functions to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
             }
         ],
