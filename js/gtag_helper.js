@@ -52,6 +52,15 @@ var gtag_trackTabPaneToggle = function(url) {
   gtag('config', GA_TRACKING_ID, {'page_path': '/virtual/' + url});
 }
 
+var gtag_trackLectureCode = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'lecture:code',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
 var gtag_trackLectureCondensed = function(url) {
   gtag('event', 'click', {
     'event_category': 'lecture:condensed',

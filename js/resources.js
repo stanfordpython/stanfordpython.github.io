@@ -139,6 +139,10 @@ function create_lecture_tr(lecture) {
 
   ).append(
     $('<td>').append(
+      create_anchor(lecture.code, "code", "Currently Unavailable", gtag_trackLectureCode)
+    )
+  ).append(
+    $('<td>').append(
       create_anchor(lecture.video, "video", "Currently Unavailable", gtag_trackLectureVideo)
     ).append(
       create_optional_note(lecture.video_note, '')
