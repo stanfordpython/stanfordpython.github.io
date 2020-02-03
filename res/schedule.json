@@ -86,13 +86,37 @@
             {
                 "title": "Functions and FP Lab",
                 "date": "2020-01-29",
-                "active": true,
+                "active": false,
                 "description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. Then, we conduct a more thorough investigation of function objects and their attributes, at least in CPython. After, we'll use functions to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
             }
         ],
         "dates": {
             "start": "2020-01-27",
             "end": "2020-01-31"
+        }
+    },
+    {
+        "uid": "5caba9d5-91cc-4594-9a3e-ed2f86543847",
+        "num": 5,
+        "title": "Python and the Web",
+        "visible": true,
+        "days": [
+            {
+                "title": "Python and the Web",
+                "date": "2020-02-03",
+                "active": true,
+                "description": "We'll begin with an introduction to object-oriented programming in Python and a discussion of classes. Then, we'll turn to one of the most exciting applications of Python: it interacts so well with the internet. We'll start with using Python to query and parse websites. We'll talk about the design of websites and web languages like HTML and JSON. Then we'll discuss how to use Python to interact with these technologies by querying websites and parsing the response. We'll take a relevant detour to discuss Python's image processing libraries and how to process images on the web. After that, we'll transition to server-side web development and discuss how to build websites backed by Python. This lecture is the most demo-heavy of the quarter and by the end, we'll build an anagrammer application, backed by Python."
+            },
+            {
+                "title": "Web Requests Lab",
+                "date": "2020-02-05",
+                "active": "false",
+                "description": "This lab is very free-form. You can choose to implement a Reddit Wallpaper Scraper, which was a former assignment in CS 41, or you can work on pretty much anything else! It's getting to be midterm season, and we want everyone to enjoy themselves, and have fun learning Python in a low-stress environment. You could choose to explore more Python functions and features, start a final project, or continue in our Quest for the Unicorn."
+            }
+        ],
+        "dates": {
+            "start": "2020-02-03",
+            "end": "2020-02-07"
         }
     }
 ]
