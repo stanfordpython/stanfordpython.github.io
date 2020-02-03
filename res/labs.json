@@ -13,7 +13,7 @@
         "topic": "Functions and Functional Programming",
         "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-4/functions-and-fp-part-1.ipynb",
         "part2": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-4/functions-and-fp-part-2.ipynb",
-        "solutions": "#",
+        "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-4.py",
         "visible": true,
         "active": true
     }
