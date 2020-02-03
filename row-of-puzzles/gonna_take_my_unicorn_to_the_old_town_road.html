@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Assignment 2: Quest for the &#129412;</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h2><code>mystery</code></h2>
+            <p>In this task, you will interact with a function which has been compiled into a <code>.pyc</code> file.</p>
+
+            <p>Start by downloading <code>mystery.pyc</code> at: <a href='https://stanfordpython.com/row-of-puzzles/mystery.pyc'>https://stanfordpython.com/row-of-puzzles/mystery.pyc</a>.</p>
+
+            <p>To interact with the <code>mystery.pyc</code> file, navigate to its enclosing directory on your hard drive in your terminal. Then, open your preferred Python shell of choice, and at the prompt, type:</p>
+
+            <pre><code>import mystery</code></pre>
+
+            <p>This will import the functions from the <code>mystery.pyc</code> file. Specifically, you will interact with the <code>mystery</code> function. To get started, at the prompt, type:</p>
+
+            <pre><code>mystery.mystery()</code></pre>
+
+            <p>This should print out to you,</p>
+
+            <pre><code>
+            Welcome to the Function of Secrets! This function can
+            be called with up to N arguments (where we know N, but
+            it has yet to be revealed to you!)
+
+            To obtain the kth argument to the function, call this
+            function with the prior k-1 arguments. The function 
+            will then print out a small puzzle, the solution 
+            to which is the kth argument. Each argument will 
+            only be one word!
+
+            E.g. if the first two arguments are "Parth" and
+            "CS41", then to obtain the clue to the third
+            argument, you would call:
+
+            mystery("Parth", "CS41")
+
+            Feeling good?
+
+            Alright, here's the first riddle!!
+
+            Three blind men walk up to this animal, and place 
+            their hands on it to discern what it is. One says,
+            "Why, it's thin, like a rope!" Another says, "I
+            cannot fit my arms around it - it must be a tree!"
+            The third says, "It is soft, muscular, and several
+            inches wide. I believe it is a snake."
+
+            The men all felt the same animal. What animal is it?
+            (Please enter the singular form of the animal, not
+            a plural).
+            </code></pre>
+
+            <p>From here, see if you can deduce the first valid argument to the function! Once you've solved the puzzle, call the function with one argument, that argument being a string consisting of your answer to the above riddle. If your answer is correct, you will then be given a clue to the second valid argument for the function. Continue in this manner until the function indicates that you have solved all its puzzles - it will then direct you to a JSON link on the Python site where you can continue your quest!
+</p>
+        </div>
+    </body>
+</html>
