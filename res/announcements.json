@@ -1,5 +1,12 @@
 [
     {
+        "uid": "1cf471c0-78e0-4270-beb7-31004bc2482a",
+        "title": "Assignment 2",
+        "content": "Assignment 2 has been released! Unicornelius is counting on you to find them! Here's the link: https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
+        "date": "2020-02-03",
+        "visible": true
+    },
+    {
         "uid": "c044b1f7-1a66-48f6-9ad8-7a33961cc4e3",
         "title": "Permission Numbers",
         "content": "We've released permisssion numbers for people who have been admitted to CS 41. Find your permission number by visiting https://stanfordpython.com/admissions.html and entering your SUNet ID.",
