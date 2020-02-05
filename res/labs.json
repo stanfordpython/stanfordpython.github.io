@@ -15,6 +15,16 @@
         "part2": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-4/functions-and-fp-part-2.ipynb",
         "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-4.py",
         "visible": true,
+        "active": false
+    },
+        {
+        "week": 5,
+        "topic": "Python and the Web",
+        "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-5/wallscraper-notebook.ipynb",
+        "part2": "#",
+        "solutions": "#",
+        "visible": true,
         "active": true
     }
 ]
+
