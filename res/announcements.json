@@ -1,5 +1,12 @@
 [
     {
+        "uid": "8d1ea661-59af-4c48-8f3b-c1c9a892481d",
+        "title": "Mid-Quarter Evaluation",
+        "content": "If you're a CS 41 student, go to this link to fill out a mid-quarter evaluation: https://forms.gle/BNr58ergCR3bwp1U6. Responses are anonymous, and the feedback is invaluable; in part, it determines if this course will be offered in the future.",
+        "date": "2020-02-05",
+        "visible": true
+    },
+    {
         "uid": "1cf471c0-78e0-4270-beb7-31004bc2482a",
         "title": "Assignment 2",
         "content": "Assignment 2 has been released! Unicornelius is counting on you to find them! Here's the link: https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
