@@ -70,5 +70,17 @@
         "visible": true,
         "active": true,
         "code": "https://stanfordpython.com/res/lecture-code/Lecture5.zip"
+    },
+        {
+        "uid": "7ec7caac-ee4f-434c-9c13-d8f869d9590b",
+        "title": "NumPy",
+        "date": "2020-02-10",
+        "condensed": "https://drive.google.com/open?id=1_JdNIRtxVhm4ZI98gX-3n4x27ly1qd0o",
+        "full": "https://drive.google.com/open?id=17Ocm36fG6qC7HPSINfrKGDvdOtUgbnBM",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
+        "active": true,
+        "code": "#"
     }
 ]
