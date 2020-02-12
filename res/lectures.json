@@ -68,7 +68,7 @@
         "video": "https://drive.google.com/open?id=181FkwUQJvJvm6E29XKO9zap_s6Flj-qR",
         "video_note": "#",
         "visible": true,
-        "active": true,
+        "active": false,
         "code": "https://stanfordpython.com/res/lecture-code/Lecture5.zip"
     },
         {
