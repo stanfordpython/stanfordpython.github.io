@@ -104,7 +104,7 @@
             {
                 "title": "Python and the Web",
                 "date": "2020-02-03",
-                "active": true,
+                "active": false,
                 "description": "We'll begin with an introduction to object-oriented programming in Python and a discussion of classes. Then, we'll turn to one of the most exciting applications of Python: it interacts so well with the internet. We'll start with using Python to query and parse websites. We'll talk about the design of websites and web languages like HTML and JSON. Then we'll discuss how to use Python to interact with these technologies by querying websites and parsing the response. We'll take a relevant detour to discuss Python's image processing libraries and how to process images on the web. After that, we'll transition to server-side web development and discuss how to build websites backed by Python. This lecture is the most demo-heavy of the quarter and by the end, we'll build an anagrammer application, backed by Python."
             },
             {
