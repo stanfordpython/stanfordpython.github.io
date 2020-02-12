@@ -29,7 +29,7 @@
     {
         "week": 6,
         "topic": "NumPy and Object-Oriented Programming",
-        "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6/lab-6.zip",
+        "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6.zip",
         "part2": "#",
         "solutions": "#",
         "visible": true,
