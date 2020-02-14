@@ -29,9 +29,9 @@
     {
         "week": 6,
         "topic": "NumPy and Object-Oriented Programming",
-        "part1": "https://drive.google.com/open?id=1se0J5yFRWj-Y7mv9KhUO5xv04a7s84fZ",
-        "part2": "#",
-        "solutions": "#",
+        "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6/lab6-part1-numpy.ipynb",
+        "part2": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6/lab6-part2-oop.ipynb",
+        "solutions": "https://github.com/stanfordpython/python-labs/tree/master/solutions/lab-6",
         "visible": true,
         "active": true
     }

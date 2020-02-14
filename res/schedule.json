@@ -110,13 +110,61 @@
             {
                 "title": "Web Requests Lab",
                 "date": "2020-02-05",
-                "active": "false",
+                "active": false,
                 "description": "This lab is very free-form. You can choose to implement a Reddit Wallpaper Scraper, which was a former assignment in CS 41, or you can work on pretty much anything else! It's getting to be midterm season, and we want everyone to enjoy themselves, and have fun learning Python in a low-stress environment. You could choose to explore more Python functions and features, start a final project, or continue in our Quest for the Unicorn."
             }
         ],
         "dates": {
             "start": "2020-02-03",
             "end": "2020-02-07"
+        }
+    },
+    {
+        "uid": "bbf3fa0a-0a79-4ed4-b7dd-1172e5083bd8",
+        "num": 6,
+        "title": "NumPy",
+        "visible": true,
+        "days": [
+            {
+                "title": "NumPy",
+                "date": "2020-02-10",
+                "active": false,
+                "description": "Transitioning into the \"data science\" focus of CS 41, this lecture focuses on numerical computing in Python. We start by discussing the ndarray, the canonical Numpy object, and explore its properties (axes, shape). We then proceed onwards to ndarray functions and transformations, and the nuances of functions acting on multi-dimensional objects (like broadcasting). We then apply what we've learned to statistical computing methods in Python, and to the standard linear parameter fitting problem."
+            },
+            {
+                "title": "NumPy Lab",
+                "date": "2020-02-12",
+                "active": true,
+                "description": "The first segment of this lecture is composed of some tricky ndarray manipulation problems. Next, we move on to a fun movie prediction model to predict which movies their classmates will most enjoy. Then, for a whimsical twist, we introduce the Pandas data processing library, and students employ properties of Pandas arrays to create beautiful ascii art. And finally, in Part 2 of the lab, we explore Object-Oriented Python, bringing a close to our exploration of Python's core language features."
+            }
+        ],
+        "dates": {
+            "start": "2020-02-10",
+            "end": "2020-02-14"
+        }
+    },
+    {
+        "uid": "643dace4-4db6-43c1-ac2d-7953e5679af6",
+        "num": 7,
+        "title": "Third Party & Standard Libraries",
+        "visible": true,
+        "days": [
+            {
+                "title": "President's Day",
+                "date": "2020-02-17",
+                "active": false,
+                "description": "PRESIDENT'S DAY"
+            },
+            {
+                "title": "Third Party & Standard Libraries Lab",
+                "date": "2020-02-19",
+                "active": false,
+                "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we explore the Python standard libraries, and delve into the rich depth and diversity of libraries that Python has to offer. We start by exploring pdb, Python's debugging library, and quickly move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
+            }
+        ],
+        "dates": {
+            "start": "2020-02-17",
+            "end": "2020-02-21"
         }
     }
 ]
