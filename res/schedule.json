@@ -134,7 +134,7 @@
             {
                 "title": "NumPy Lab",
                 "date": "2020-02-12",
-                "active": true,
+                "active": false,
                 "description": "The first segment of this lecture is composed of some tricky ndarray manipulation problems. Next, we move on to a fun movie prediction model to predict which movies their classmates will most enjoy. Then, for a whimsical twist, we introduce the Pandas data processing library, and students employ properties of Pandas arrays to create beautiful ascii art. And finally, in Part 2 of the lab, we explore Object-Oriented Python, bringing a close to our exploration of Python's core language features."
             }
         ],
@@ -152,7 +152,7 @@
             {
                 "title": "President's Day",
                 "date": "2020-02-17",
-                "active": false,
+                "active": true,
                 "description": "PRESIDENT'S DAY"
             },
             {
