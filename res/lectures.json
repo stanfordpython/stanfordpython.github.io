@@ -82,5 +82,17 @@
         "visible": true,
         "active": true,
         "code": "#"
+    },
+    	{
+        "uid": "86d9817e-e471-4f32-a79e-aa88b307c54b",
+        "title": "Standard Library",
+        "date": "2020-02-19",
+        "condensed": "#",
+        "full": "#",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
+        "active": true,
+        "code": "https://stanfordpython.com/res/lecture-code/Lecture7.zip"
     }
 ]
