@@ -152,13 +152,13 @@
             {
                 "title": "President's Day",
                 "date": "2020-02-17",
-                "active": true,
+                "active": false,
                 "description": "PRESIDENT'S DAY"
             },
             {
-                "title": "Third Party & Standard Libraries Lab",
+                "title": "Third Party & Standard Libraries",
                 "date": "2020-02-19",
-                "active": false,
+                "active": true,
                 "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we explore the Python standard libraries, and delve into the rich depth and diversity of libraries that Python has to offer. We start by exploring pdb, Python's debugging library, and quickly move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
             }
         ],
