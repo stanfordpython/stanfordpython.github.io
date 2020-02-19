@@ -80,7 +80,7 @@
         "video": "#",
         "video_note": "#",
         "visible": true,
-        "active": true,
+        "active": false,
         "code": "#"
     },
     	{
