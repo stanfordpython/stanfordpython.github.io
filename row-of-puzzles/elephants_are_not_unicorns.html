@@ -8,13 +8,13 @@
             <h2>Audio Processing</h2>
             <p>For this phase of the assignment, you will use the Python requests library to retrieve segments of an audio file which we have hidden throughout the course website, then use NumPy to reconstruct the file. The contents of the audio file contain verbal directions to the next phase of your quest.</p>
 
-            <b>The starter code is located here: <a href='https://www.stanfordpython.com/row-of-puzzles/audio/audio_startercode.py'>https://www.stanfordpython.com/row-of-puzzles/audio/audio_startercode.py</a></b>
+            <b>The starter code is located here: <a href='https://stanfordpython.com/row-of-puzzles/audio/audio_startercode.py'>https://stanfordpython.com/row-of-puzzles/audio/audio_startercode.py</a></b>
 
             <p>We have represented the audio signal as an (1,366,000 x 2) matrix, which we will henceforth denote <code>M</code>. The element of <code>M</code> in row <code>i</code> and column <code>j</code> represents the output pitch at time <code>i</code> (where time is measured relative to sampling frequency at the time the audio is played) along channel <code>j</code> (our signal only has a left channel and a right channel, hence two columns).</p>
 
             <p>We have divided <code>M</code> up into 100 components, each an (13,660 x 2) matrix (where rows 1-13,660 of <code>M</code> make up the first component, 13,661-27,320 make up the second component, etc.). We have then encoded each matrix as comma-delimited plaintext and placing it at a specified URL on the course website.</p>
 
-            <p>To orient yourself to the problem, use your browser to navigate to <a href='https://www.stanfordpython.com/row-of-puzzles/audio/audio_start.json'>https://www.stanfordpython.com/row-of-puzzles/audio/audio_start.json</a>. You should be greeted by a JSON file of the following format:
+            <p>To orient yourself to the problem, use your browser to navigate to <a href='https://stanfordpython.com/row-of-puzzles/audio/audio_start.json'>https://stanfordpython.com/row-of-puzzles/audio/audio_start.json</a>. You should be greeted by a JSON file of the following format:
             </p>
             <pre><code>
             {
@@ -47,7 +47,7 @@
         <h5><code>parse_site()</code></h5>
         <p>Now is where we put everything together - exciting!</p>
 
-        <p>We're going to start by examining the JSON file at <a href='https://www.stanfordpython.com/row-of-puzzles/audio/audio_start.json'>https://www.stanfordpython.com/row-of-puzzles/audio/audio_start.json</a>. Then, loop over the chain of JSONs stored on the course site, and within each loop, perform the following:</p>
+        <p>We're going to start by examining the JSON file at <a href='https://stanfordpython.com/row-of-puzzles/audio/audio_start.json'>https://stanfordpython.com/row-of-puzzles/audio/audio_start.json</a>. Then, loop over the chain of JSONs stored on the course site, and within each loop, perform the following:</p>
 
         <ul>
             <li>Access the data stored within the current JSON</li>
