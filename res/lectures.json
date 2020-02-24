@@ -92,7 +92,19 @@
         "video": "#",
         "video_note": "#",
         "visible": true,
-        "active": true,
+        "active": false,
         "code": "https://stanfordpython.com/res/lecture-code/Lecture7.zip"
+    }
+        {
+        "uid": "161d41b6-b91f-4711-8805-53e827fa2a79",
+        "title": "Machine Learning",
+        "date": "2020-02-24",
+        "condensed": "https://drive.google.com/open?id=1V5S49YCRVG5hZI7OqZ7BHS7C_sZ9ncN4",
+        "full": "https://drive.google.com/open?id=149sbE3AeC7cjv9-u6j56zld6Z-mou0Zv",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
+        "active": true,
+        "code": "https://stanfordpython.com/res/lecture-code/Lecture9.zip"
     }
 ]
