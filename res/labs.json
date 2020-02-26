@@ -39,7 +39,7 @@
         "week": 8,
         "topic": "Python Libraries and Machine Learning",
         "part1": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-8/sl-tpl-ml-part-1.ipynb",
-        "part2": "#",
+        "part2": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-8/sl-tpl-ml-part-2.ipynb",
         "solutions": "#",
         "visible": true,
         "active": true
