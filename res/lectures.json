@@ -71,7 +71,7 @@
         "active": false,
         "code": "https://stanfordpython.com/res/lecture-code/Lecture5.zip"
     },
-        {
+    {
         "uid": "7ec7caac-ee4f-434c-9c13-d8f869d9590b",
         "title": "NumPy",
         "date": "2020-02-10",
@@ -83,7 +83,7 @@
         "active": false,
         "code": "#"
     },
-    	{
+    {
         "uid": "86d9817e-e471-4f32-a79e-aa88b307c54b",
         "title": "Standard Library",
         "date": "2020-02-19",
@@ -95,7 +95,7 @@
         "active": false,
         "code": "https://stanfordpython.com/res/lecture-code/Lecture7.zip"
     },
-        {
+    {
         "uid": "161d41b6-b91f-4711-8805-53e827fa2a79",
         "title": "Machine Learning",
         "date": "2020-02-24",
@@ -104,7 +104,19 @@
         "video": "https://drive.google.com/open?id=1V_9xmICwer1U5WlxMIzoY9EO3_it425y",
         "video_note": "#",
         "visible": true,
+        "active": false,
+        "code": "https://stanfordpython.com/res/lecture-code/Lecture8.zip"
+    },
+    {
+        "uid": "fbb1d737-46b3-4ca5-b2ee-339cf2edfcfb",
+        "title": "Matplotlib",
+        "date": "2020-03-02",
+        "condensed": "https://drive.google.com/file/d/1xcndwb2Bf6dS_BFE1bygfa7bOnbqMWQ4/view?usp=sharing",
+        "full": "https://drive.google.com/file/d/1cBMfE6I_-UEc9IdsTjiOJLnK562vHIjG/view?usp=sharing",
+        "video": "#",
+        "video_note": "#",
+        "visible": true,
         "active": true,
-        "code": "https://stanfordpython.com/res/lecture-code/Lecture9.zip"
+        "code": "https://stanfordpython.com/res/lecture-code/lecture-9.py"
     }
 ]
