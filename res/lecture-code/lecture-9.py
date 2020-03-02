@@ -65,6 +65,20 @@ def multiple_subplots():
     plt.show()
 
 
+def object_oriented_plotting():
+    """
+    An example of object-oriented Matplotlib.
+    """
+    fig = plt.figure()
+    print(type(fig)) # => matplotlib.figure.Figure
+
+    ax = fig.add_subplot(1, 1, 1)
+    print(type(ax))  # => matplotlib.axes._subplots.AxesSubplot
+
+    ax.plot([1, 4, 9, 16])
+    plt.show()
+
+
 def histogram():
     """
     Plot a histogram.
@@ -101,6 +115,7 @@ def main():
     simple_plot()
     plot_customizations()
     multiple_subplots()
+    object_oriented_plotting()
     histogram()
     scatter_plot()
 
