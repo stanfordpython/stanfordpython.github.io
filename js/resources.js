@@ -205,6 +205,45 @@ function create_handout_tr(ho) {
   return $tr;
 }
 
+function create_showcase_tr(project) {
+  /*
+  <tr>
+    <td scope="row"> 
+      <b>Sample Project Title</b> <br> 
+         Sample Project Authors <br>
+         <a href="link_to_project"> [Check it Out!] </a>
+       </td>
+    <td> (Image, if applicable) </td>
+  </tr>
+  */
+  var $tr = $('<tr>').append(
+    $('<td>').append(
+    // $('<center>').attr('scope', 'row').append(
+    $('<b>').append(
+      project.Title.concat("<br>"))).append(
+      project.Authors.concat("<br>")).append(
+        create_anchor(project.href, project.DemoType, "None", gtag_trackShowcaseLink)
+      // )
+      ));
+
+  // Add images if they're applicable
+  if (project.img.length > 0){
+    $tr.append(
+      $('<td>').append(
+        '<img src="'.concat(project.img, '"">')
+      ));
+  }
+  else {
+    // Occupy the right hand column with something.
+    $tr.append(
+      $('<td>').append(
+        ""
+      ));
+  }
+
+  return $tr;
+}
+
 function create_announcement(announcement) {
   /*
   <div class="panel panel-default">
@@ -286,7 +325,7 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'https://stanfordpython.com/res'
+var RESOURCES_DIR = 'http://localhost:8000/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
@@ -310,6 +349,9 @@ $.when(
   }),
   $.getJSON(RESOURCES_DIR + '/schedule.json', function(data) {
       schedule = data;
+  }),
+  $.getJSON(RESOURCES_DIR + '/projects.json', function(data) {
+      projects = data;
   })
 ).then(function() {
 
@@ -350,6 +392,14 @@ $.when(
     var markup = create_handout_tr(ho);
     if (markup !== null) {
       $(".handouts tbody").append(markup);
+    }
+  }
+
+  for (var i = 0; i < projects.length; i++) {
+    var proj = projects[i];
+    var markup = create_showcase_tr(proj);
+    if (markup !== null) {
+      $(".projects tbody").append(markup);
     }
   }
 

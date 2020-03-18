@@ -124,6 +124,15 @@ var gtag_trackAssignmentHandout = function(url) {
   });
 }
 
+var gtag_trackShowcaseLink = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'resource:showcase',
+    'event_label': url,
+    'transport_type': DEFAULT_TRANSPORT_TYPE,
+    // 'event_callback': function(){document.location = url;}
+  });
+}
+
 var gtag_trackAssignmentStarterCode = function(url) {
   gtag('event', 'click', {
     'event_category': 'assignment:starter_code',

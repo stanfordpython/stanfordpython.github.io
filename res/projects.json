@@ -1,0 +1,23 @@
+[
+    {
+        "uid": "4d4fd06d-adf8-4161-8fb0-27a9590231c2",
+        "Title": "Project Title",
+        "Authors": "Author1, Author2",
+        "DemoType": "GitHub",
+        "href": "https://google.com",
+        "img": "",
+        "imgAlt": "altText",
+        "ext": ""
+    },
+    {
+        "uid": "4d4fd06d-adf8-4161-8fb0-27a9590231c2",
+        "Title": "Project Title2",
+        "Authors": "Author1, Author2",
+        "DemoType": "GitHub",
+        "href": "https://google.com",
+        "img": "https://www.python.org/static/community_logos/python-logo.png",
+        "imgAlt": "altText",
+        "ext": ""
+
+    }
+]
