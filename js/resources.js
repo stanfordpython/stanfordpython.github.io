@@ -208,8 +208,8 @@ function create_handout_tr(ho) {
 function create_showcase_tr(project) {
   /*
   <tr>
-    <td scope="row"> 
-      <b>Sample Project Title</b> <br> 
+    <td scope="row">
+      <b>Sample Project Title</b> <br>
          Sample Project Authors <br>
          <a href="link_to_project"> [Check it Out!] </a>
        </td>
@@ -325,7 +325,8 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'http://localhost:8000/res'
+//var RESOURCES_DIR = 'http://localhost:8000/res'
+var RESOURCES_DIR = 'https://stanfordpython.com/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
