@@ -217,7 +217,7 @@ function create_showcase_tr(project) {
   </tr>
   */
   var $tr = $('<tr>').append(
-    $('<td>')
+    $('<td>').attr('scope', 'row')
       .append(
         $('<b>')
           .append(project.title)
