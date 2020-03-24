@@ -228,8 +228,6 @@ function create_showcase_tr(project) {
     create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
   );
 
-  console.log($tr.html());
-
   // Add images if they're applicable
   if (project.img.length > 0){
     $tr.append(
@@ -244,7 +242,7 @@ function create_showcase_tr(project) {
         project.ext
       ));
   }
-  console.log($tr)
+  
   return $tr;
 }
 
