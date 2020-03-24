@@ -232,12 +232,6 @@ function create_showcase_tr(project) {
       .append(
         $("<br>")
       )
-      // .append(
-      //   create_anchor(project.readmeLink, "README", "None", gtag_trackShowcaseLink)
-      // )
-      // .append(
-      //   $("<br>")
-      // )
       .append(
         create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
       )
@@ -257,20 +251,6 @@ function create_showcase_tr(project) {
         )
       )
   }
-  // Add images if they're applicable
-  // if (project.img.length > 0){
-  //   $tr.append(
-  //     $('<td>').append(
-  //       '<img src="'.concat(project.img, width="200", height="100", '"">')
-  //     ));
-  // }
-  // else {
-  //   // Occupy the right hand column with something.
-  //   $tr.append(
-  //     $('<td>').append(
-  //       project.ext
-  //     ));
-  // }
 
   return $tr;
 }
