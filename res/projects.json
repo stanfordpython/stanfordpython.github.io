@@ -3,22 +3,18 @@
         "uid": "4d4fd06d-adf8-4161-8fb0-27a9590231c2",
         "title": "TweetInsight",
         "authors": "AJ Arnolie",
-        "readmeLink": "https://www.github.com",
-        "codeSource": "GitHub",
+        "codeSource": "README and Code (GitHub)",
         "codeLink": "https://www.github.com",
-        "img": "",
-        "imgAlt": "",
+        "rightColMedia": "<a href='http://www.google.com'>Media (here is's a Google link)</a>",
         "ext": ""
     },
     {
         "uid": "4d4fd06d-adf8-4161-8fb0-27a9590231c2",
         "title": "TweetInsight",
         "authors": "AJ Arnolie",
-        "readmeLink": "https://www.github.com",
-        "codeSource": "GitHub",
+        "codeSource": "README and Code (GitHub)",
         "codeLink": "https://www.github.com",
-        "img": "",
-        "imgAlt": "",
+        "rightColMedia": "<a href='http://www.google.com'>Media (here is's a Google link)</a>",
         "ext": ""
     }
 ]
