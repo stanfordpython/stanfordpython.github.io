@@ -224,9 +224,11 @@ function create_showcase_tr(project) {
       project.authors.concat("<br>")).append(
         create_anchor(project.readmeLink, "README", "None", gtag_trackShowcaseLink)
       ));
-  $tr.append($("<br>").append(
-        create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
-      ));
+  $tr = $tr.append($("<br>")).append(
+    create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
+  );
+
+  console.log($tr.html());
 
   // Add images if they're applicable
   if (project.img.length > 0){
