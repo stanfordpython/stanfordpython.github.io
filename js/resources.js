@@ -217,16 +217,32 @@ function create_showcase_tr(project) {
   </tr>
   */
   var $tr = $('<tr>').append(
-    $('<td>').append(
-    // $('<center>').attr('scope', 'row').append(
-    $('<b>').append(
-      project.title.concat("<br>"))).append(
-      project.authors.concat("<br>")).append(
+    $('<td>')
+      .append(
+        $('<b>')
+          .append(project.title)
+      )
+      .append(
+        $("<br>")
+      )
+      .append(
+        $('<span>')
+          .append(project.authors)
+      )
+      .append(
+        $("<br>")
+      )
+      .append(
         create_anchor(project.readmeLink, "README", "None", gtag_trackShowcaseLink)
-      ));
-  $tr = $tr.append($("<br>")).append(
-    create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
+      )
+      .append(
+        $("<br>")
+      )
+      .append(
+        create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
+      )
   );
+
 
   // Add images if they're applicable
   if (project.img.length > 0){
@@ -242,7 +258,7 @@ function create_showcase_tr(project) {
         project.ext
       ));
   }
-  
+
   return $tr;
 }
 
