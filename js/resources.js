@@ -220,27 +220,29 @@ function create_showcase_tr(project) {
     $('<td>').append(
     // $('<center>').attr('scope', 'row').append(
     $('<b>').append(
-      project.Title.concat("<br>"))).append(
-      project.Authors.concat("<br>")).append(
-        create_anchor(project.href, project.DemoType, "None", gtag_trackShowcaseLink)
-      // )
+      project.title.concat("<br>"))).append(
+      project.authors.concat("<br>")).append(
+        create_anchor(project.readmeLink, "README", "None", gtag_trackShowcaseLink)
+      ));
+  $tr.append($("<br>").append(
+        create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
       ));
 
   // Add images if they're applicable
   if (project.img.length > 0){
     $tr.append(
       $('<td>').append(
-        '<img src="'.concat(project.img, '"">')
+        '<img src="'.concat(project.img, width="200", height="100", '"">')
       ));
   }
   else {
     // Occupy the right hand column with something.
     $tr.append(
       $('<td>').append(
-        ""
+        project.ext
       ));
   }
-
+  console.log($tr)
   return $tr;
 }
 
