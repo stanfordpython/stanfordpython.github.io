@@ -213,22 +213,22 @@ function create_showcase_card(project) {
       <h6 class="card-subtitle mb-2 text-muted">{ project.authors }</h6>
       <a href="{ project.codeLink }" class="card-link">{ project.codeSource }</a>
       { project.ext }
-      <button 
-        type="button" 
-        class="btn btn-link card-link" 
-        data-toggle="modal" 
+      <button
+        type="button"
+        class="btn btn-link card-link"
+        data-toggle="modal"
         data-target="#{ project.uid }-modal"
       >
         { project.mediaType }
       </button>
     </div>
   </div>
-  <div 
-    class="modal fade" 
-    id="{ project.uid }-modal" 
-    tabindex="-1" 
-    role="dialog" 
-    aria-labelledby="{ project.uid }-modalTitle" 
+  <div
+    class="modal fade"
+    id="{ project.uid }-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="{ project.uid }-modalTitle"
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
@@ -426,7 +426,7 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'http://localhost:8000/res'
+var RESOURCES_DIR = 'https://stanfordpython.com/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
