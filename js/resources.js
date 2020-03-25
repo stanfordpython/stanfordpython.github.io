@@ -426,7 +426,8 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-var RESOURCES_DIR = 'https://stanfordpython.com/res'
+//var RESOURCES_DIR = 'https://stanfordpython.com/res'
+var RESOURCES_DIR = 'http://localhost:8000/res'
 
 $.when(
   // Before we can do anything, make sure we have the proper data!
