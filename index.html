@@ -49,8 +49,8 @@ Revision History:
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- End Favicon -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen"> -->
   <link rel="stylesheet" href="css/bootswatch/paper.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/colors.css">
@@ -84,13 +84,25 @@ Revision History:
 
         <!-- Navigation Tabs -->
         <nav role="navigation">
-          <ul class="nav nav-tabs nav-justified" role="tablist" id="navigation">
-            <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
-            <li role="presentation"><a href="#lecture" aria-controls="lecture" role="tab" data-toggle="tab">Lecture</a></li>
-            <li role="presentation"><a href="#labs" aria-controls="labs" role="tab" data-toggle="tab">Labs</a></li>
-            <li role="presentation"><a href="#assignments" aria-controls="assignments" role="tab" data-toggle="tab">Assignments</a></li>
-            <li role="presentation"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">Resources</a></li>
-            <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Course Info</a></li>
+          <ul class="nav nav-tabs nav-fill" role="tablist" id="navigation">
+            <li role="presentation" class="nav-item active">
+              <a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a>
+            </li>
+          <li class='nav-item' role="presentation">
+              <a href="#lecture" aria-controls="lecture" role="tab" data-toggle="tab">Lecture</a>
+          </li>
+            <li role="presentation">
+              <a href="#labs" aria-controls="labs" role="tab" data-toggle="tab">Labs</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#assignments" aria-controls="assignments" role="tab" data-toggle="tab">Assignments</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">Resources</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#info" aria-controls="info" role="tab" data-toggle="tab">Course Info</a>
+          </li>
           </ul>
         </nav>
         <!-- End Navigation Tabs -->
@@ -101,27 +113,10 @@ Revision History:
           <div role="tabpanel" class="tab-pane fade in active" id="overview">
 
             <!-- Start of the Final Project Showcase -->
-            
-            <div class="row">
-              <div>
-              <div class="projects">
-              <h4 class="text-primary">Final Project Showcase</h4>
-                <table class="table table-striped table-hover table-bordered">
-                  <thead>
-                    <tr>
-                      <th style="width:40%">Project</th>
-                      <th style="width:40%">Video</th>
+            <div class="container">
+              <div id="final-showcase" class="row mt-2 no-gutters justify-content-between d-flex flex-wrap">
 
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Showcase inserted here by resources.js TODO - add closing
-                      comment to this when uncommenting the final project showcase
-                      since HTML comments don't nest -->
-                  </tbody>
-                </table>
               </div>
-              <div>
             </div>
             
             <!-- End of the Final Project Showcase -->

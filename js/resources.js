@@ -205,54 +205,88 @@ function create_handout_tr(ho) {
   return $tr;
 }
 
-function create_showcase_tr(project) {
+function create_showcase_card(project) {
   /*
-  <tr>
-    <td scope="row"> 
-      <b>Sample Project Title</b> <br> 
-         Sample Project Authors <br>
-         <a href="link_to_project"> [Check it Out!] </a>
-       </td>
-    <td> (Image, if applicable) </td>
-  </tr>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{ project.title }</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{ project.authors }</h6>
+      <a href="{ project.codeLink }" class="card-link">{ project.codeSource }</a>
+      { project.ext }
+      <button 
+        type="button" 
+        class="btn btn-link card-link" 
+        data-toggle="modal" 
+        data-target="#{ project.uid }-modal"
+      >
+        { project.mediaType }
+      </button>
+    </div>
+  </div>
+  <div 
+    class="modal fade" 
+    id="{ project.uid }-modal" 
+    tabindex="-1" 
+    role="dialog" 
+    aria-labelledby="{ project.uid }-title" 
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="{ project.uid }-title">Video for "{ project.title }"</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          { project.rightColMedia }
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   */
-  var $tr = $('<tr>').append(
-    $('<td>').attr('scope', 'row')
+  var $card = $('<div>').attr('class', 'col mb-2')
+  .append(
+    $('<div>').attr({
+      'class': 'card',
+      'style': 'width: 20rem; height: 100%;'
+    })
+    .append(
+      $('<div>').attr('class', 'card-body')
       .append(
-        $('<b>')
-          .append(project.title)
-      )
-      .append(
-        $("<br>")
-      )
-      .append(
-        $('<span>')
-          .append(project.authors)
-      )
-      .append(
-        $("<br>")
-      )
-      .append(
+        $('<h5>').attr('class', 'card-title').append(project.title)
+      ).append(
+        $('<h6>').attr('class', 'card-subtitle mb-2 text-muted').append(project.authors)
+      ).append(
         create_anchor(project.codeLink, project.codeSource, "None", gtag_trackShowcaseLink)
+        .attr('class', 'mr-3')
+      ).append(
+        (project.rightColMedia ? $('<a>').attr({
+          'class': 'mr-3',
+          'data-toggle': 'modal',
+          'data-target': `#${project.uid}-modal`,
+          'href': '#'
+        }).append('Video') : null)
+      ).append(
+        (project.ext ? '<br />' + project.ext : null)
       )
-      .append(
-        $("<br>")
-      )
-      .append(
-        $("<span>")
-          .append(project.ext)
-      )
+    )
   );
 
-  if (project.rightColMedia.length > 0) {
-    $tr = $tr.append(
-      $("<td>").append(
-        project.rightColMedia
-        )
-      )
-  }
+  // if (project.rightColMedia.length > 0) {
+  //   $tr = $tr.append(
+  //     $("<td>").append(
+  //       project.rightColMedia
+  //       )
+  //     )
+  // }
 
-  return $tr;
+  return $card;
 }
 
 function create_announcement(announcement) {
@@ -408,9 +442,9 @@ $.when(
 
   for (var i = 0; i < projects.length; i++) {
     var proj = projects[i];
-    var markup = create_showcase_tr(proj);
+    var markup = create_showcase_card(proj);
     if (markup !== null) {
-      $(".projects tbody").append(markup);
+      $("#final-showcase").append(markup);
     }
   }
 
