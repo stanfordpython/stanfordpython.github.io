@@ -228,7 +228,7 @@ function create_showcase_card(project) {
     id="{ project.uid }-modal" 
     tabindex="-1" 
     role="dialog" 
-    aria-labelledby="{ project.uid }-title" 
+    aria-labelledby="{ project.uid }-modalTitle" 
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
@@ -250,7 +250,7 @@ function create_showcase_card(project) {
   </div>
 
   */
-  var $card = $('<div>').attr('class', 'col mb-2')
+  var $card = $('<div>').attr({'class': 'col mb-2'})
   .append(
     $('<div>').attr({
       'class': 'card',
@@ -270,12 +270,68 @@ function create_showcase_card(project) {
           'class': 'mr-3',
           'data-toggle': 'modal',
           'data-target': `#${project.uid}-modal`,
-          'href': '#'
+          'href': `#${ project.uid }-modal`
         }).append('Video') : null)
       ).append(
         (project.ext ? '<br />' + project.ext : null)
       )
     )
+  ).append(
+    (project.rightColMedia ?
+    $('<div>').attr({
+      'class': 'modal',
+      'id': `${ project.uid }-modal`,
+      'tabindex': '-1',
+      'role': 'dialog',
+      'aria-labelledby': `${ project.uid }-modalTitle`,
+      'aria-hidden': 'true'
+    })
+    .append(
+      $('<div>').attr({'class': 'modal-dialog modal-dialog-centered', 'role': 'document'})
+      .append(
+        $('<div>').attr('class', 'modal-content')
+        .append(
+          /* BEGIN MODAL HEADER */
+          $('<div>').attr('class', 'modal-header')
+          .append(
+            $('<h5>').attr({'class': 'modal-title', 'id': `${ project.uid }-modalTitle`})
+            .append(`Video for "${project.title}"`)
+          )
+          .append(
+            $('<button>').attr({
+              'type': 'button',
+              'class': 'close',
+              'data-dismiss': 'modal',
+              'aria-label': "Close"
+            })
+            .append(
+              $('<span>').attr('aria-hidden', 'true')
+              .append('&times;')
+            )
+          )
+          /* END MODAL HEADER */
+        )
+        .append(
+          /* BEGIN MODAL BODY */
+          $('<div>').attr('class', 'modal-body')
+          .append(project.rightColMedia)
+          /* END MODAL BODY */
+        )
+        .append(
+          /* BEGIN MODAL FOOTER */
+          $('<div>').attr('class', 'modal-footer')
+          .append(
+            $('<button>').attr({
+              'type': 'button',
+              'class': 'btn btn-secondary',
+              'data-dismiss': 'modal'
+            }).append('Close')
+          )
+          /* END MODAL FOOTER */
+        )
+      )
+    )
+    : null)
   );
 
   // if (project.rightColMedia.length > 0) {
