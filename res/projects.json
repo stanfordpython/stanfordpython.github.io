@@ -1,44 +1,44 @@
 [
   {
     "uid": "24fcbe48-9b21-4612-a228-ab3c975d4791",
-    "title": "TweetInsight - Twitter Analytics Tool",
+    "title": "#️⃣ TweetInsight - Twitter Analytics Tool",
     "authors": "AJ Arnolie",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ajarno",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/sWLWG9jubqg\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/sWLWG9jubqg\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   
   },
   {
     "uid": "b8a41718-5458-43ae-aa77-d5523b0a0432",
-    "title": "Fault Triangle",
+    "title": "🌎 Fault Triangle",
     "authors": "Anatoly Aseev",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/aaseev",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/Pa8gztQ-DlM\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/Pa8gztQ-DlM\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "f4577760-e010-4725-a5d4-45ba45f14444",
-    "title": "Reddit Wallscraper",
+    "title": "🖼 Reddit Wallscraper",
     "authors": "Elizabeth Fitzgerald, Chris Moffitt",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/cmoffitt_elizfitz",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/52I2SWYAUeQ\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/52I2SWYAUeQ\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "16ded6ec-c8d6-4166-a380-81dad6fb903b",
-    "title": "The Florida Man",
+    "title": "🤦‍♂️ The Florida Man",
     "authors": "Corbin Schmeil, Dylan Ly",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dylanly9_jcorbin",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/nXj9R4v0K70\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/nXj9R4v0K70\" width=\"470\" height=\"230\"></iframe>",
     "ext": "<a href=\"https://floridamanapp.herokuapp.com\">Online App Demo</a>"
   },
   {
     "uid": "e099f244-91da-424e-9adb-993585e8e450",
-    "title": "OpenDNA",
+    "title": "🧬 OpenDNA",
     "authors": "Daniel Martin Marin Quiroz",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/danielmq",
@@ -47,52 +47,52 @@
   },
   {
     "uid": "bc889a0b-2842-472a-8f37-b50d6b7bc2dd",
-    "title": "Wallscraper",
+    "title": "🖼 Wallscraper",
     "authors": "Danny Du",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dannydu",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/JQ-UmssE4vk\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/JQ-UmssE4vk\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "ac52edde-d538-4166-b2c7-7ff3bf960e1f",
-    "title": "Tweet Sentiment Analysis",
+    "title": "🎭 Tweet Sentiment Analysis",
     "authors": "Erick Hernandez-Ascencio, Ruben Sanchez",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/erickha_rubensan",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/e7AWQJKWMYs\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/e7AWQJKWMYs\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "bbe3ec95-1910-46de-a311-c02791c0d23c",
-    "title": "Weight Room Data Logger",
+    "title": "💪 Weight Room Data Logger",
     "authors": "Franklin Tarke",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ftarke",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/b74z9mngAno\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/b74z9mngAno\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "2863f2d1-96cd-4ac2-841c-de9dc711d549",
-    "title": "EEG Classifier",
+    "title": "🧠 EEG Classifier",
     "authors": "Grant Sheen",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/gsheen",
-    "rightColMedia": "<iframe src=\"https://www.youtube.com/embed/XplWugcaX2M\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://www.youtube.com/embed/XplWugcaX2M\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "99394185-31a4-4911-a5d7-2dd1f131b2f6",
-    "title": "Wage Predictor",
+    "title": "💵 Wage Predictor",
     "authors": "Isabel Gallegos",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/iogalle",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/3LJavuRQMPo\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/3LJavuRQMPo\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "a497d571-b411-45c3-8f6a-b10156c848f2",
-    "title": "Wheel! Of! Fortune! (Python Edition)",
+    "title": "💰 Wheel! Of! Fortune! (Python Edition)",
     "authors": "Jose Francisco, Helena Vasconcelos",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/helenav_josencf",
@@ -101,16 +101,16 @@
   },
   {
     "uid": "eb2e277a-958b-407a-b978-0df551f37133",
-    "title": "Reading Your Mind: Predicting Choice Based On Brain Activity",
+    "title": "🧠 Reading Your Mind: Predicting Choice Based On Brain Activity",
     "authors": "Leili Mortazavi",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/leilimor",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/IcPpzS51fHw\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://youtube.com/embed/IcPpzS51fHw\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "7a740a13-3d9b-42cb-bb43-f7569740aeaf",
-    "title": "[Placeholder] Cantera Analysis of Combined Cycle Power Plant",
+    "title": "💡 [Placeholder] Cantera Analysis of Combined Cycle Power Plant",
     "authors": "Lindsey Engel",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/lindseye",
@@ -119,20 +119,20 @@
   },
   {
     "uid": "70114eee-37c2-4014-af47-21a86f800cb3",
-    "title": "[Placeholder] Fantasy Baseball Draft Assistant",
+    "title": "⚾️ [Placeholder] Fantasy Baseball Draft Assistant",
     "authors": "Max Pike",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/mpike27",
-    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1k9nvNPpbD2xDcVRPTLACNyO0Wv7pYdG2/preview\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1k9nvNPpbD2xDcVRPTLACNyO0Wv7pYdG2/preview\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   },
   {
     "uid": "286a7731-b614-4f95-b951-e3b69eb8c4e7",
-    "title": "[Placeholder] Tech Job Scraper",
+    "title": "💻 [Placeholder] Tech Job Scraper",
     "authors": "Anonymous",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/anon1",
-    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1gM_YJ2mk5TqmskcLa5K9OgAuDOd5rJHz/preview\" width=\"470\"></iframe>",
+    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1gM_YJ2mk5TqmskcLa5K9OgAuDOd5rJHz/preview\" width=\"470\" height=\"230\"></iframe>",
     "ext": ""
   }
 ]
