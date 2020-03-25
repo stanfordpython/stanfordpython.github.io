@@ -524,4 +524,8 @@ $.when(
       var day = days[j];
     }
   }
+}).then(function () {
+  $(".modal").on('hidden.bs.modal', function (e) {
+    $(this).find(".youtube-modal-embed").attr("src", $(this).find(".youtube-modal-embed").attr("src"));
+  });
 });
