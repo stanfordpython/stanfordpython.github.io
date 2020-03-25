@@ -1,7 +1,7 @@
 [
   {
     "uid": "24fcbe48-9b21-4612-a228-ab3c975d4791",
-    "title": "#️⃣ TweetInsight - Twitter Analytics Tool",
+    "title": "&#x1F4F1; TweetInsight - Twitter Analytics Tool",
     "authors": "AJ Arnolie",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ajarno",
@@ -11,7 +11,7 @@
   },
   {
     "uid": "b8a41718-5458-43ae-aa77-d5523b0a0432",
-    "title": "🌎 Fault Triangle",
+    "title": "&#x1F30E; Fault Triangle",
     "authors": "Anatoly Aseev",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/aaseev",
@@ -20,7 +20,7 @@
   },
   {
     "uid": "f4577760-e010-4725-a5d4-45ba45f14444",
-    "title": "🖼 Reddit Wallscraper",
+    "title": "&#x1F5BC; Reddit Wallscraper",
     "authors": "Elizabeth Fitzgerald, Chris Moffitt",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/cmoffitt_elizfitz",
@@ -29,7 +29,7 @@
   },
   {
     "uid": "16ded6ec-c8d6-4166-a380-81dad6fb903b",
-    "title": "🤦‍♂️ The Florida Man",
+    "title": "&#x1F926; The Florida Man",
     "authors": "Corbin Schmeil, Dylan Ly",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dylanly9_jcorbin",
@@ -38,7 +38,7 @@
   },
   {
     "uid": "e099f244-91da-424e-9adb-993585e8e450",
-    "title": "🧬 OpenDNA",
+    "title": "&#x1f9ec; OpenDNA",
     "authors": "Daniel Martin Marin Quiroz",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/danielmq",
@@ -47,7 +47,7 @@
   },
   {
     "uid": "bc889a0b-2842-472a-8f37-b50d6b7bc2dd",
-    "title": "🖼 Wallscraper",
+    "title": "&#x1F5BC; Wallscraper",
     "authors": "Danny Du",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dannydu",
@@ -56,7 +56,7 @@
   },
   {
     "uid": "ac52edde-d538-4166-b2c7-7ff3bf960e1f",
-    "title": "🎭 Tweet Sentiment Analysis",
+    "title": "&#x1F3AD; Tweet Sentiment Analysis",
     "authors": "Erick Hernandez-Ascencio, Ruben Sanchez",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/erickha_rubensan",
@@ -65,7 +65,7 @@
   },
   {
     "uid": "bbe3ec95-1910-46de-a311-c02791c0d23c",
-    "title": "💪 Weight Room Data Logger",
+    "title": "&#x1F4AA; Weight Room Data Logger",
     "authors": "Franklin Tarke",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ftarke",
@@ -74,7 +74,7 @@
   },
   {
     "uid": "2863f2d1-96cd-4ac2-841c-de9dc711d549",
-    "title": "🧠 EEG Classifier",
+    "title": "&#x1F9E0; EEG Classifier",
     "authors": "Grant Sheen",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/gsheen",
@@ -83,7 +83,7 @@
   },
   {
     "uid": "99394185-31a4-4911-a5d7-2dd1f131b2f6",
-    "title": "💵 Wage Predictor",
+    "title": "&#x1F4B5; Wage Predictor",
     "authors": "Isabel Gallegos",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/iogalle",
@@ -92,7 +92,7 @@
   },
   {
     "uid": "a497d571-b411-45c3-8f6a-b10156c848f2",
-    "title": "💰 Wheel! Of! Fortune! (Python Edition)",
+    "title": "&#x1F4B0; Wheel! Of! Fortune! (Python Edition)",
     "authors": "Jose Francisco, Helena Vasconcelos",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/helenav_josencf",
@@ -101,7 +101,7 @@
   },
   {
     "uid": "eb2e277a-958b-407a-b978-0df551f37133",
-    "title": "🧠 Reading Your Mind: Predicting Choice Based On Brain Activity",
+    "title": "&#x1F9E0; Reading Your Mind: Predicting Choice Based On Brain Activity",
     "authors": "Leili Mortazavi",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/leilimor",
@@ -110,7 +110,7 @@
   },
   {
     "uid": "7a740a13-3d9b-42cb-bb43-f7569740aeaf",
-    "title": "💡 [Placeholder] Cantera Analysis of Combined Cycle Power Plant",
+    "title": "&#x1F4A1; [Placeholder] Cantera Analysis of Combined Cycle Power Plant",
     "authors": "Lindsey Engel",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/lindseye",
@@ -119,7 +119,7 @@
   },
   {
     "uid": "70114eee-37c2-4014-af47-21a86f800cb3",
-    "title": "⚾️ [Placeholder] Fantasy Baseball Draft Assistant",
+    "title": "&#x26BE; [Placeholder] Fantasy Baseball Draft Assistant",
     "authors": "Max Pike",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/mpike27",
@@ -128,7 +128,7 @@
   },
   {
     "uid": "286a7731-b614-4f95-b951-e3b69eb8c4e7",
-    "title": "💻 [Placeholder] Tech Job Scraper",
+    "title": "&#x1F4BB; [Placeholder] Tech Job Scraper",
     "authors": "Anonymous",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/anon1",
