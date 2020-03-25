@@ -58,3 +58,9 @@ ul {
 .splash.page .subtitle {
   font-size: 32px;
 }
+
+/* YouTube Modal */
+.youtube-modal-embed {
+  width: 468px;
+  height: 234px;
+}
