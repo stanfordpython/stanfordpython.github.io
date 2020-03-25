@@ -5,7 +5,7 @@
     "authors": "AJ Arnolie",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ajarno",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/sWLWG9jubqg\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/sWLWG9jubqg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   
   },
@@ -15,7 +15,7 @@
     "authors": "Anatoly Aseev",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/aaseev",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/Pa8gztQ-DlM\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/Pa8gztQ-DlM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -24,7 +24,7 @@
     "authors": "Elizabeth Fitzgerald, Chris Moffitt",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/cmoffitt_elizfitz",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/52I2SWYAUeQ\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/52I2SWYAUeQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -33,8 +33,8 @@
     "authors": "Corbin Schmeil, Dylan Ly",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dylanly9_jcorbin",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/nXj9R4v0K70\" width=\"470\" height=\"230\"></iframe>",
-    "ext": "<a href=\"https://floridamanapp.herokuapp.com\">Online App Demo</a>"
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/nXj9R4v0K70\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+    "ext": "<a target=\"_blank\" href=\"https://floridamanapp.herokuapp.com\">Online App Demo</a>"
   },
   {
     "uid": "e099f244-91da-424e-9adb-993585e8e450",
@@ -51,7 +51,7 @@
     "authors": "Danny Du",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/dannydu",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/JQ-UmssE4vk\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/JQ-UmssE4vk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -60,7 +60,7 @@
     "authors": "Erick Hernandez-Ascencio, Ruben Sanchez",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/erickha_rubensan",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/e7AWQJKWMYs\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/e7AWQJKWMYs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -69,7 +69,7 @@
     "authors": "Franklin Tarke",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/ftarke",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/b74z9mngAno\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/b74z9mngAno\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -78,7 +78,7 @@
     "authors": "Grant Sheen",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/gsheen",
-    "rightColMedia": "<iframe src=\"https://www.youtube.com/embed/XplWugcaX2M\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/XplWugcaX2M\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -87,7 +87,7 @@
     "authors": "Isabel Gallegos",
     "codeSource": "GitHub",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/iogalle",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/3LJavuRQMPo\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/3LJavuRQMPo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
@@ -105,12 +105,12 @@
     "authors": "Leili Mortazavi",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/leilimor",
-    "rightColMedia": "<iframe src=\"https://youtube.com/embed/IcPpzS51fHw\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/IcPpzS51fHw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
     "uid": "7a740a13-3d9b-42cb-bb43-f7569740aeaf",
-    "title": "💡 [Placeholder] Cantera Analysis of Combined Cycle Power Plant",
+    "title": "💡 Combined Gas and Steam Cycle Analysis",
     "authors": "Lindsey Engel",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/lindseye",
@@ -119,20 +119,20 @@
   },
   {
     "uid": "70114eee-37c2-4014-af47-21a86f800cb3",
-    "title": "⚾️ [Placeholder] Fantasy Baseball Draft Assistant",
+    "title": "⚾️ My Assistant GM",
     "authors": "Max Pike",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/mpike27",
-    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1k9nvNPpbD2xDcVRPTLACNyO0Wv7pYdG2/preview\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/DWg0N-W-bAs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   },
   {
     "uid": "286a7731-b614-4f95-b951-e3b69eb8c4e7",
-    "title": "💻 [Placeholder] Tech Job Scraper",
+    "title": "💻 Establishments of Large US Companies",
     "authors": "Anonymous",
     "codeSource": "Github",
     "codeLink": "https://github.com/stanfordpython/final-projects-win20/tree/master/anon1",
-    "rightColMedia": "<iframe src=\"https://drive.google.com/file/d/1gM_YJ2mk5TqmskcLa5K9OgAuDOd5rJHz/preview\" width=\"470\" height=\"230\"></iframe>",
+    "rightColMedia": "<iframe class=\"youtube-modal-embed\" src=\"https://www.youtube-nocookie.com/embed/I3i8HWBxFDg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "ext": ""
   }
 ]
