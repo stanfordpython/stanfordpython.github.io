@@ -269,8 +269,8 @@ function create_showcase_card(project) {
         (project.rightColMedia ? $('<a>').attr({
           'class': 'mr-3',
           'data-toggle': 'modal',
-          'data-target': `#${project.uid}-modal`,
-          'href': `#${ project.uid }-modal`
+          'data-target': `#modal-${project.uid}`,
+          'href': `#modal-${ project.uid }`
         }).append('Video') : null)
       ).append(
         (project.ext ? '<br />' + project.ext : null)
@@ -280,10 +280,10 @@ function create_showcase_card(project) {
     (project.rightColMedia ?
     $('<div>').attr({
       'class': 'modal',
-      'id': `${ project.uid }-modal`,
+      'id': `modal-${ project.uid }`,
       'tabindex': '-1',
       'role': 'dialog',
-      'aria-labelledby': `${ project.uid }-modalTitle`,
+      'aria-labelledby': `modalTitle-${ project.uid }`,
       'aria-hidden': 'true'
     })
     .append(
@@ -294,7 +294,7 @@ function create_showcase_card(project) {
           /* BEGIN MODAL HEADER */
           $('<div>').attr('class', 'modal-header')
           .append(
-            $('<h5>').attr({'class': 'modal-title', 'id': `${ project.uid }-modalTitle`})
+            $('<h5>').attr({'class': 'modal-title', 'id': `modalTitle-${ project.uid }`})
             .append(`Video for "${project.title}"`)
           )
           .append(
@@ -323,7 +323,7 @@ function create_showcase_card(project) {
           .append(
             $('<button>').attr({
               'type': 'button',
-              'class': 'btn btn-secondary',
+              'class': 'btn btn-default',
               'data-dismiss': 'modal'
             }).append('Close')
           )
