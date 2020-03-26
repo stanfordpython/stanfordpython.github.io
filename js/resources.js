@@ -207,16 +207,6 @@ function create_handout_tr(ho) {
 
 function create_showcase_card(project) {
   /*
-<<<<<<< HEAD
-  <tr>
-    <td scope="row">
-      <b>Sample Project Title</b> <br>
-         Sample Project Authors <br>
-         <a href="link_to_project"> [Check it Out!] </a>
-       </td>
-    <td> (Image, if applicable) </td>
-  </tr>
-=======
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{ project.title }</h5>
