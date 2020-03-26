@@ -37,6 +37,9 @@ ul {
   width: 100%;
 }
 
+.fade.show {
+  opacity: 1;
+}
 /* Splash Page */
 
 .splash.page {
