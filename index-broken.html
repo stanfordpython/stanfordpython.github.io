@@ -1,0 +1,395 @@
+<!--
+File: index.html
+
+Main page for CS41 - Stanford's introductory Python course.
+
+Revision History:
+@parthsarin 1-3-2020 add course staff, remove splash page
+@parthsarin 11-5-2019 reset the website for win 2020
+@sredmond 04-27-2016 adds announcements, tables, order, structure, tabs
+@sredmond removed splash page
+@sredmond updated for spr16 (3-27-2016)
+@skleung created (aut 15)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151814369-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151814369-1');
+  </script>
+
+  <!-- End Global site tag -->
+
+  <meta charset="utf-8">
+  <title>CS41 - The Python Programming Language</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <!-- Begin Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- End Favicon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen"> -->
+  <link rel="stylesheet" href="css/bootswatch/paper.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/colors.css">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5e5b1adc28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <ul class="pages">
+    <li class="content page">
+      <div class="container">
+
+        <!-- Page Header -->
+        <div class="page-header">
+          <h1><span class="text-primary">CS41</span> <small>hap.<span class="text-primary">py</span> code</small></h1>
+          <h3 class="text-muted">the <span class="text-primary">python</span> programming language</h3>
+        </div>
+        <!-- End Page Header -->
+
+        <!-- Application Alert -->
+        
+<!--         <div class="alert alert-success" role="alert">
+            Interested in taking CS41 in Winter 2020? <a href="http://apply.stanfordpython.com/" onclick="gtag_trackApplication('alert'); return true;" class="alert-link" target="_blank">Apply here</a> to be considered for a spot on the waitlist (the application deadline has passed).
+        </div> -->
+        
+        <!-- End Application Alert -->
+
+        <!-- Old Course Notes Alert -->
+        <!-- <div class="alert alert-dismissable alert-info" role="alert">
+            This website is still showing some information from the last time the class was offered.
+        </div> -->
+        <!-- End Old Course Notes Alert -->
+
+        <!-- Navigation Tabs -->
+        <nav role="navigation">
+          <ul class="nav nav-tabs nav-fill" role="tablist" id="navigation">
+            <li role="presentation" class="nav-item active">
+              <a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a>
+            </li>
+          <li class='nav-item' role="presentation">
+              <a href="#lecture" aria-controls="lecture" role="tab" data-toggle="tab">Lecture</a>
+          </li>
+            <li role="presentation">
+              <a href="#labs" aria-controls="labs" role="tab" data-toggle="tab">Labs</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#assignments" aria-controls="assignments" role="tab" data-toggle="tab">Assignments</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#resources" aria-controls="resources" role="tab" data-toggle="tab">Resources</a>
+          </li>
+          <li class='nav-item' role="presentation">
+              <a href="#info" aria-controls="info" role="tab" data-toggle="tab">Course Info</a>
+          </li>
+          </ul>
+        </nav>
+        <!-- End Navigation Tabs -->
+
+        <!-- Tab Panes -->
+        <div class="tab-content">
+          <!-- Overview Tab -->
+          <div role="tabpanel" class="tab-pane fade in active" id="overview">
+
+            <!-- Start of the Final Project Showcase -->
+            <h4 class="text-primary">Project Showcase</h4>
+            <div class="container">
+              <div id="final-showcase" class="row no-gutters justify-content-between d-flex flex-wrap">
+
+              </div>
+            </div>
+            
+            <!-- End of the Final Project Showcase -->
+
+            <div class="row">
+              <!-- Left Column -->
+              <div class="col-md-4">
+                <!-- Announcements -->
+                <h4 class="text-primary">News Feed</h4>
+                <div id="announcements">
+                  <!-- Announcements are inserted here by resources.js -->
+                </div>
+                <!-- End Announcements -->
+              </div>
+              <!-- End Left Column -->
+
+              <!-- Right Column -->
+              <div class="col-md-8 col-ms-12">
+                <h4 class="text-primary">Schedule</h4>
+                <!-- Schedule -->
+                <div class="schedule">
+                  <div class="table-responsive panel panel-default">
+                    <div class="panel-heading">Course Content</div>
+                    <table class="table table-striped table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width:20%">Topic</th>
+                          <th style="width:40%">Monday</th>
+                          <th style="width:40%">Wednesday</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Schedules are inserted here by resources.js -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- End Schedule -->
+
+              </div>
+              <!-- End Right Column -->
+            </div>
+          </div>
+          <!-- End Overview Tab -->
+
+          <!-- Lecture Tab --> 
+          <div role="tabpanel" class="tab-pane fade" id="lecture">
+            <!-- Lectures -->
+            <div class="lectures">
+              <div class="table-responsive panel panel-default">
+                <div class="panel-heading">Lecture Material</div>
+                <div class="panel-body">
+                  <p class="blurb">Lectures are generally once per week, and are intended to fill the 80-minute class period. Each lecture covers a particular aspect of the Python language or ecosystem. Lectures build on each other - that is, the material gets progressively more advanced throughout the quarter. Slides are heavily animated, so both the compressed and full versions of the slide decks are uploaded.</p>
+                  <p class="blurb">Unfortunately, CS41 is not offered through SCPD, so the video recordings are not professionally done, and may at times be low-quality or missing entirely. Our goal is that the videos are a helpful learning resource, and hopefully they improve the CS41 experience for you!</p>
+                  <p class="blurb"><b>The video recordings are only viewable to those who have an SUNet ID (@stanford.edu email). Requests for access by external accounts will not be approved.</b> We will make exceptions on a case-by-case basis, especially to people who are university-affiliated. To apply for an exception, email coopermj@stanford.edu.</p>
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Topic</th>
+                      <th>Slides</th>
+                      <th>Code</th>
+                      <th>Video</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Lectures are inserted here by resources.js -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Lectures -->
+          </div>
+          <!-- End Lecture Tab -->
+
+          <!-- Labs Tab -->
+          <div role="tabpanel" class="tab-pane fade" id="labs">
+            <div class="labs">
+              <div class="table-responsive panel panel-default">
+                <div class="panel-heading">Labs!</div>
+                <div class="panel-body">
+                  <p class="blurb">Labs in CS41 provide a hands-on opportunity to experiment with the Python concepts presented in lectures. Although students work on these labs during an 80-minute class period, it would take much longer to fully complete a lab. Each lab comes with a number of challenge problems that will take even the experiences programmer nontrivial time. Labs are collaborative and open-ended, frequently asking you to think about how or why Python makes the decisions it does.</p>
+                  <p class="blurb">Each problem is chosen to reinforce a particular concept, but you are free to skip around at will. You are not expected to submit your solutions to labs, although our reference solutions will be posted afterwards. Think of labs as a chance to solidify your working knowledge of Python - after all, what better way to learn Python than to practice it?</p>
+                  <b class="blurb">See <a href="lab-assignments.html">Lab Assignments</a> for your lab assignment!</b>
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Week</th>
+                      <th>Topic</th>
+                      <th>Part 1 Link</th>
+                      <th>Part 2 Link</th>
+                      <th>Solutions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Labs are inserted here by resources.js -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End Labs Tab -->
+
+          <!-- Assignments Tab -->
+          <div role="tabpanel" class="tab-pane fade" id="assignments">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="assignments">
+                  <div class="table-responsive panel panel-default">
+                    <div class="panel-heading">Assignments</div>
+                    <div class="panel-body">
+                      <p>Assignments in CS41 are a chance to show us what you've learned in the course! As a 2-unit CR/NC course, we don't want anyone to be unduly stressed about the assignments. Grades are given on the checkmark scale, and more importantly, submitted solutions will receive style feedback from the course staff. We think assignments are an opportunity to challenge yourself to really learn the material, so enjoy! We hope you have fun completing these assignments.</p>
+                    </div>
+                    <table class="table table-striped table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Title</th>
+                          <th>Handout</th>
+                          <th>Starter Code</th>
+                          <th>Released</th>
+                          <th>Due</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Assignments are inserted here by resources.js -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Assignments Tab -->
+
+          <!-- Resources Tab -->
+          <div role="tabpanel" class="tab-pane fade" id="resources">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="handouts">
+                  <div class="table-responsive panel panel-default">
+                    <div class="panel-heading">Handouts</div>
+                    <div class="panel-body">
+                      <p class="blurb">These handouts represent any miscellaneous information we need to communicate with you. Usually, these handouts contain logistical instructions, but anything goes!</p>
+                    </div>
+                    <table class="table table-striped table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Handout</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Handouts are inserted here by resources.js -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="readings">
+                  <div class="table-responsive panel panel-default">
+                    <div class="panel-heading">Readings</div>
+                    <div class="panel-body">
+                      <p>These optional reading materials are posted throughout the quarter to supplement the course material for those who are very interested in Python. You will not be held responsible for any information presented only through optional readings; however, the material is fascinating and worth looking at. Currently, it's just a list of articles I find interesting - there may be more structure in the future.</p>
+                    </div>
+                    <table class="table table-striped table-hover table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Reading</th>
+                          <th>Credit</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Readings are inserted here by resources.js -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Resources Tab -->
+
+          <!-- Course Info Tab -->
+          <div role="tabpanel" class="tab-pane fade" id="info">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="well lead">
+                  The fundamentals and contemporary usage of the Python programming language. Primary focus on developing best practices in writing Python and exploring the extensible and unique parts of Python that make it such a powerful language.
+                </div>
+
+                <h4>Essential Links</h4>
+                <p class="lead">
+                  <!-- TODO: Fix this janky spacing hack -->
+                  <strong class="small"><a href="https://forms.gle/BNr58ergCR3bwp1U6" target="_blank">Mid-Quarter Evaluation</a></strong>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <strong class="small"><a href="https://docs.google.com/document/d/15Z1g1oXv32njCOiFvGBTlJde4rfOBtshBvKIQH17hys/edit?usp=sharing" onclick="gtag_trackOutboundLink('course_information'); return true;" target="_blank">Course Info</a></strong>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <strong class="small"><a href="https://docs.google.com/document/d/1PcMPWTI8xiKbihE5FqJSFgVY2XMN0j6aoyIAsmwvd8U/edit?usp=sharing" onclick="gtag_trackOutboundLink('syllabus'); return true;" target="_blank">Syllabus</a></strong>
+                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <strong class="small"><a href="https://piazza.com/stanford/winter2020/cs41" onclick="gtag_trackOutboundLink('piazza'); return true;" target="_blank">Piazza</a></strong>
+                </p>
+
+                <h4>Basic Info</h4>
+
+                <dl class="dl-horizontal lead">
+                  <dt>Date / Time</dt>
+                  <dd>Monday + Wednesday 3:00pm to 4:20pm</dd>
+
+                  <dt>Location</dt>
+                  <dd>Gates B12</dd>
+
+                  <dt>Instructors</dt>
+                  <dd>Parth (psarin@stanford.edu)</dd>
+                  <dd>Michael (coopermj@stanford.edu)</dd>
+
+                  <dt>Course Staff</dt>
+                  <dd>Email: staff@stanfordpython.com</dd>
+                  <dd>Alexander Iyabor Jr</dd>
+                  <dd>Andrew Huang</dd>
+                  <dd>Antonio Ferris</dd>
+                  <dd>Joy Hsu</dd>
+                  <dd>Lemuel Cardenas-Arriaga</dd>
+                  <dd>Nick Negrete</dd>
+                  <dd>Sam Kwong</dd>
+                  <dd>Theo Culhane</dd>
+
+                  <dt>Prereqs</dt>
+                  <dd>CS106B/X or equivalent</dd>
+
+                  <dt>Spotify Playlist</dt>
+                  <dd><a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">🦄 CS 41</a> (contribute!)</dd>
+                  
+              </dl>
+              <h4>Office Hours</h4>
+              <dl class="dl-horizontal lead">
+                <dt>Parth's</dt>
+                <dd>Fridays, 3pm-4pm in Gates B02</dd>
+                <dt>Michael's</dt>
+                <dd>Tuesdays, 9:30am-10:30am in Gates B02</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!-- End Course Info Tab -->
+      </div>
+      <!-- End Tab Panes -->
+    </div>
+  </li>
+</ul>
+
+<!-- Scripts placed at the bottom of the page for faster loading -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script type="text/javascript" src="/js/gtag_helper.js"></script>
+<script type="text/javascript" src="js/resources.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
