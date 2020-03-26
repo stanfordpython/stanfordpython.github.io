@@ -248,8 +248,6 @@ function create_showcase_card(project) {
       </div>
     </div>
   </div>
-
->>>>>>> navbar-fix
   */
   var $card = $('<div>').attr({'class': 'col mb-2'})
   .append(
@@ -427,14 +425,8 @@ function create_week_heading_tr(week) {
 }
 
 // Actually fetch all the resources
-<<<<<<< HEAD
 //var RESOURCES_DIR = 'http://localhost:8000/res'
 var RESOURCES_DIR = 'https://stanfordpython.com/res'
-=======
-//var RESOURCES_DIR = 'https://stanfordpython.com/res'
-var RESOURCES_DIR = 'http://localhost:8000/res'
->>>>>>> navbar-fix
-
 $.when(
   // Before we can do anything, make sure we have the proper data!
   $.getJSON(RESOURCES_DIR + '/announcements.json', function(data) {
