@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -16,7 +16,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
 	<Styles>
-		<Navbar expand="lg">
+		<Navbar variant="dark" expand="lg">
 			<Navbar.Brand href="/">CS 41: Hap.py Code, The Python Programming Language</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
