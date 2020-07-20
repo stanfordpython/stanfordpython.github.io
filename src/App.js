@@ -11,11 +11,10 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavigationBar />
-
         <HashRouter>
+          <NavigationBar />
           <Layout>
-              <Route path="/" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
           </Layout>

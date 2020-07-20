@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -21,9 +22,9 @@ export const NavigationBar = () => (
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="ml-auto">
-					<Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-					<Nav.Item><Nav.Link href="/about/">About</Nav.Link></Nav.Item>
-					<Nav.Item><Nav.Link href="/contact/">Contact</Nav.Link></Nav.Item>
+					<RouterNavLink to="/">Home</RouterNavLink>
+					<RouterNavLink to="/about/">About</RouterNavLink>
+					<RouterNavLink to="/contact/">Contact</RouterNavLink>
 
 				</Nav>
 
@@ -31,4 +32,12 @@ export const NavigationBar = () => (
 
 		</Navbar>
 	</Styles>
+)
+
+const RouterNavLink = ({ children, ...props }) => (
+  <LinkContainer exact {...props}>
+    <Nav.Link active={false}>
+      {children}
+    </Nav.Link>
+  </LinkContainer>
 )
