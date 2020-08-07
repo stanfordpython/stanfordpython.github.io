@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 
-export const NoMatch = () => (
-	<div>
-		<h2> 404 - No Match </h2>
-	</div>
+export class NoMatch extends Component {
+  render() {
+	return (
+		<ReactMarkdown source={
+			this.props.match.params.slug
+		} />
+    );
+  }
+}
 
-)
