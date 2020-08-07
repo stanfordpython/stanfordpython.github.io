@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
-import { Link } from 'react-router-dom';
+import ReactMd from 'react-md-file';
 
 export class NoMatch extends Component {
-  render() {
+
+	render() {
 	return (
-		<ReactMarkdown source={
-			this.props.match.params.slug
-		} />
-    );
-  }
+		<div className="content">
+		<ReactMd fileName={this.props.match.params.slug.concat(".md")} />
+		</div>
+	);
+	}
 }
 
