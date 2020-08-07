@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactMd from 'react-md-file';
 
-export const NoMatch = () => (
-	<div>
-		<h2> 404 - No Match </h2>
-	</div>
+export class NoMatch extends Component {
 
-)
+	render() {
+	return (
+		<div className="content">
+		<ReactMd fileName={this.props.match.params.slug.concat(".md")} />
+		</div>
+	);
+	}
+}
+
