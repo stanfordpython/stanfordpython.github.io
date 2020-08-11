@@ -7,7 +7,7 @@ export class NoMatch extends Component {
 		return (
 			<div className="content">
 			<h2>404</h2>
-			<h5>By Michael Cooper (a huge fan of u/poem_for_your_sprog)</h5>
+			<h5>By Michael Cooper (a fan of u/poem_for_your_sprog)</h5>
 			<br></br>
 			<p>
 				When Parth decided to explore,<br></br>
