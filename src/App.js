@@ -14,6 +14,7 @@ class App extends Component {
       <React.Fragment>
         <HashRouter>
           <NavigationBar />
+          <Layout>
           <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
@@ -21,6 +22,7 @@ class App extends Component {
               <Route path="/page/:slug" component={Page}/>
               <Route exact path="/:slug" component={NoMatch}/>
           </Switch>
+          </Layout>
         </HashRouter>
       </React.Fragment>
     );
