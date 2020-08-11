@@ -32,7 +32,7 @@ export class NoMatch extends Component {
 				<br></br>
 				Painstakingly, Parth checked his link,<br></br>
 				Abrim with angst and pain.<br></br>
-				He fixed a typo in his link,<br></br>
+				He fixed the typo in his link.<br></br>
 				And all was good again.<br></br>
 
 			</p>
