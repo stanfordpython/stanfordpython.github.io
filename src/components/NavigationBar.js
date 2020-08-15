@@ -23,8 +23,9 @@ export const NavigationBar = () => (
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="ml-auto">
 					<RouterNavLink to="/">Home</RouterNavLink>
-					<RouterNavLink to="/about/">About</RouterNavLink>
-					<RouterNavLink to="/contact/">Contact</RouterNavLink>
+					<RouterNavLink to="/lectures/">Lectures</RouterNavLink>
+					<RouterNavLink to="/labs/">Labs</RouterNavLink>
+					<RouterNavLink to="/assignments/">Assignments</RouterNavLink>
 
 				</Nav>
 

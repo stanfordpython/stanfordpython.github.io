@@ -7,6 +7,7 @@ import { NoMatch } from './NoMatch';
 import { Page } from './Page'
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -17,8 +18,9 @@ class App extends Component {
           <Layout>
           <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/lectures" component={About} />
+              <Route exact path="/labs" component={About} />
+              <Route exact path="/assignments" component={Contact} />
               <Route path="/page/:slug" component={Page}/>
               <Route exact path="/:slug" component={NoMatch}/>
           </Switch>

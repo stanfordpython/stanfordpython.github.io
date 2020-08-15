@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Layout } from './components/Layout';
 
 export class NoMatch extends Component {
 
 	render() {			
 
 		return (
-			<Layout>
 			<div className="content">
 				<h2>404</h2>
 				<h5>By Michael Cooper (a fan of u/poem_for_your_sprog)</h5>
@@ -39,7 +37,6 @@ export class NoMatch extends Component {
 
 				</p>
 			</div>
-			</Layout>
 		);
 	}
 }
