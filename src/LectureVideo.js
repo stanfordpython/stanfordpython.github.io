@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 import { urlMapping } from './lectureMapping';
 import { NoMatch } from './NoMatch';
+import { Page } from './Page';
 
-export class LectureVideo extends Component {
+export class LecturePage extends Page {
 
     convertUrl = (url) => {
         return urlMapping[this.props.match.params.slug]
