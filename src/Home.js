@@ -1,5 +1,5 @@
 import React from 'react';
-import { LectureData } from './LectureData'
+import { LectureData } from './LectureTable'
 
 export const Home = () => (
 	<div>

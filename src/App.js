@@ -4,7 +4,8 @@ import { Home } from './Home';
 import { About } from './About';
 import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
-import { Page } from './Page'
+import { Page } from './Page';
+import { LectureVideo } from './LectureVideo';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import './App.css';
@@ -22,7 +23,8 @@ class App extends Component {
               <Route exact path="/labs" component={About} />
               <Route exact path="/assignments" component={Contact} />
               <Route path="/page/:slug" component={Page}/>
-              <Route exact path="/:slug" component={NoMatch}/>
+              <Route path="/lecture/:slug" component={LectureVideo}/>
+              <Route path="/:slug" component={NoMatch}/>
           </Switch>
           </Layout>
         </HashRouter>
