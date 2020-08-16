@@ -22,7 +22,7 @@ class App extends Component {
               <Route exact path="/lectures" component={About} />
               <Route exact path="/labs" component={About} />
               <Route exact path="/assignments" component={Contact} />
-              <Route path="/page/:slug" component={Page}/>
+              <Route path="/page/:slug+" component={Page}/>
               <Route path="/lecture/:slug" component={LectureVideo}/>
               <Route path="/:slug" component={NoMatch}/>
           </Switch>
