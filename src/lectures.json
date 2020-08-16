@@ -1,4 +1,4 @@
-export const lectureData = [
+[
     {
         "title": "Welcome to Python!",
         "date": "2021-01-06",

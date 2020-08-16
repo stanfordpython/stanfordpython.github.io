@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
-import { urlMapping } from './lectureMapping';
 import { NoMatch } from './NoMatch';
 import { Page } from './Page';
 
+
+
 export class LecturePage extends Page {
+    constructor(props) {
+        super(props);
+
+        this.urlMapping = require('./lectureMapping.json');
+    }
 
     convertUrl = (url) => {
-        return urlMapping[this.props.match.params.slug]
+        return this.urlMapping[this.props.match.params.slug]
     }
 
     render() {
         let vidUrl = this.convertUrl(this.props.match.params.slug)[0];
-        
+
         if (vidUrl == null) {
             return (
                 <NoMatch/>

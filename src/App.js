@@ -24,7 +24,7 @@ class App extends Component {
               <Route exact path="/assignments" component={Contact} />
               <Route path="/page/:slug+" component={Page}/>
               <Route path="/lecture/:slug" component={LecturePage}/>
-              <Route path="/:slug" component={NoMatch}/>
+              <Route component={NoMatch}/>
           </Switch>
           </Layout>
         </HashRouter>
