@@ -3,27 +3,55 @@ import ReactPlayer from 'react-player';
 import { NoMatch } from './NoMatch';
 import { Page } from './Page';
 
-
-
 export class LecturePage extends Page {
     constructor(props) {
         super(props);
 
         this.urlMapping = require('./lectureMapping.json');
+        this.state = {
+            chat: '',
+            failed: false,
+          };
     }
 
     convertUrl = (url) => {
         return this.urlMapping[this.props.match.params.slug]
     }
 
-    render() {
-        let vidUrl = this.convertUrl(this.props.match.params.slug)[0];
+    componentDidMount() {
 
-        if (vidUrl == null) {
+        try {
+            var chatPromise = this.fetchFile(
+                this.convertUrl(this.props.match.params.slug)[3]
+                );
+        }
+        catch {
+            this.state.failed = true;
+            return;
+        }    
+		
+		chatPromise.then(result => {
+            // Success!
+			this.setState({chat: result});
+		}, function(value) {
+			// Failure!
+        });
+    }
+
+    render() {
+        try {
+            let vidUrl = this.convertUrl(this.props.match.params.slug)[0];
+        }
+        catch {
+            this.state.failed = true;
+        }
+
+        if (this.state.failed) {
             return (
                 <NoMatch/>
             )
         }
+
         return (
             <div>
             <h3>{this.convertUrl(this.props.match.params.slug)[1]}</h3>
@@ -33,6 +61,9 @@ export class LecturePage extends Page {
             </center>
             <br></br>
             <p>Notes: {this.convertUrl(this.props.match.params.slug)[2]}</p>
+            <br></br>
+            <p>Transcript:</p> 
+            <p>{this.state.chat}</p>
             </div>
         )
     }

@@ -44,3 +44,7 @@ table {
 td, th {
   padding: 5px;
 }
+
+p {
+  white-space:pre;
+}

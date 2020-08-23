@@ -48,6 +48,10 @@ export class Page extends Component {
 		
 	}
 
+	shouldComponentUpdate(nextProps) {
+        return this.props.match.params.slug !== nextProps.slug;
+    }
+
 	render() {		
         if (this.state.md === 404) {
             return (

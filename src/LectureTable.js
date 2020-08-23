@@ -3,17 +3,14 @@ import Moment from 'moment';
 
 function Lecture({title, date, condensed, full, video, visible, code, active, 
                  highlight}) {
-    let parsedDate = Moment(date, "YYYY-MM-DD");
-    let now = Moment();
     
     // Check date for row highlighting
     let rowStyle;
-    if (now <= parsedDate && !highlight) {
+    if (highlight) {
         rowStyle={
             backgroundColor: "#FFF0F0",
             fontWeight: "bold"
         }
-        highlight = true;
     }
     else {
         rowStyle={
@@ -57,7 +54,7 @@ export class LectureData extends Component {
             backgroundColor: "white"
         };
 
-        this.sethighlight = false;
+        this.highlight = false;
     }
 
     componentDidMount() {
@@ -74,6 +71,7 @@ export class LectureData extends Component {
         return (
             <div className="lecturedata-container">
             <table>
+            <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Title</td>
                 <td>Date</td>
@@ -94,10 +92,11 @@ export class LectureData extends Component {
                             code={lectureData.code}
                             visible={lectureData.visible}
                             active={lectureData.active}
-                            highlight={this.sethighlight}
+                            highlight={Moment() <= Moment(lectureData.date, "YYYY-MM-DD")}
                         />    
                     ))
                 }
+                </tbody>
                 </table>
               </div>
           );
