@@ -50,16 +50,20 @@ export class LectureData extends Component {
 
         this.state = {}
 
-        this.rowStyle={
-            backgroundColor: "white"
-        };
-
-        this.highlight = false;
+        this.highlight = 0;
     }
 
     componentDidMount() {
         let lectureData = require('./lectures.json');
         this.setState({ lectureData });
+
+        let i;
+        for (i = 0; i < lectureData.length; i++) {
+            if (Moment() > Moment(lectureData.date, "YYYY-MM-DD")) {
+            this.highlight = i;    
+            break;
+            }
+        }
     }
 
     render () {
@@ -92,7 +96,7 @@ export class LectureData extends Component {
                             code={lectureData.code}
                             visible={lectureData.visible}
                             active={lectureData.active}
-                            highlight={Moment() <= Moment(lectureData.date, "YYYY-MM-DD")}
+                            highlight={index === this.highlight}
                         />    
                     ))
                 }
