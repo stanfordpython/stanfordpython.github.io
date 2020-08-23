@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
+import CodeBlock from './CodeBlock';
 
 export class Page extends Component {
 
@@ -62,7 +63,7 @@ export class Page extends Component {
         }
 		return (
 			<div className="content">
-			<ReactMarkdown source={this.state.md} />
+			<ReactMarkdown source={this.state.md} renderers={{ code: CodeBlock }}/>
 			</div>
 		);
 	}
