@@ -63,7 +63,9 @@ export class LecturePage extends Page {
             <p>Notes: {this.convertUrl(this.props.match.params.slug)[2]}</p>
             <br></br>
             <p>Transcript:</p> 
-            <p>{this.state.chat}</p>
+            <div style={{height:350, overflow:"auto"}}>
+                <p>{this.state.chat}</p>
+            </div>
             </div>
         )
     }
