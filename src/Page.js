@@ -60,10 +60,12 @@ export class Page extends Component {
                 <NoMatch />
                 </div>
             );
-        }
+		}
 		return (
 			<div className="content">
-			<ReactMarkdown source={this.state.md} renderers={{ code: CodeBlock }}/>
+			<ReactMarkdown 
+				source={this.state.md}
+				renderers={{ code: CodeBlock }}/>
 			</div>
 		);
 	}

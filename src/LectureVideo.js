@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import { NoMatch } from './NoMatch';
 import { Page } from './Page';
