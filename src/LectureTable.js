@@ -59,8 +59,8 @@ export class LectureData extends Component {
 
         let i;
         for (i = 0; i < lectureData.length; i++) {
-            if (Moment() > Moment(lectureData.date, "YYYY-MM-DD")) {
-            this.highlight = i;    
+            if (Moment() < Moment(lectureData[i].date, "YYYY-MM-DD")) {
+            this.highlight = i;
             break;
             }
         }

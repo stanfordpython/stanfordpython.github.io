@@ -7,7 +7,7 @@ export class LecturePage extends Page {
     constructor(props) {
         super(props);
 
-        this.urlMapping = require('./lectureMapping.json');
+        this.urlMapping = require('./lectureVideos.json');
         this.state = {
             chat: '',
             failed: false,
