@@ -5,8 +5,7 @@
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
         "starter_code": "#",
         "due": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
     {
         "num": 1,
@@ -14,8 +13,7 @@
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
         "starter_code": "https://stanfordpython.com/res/starter-code/assign1.zip",
         "due": "2020-02-04 11:59:59 PM",
-        "visible": true,
-        "active": false 
+        "visible": true
     },
     {
         "num": 2,
@@ -23,8 +21,7 @@
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
         "starter_code": "#",
         "due": "2020-02-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
     {
         "num": 3,
@@ -32,7 +29,6 @@
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/final-proj/README.md",
         "starter_code": "#",
         "due": "2020-03-09 11:59:59 PM",
-        "visible": true,
-        "active": true
+        "visible": true
     }
 ]

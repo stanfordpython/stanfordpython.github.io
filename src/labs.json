@@ -5,8 +5,7 @@
         "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-2/data-structures-part-1.ipynb",
         "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-2.py",
         "date": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
     {
         "week": 4,
@@ -14,17 +13,15 @@
         "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-4/functions-and-fp-part-1.ipynb",
         "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-4.py",
         "date": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
-        {
+    {
         "week": 5,
         "topic": "Python and the Web",
         "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-5/wallscraper-notebook.ipynb",
         "solutions": "#",
         "date": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
     {
         "week": 6,
@@ -32,8 +29,7 @@
         "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6/lab6-code-numpy.ipynb",
         "solutions": "https://github.com/stanfordpython/python-labs/tree/master/solutions/lab-6",
         "date": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": false
+        "visible": true
     },
     {
         "week": 8,
@@ -41,8 +37,7 @@
         "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-8/sl-tpl-ml-part-1.ipynb",
         "solutions": "#",
         "date": "2020-01-21 11:59:59 PM",
-        "visible": true,
-        "active": true
+        "visible": true
     }
 ]
 
