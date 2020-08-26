@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
 
-function Assignment({title, spec, starterCode, due, visible, highlight}) {
+function Assignment({title, assignmentNumber, spec, starterCode, due, visible, highlight}) {
     
     // Check date for row highlighting
     let rowStyle;
@@ -31,8 +31,7 @@ function Assignment({title, spec, starterCode, due, visible, highlight}) {
 
     return (
           <tr style={rowStyle}>
-            <td>{title}</td>
-            <td><a href={spec}>Assignment Spec</a></td>
+            <td><a href={spec}>Assignment {assignmentNumber}: {title}</a></td>
             <td>{starterCodeLink}</td>
             <td>{due}</td>
           </tr>
@@ -73,7 +72,6 @@ export class AssignmentData extends Component {
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Title</td>
-                <td>Assignment Spec</td>
                 <td>Starter Code</td>
                 <td>Due</td>
             </tr>
@@ -82,6 +80,7 @@ export class AssignmentData extends Component {
                     (
                         <Assignment
                             key={index}
+                            assignmentNumber={index}
                             title={assignmentData.title}
                             spec={assignmentData.spec}
                             starterCode={assignmentData.starter_code}

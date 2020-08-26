@@ -74,7 +74,7 @@ export class LabData extends Component {
             <tr style={{fontWeight: "bold"}}>
                 <td>Week</td>
                 <td>Topic</td>
-                <td>Code</td>
+                <td>Starter Code</td>
                 <td>Solutions</td>
             </tr>
                 {
