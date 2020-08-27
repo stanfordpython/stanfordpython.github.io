@@ -6,3 +6,5 @@ And this is body
 def function():
     return 5
 ```
+
+[Second](http://localhost:3000/#/page/samplepage2)

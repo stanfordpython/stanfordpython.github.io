@@ -3,70 +3,79 @@ import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
 
+function safeFetch(url, options) {
+  if (options == null) options = {}
+  if (options.credentials == null) options.credentials = 'same-origin'
+  
+  return fetch(url, options).then(function(response) {
+    if (response.status >= 200 && response.status < 300) {
+      return response.text();
+
+    } else {
+      var error = new Error(response.statusText || response.status);
+      error.response = response;
+
+      return Promise.reject(error);
+    }
+  }).catch(err => {
+    return Promise.reject(err);
+  });
+}
+
+
+
 export class Page extends Component {
+  // Constructor
+  constructor(props) {
+    super(props);
+    this.state = {
+      md: '',
+    };
+  }
 
-	// Constructor
-	constructor(props) {
-		super(props);
-		this.state = {
-		  md: '',
-		};
-	  }
+  fetchFile(path) {
+    return safeFetch(path);
+  }
 
-	// fetch the md file
-	fetchFile(file) {
-		let request = new Request(file, {
-		headers: new Headers({
-			'Content-Type': 'text/plain'
-		})
-		});
-		return fetch(request).then(res => {
-			console.log(res);
-			if (!res.ok) {
-				throw new Error(res.statusText);
-		}
+  fetchMarkdown(slug) {
+  	this.fetchFile(`${slug}.md`)
+  	.then((response) => {
+        this.setState({
+          md: response
+        });
+    })
+    .catch((e) => {
+        this.setState({
+          md: 404
+        })
+    });
+  }
 
-		return res.text().then(text => {
-			return text;
-		});
-		}).catch(err => {
-			this.setState({md: 404});
-			throw new Error('Failed fetching file: ' + err.message);
-		});
-	}
+  componentDidMount() {
+		this.fetchMarkdown(this.props.match.params.slug);
+  }
 
-	componentDidMount() {
-		var mdPromise = this.fetchFile(
-			this.props.match.params.slug.concat(".md")
-			);
-		
-		mdPromise.then(result => {
-            // Success!
-			this.setState({md: result});
-		}, function(value) {
-			// Failure!
-		});
-		
-	}
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params.slug !== prevProps.match.params.slug) {
+      this.fetchMarkdown(this.props.match.params.slug);
+    }
+  }
 
-	shouldComponentUpdate(nextProps) {
-        return this.props.match.params.slug !== nextProps.slug;
+  render() {    
+    if (this.state.md === 404) {
+      return (
+        <div className="content">
+        <NoMatch />
+        </div>
+      );
     }
 
-	render() {		
-        if (this.state.md === 404) {
-            return (
-                <div className="content">
-                <NoMatch />
-                </div>
-            );
-		}
-		return (
-			<div className="content">
-			<ReactMarkdown 
-				source={this.state.md}
-				renderers={{ code: CodeBlock }}/>
-			</div>
-		);
-	}
+    return (
+      <div className="content">
+      <ReactMarkdown 
+        source={this.state.md}
+        renderers={{ code: CodeBlock }}/>
+      </div>
+    );
+  }
 }
