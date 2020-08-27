@@ -11,40 +11,45 @@ export class LecturePage extends Page {
         this.state = {
             chat: '',
             failed: false,
-          };
+        };
     }
 
     convertUrl = (url) => {
         return this.urlMapping[this.props.match.params.slug]
     }
 
-    componentDidMount() {
-
+    fetchVidInfo() {
+        let vidInfo;
         try {
-            var chatPromise = this.fetchFile(
-                this.convertUrl(this.props.match.params.slug)[3]
-                );
+            vidInfo = this.convertUrl(this.props.match.params.slug);
+            var chatPromise = this.fetchFile(vidInfo.chatFile);
         }
+
         catch {
-            this.state.failed = true;
+            this.setState({failed: true});
             return;
-        }    
-		
-		chatPromise.then(result => {
+        }
+
+        chatPromise.then((result) => {
             // Success!
-			this.setState({chat: result});
-		}, function(value) {
-			// Failure!
+            this.setState({chat: result, vidInfo: vidInfo, failed: false});
+        }).catch((e) => {
+            // Failure!
+            this.setState({vidInfo: vidInfo, failed: false});
         });
     }
 
+    componentDidMount() {
+        this.fetchVidInfo();
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.match.params.slug !== prevProps.match.params.slug) {
+          this.fetchVidInfo(this.props.match.params.slug);
+        }
+    }
+
     render() {
-        try {
-            let vidUrl = this.convertUrl(this.props.match.params.slug)[0];
-        }
-        catch {
-            this.state.failed = true;
-        }
 
         if (this.state.failed) {
             return (
@@ -52,15 +57,22 @@ export class LecturePage extends Page {
             )
         }
 
+        if (!this.state.vidInfo) {
+            return null;
+        }
+
         return (
             <div>
-            <h3>{this.convertUrl(this.props.match.params.slug)[1]}</h3>
+            <h3>{this.state.vidInfo.title}</h3>
             <br></br>
             <center>
-            <ReactPlayer url={'https://www.youtube.com/watch?v='.concat(this.convertUrl(this.props.match.params.slug))} controls={true} />
+            <ReactPlayer 
+                url={`https://www.youtube.com/watch?v=${this.state.vidInfo.YTSlug}`} 
+                controls={true} 
+            />
             </center>
             <br></br>
-            <p>Notes: {this.convertUrl(this.props.match.params.slug)[2]}</p>
+            <p>Notes: {this.state.vidInfo.notes}</p>
             <br></br>
             <p>Transcript:</p> 
             <div style={{height:350, overflow:"auto"}}>

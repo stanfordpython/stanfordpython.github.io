@@ -1,3 +1,8 @@
 {
-    "1": ["dQw4w9WgXcQ", "Lecture 1: Introduction to Python", "N/A", "lecture1Chat.txt"]
+    "1": {
+        "YTSlug": "dQw4w9WgXcQ", 
+        "title": "Lecture 1: Introduction to Python", 
+        "notes": "N/A", 
+        "chatFile": "lecture1Chat.txt"
+    }
 }
