@@ -29,11 +29,21 @@ function Assignment({title, assignmentNumber, spec, starterCode, due, visible, h
         starterCodeLink = (<a href={starterCode}>Starter Code</a>);
     }
 
+    // How many days from now is it due?
+    let dueFromNow;
+    if (Moment() <= Moment(due, "YYYY-MM-DD")) {
+        dueFromNow = "(in ".concat(String(Moment(due, "YYYY-MM-DD").diff(Moment(), 'days'))).concat(" days).");
+    }
+    else {
+        dueFromNow = "";
+    }
+    console.log(dueFromNow);
+    
     return (
           <tr style={rowStyle}>
             <td><a href={spec}>Assignment {assignmentNumber}: {title}</a></td>
             <td>{starterCodeLink}</td>
-            <td>{due}</td>
+            <td>{Moment(due, "YYYY-MM-DD HH:mm:ss A").format("YYYY-MM-DD hh:mm A")} {dueFromNow}</td>
           </tr>
     );
 }
