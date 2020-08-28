@@ -37,7 +37,6 @@ function Assignment({title, assignmentNumber, spec, starterCode, due, visible, h
     else {
         dueFromNow = "";
     }
-    console.log(dueFromNow);
     
     return (
           <tr style={rowStyle}>
