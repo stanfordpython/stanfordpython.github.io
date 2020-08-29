@@ -2,6 +2,7 @@ import React from 'react';
 import { LectureData } from './LectureTable'
 import { AssignmentData } from './assignmentTable'
 import { LabData } from './labTable'
+import { Schedule } from './schedule'
 
 
 export const Home = () => (
@@ -10,6 +11,7 @@ export const Home = () => (
 		<LectureData/>
 		<AssignmentData/>
 		<LabData/>
+		<Schedule/>
 
 	</div>
 
