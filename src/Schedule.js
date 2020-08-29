@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
 
+import Table from 'react-bootstrap/Table';
+
 function ScheduleCell(title, description, highlight) {
     let cellStyle;
     if (highlight) {
@@ -9,9 +11,7 @@ function ScheduleCell(title, description, highlight) {
         }
     }
     else {
-        cellStyle={
-            backgroundColor: "white"
-        };
+        cellStyle={};
     }
 
     return (
@@ -69,7 +69,7 @@ export class Schedule extends Component {
 
         return (
             <div className="scheduledata-container">
-            <table className="scheduleTable">
+            <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Week</td>
@@ -90,8 +90,8 @@ export class Schedule extends Component {
                     ))
                 }
                 </tbody>
-                </table>
-              </div>
+            </Table>
+            </div>
           );
         }
 }
