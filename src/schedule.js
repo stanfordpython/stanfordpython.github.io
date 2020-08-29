@@ -6,7 +6,6 @@ function ScheduleCell(title, description, highlight) {
     if (highlight) {
         cellStyle={
             backgroundColor: "#FFF0F0",
-            fontWeight: "bold"
         }
     }
     else {
