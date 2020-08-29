@@ -73,8 +73,8 @@ export class Schedule extends Component {
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Week</td>
-                <td>Monday</td>
-                <td>Wednesday</td>
+                <td>Tuesday</td>
+                <td>Thursday</td>
             </tr>
                 {
                     scheduleData.map((scheduleData, index) =>
