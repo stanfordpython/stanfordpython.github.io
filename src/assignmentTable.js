@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
 
-function Assignment({title, assignmentNumber, spec, starterCode, due, visible, highlight}) {
+function Assignment({title, assignmentNumber, spec, starterCode, due, 
+                     visible, highlight}) {
     
     // Check date for row highlighting
     let rowStyle;
@@ -30,19 +31,15 @@ function Assignment({title, assignmentNumber, spec, starterCode, due, visible, h
     }
 
     // How many days from now is it due?
-    let dueFromNow;
-    if (Moment() <= Moment(due, "YYYY-MM-DD")) {
-        dueFromNow = "(in ".concat(String(Moment(due, "YYYY-MM-DD").diff(Moment(), 'days'))).concat(" days).");
-    }
-    else {
-        dueFromNow = "";
-    }
+    const dueFromNow = Moment(due, "YYYY-MM-DD HH:mm:ss A").fromNow();
+    const formattedDate = Moment(due, "YYYY-MM-DD HH:mm:ss A")
+                          .format("MMMM Do YYYY @ h:mma"); 
     
     return (
           <tr style={rowStyle}>
             <td><a href={spec}>Assignment {assignmentNumber}: {title}</a></td>
             <td>{starterCodeLink}</td>
-            <td>{Moment(due, "YYYY-MM-DD HH:mm:ss A").format("YYYY-MM-DD hh:mm A")} {dueFromNow}</td>
+            <td>{formattedDate} ({dueFromNow})</td>
           </tr>
     );
 }
