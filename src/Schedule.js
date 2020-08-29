@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Moment from 'moment';
+import React, { Component } from "react";
+import Moment from "moment";
 
-import Table from 'react-bootstrap/Table';
+import Table from "react-bootstrap/Table";
 
 function ScheduleCell(title, description, highlight) {
     let cellStyle;
@@ -57,7 +57,7 @@ export class Schedule extends Component {
     }
 
     componentDidMount() {
-        let scheduleData = require('./schedule.json');
+        let scheduleData = require("./schedule.json");
         this.setState({ scheduleData });
     }
 

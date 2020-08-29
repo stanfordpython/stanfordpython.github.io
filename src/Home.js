@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { Schedule } from './Schedule';
+import { Schedule } from "./Schedule";
 
-import { Button, Col, Row, Tab, Modal, Nav } from 'react-bootstrap';
-import logo from './logo.png';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import logo from "./logo.png";
 
 export const Home = () => (
     <div className="home">

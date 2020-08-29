@@ -4,23 +4,28 @@ body {
   background-color: white;
 }
 
-h2, h3, h4, blockquote {
+h2, 
+h3, 
+h4, 
+blockquote {
   margin-top: 30px !important;
 }
 
 /* HOME PAGE */
 #logo {
-    width: 180px;
-    max-width: 100%;
+  width: 180px;
+  max-width: 100%;
 }
 
 /* NAVBAR */
 .navbar {
-    background-image: linear-gradient(to right, #a18cd1 0%, #cc7eb6 100%);
+  background-image: linear-gradient(to right, #a18cd1 0%, #cc7eb6 100%);
 }
-.navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
-    &:hover{
-        color: white;
-    }
+
+.navbar-brand, 
+.navbar-nav .nav-link {
+  color: #bbb;
+  &:hover {
+    color: white;
+  }
 }

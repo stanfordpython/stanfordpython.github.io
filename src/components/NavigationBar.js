@@ -1,7 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import styled from 'styled-components';
 
 export const NavigationBar = () => (
 	<Navbar variant="dark" expand="lg">

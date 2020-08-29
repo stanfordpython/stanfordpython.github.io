@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { LabData } from './LabTable';
+import { LabData } from "./LabTable";
 
 export const Labs = () => (
     <div>
         <LabData />
     </div>
 
-)
+);

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { LectureData } from './LectureTable';
+import { LectureData } from "./LectureTable";
 
 export const Lectures = () => (
     <div>
         <LectureData />
     </div>
 
-)
+);
