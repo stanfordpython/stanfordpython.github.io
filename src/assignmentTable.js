@@ -48,26 +48,27 @@ export class AssignmentData extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {}
-
-        this.highlight = 0;
-    }
-
-    componentDidMount() {
-        let assignmentData = require('./assignments.json');
-        this.setState({ assignmentData });
-
-        let i;
-        for (i = 0; i < assignmentData.length; i++) {
-            if (Moment() < Moment(assignmentData[i].due, "YYYY-MM-DD HH:mm:ss A")) {
-                this.highlight = i;    
-                break;
-            }
+        this.state = {
+            highlight: 0
         }
     }
 
+    componentDidMount() {
+        const assignmentData = require('./assignments.json');
+
+        let i;
+        for (i = 0; i < assignmentData.length; i++) {
+            const due = Moment(assignmentData[i].due, "YYYY-MM-DD HH:mm:ss A");
+            if (Moment() < due) {
+                break;
+            }
+        }
+
+        this.setState({ assignmentData, highlight: i });
+    }
+
     render () {
-        let assignmentData = this.state.assignmentData;
+        const assignmentData = this.state.assignmentData;
         if (!assignmentData) {
             return null
         }
@@ -92,7 +93,7 @@ export class AssignmentData extends Component {
                             starterCode={assignmentData.starter_code}
                             due={assignmentData.due}
                             visible={assignmentData.visible}
-                            highlight={index === this.highlight}
+                            highlight={index === this.state.highlight}
                         />    
                     ))
                 }
