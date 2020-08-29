@@ -1,8 +1,8 @@
 import React from 'react';
 import { LectureData } from './LectureTable'
-import { AssignmentData } from './assignmentTable'
-import { LabData } from './labTable'
-import { Schedule } from './schedule'
+import { AssignmentData } from './AssignmentTable'
+import { LabData } from './LabTable'
+import { Schedule } from './Schedule'
 
 
 export const Home = () => (
