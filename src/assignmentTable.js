@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Moment from 'moment';
+import moment from 'moment';
 
 function Assignment({title, assignmentNumber, spec, starterCode, due, 
                      visible, highlight}) {
@@ -31,8 +31,8 @@ function Assignment({title, assignmentNumber, spec, starterCode, due,
     }
 
     // How many days from now is it due?
-    const dueFromNow = Moment(due, "YYYY-MM-DD HH:mm:ss A").fromNow();
-    const formattedDate = Moment(due, "YYYY-MM-DD HH:mm:ss A")
+    const dueFromNow = moment(due, "YYYY-MM-DD HH:mm:ss A").fromNow();
+    const formattedDate = moment(due, "YYYY-MM-DD HH:mm:ss A")
                           .format("MMMM Do YYYY @ h:mma"); 
     
     return (
@@ -54,14 +54,15 @@ export class AssignmentData extends Component {
     }
 
     componentDidMount() {
-        const assignmentData = require('./assignments.json');
+        const assignmentData = require("./assignments.json");
 
         let i;
         for (i = 0; i < assignmentData.length; i++) {
-            const due = Moment(assignmentData[i].due, "YYYY-MM-DD HH:mm:ss A");
-            if (Moment() < due) {
+            const due = moment(assignmentData[i]["due"], 
+                               "YYYY-MM-DD HH:mm:ss A");
+            if (moment() < due) {
                 break;
-            }
+            }
         }
 
         this.setState({ assignmentData, highlight: i });
