@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Moment from 'moment';
+import moment from 'moment';
 import Table from "react-bootstrap/Table";
 
-function Assignment({title, assignmentNumber, spec, starterCode, due, visible, highlight}) {
+function Assignment({title, assignmentNumber, spec, starterCode, due, 
+                     visible, highlight}) {
     
     // Check date for row highlighting
     let rowStyle;
@@ -31,19 +32,15 @@ function Assignment({title, assignmentNumber, spec, starterCode, due, visible, h
     }
 
     // How many days from now is it due?
-    let dueFromNow;
-    if (Moment() <= Moment(due, "YYYY-MM-DD")) {
-        dueFromNow = "(in ".concat(String(Moment(due, "YYYY-MM-DD").diff(Moment(), 'days'))).concat(" days).");
-    }
-    else {
-        dueFromNow = "";
-    }
+    const dueFromNow = moment(due, "YYYY-MM-DD HH:mm:ss A").fromNow();
+    const formattedDate = moment(due, "YYYY-MM-DD HH:mm:ss A")
+                          .format("MMMM Do YYYY @ h:mma"); 
     
     return (
           <tr style={rowStyle}>
             <td><a href={spec}>Assignment {assignmentNumber}: {title}</a></td>
             <td>{starterCodeLink}</td>
-            <td>{Moment(due, "YYYY-MM-DD HH:mm:ss A").format("YYYY-MM-DD hh:mm A")} {dueFromNow}</td>
+            <td>{formattedDate} ({dueFromNow})</td>
           </tr>
     );
 }
@@ -52,26 +49,28 @@ export class AssignmentData extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {}
-
-        this.highlight = 0;
-    }
-
-    componentDidMount() {
-        let assignmentData = require('./assignments.json');
-        this.setState({ assignmentData });
-
-        let i;
-        for (i = 0; i < assignmentData.length; i++) {
-            if (Moment() < Moment(assignmentData[i].due, "YYYY-MM-DD HH:mm:ss A")) {
-                this.highlight = i;    
-                break;
-            }
+        this.state = {
+            highlight: 0
         }
     }
 
+    componentDidMount() {
+        const assignmentData = require("./assignments.json");
+
+        let i;
+        for (i = 0; i < assignmentData.length; i++) {
+            const due = moment(assignmentData[i]["due"], 
+                               "YYYY-MM-DD HH:mm:ss A");
+            if (moment() < due) {
+                break;
+            }
+        }
+
+        this.setState({ assignmentData, highlight: i });
+    }
+
     render () {
-        let assignmentData = this.state.assignmentData;
+        const assignmentData = this.state.assignmentData;
         if (!assignmentData) {
             return null
         }
@@ -96,7 +95,7 @@ export class AssignmentData extends Component {
                             starterCode={assignmentData.starter_code}
                             due={assignmentData.due}
                             visible={assignmentData.visible}
-                            highlight={index === this.highlight}
+                            highlight={index === this.state.highlight}
                         />    
                     ))
                 }
