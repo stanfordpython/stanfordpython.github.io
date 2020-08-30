@@ -4,7 +4,7 @@ import { Schedule } from "./Schedule";
 
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import logo from "./sp_logo.png";
+import logo from "./logo.png";
 
 export const Home = () => (
     <div className="home">
