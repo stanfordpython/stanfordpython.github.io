@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import Moment from 'moment';
+import React, { Component } from "react";
+import Moment from "moment";
+
+import Table from "react-bootstrap/Table";
 
 function ScheduleCell(title, description, highlight) {
     let cellStyle;
@@ -9,9 +11,7 @@ function ScheduleCell(title, description, highlight) {
         }
     }
     else {
-        cellStyle={
-            backgroundColor: "white"
-        };
+        cellStyle={};
     }
 
     return (
@@ -57,7 +57,7 @@ export class Schedule extends Component {
     }
 
     componentDidMount() {
-        let scheduleData = require('./schedule.json');
+        let scheduleData = require("./schedule.json");
         this.setState({ scheduleData });
     }
 
@@ -69,12 +69,12 @@ export class Schedule extends Component {
 
         return (
             <div className="scheduledata-container">
-            <table className="scheduleTable">
+            <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Week</td>
-                <td>Monday</td>
-                <td>Wednesday</td>
+                <td>Tuesday</td>
+                <td>Thursday</td>
             </tr>
                 {
                     scheduleData.map((scheduleData, index) =>
@@ -90,8 +90,8 @@ export class Schedule extends Component {
                     ))
                 }
                 </tbody>
-                </table>
-              </div>
+            </Table>
+            </div>
           );
         }
 }
