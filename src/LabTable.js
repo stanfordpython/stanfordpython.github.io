@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
+import Table from "react-bootstrap/Table";
 
 function Lab({week, topic, code, solutions, date, visible, highlight}) {
     
@@ -69,7 +70,7 @@ export class LabData extends Component {
 
         return (
             <div className="labdata-container">
-            <table>
+            <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Week</td>
@@ -93,7 +94,7 @@ export class LabData extends Component {
                     ))
                 }
                 </tbody>
-                </table>
+                </Table>
               </div>
           );
         }
