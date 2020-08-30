@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
 import Remarkable from 'remarkable';
+import toc from 'markdown-toc-unlazy';
 
 function safeFetch(url, options) {
   if (options == null) options = {}
@@ -62,8 +63,7 @@ export class Page extends Component {
     }
   }
 
-  render() {    
-    var toc = require('markdown-toc');
+  render() {   
     console.log(toc('# One\n\n# Two').content);
 
     if (this.state.md === 404) {
