@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
+import Remarkable from 'remarkable';
+import toc from 'markdown-toc-unlazy';
 
 function safeFetch(url, options) {
   if (options == null) options = {}
@@ -61,7 +63,9 @@ export class Page extends Component {
     }
   }
 
-  render() {    
+  render() {   
+    console.log(toc('# One\n\n# Two').content);
+
     if (this.state.md === 404) {
       return (
         <div className="content">
