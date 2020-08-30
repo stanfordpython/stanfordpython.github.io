@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
+import Table from "react-bootstrap/Table";
 
 function Assignment({title, assignmentNumber, spec, starterCode, due, visible, highlight}) {
     
@@ -77,7 +78,7 @@ export class AssignmentData extends Component {
 
         return (
             <div className="assignmentdata-container">
-            <table>
+            <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Title</td>
@@ -100,7 +101,7 @@ export class AssignmentData extends Component {
                     ))
                 }
                 </tbody>
-                </table>
+                </Table>
               </div>
           );
         }

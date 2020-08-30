@@ -19,10 +19,10 @@ blockquote {
 
 /* NAVBAR */
 .navbar {
-  background-image: linear-gradient(to right, #a18cd1 0%, #cc7eb6 100%);
+  background-image: linear-gradient(to right, #347965 0%, #524078 100%);
 }
 
-.navbar-brand,
+.navbar-brand,n
 .navbar-nav .nav-link {
   color: #bbb;
   &:hover {
