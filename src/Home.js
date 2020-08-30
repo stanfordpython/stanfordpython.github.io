@@ -25,6 +25,7 @@ export const Home = () => (
                 </div>
             </Col>
         </Row>
+        <br></br>
         <Schedule/>
 
     </div>

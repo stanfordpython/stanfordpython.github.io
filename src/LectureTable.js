@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'moment';
+import Table from "react-bootstrap/Table";
+
 
 function Lecture({title, date, condensed, full, video, visible, code, active, 
                  highlight}) {
@@ -74,7 +76,7 @@ export class LectureData extends Component {
 
         return (
             <div className="lecturedata-container">
-            <table>
+            <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
                 <td>Title</td>
@@ -101,7 +103,7 @@ export class LectureData extends Component {
                     ))
                 }
                 </tbody>
-                </table>
+                </Table>
               </div>
           );
         }
