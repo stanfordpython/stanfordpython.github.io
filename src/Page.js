@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
-import toc from 'markdown-toc-unlazy';
 
-import { HashLink } from 'react-router-hash-link';
+import toc from 'markdown-toc-unlazy';
+import uslug from 'uslug';
 
 
 function safeFetch(url, options) {
@@ -32,6 +32,32 @@ function flatten(text, child) {
     : React.Children.toArray(child.props.children).reduce(flatten, text)
 }
 
+/**
+ * The Header object renders each markdown header and uses a reference to scroll
+ * to this header when the parent component passes the prop to do so.
+ * 
+ * @param  children The children of the react component.
+ * @param  level    The level of the header (1, 2, 3, ...).
+ * @param  scrollTo The element to scroll to. If this matches the slug, the
+ *                  component will atempt to scroll here.
+ */
+const Header = ({ children, level, scrollTo }) => {
+  const DOMChildren = React.Children.toArray(children);
+  
+  const text = DOMChildren.reduce(flatten, '');
+  const slug = uslug(text);
+
+  const scrollRef = React.useRef(null);
+  React.useEffect(() => {
+    if ((scrollTo === slug) && (scrollRef.current)) {
+      console.log(`Scrolling to ${slug}...`)
+      scrollRef.current.scrollIntoView();
+    }
+  }, [scrollTo, slug]);
+
+  return React.createElement('h' + level, {id: slug, ref: scrollRef}, children)
+}
+
 
 export class Page extends Component {
   // Constructor
@@ -39,7 +65,10 @@ export class Page extends Component {
     super(props);
     this.state = {
       md: '',
+      scrollTo: null
     };
+
+    this.customSlug = this.customSlug.bind(this);
   }
 
   fetchFile(path) {
@@ -60,6 +89,12 @@ export class Page extends Component {
     });
   }
 
+  customSlug(s) {
+    /* Create a slug for s that prepends the current path */
+    const currLocation = this.props.location.pathname;
+    return currLocation + '#' + uslug(s)
+  }
+
   componentDidMount() {
 		this.fetchMarkdown(this.props.match.params.slug);
   }
@@ -68,61 +103,16 @@ export class Page extends Component {
     if (this.props.match.params.slug !== prevProps.match.params.slug) {
       this.fetchMarkdown(this.props.match.params.slug);
     }
-  }
 
-  // Custom heading renderer for anchors defined in the following two functions  
-  HeadingRenderer(props) {
-    var children = React.Children.toArray(props.children)
-    var text = children.reduce(flatten, '')
-    var slug = text.toLowerCase().replace(/\W/g, '-')
-    console.log(slug)
-    return React.createElement('h' + props.level, {id: slug}, props.children)
-  }
-
-  genTOC() {
-    var toc = [];
-    var mdDelimited = this.state.md.split("\n");
-    console.log(mdDelimited.length);
-    var i;
-    var inCodeBlock = false;
-    for (i = 0; i < mdDelimited.length; i++) {
-      var curLine = mdDelimited[i];
-      var title;
-
-      // Exclude the case of code blocks, where comments often begin with "#"
-      if (curLine.startsWith("```")) {
-        inCodeBlock = !inCodeBlock;
-        continue;
-      }
-
-      if (curLine.startsWith("#") && !inCodeBlock) {
-        // Count how many hashes precede the line
-        var j = 0;
-        while (curLine[j] === "#") {
-          j++;
-        }
-
-        // Remove hashes from start of current line; remove leading space if applicable
-        curLine = curLine.replace(/#/g, "").trimLeft();
-        title = curLine;
-        // Change the line to be lowercase, replace spaces with dashes
-        curLine = curLine.toLowerCase().replace(/ /g, "-");
-        console.log(curLine);
-
-        // Construct the link object
-        toc.push(
-          <div>
-            <HashLink smooth to={"#".concat(curLine)}>{title}</HashLink><br></br>
-          </div>
-        )
-      }
+    // Find the hash of the targeted element and scroll into view.
+    const currHash = this.props.location.hash;
+    const elemID = currHash.slice(1);
+    if (currHash && (this.state.scrollTo !== elemID)) {
+      this.setState({ scrollTo: elemID })
     }
-    return toc;
-    
   }
 
-  render() {   
-
+  render() {
     if (this.state.md === 404) {
       return (
         <div className="content">
@@ -131,73 +121,21 @@ export class Page extends Component {
       );
     }
 
-    // console.log(this.state.md);
     return (
       <div>
-      {this.genTOC()}
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className="content" id="content">
-      <ReactMarkdown source={toc(this.state.md).content}
-      />
-      <ReactMarkdown 
-        source={this.state.md}
-        renderers={{ code: CodeBlock, heading: this.HeadingRenderer }}/>
-      </div>
+        <div className="content" id="content">
+        <ReactMarkdown 
+          source={toc(this.state.md, {slugify: this.customSlug}).content}
+        />
+        <ReactMarkdown 
+          source={this.state.md}
+          renderers={{ 
+            code: CodeBlock, 
+            heading: (props) => Header({ 
+              scrollTo: this.state.scrollTo,
+              ...props })
+          }}/>
+        </div>
       </div>
 
     );
