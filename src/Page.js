@@ -4,7 +4,7 @@ import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
 import toc from 'markdown-toc-unlazy';
 
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 
 function safeFetch(url, options) {
@@ -112,7 +112,7 @@ export class Page extends Component {
         // Construct the link object
         toc.push(
           <div>
-            <Link smooth to={"#".concat(curLine)}>{title}</Link><br></br>
+            <HashLink smooth to={"#".concat(curLine)}>{title}</HashLink><br></br>
           </div>
         )
       }
