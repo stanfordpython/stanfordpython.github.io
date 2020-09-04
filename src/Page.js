@@ -50,7 +50,6 @@ const Header = ({ children, level, scrollTo }) => {
   const scrollRef = React.useRef(null);
   React.useEffect(() => {
     if ((scrollTo === slug) && (scrollRef.current)) {
-      console.log(`Scrolling to ${slug}...`)
       scrollRef.current.scrollIntoView();
     }
   }, [scrollTo, slug]);
