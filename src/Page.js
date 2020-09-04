@@ -39,7 +39,6 @@ export class Page extends Component {
     super(props);
     this.state = {
       md: '',
-      toc: [],
     };
   }
 
@@ -81,12 +80,14 @@ export class Page extends Component {
   }
 
   genTOC() {
+    var toc = [];
     var mdDelimited = this.state.md.split("\n");
     console.log(mdDelimited.length);
     var i;
     var inCodeBlock = false;
     for (i = 0; i < mdDelimited.length; i++) {
       var curLine = mdDelimited[i];
+      var title;
 
       // Exclude the case of code blocks, where comments often begin with "#"
       if (curLine.startsWith("```")) {
@@ -100,18 +101,23 @@ export class Page extends Component {
         while (curLine[j] === "#") {
           j++;
         }
+
         // Remove hashes from start of current line; remove leading space if applicable
         curLine = curLine.replace(/#/g, "").trimLeft();
+        title = curLine;
         // Change the line to be lowercase, replace spaces with dashes
         curLine = curLine.toLowerCase().replace(/ /g, "-");
         console.log(curLine);
 
         // Construct the link object
-        this.state.toc.push(
-          <Link smooth to="#h3">Link to h3</Link>
+        toc.push(
+          <div>
+            <Link smooth to={"#".concat(curLine)}>{title}</Link><br></br>
+          </div>
         )
       }
     }
+    return toc;
     
   }
 
@@ -126,11 +132,9 @@ export class Page extends Component {
     }
 
     // console.log(this.state.md);
-    this.genTOC();
     return (
       <div>
-      <Link smooth to="#h3">Link to h3</Link>
-      <Link smooth to="#this-is-a-header">Link to primary header</Link>
+      {this.genTOC()}
       <br></br>
       <br></br>
       <br></br>
