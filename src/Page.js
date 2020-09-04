@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { NoMatch } from './NoMatch';
 import CodeBlock from './CodeBlock';
-import Remarkable from 'remarkable';
 import toc from 'markdown-toc-unlazy';
+
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 function safeFetch(url, options) {
   if (options == null) options = {}
@@ -24,6 +26,11 @@ function safeFetch(url, options) {
   });
 }
 
+function flatten(text, child) {
+  return typeof child === 'string'
+    ? text + child
+    : React.Children.toArray(child.props.children).reduce(flatten, text)
+}
 
 
 export class Page extends Component {
@@ -63,8 +70,16 @@ export class Page extends Component {
     }
   }
 
+  // Custom heading renderer for anchors defined in the following two functions  
+  HeadingRenderer(props) {
+    var children = React.Children.toArray(props.children)
+    var text = children.reduce(flatten, '')
+    var slug = text.toLowerCase().replace(/\W/g, '-')
+    console.log(slug)
+    return React.createElement('h' + props.level, {id: slug}, props.children)
+  }
+
   render() {   
-    console.log(toc('# One\n\n# Two').content);
 
     if (this.state.md === 404) {
       return (
@@ -75,11 +90,75 @@ export class Page extends Component {
     }
 
     return (
-      <div className="content">
+      <div>
+      <Link smooth to="#h3">Link to h3</Link>
+      <br></br>
+      <Link smooth to="#this-is-a-header">Link to primary header</Link>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="content" id="content">
+      <ReactMarkdown source={toc(this.state.md).content}
+      />
       <ReactMarkdown 
         source={this.state.md}
-        renderers={{ code: CodeBlock }}/>
+        renderers={{ code: CodeBlock, heading: this.HeadingRenderer }}/>
       </div>
+      </div>
+
     );
   }
 }
