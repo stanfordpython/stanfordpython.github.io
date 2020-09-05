@@ -9,7 +9,7 @@ function Assignment({title, assignmentNumber, spec, starterCode, due,
     let rowStyle;
     if (highlight) {
         rowStyle={
-            backgroundColor: "#FFF0F0",
+            backgroundColor: "#e6e0f3",
             fontWeight: "bold"
         }
     }
