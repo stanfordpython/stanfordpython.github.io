@@ -109,6 +109,11 @@ export class Page extends Component {
     if (currHash && (this.state.scrollTo !== elemID)) {
       this.setState({ scrollTo: elemID })
     }
+
+    // Clear the hash if there isn't one anymore
+    if (!currHash && this.state.scrollTo) {
+      this.setState({ scrollTo: null });
+    }
   }
 
   render() {
