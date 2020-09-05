@@ -8,7 +8,7 @@ function Lab({week, topic, code, solutions, date, visible, highlight}) {
     let rowStyle;
     if (highlight) {
         rowStyle={
-            backgroundColor: "#FFF0F0",
+            backgroundColor: "#e6e0f3",
             fontWeight: "bold"
         }
     }

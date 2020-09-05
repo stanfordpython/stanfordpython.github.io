@@ -7,7 +7,7 @@ function ScheduleCell(title, description, highlight) {
     let cellStyle;
     if (highlight) {
         cellStyle={
-            backgroundColor: "#FFF0F0",
+            backgroundColor: "#e6e0f3",
         }
     }
     else {
