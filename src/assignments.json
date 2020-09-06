@@ -3,7 +3,7 @@
         "num": 0,
         "title": "Welcome to Python!",
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign0/README.md",
-        "starter_code": "#",
+        "starterCode": "#",
         "due": "2021-01-21 11:59:59 PM",
         "visible": true
     },
@@ -11,7 +11,7 @@
         "num": 1,
         "title": "Cryptography",
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign1/README.md",
-        "starter_code": "https://stanfordpython.com/res/starter-code/assign1.zip",
+        "starterCode": "https://stanfordpython.com/res/starter-code/assign1.zip",
         "due": "2021-02-04 11:59:59 PM",
         "visible": true
     },
@@ -19,7 +19,7 @@
         "num": 2,
         "title": "Quest for the 🦄",
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/assign2/README.md",
-        "starter_code": "#",
+        "starterCode": "#",
         "due": "2021-02-21 11:59:59 PM",
         "visible": true
     },
@@ -27,7 +27,7 @@
         "num": 3,
         "title": "Final Project",
         "spec": "https://github.com/stanfordpython/python-assignments/blob/master/final-proj/README.md",
-        "starter_code": "#",
+        "starterCode": "#",
         "due": "2021-03-09 11:59:59 PM",
         "visible": true
     }

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 import { AssignmentData } from "./AssignmentTable";
 import { SiteHeader } from "./SiteHeader";
 
-
-export const Assignments = () => (
-    <div>
+const Assignments: FunctionComponent = () => (
+    <>
         <SiteHeader />
         <AssignmentData />
-    </div>
+    </>
 );
+
+export default Assignments;

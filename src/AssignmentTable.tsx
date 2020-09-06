@@ -1,30 +1,35 @@
-import React, { Component } from 'react';
+import React, { FunctionComponent, Component, CSSProperties } from 'react';
 import moment from 'moment';
 import Table from "react-bootstrap/Table";
 
-function Assignment({title, assignmentNumber, spec, starterCode, due, 
-                     visible, highlight}) {
+interface AssignmentRowProps {
+    title: string,
+    assignmentNumber: number,
+    spec: string,
+    starterCode: string,
+    due: moment.Moment,
+    visible: boolean,
+    highlight?: boolean
+}
+
+const Assignment: FunctionComponent<AssignmentRowProps> =
+    ({title, assignmentNumber, spec, starterCode, due, visible, highlight}: AssignmentRowProps) => {
     
+    if (!visible) {
+        return null;
+    }
+
     // Check date for row highlighting
-    let rowStyle;
+    let rowStyle: CSSProperties = {};
     if (highlight) {
         rowStyle={
             backgroundColor: "#e6e0f3",
             fontWeight: "bold"
         }
     }
-    else {
-        rowStyle={
-            backgroundColor: "white"
-        };
-    }
-
-    if (!visible) {
-        return null;
-    }
     
     // Is there code?
-    let starterCodeLink;
+    let starterCodeLink: JSX.Element | null;
     if (!starterCode || starterCode === "#") {
         starterCodeLink = null;
     } else {
@@ -32,9 +37,8 @@ function Assignment({title, assignmentNumber, spec, starterCode, due,
     }
 
     // How many days from now is it due?
-    const dueFromNow = moment(due, "YYYY-MM-DD HH:mm:ss A").fromNow();
-    const formattedDate = moment(due, "YYYY-MM-DD HH:mm:ss A")
-                          .format("MMMM Do YYYY @ h:mma"); 
+    const dueFromNow: string = due.fromNow();
+    const formattedDate: string = due.format("MMMM Do YYYY @ h:mma"); 
     
     return (
           <tr style={rowStyle}>
@@ -45,9 +49,14 @@ function Assignment({title, assignmentNumber, spec, starterCode, due,
     );
 }
 
-export class AssignmentData extends Component {
-    constructor(props) {
-        super(props);
+interface AssignmentDataState {
+    highlight: number,
+    assignmentData?: Array<AssignmentRowProps>
+}
+
+export class AssignmentData extends Component<{}, AssignmentDataState> {
+    constructor(props: {}) {
+        super({});
 
         this.state = {
             highlight: 0
@@ -55,12 +64,18 @@ export class AssignmentData extends Component {
     }
 
     componentDidMount() {
-        const assignmentData = require("./assignments.json");
+        let assignmentData = require("./assignments.json");
+        assignmentData = assignmentData.map(
+            <AssignmentRowProps,> ({ due, ...v }: {due: string}) => {
+            return {
+                due: moment(due, "YYYY-MM-DD HH:mm:ss A"),
+                ...v
+            }
+        })
 
         let i;
         for (i = 0; i < assignmentData.length; i++) {
-            const due = moment(assignmentData[i]["due"], 
-                               "YYYY-MM-DD HH:mm:ss A");
+            const due = assignmentData[i].due;
             if (moment() < due) {
                 break;
             }
@@ -92,7 +107,7 @@ export class AssignmentData extends Component {
                             assignmentNumber={index}
                             title={assignmentData.title}
                             spec={assignmentData.spec}
-                            starterCode={assignmentData.starter_code}
+                            starterCode={assignmentData.starterCode}
                             due={assignmentData.due}
                             visible={assignmentData.visible}
                             highlight={index === this.state.highlight}
