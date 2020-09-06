@@ -6,7 +6,7 @@ const NoMatch: FunctionComponent<{}> = () => {
 			<h2>404</h2>
 			<h5>By Michael Cooper (a fan of u/poem_for_your_sprog)</h5>
 			<br></br>
-			<p align="left">
+			<p>
 				When Parth decided to explore,<br></br>
 				And browse the Internet;<br></br>
 				He dreamed of servers near and far,<br></br>
