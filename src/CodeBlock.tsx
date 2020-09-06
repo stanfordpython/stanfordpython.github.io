@@ -1,10 +1,16 @@
 // Acknowledgement: Fergus Farrell for CodeBlock.js
 
-import React from "react"
+import React, { FunctionComponent } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
-const CodeBlock = ({ language, value }) => {
+interface CodeProps {
+  language?: string,
+  value: JSX.Element
+}
+
+const CodeBlock: FunctionComponent<CodeProps> = 
+  ({ language, value }: CodeProps) => {
   return (
     <SyntaxHighlighter language={language} style={atomDark}>
       {value}
@@ -12,4 +18,4 @@ const CodeBlock = ({ language, value }) => {
   )
 }
 
-export default CodeBlock
+export default CodeBlock;
