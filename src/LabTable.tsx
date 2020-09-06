@@ -1,33 +1,38 @@
-import React, { Component } from 'react';
-import Moment from 'moment';
+import React, { FunctionComponent, Component, CSSProperties } from 'react';
+import moment from 'moment';
 import Table from "react-bootstrap/Table";
 
-function Lab({week, topic, code, solutions, date, visible, highlight}) {
-    
-    // Check date for row highlighting
-    let rowStyle;
-    if (highlight) {
-        rowStyle={
-            backgroundColor: "#e6e0f3",
-            fontWeight: "bold"
-        }
-    }
-    else {
-        rowStyle={
-            backgroundColor: "white"
-        };
-    }
+interface LabRowProps {
+    week: string,
+    topic: string,
+    code: string,
+    solutions: string | null,
+    date: moment.Moment,
+    visible: boolean,
+    highlight?: boolean
+}
 
+const Lab: FunctionComponent<LabRowProps> = 
+    ({week, topic, code, solutions, date, visible, highlight}: LabRowProps) => {
     if (!visible) {
         return null;
     }
 
+    // Check date for row highlighting
+    let rowStyle: CSSProperties = {};
+    if (highlight) {
+        rowStyle = {
+            backgroundColor: "#e6e0f3",
+            fontWeight: "bold"
+        }
+    }
+
     // Is it past due date? Then post solutions.
-    if (Moment() < Moment(date, "YYYY-MM-DD HH:mm:ss A") ||
-        solutions === "#" || solutions === null) {
-        solutions = null;
+    let solutionsElem: JSX.Element | null;
+    if (moment() < date || solutions === "#" || solutions === null) {
+        solutionsElem = null;
     } else {
-        solutions = (<a href={solutions}>Solutions</a>);
+        solutionsElem = (<a href={solutions}>Solutions</a>);
     }
 
     return (
@@ -35,31 +40,45 @@ function Lab({week, topic, code, solutions, date, visible, highlight}) {
             <td>{week}</td>
             <td>{topic}</td>
             <td><a href={code}>Starter Code</a></td>
-            <td>{solutions}</td>
+            <td>{solutionsElem}</td>
           </tr>
     );
 }
 
-export class LabData extends Component {
-    constructor(props) {
+interface LabDataState {
+    highlight: number,
+    labData?: Array<LabRowProps>
+}
+
+export class LabData extends Component<{}, LabDataState> {
+    constructor(props: {}) {
         super(props);
 
-        this.state = {}
-
-        this.highlight = 0;
+        this.state = {
+            highlight: 0
+        }
     }
 
     componentDidMount() {
         let labData = require('./labs.json');
-        this.setState({ labData });
+        labData = labData.map(
+            <LabRowProps,>
+            ({ date, ...v }: { date: string }) => {
+                return {
+                    date: moment(date, "YYYY-MM-DD HH:mm:ss A"),
+                    ...v
+                }
+            }
+        )
 
         let i;
         for (i = 0; i < labData.length; i++) {
-            if (Moment() < Moment(labData[i].date, "YYYY-MM-DD HH:mm:ss A")) {
-                this.highlight = i;    
+            if (moment() < labData[i].date) {
                 break;
             }
         }
+
+        this.setState({ labData, highlight: i });
     }
 
     render () {
@@ -89,7 +108,7 @@ export class LabData extends Component {
                             solutions={labData.solutions}
                             date={labData.date}
                             visible={labData.visible}
-                            highlight={index === this.highlight}
+                            highlight={index === this.state.highlight}
                         />    
                     ))
                 }
