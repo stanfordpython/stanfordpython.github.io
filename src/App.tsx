@@ -4,7 +4,7 @@ import Home from "./Home";
 import Lectures from "./Lectures";
 import Labs from "./Labs";
 import Assignments from "./Assignments";
-import { NoMatch } from "./NoMatch";
+import NoMatch from "./NoMatch";
 import { Page } from "./Page";
 import { LecturePage } from "./LectureVideo";
 import { Layout } from "./components/Layout";
