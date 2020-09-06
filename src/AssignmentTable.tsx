@@ -38,7 +38,7 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
 
     // How many days from now is it due?
     const dueFromNow: string = due.fromNow();
-    const formattedDate: string = due.format("MMMM Do YYYY @ h:mma"); 
+    const formattedDate: string = due.format("MMMM Do YYYY @ h:mma");
     
     return (
           <tr style={rowStyle}>
@@ -93,12 +93,14 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
         return (
             <div className="assignmentdata-container">
             <Table bordered hover className="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Starter Code</th>
+                        <th>Due</th>
+                    </tr>
+                </thead>
             <tbody>
-            <tr style={{fontWeight: "bold"}}>
-                <td>Title</td>
-                <td>Starter Code</td>
-                <td>Due</td>
-            </tr>
                 {
                     assignmentData.map((assignmentData, index) =>
                     (

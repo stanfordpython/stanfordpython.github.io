@@ -90,13 +90,15 @@ export class LabData extends Component<{}, LabDataState> {
         return (
             <div className="labdata-container">
             <Table bordered hover className="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic</th>
+                        <th>Starter Code</th>
+                        <th>Solutions</th>
+                    </tr>
+                </thead>
             <tbody>
-            <tr style={{fontWeight: "bold"}}>
-                <td>Week</td>
-                <td>Topic</td>
-                <td>Starter Code</td>
-                <td>Solutions</td>
-            </tr>
                 {
                     labData.map((labData, index) =>
                     (
