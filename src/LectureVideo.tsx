@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { NoMatch } from './NoMatch';
-import { Page, PageProps, PageState } from './Page';
+import NoMatch from './NoMatch';
+import { Page, PageProps } from './Page';
 
 interface LectureInfo {
     YTSlug: string,
