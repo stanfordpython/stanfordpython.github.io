@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-syntax-highlighter": "^11.0.5",
+    "@types/uslug": "^1.0.0",
     "bootstrap": "^4.5.0",
     "esnext": "^3.3.1",
     "markdown-toc-unlazy": "^1.0.1",

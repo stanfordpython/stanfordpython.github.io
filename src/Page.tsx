@@ -71,11 +71,12 @@ const Header =
                                children)
 }
 
-type PageProps = RouteComponentProps<{ slug: string }>;
-interface PageState {
+export type PageProps = RouteComponentProps<{ slug: string }>;
+export interface PageState {
     md: string | 404,
     scrollTo: string | null,
-    failed?: boolean
+    failed?: boolean,
+    [x: string]: any
 }
 
 export class Page extends Component<PageProps, PageState> {
@@ -136,7 +137,7 @@ export class Page extends Component<PageProps, PageState> {
         }
     }
 
-    render() {
+    render(): JSX.Element | null {
         if (this.state.md === 404) {
             return (
                 <div className="content">

@@ -1817,6 +1817,11 @@
     "@types/testing-library__dom" "*"
     pretty-format "^25.1.0"
 
+"@types/uslug@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/uslug/-/uslug-1.0.0.tgz#cbc7d83059000f16a3fd0b897cf4a0c8c8f23c86"
+  integrity sha512-nE09t7VkH3c2G4k8xyaAoWxBJ2agiy1horenlTc9JR/Y6Hg+yA7l/60DFGapSzkyqjZsYlGM9SNyX9agXD33Pw==
+
 "@types/warning@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"

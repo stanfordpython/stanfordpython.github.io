@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Switch, HashRouter, Route } from "react-router-dom";
 import Home from "./Home";
-import { Lectures } from "./Lectures";
+import Lectures from "./Lectures";
 import Labs from "./Labs";
 import Assignments from "./Assignments";
 import { NoMatch } from "./NoMatch";
