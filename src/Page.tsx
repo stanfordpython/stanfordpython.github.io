@@ -146,24 +146,62 @@ export class Page extends Component<PageProps, PageState> {
             );
         }
 
-        return (
-            <div>
-                <div className="content" id="content">
-                    <ReactMarkdown
-                        source={toc(this.state.md, { slugify: this.customSlug }).content}
-                    />
-                    <ReactMarkdown
-                        source={this.state.md}
-                        renderers={{
-                            code: CodeBlock,
-                            heading: (props) => Header({
-                                scrollTo: this.state.scrollTo,
-                                ...props
-                            })
-                        }} />
-                </div>
-            </div>
+        // Check for the string "[[TOC]]" in the text. If it exists,
+        // render a TOC there indexing all content after [[TOC]]; if not,
+        // render just the content without the table of contents.
+        var TOC_indicator: string = "[[TOC]]";
+        console.log(this.state.md);
+        if (this.state.md.includes(TOC_indicator)) {
+            var preTOC: string = this.state.md.slice(0, this.state.md.indexOf(TOC_indicator));
+            var postTOC: string = this.state.md.slice(this.state.md.indexOf(TOC_indicator) + TOC_indicator.length);
 
-        );
+            return (
+                <div>
+                    <div className="content" id="content">
+                    <ReactMarkdown
+                            source={preTOC}
+                            renderers={{
+                                code: CodeBlock,
+                                heading: (props) => Header({
+                                    scrollTo: this.state.scrollTo,
+                                    ...props
+                                })
+                            }} />
+                        <ReactMarkdown
+                            source={toc(postTOC, { slugify: this.customSlug }).content}
+                        />
+                        <ReactMarkdown
+                            source={postTOC}
+                            renderers={{
+                                code: CodeBlock,
+                                heading: (props) => Header({
+                                    scrollTo: this.state.scrollTo,
+                                    ...props
+                                })
+                            }} />
+                    </div>
+                </div>
+
+            );
+        }
+        else {
+            return (
+                <div>
+                    <div className="content" id="content">
+                        <ReactMarkdown
+                            source={this.state.md}
+                            renderers={{
+                                code: CodeBlock,
+                                heading: (props) => Header({
+                                    scrollTo: this.state.scrollTo,
+                                    ...props
+                                })
+                            }} />
+                    </div>
+                </div>
+            );
+        }
+
+
     }
 }

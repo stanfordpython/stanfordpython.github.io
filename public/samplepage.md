@@ -1,6 +1,12 @@
 # This is a header
 And this is body
 
+[[TOC]]
+
+## This is a first secondary header
+
+Beep bop
+
 ## This is a secondary header
 f
 
