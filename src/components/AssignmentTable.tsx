@@ -64,7 +64,7 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
     }
 
     componentDidMount() {
-        let assignmentData = require("./assignments.json");
+        let assignmentData = require("../res/assignments.json");
         assignmentData = assignmentData.map(
             <AssignmentRowProps,> ({ due, ...v }: {due: string}) => {
             return {

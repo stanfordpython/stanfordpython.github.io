@@ -72,7 +72,7 @@ export class LectureData extends Component<{}, LectureDataState> {
     }
 
     componentDidMount() {
-        let lectureData = require('./lectures.json');
+        let lectureData = require('../res/lectures.json');
         lectureData = lectureData.map(
             <LectureRowProps,>
             ({ date, ...v }: { date: string }) => {

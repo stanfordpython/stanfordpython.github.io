@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
-import NoMatch from './NoMatch';
+import NoMatch from '../pages/NoMatch';
 import CodeBlock from './CodeBlock';
 
 import { RouteComponentProps } from 'react-router-dom';

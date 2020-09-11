@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 import { Switch, HashRouter, Route } from "react-router-dom";
-import Home from "./Home";
-import Lectures from "./Lectures";
-import Labs from "./Labs";
-import Assignments from "./Assignments";
-import NoMatch from "./NoMatch";
-import { Page } from "./Page";
-import { LecturePage } from "./LectureVideo";
-import { Layout } from "./components/Layout";
-import { NavigationBar } from "./components/NavigationBar";
+import Home from "./pages/Home";
+import Lectures from "./pages/Lectures";
+import Labs from "./pages/Labs";
+import Assignments from "./pages/Assignments";
+import NoMatch from "./pages/NoMatch";
+import { Page } from "./components/Page";
+import { LecturePage } from "./components/LectureVideo";
+import { Layout } from "./Layout";
+import { NavigationBar } from "./NavigationBar";
 import "./App.css";
 
 const App: FunctionComponent = () => {

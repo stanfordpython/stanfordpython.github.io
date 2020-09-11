@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import logo from "./logo.png";
+import logo from "../res/logo.png";
 
 const SiteHeader: FunctionComponent<{}> = () => {
     return (

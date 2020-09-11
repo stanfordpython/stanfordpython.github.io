@@ -93,7 +93,7 @@ export class Schedule extends Component<{}, ScheduleState> {
     }
 
     componentDidMount() {
-        let dirtyScheduleData = require("./schedule.json");
+        let dirtyScheduleData = require("../res/schedule.json");
         const scheduleData: Array<ScheduleRow> = dirtyScheduleData.map(
             ({ days, dates, ...v }: { 
                 days: Array<{ 

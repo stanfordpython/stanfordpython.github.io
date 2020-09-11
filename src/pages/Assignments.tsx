@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 
-import { AssignmentData } from "./AssignmentTable";
-import SiteHeader from "./SiteHeader";
+import { AssignmentData } from "../components/AssignmentTable";
+import SiteHeader from "../components/SiteHeader";
 
 const Assignments: FunctionComponent = () => (
     <div className="assignments">

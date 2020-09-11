@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import NoMatch from './NoMatch';
+import NoMatch from '../pages/NoMatch';
 import { Page, PageProps } from './Page';
 
 interface LectureInfo {
@@ -12,7 +12,7 @@ interface LectureInfo {
 interface URLMapping {
     [slug: string]: LectureInfo
 }
-const urlMapping: URLMapping = require('./lectureVideos.json');
+const urlMapping: URLMapping = require('../res/lectureVideos.json');
 
 export class LecturePage extends Page {
     constructor(props: PageProps) {

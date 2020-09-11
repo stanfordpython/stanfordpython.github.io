@@ -60,7 +60,7 @@ export class LabData extends Component<{}, LabDataState> {
     }
 
     componentDidMount() {
-        let labData = require('./labs.json');
+        let labData = require('../res/labs.json');
         labData = labData.map(
             <LabRowProps,>
             ({ date, ...v }: { date: string }) => {
