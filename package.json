@@ -6,7 +6,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/bootstrap": "^4.5.0",
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-syntax-highlighter": "^11.0.5",
+    "@types/uslug": "^1.0.0",
     "bootstrap": "^4.5.0",
+    "esnext": "^3.3.1",
     "markdown-toc-unlazy": "^1.0.1",
     "moment": "^2.27.0",
     "react": "^16.13.1",
@@ -21,6 +29,7 @@
     "react-youtube": "^7.11.3",
     "remarkable": "^2.0.1",
     "styled-components": "^5.1.1",
+    "typescript": "^4.0.2",
     "uslug": "^1.0.4"
   },
   "scripts": {

@@ -1,41 +1,52 @@
-import React, { Component } from 'react';
-import Moment from 'moment';
+import React, { FunctionComponent, Component, CSSProperties } from 'react';
+import moment from 'moment';
 import Table from "react-bootstrap/Table";
 
+interface LectureRowProps {
+    title: string,
+    date: moment.Moment,
+    // URL props:
+    condensed: string,
+    full: string,
+    video: string,
+    code: string,
+    // Display props:
+    visible: boolean,
+    active: boolean,
+    highlight?: boolean
+}
 
-function Lecture({title, date, condensed, full, video, visible, code, active, 
-                 highlight}) {
-    
+const Lecture: FunctionComponent<LectureRowProps> =
+    ({title, date, condensed, full, video, visible, code, active, 
+        highlight}: LectureRowProps) => {
+
+    if (!visible) {
+        return null;
+    }
+
     // Check date for row highlighting
-    let rowStyle;
+    let rowStyle: CSSProperties = {};
     if (highlight) {
         rowStyle={
             backgroundColor: "#e6e0f3",
             fontWeight: "bold"
         }
     }
-    else {
-        rowStyle={
-            backgroundColor: "white"
-        };
-    }
-
-    if (!visible) {
-        return null;
-    }
 
     // Is there code?
-    let codeLink;
+    let codeLink: JSX.Element | null;
     if (!code || code === "#") {
         codeLink = null;
     } else {
         codeLink = (<a href={code}>Code</a>);
     }
 
+    const formattedDate: string = date.format("MMMM Do YYYY");
+
     return (
           <tr style={rowStyle}>
             <td>{title}</td>
-            <td>{date}</td>
+            <td>{formattedDate}</td>
             <td><a href={condensed}>Condensed Slides</a>
                 <br></br>
                 <a href={full}>Full Slides</a>
@@ -46,26 +57,40 @@ function Lecture({title, date, condensed, full, video, visible, code, active,
     );
 }
 
-export class LectureData extends Component {
-    constructor(props) {
+interface LectureDataState {
+    highlight: number,
+    lectureData?: Array<LectureRowProps>
+}
+
+export class LectureData extends Component<{}, LectureDataState> {
+    constructor(props: {}) {
         super(props);
 
-        this.state = {}
-
-        this.highlight = 0;
+        this.state = {
+            highlight: 0
+        }
     }
 
     componentDidMount() {
         let lectureData = require('./lectures.json');
-        this.setState({ lectureData });
+        lectureData = lectureData.map(
+            <LectureRowProps,>
+            ({ date, ...v }: { date: string }) => {
+                return {
+                    date: moment(date, "YYYY-MM-DD"),
+                    ...v
+                }
+            }
+        )
 
         let i;
         for (i = 0; i < lectureData.length; i++) {
-            if (Moment() < Moment(lectureData[i].date, "YYYY-MM-DD")) {
-            this.highlight = i;
-            break;
+            if (moment() < lectureData[i].date) {
+                break;
             }
         }
+
+        this.setState({ lectureData, highlight: i });
     }
 
     render () {
@@ -77,14 +102,16 @@ export class LectureData extends Component {
         return (
             <div className="lecturedata-container">
             <Table bordered hover className="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Slides</th>
+                        <th>Video</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
             <tbody>
-            <tr style={{fontWeight: "bold"}}>
-                <td>Title</td>
-                <td>Date</td>
-                <td>Slides</td>
-                <td>Video</td>
-                <td>Code</td>
-            </tr>
                 {
                     lectureData.map((lectureData, index) =>
                     (
@@ -98,7 +125,7 @@ export class LectureData extends Component {
                             code={lectureData.code}
                             visible={lectureData.visible}
                             active={lectureData.active}
-                            highlight={index === this.highlight}
+                            highlight={index === this.state.highlight}
                         />    
                     ))
                 }
