@@ -92,7 +92,7 @@ export class Page extends Component<PageProps, PageState> {
     }
 
     fetchFile(path: string) {
-        return safeFetch(path);
+        return safeFetch("page/".concat(path));
     }
 
     fetchMarkdown(slug: string) {
