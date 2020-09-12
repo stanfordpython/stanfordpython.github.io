@@ -1,6 +1,12 @@
 import React, { FunctionComponent } from "react";
 import courseInfoLinks from "../res/courseInfoLinks.json";
 import ListGroup from "react-bootstrap/ListGroup";
+import ReactHtmlParser from 'react-html-parser';
+
+function obfuscate( domain:string, name:string ) { 
+    // Citation: Dan Jurafsky for this function.
+    return '<a href="mai' + 'lto:' + name + '@' + domain + '">' + name + '@' + domain + '</' + 'a>'; 
+}
 
 const CourseInfo: FunctionComponent<{}> = () => {
     let essentialLinks: JSX.Element[] = []; 
@@ -35,8 +41,8 @@ const CourseInfo: FunctionComponent<{}> = () => {
 
                 <dt className="text-right col-md-3">Instructors</dt>
                 <dd className="col-md-9">
-                    Parth (<a href="mailto:psarin@stanford.edu">psarin@stanford.edu</a>)<br />
-                    Michael (<a href="mailto:coopermj@stanford.edu">coopermj@stanford.edu</a>)
+                    Parth ({ ReactHtmlParser (obfuscate("stanford.edu", "psarin"))})<br />
+                    Michael ({ ReactHtmlParser (obfuscate("stanford.edu", "coopermj"))})
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
