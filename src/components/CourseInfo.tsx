@@ -46,7 +46,7 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
-                <dd className="col-md-9">We're hiring! Email us if you're interested!</dd>
+                <dd className="col-md-9">We're currently looking for TAs! Email us if you're interested!</dd>
 
                 <dt className="text-right col-md-3">Prereqs</dt>
                 <dd className="col-md-9">CS106B/X or equivalent</dd>
