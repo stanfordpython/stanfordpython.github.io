@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Lectures from "./pages/Lectures";
 import Labs from "./pages/Labs";
 import Assignments from "./pages/Assignments";
-import CourseInfo from "./pages/CourseInfo";
 import NoMatch from "./pages/NoMatch";
 import { Page } from "./components/Page";
 import { LecturePage } from "./components/LectureVideo";
@@ -23,7 +22,6 @@ const App: FunctionComponent = () => {
             <Route exact path="/lectures" component={Lectures} />
             <Route exact path="/labs" component={Labs} />
             <Route exact path="/assignments" component={Assignments} />
-            <Route exact path="/info" component={CourseInfo} />
             <Route path="/page/:slug+" component={Page}/>
             <Route path="/lecture/:slug" component={LecturePage}/>
             

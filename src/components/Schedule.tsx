@@ -142,6 +142,7 @@ export class Schedule extends Component<{}, ScheduleState> {
 
         return (
             <div className="scheduledata-container">
+            <h2>Course Schedule</h2>
             <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>

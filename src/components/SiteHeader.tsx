@@ -23,7 +23,6 @@ const SiteHeader: FunctionComponent<{}> = () => {
                 </div>
             </Col>
         </Row>
-        <br></br>
         </div>
     )
 }
