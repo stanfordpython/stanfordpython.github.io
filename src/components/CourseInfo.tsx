@@ -1,8 +1,11 @@
 import React, { FunctionComponent } from "react";
-
 import courseInfoLinks from "../res/courseInfoLinks.json";
-
 import ListGroup from "react-bootstrap/ListGroup";
+
+function obfuscate( name: string, domain:string, em_name:string ) { 
+    // Citation: Dan Jurafsky for this function.
+    return { __html: name + ' (<a href="mai' + 'lto:' + em_name + '@' + domain + '">' + em_name + '@' + domain + '</' + 'a>)'}; 
+}
 
 const CourseInfo: FunctionComponent<{}> = () => {
     let essentialLinks: JSX.Element[] = []; 
@@ -37,12 +40,12 @@ const CourseInfo: FunctionComponent<{}> = () => {
 
                 <dt className="text-right col-md-3">Instructors</dt>
                 <dd className="col-md-9">
-                    Parth (psarin@stanford.edu)<br />
-                    Michael (coopermj@stanford.edu)
+                    <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
+                    <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
-                <dd className="col-md-9">TBD... email us if you're interested!</dd>
+                <dd className="col-md-9">We're currently looking for TAs! Email us if you're interested!</dd>
 
                 <dt className="text-right col-md-3">Prereqs</dt>
                 <dd className="col-md-9">CS106B/X or equivalent</dd>
@@ -59,4 +62,4 @@ const CourseInfo: FunctionComponent<{}> = () => {
     );
 }
 
-export default CourseInfo;
+export default CourseInfo
