@@ -12,6 +12,7 @@ export const NavigationBar = () => (
 				<RouterNavLink to="/lectures">Lectures</RouterNavLink>
 				<RouterNavLink to="/labs">Labs</RouterNavLink>
 				<RouterNavLink to="/assignments">Assignments</RouterNavLink>
+				<RouterNavLink to="/info">Course Info</RouterNavLink>
 			</Nav>
 		</Navbar.Collapse>
 
