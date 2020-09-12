@@ -5,16 +5,16 @@
 		"visible": true,
 		"days": [
 			{
-				"title": "Welcome to Python",
+				"title": "Welcome to Python!",
 				"date": "2020-01-06",
 				"active": false,
-				"description": "Hello world! Welcome to CS41. Topics covered: why take CS41, history and context of Python, zen and philosophy of Python, who uses Python, and lots of Python fundamentals (using the interpreter, comments, variables, types, numbers, math, booleans, logic, strings, lists, slicing, console I/O, control flow, loops, range, functions)"
+				"description": "Hello world! Welcome to CS41. In this lecture, students will be introduced to the course and to the basic building blocks of Python. We will cover the interactive interpreter, variables and types, numbers and booleans, strings and lists, string formatting, control flow, loops, and functions."
 			},
 			{
-				"title": "Python Fundamentals",
+				"title": "Python Basics",
 				"date": "2020-01-08",
 				"active": false,
-				"description": "Our rapid progression through Python fundamentals continues, covering: objects, variables, and types, duck typing, equality vs. identity testing, additional useful string methods, string formatting (using .format()), file I/O (using a context manager), running Python as a script, the basics of imports, and virutal environments."
+				"description": "Our rapid progression through Python fundamentals continues, as we cover comments, console I/O, and file I/O, running Python as a script, modules, imports, and virtual environments."
 			}
 		],
 		"dates": {
@@ -31,13 +31,13 @@
     			"title": "Data Structures",
     			"date": "2020-01-13",
     			"active": false,
-    			"description": "Python's numerous tools for standard data manipulation makes life easy for programmers. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators and even a few uncommon ones. We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions. Python allows us to write list, dictionary, and set comprehensions, and we'll explore these tools as well as their connection to higher-level reasoning about problem-solving."
+    			"description": "In this lecture, we'll dive into Python's standard tools for data manipulation. Together with a review of lists from last week, we'll see dictionaries, tuples, and sets, along with all of their common operators (and even a few uncommon ones!). We briefly look at a few looping techniques (enumerate, zip), and then dive into comprehensions."
     		},
     		{
     			"title": "Data Structures Lab",
     			"date": "2020-01-15",
     			"active": false,
-    			"description": "The first full-length lab of CS41 features a wide collection of small problems, chosen to practice the many, many topics covered in the first three days of lecture and solidify concepts that may not have been absorbed on the first pass."
+    			"description": "The first full-length lab of CS41 features a wide collection of small problems, selected to practice topics from the first three course lectures, and to solidify course concepts."
     		}
     	],
     	"dates": {
@@ -46,21 +46,44 @@
     	}
     },
     {
-        "num": 3,
+    	"num": 3,
+    	"title": "Object-Oriented Python",
+    	"visible": true,
+    	"days": [
+    		{
+    			"title": "Object-Oriented Python",
+    			"date": "2020-01-13",
+    			"active": false,
+    			"description": "Python provides builtin support for the object oriented programming paradigm. In this lecture, we will explore namespaces and scope, the Python data model, class objects, and inheritance. We will review the difference between class objects and instance objects, and we will learn about methods associated with class objects as well as Python's special 'magic methods'."
+    		},
+    		{
+    			"title": "Object-Oriented Python Lab",
+    			"date": "2020-01-15",
+    			"active": false,
+    			"description": "In this lab, students will deepen their understanding of object-oriented programming in Python by writing classes and methods. We start with simple classes - first writing a class to represent a Stanford class - and gradually build in complexity to implement a graph and associated graph algorithms, and a class which represents a polynomial, and which uses Python's magic methods to hook into Python's builtin mathematical operations."
+    		}
+    	],
+    	"dates": {
+    		"start": "2020-01-13",
+    		"end": "202-01-17"
+    	}
+    },
+    {
+        "num": 4,
         "title": "Functions",
         "visible": true,
         "days": [
-            {
-                "title": "MLK Day",
-                "date": "2020-01-20",
-                "active": false,
-                "description": "HOLIDAY"
-            },
             {
                 "title": "Functions",
                 "date": "2020-01-22",
                 "active": false,
                 "description": "We've seen functions in other languages, but Python gives us additional tools in defining and calling functions. After reviewing some nuances in the function execution model regarding return values, scope, and pass-by semantics, we'll see keyword arguments alongside their familiar positional counterparts. We'll discuss positional arguments, keyword arguments, default arguments, and their relation to str.format. Lastly, we peek into an odd quirk of Python - that functions are objects, and can be treated as such."
+            },
+            {
+                "title": "Functions Lab",
+                "date": "2020-01-22",
+                "active": false,
+                "description": ""
             }
         ],
         "dates": {
@@ -69,7 +92,7 @@
         }
     },
     {
-        "num": 4,
+        "num": 5,
         "title": "Functional Programming",
         "visible": true,
         "days": [
@@ -80,10 +103,10 @@
                 "description": "We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
             },
             {
-                "title": "Functions and FP Lab",
+                "title": "Functions and Functional Programming Lab",
                 "date": "2020-01-29",
                 "active": false,
-                "description": "This lab first drills function argument rules, then asks you to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. Then, we conduct a more thorough investigation of function objects and their attributes, at least in CPython. After, we'll use functions to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
+                "description": "This lab first drills function argument rules, then asks students to write functions utilizing the new superpowers offered by Python functions. Several function nuances are covered, including the danger of mutable default values. Then, we conduct a more thorough investigation of function objects and their attributes, at least in CPython. After, we'll use functions to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
             }
         ],
         "dates": {
@@ -92,7 +115,7 @@
         }
     },
     {
-        "num": 5,
+        "num": 6,
         "title": "Python and the Web",
         "visible": true,
         "days": [
@@ -106,7 +129,7 @@
                 "title": "Web Requests Lab",
                 "date": "2020-02-05",
                 "active": false,
-                "description": "This lab is very free-form. You can choose to implement a Reddit Wallpaper Scraper, which was a former assignment in CS 41, or you can work on pretty much anything else! It's getting to be midterm season, and we want everyone to enjoy themselves, and have fun learning Python in a low-stress environment. You could choose to explore more Python functions and features, start a final project, or continue in our Quest for the Unicorn."
+                "description": "This lab is very free-form. Students can choose to implement a Reddit Wallpaper Scraper, which was a former assignment in CS 41, or students can work on pretty much anything else! It's getting to be midterm season, and we want everyone to enjoy themselves, and have fun learning Python in a low-stress environment. Students could choose to explore more Python functions and features, start a final project, or work on Assignment 2."
             }
         ],
         "dates": {
@@ -115,44 +138,90 @@
         }
     },
     {
-        "num": 6,
-        "title": "NumPy",
+        "num": 7,
+        "title": "Standard Libraries",
         "visible": true,
         "days": [
             {
-                "title": "NumPy",
-                "date": "2020-02-10",
-                "active": false,
-                "description": "Transitioning into the \"data science\" focus of CS 41, this lecture focuses on numerical computing in Python. We start by discussing the ndarray, the canonical Numpy object, and explore its properties (axes, shape). We then proceed onwards to ndarray functions and transformations, and the nuances of functions acting on multi-dimensional objects (like broadcasting). We then apply what we've learned to statistical computing methods in Python, and to the standard linear parameter fitting problem."
+                "title": "Standard Libraries",
+                "date": "2020-02-19",
+                "active": true,
+                "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we teach students to explore Python's standard libraries. We first cover the basics of reading documentation, then we delve into the the rich depth and diversity of libraries that Python has to offer. We explore pdb, Python's debugging library, and move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
             },
             {
-                "title": "NumPy Lab",
-                "date": "2020-02-12",
+                "title": "Standard Libraries Lab",
+                "date": "2020-02-17",
                 "active": false,
-                "description": "The first segment of this lecture is composed of some tricky ndarray manipulation problems. Next, we move on to a fun movie prediction model to predict which movies their classmates will most enjoy. Then, for a whimsical twist, we introduce the Pandas data processing library, and students employ properties of Pandas arrays to create beautiful ascii art. And finally, in Part 2 of the lab, we explore Object-Oriented Python, bringing a close to our exploration of Python's core language features."
+                "description": "Students will contemplate the standard libraries and the unsolved mysteries of the universe. Any students who solve a previously-unsolved mysteries of the universe will earn extra credit."
             }
         ],
         "dates": {
-            "start": "2020-02-10",
-            "end": "2020-02-14"
+            "start": "2020-02-17",
+            "end": "2020-02-21"
         }
     },
     {
-        "num": 7,
-        "title": "Third Party & Standard Libraries",
+        "num": 8,
+        "title": "Third-Party Packages",
         "visible": true,
         "days": [
             {
-                "title": "President's Day",
-                "date": "2020-02-17",
-                "active": false,
-                "description": "PRESIDENT'S DAY"
-            },
-            {
-                "title": "Third Party & Standard Libraries",
+                "title": "Third-Party Packages",
                 "date": "2020-02-19",
                 "active": true,
-                "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we explore the Python standard libraries, and delve into the rich depth and diversity of libraries that Python has to offer. We start by exploring pdb, Python's debugging library, and quickly move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
+                "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and third-party Python packages, after which we provide a survey of some of these libraries, including [TODO - add this list once finalized]."
+            },
+            {
+                "title": "Third-Party Packages Lab",
+                "date": "2020-02-17",
+                "active": false,
+                "description": "Students will contemplate third-party Python packages and the unsolved mysteries of the universe. Any students who solve a previously-unsolved mysteries of the universe will earn extra credit."
+            }
+        ],
+        "dates": {
+            "start": "2020-02-17",
+            "end": "2020-02-21"
+        }
+    },
+    {
+        "num": 9,
+        "title": "Python in the Real World",
+        "visible": true,
+        "days": [
+            {
+                "title": "Student-Choice Lecture",
+                "date": "2020-02-19",
+                "active": true,
+                "description": "Parth, Michael, and the TAs will give 'lightning lectures,' 10-15 minute lectures/demonstrations on topics of students' choice."
+            },
+            {
+                "title": "Guest Lecture",
+                "date": "2020-02-17",
+                "active": false,
+                "description": "A guest lecture by a super cool visitor."
+            }
+        ],
+        "dates": {
+            "start": "2020-02-17",
+            "end": "2020-02-21"
+        }
+    },
+    {
+        "num": 10,
+        "title": "Final Project",
+        "visible": true,
+        "days": [
+            {
+                "title": "Final Project Work Period",
+                "date": "2020-02-19",
+                "active": true,
+                "description": "It's dead week - you deserve a break. This lecture will be a final project work period in which TAs will be circulating to help students as they work on their CS41 final projects."
+            },
+            {
+                "title": "Final Project Presentations",
+                "date": "2020-02-17",
+                "active": false,
+                "description": "Students will have the opportunity to share their final projects with the class."
             }
         ],
         "dates": {
