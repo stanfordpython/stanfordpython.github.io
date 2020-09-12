@@ -6,7 +6,7 @@ import logo from "../res/logo.png";
 const SiteHeader: FunctionComponent<{}> = () => {
     return (
         <div>
-        <Row>
+        <Row className="mb-4">
             <Col md={2} className="d-none d-md-block align-self-center text-center">
                 <img id="logo" src={logo} alt="Stanford Logo" />
             </Col>
