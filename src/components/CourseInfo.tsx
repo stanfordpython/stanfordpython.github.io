@@ -37,12 +37,12 @@ export default class CourseInfo extends Component {
 
                 <dt className="text-right col-md-3">Instructors</dt>
                 <dd className="col-md-9">
-                    Parth (psarin@stanford.edu)<br />
-                    Michael (coopermj@stanford.edu)
+                    Parth (<a href="mailto:psarin@stanford.edu">psarin@stanford.edu</a>)<br />
+                    Michael (<a href="mailto:coopermj@stanford.edu">coopermj@stanford.edu</a>)
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
-                <dd className="col-md-9">TBD... email us if you're interested!</dd>
+                <dd className="col-md-9">We're hiring! Email us if you're interested!</dd>
 
                 <dt className="text-right col-md-3">Prereqs</dt>
                 <dd className="col-md-9">CS106B/X or equivalent</dd>
