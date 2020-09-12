@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React, { FunctionComponent } from "react";
 import courseInfoLinks from "../res/courseInfoLinks.json";
 import ListGroup from "react-bootstrap/ListGroup";
 
-export default class CourseInfo extends Component {
-
-    render () {
+const CourseInfo: FunctionComponent<{}> = () => {
     let essentialLinks: JSX.Element[] = []; 
     for (let [key, value] of Object.entries(courseInfoLinks)) {
         essentialLinks.push(
@@ -57,5 +55,6 @@ export default class CourseInfo extends Component {
             </dl>
     </div>
     );
-    }
 }
+
+export default CourseInfo
