@@ -50,7 +50,8 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <dt className="text-right col-md-3">Spotify Playlist</dt>
                 <dd className="col-md-9">
                     <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">
-                        🦄 CS 41
+                        <span role="img" aria-label="unicorn face">🦄</span> 
+                        CS 41
                     </a> (contribute!)
                 </dd>
             </dl>
