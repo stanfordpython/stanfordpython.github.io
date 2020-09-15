@@ -150,10 +150,65 @@ export class Page extends Component<PageProps, PageState> {
         // render a TOC there indexing all content after [[TOC]]; if not,
         // render just the content without the table of contents.
         var TOC_indicator: string = "[[TOC]]";
-        console.log(this.state.md);
+        var TOC_nobullets: string = "[[TOC_NO_BULLET]]";
         if (this.state.md.includes(TOC_indicator)) {
+            // Then we render the TOC in standard bulleted markdown
             var preTOC: string = this.state.md.slice(0, this.state.md.indexOf(TOC_indicator));
             var postTOC: string = this.state.md.slice(this.state.md.indexOf(TOC_indicator) + TOC_indicator.length);
+
+            // Remove the automatic bullet from the TOC; keep the indent
+            var TOC: string = toc(postTOC, { slugify: this.customSlug }).content;
+            return (
+                <div>
+                    <div className="content" id="content">
+                    <ReactMarkdown
+                            source={preTOC}
+                            renderers={{
+                                code: CodeBlock,
+                                heading: (props) => Header({
+                                    scrollTo: this.state.scrollTo,
+                                    ...props
+                                })
+                            }} />
+                        <ReactMarkdown
+                            source={TOC}
+                        />
+                        <ReactMarkdown
+                            source={postTOC}
+                            renderers={{
+                                code: CodeBlock,
+                                heading: (props) => Header({
+                                    scrollTo: this.state.scrollTo,
+                                    ...props
+                                })
+                            }} />
+                    </div>
+                </div>
+
+            );
+        }
+        else if (this.state.md.includes(TOC_nobullets)) {
+            // Then we render the TOC indented without bullets
+            var preTOC: string = this.state.md.slice(0, this.state.md.indexOf(TOC_nobullets));
+            var postTOC: string = this.state.md.slice(this.state.md.indexOf(TOC_nobullets) + TOC_nobullets.length);
+            
+            // Remove the automatic bullet from the TOC; keep the indent
+            var TOC: string = toc(postTOC, { slugify: this.customSlug }).content;
+            var TOC_arr: string[] = TOC.split("\n");
+            var i = 0;
+            for (i = 0; i < TOC_arr.length; ++i) {
+                if (TOC_arr[i].includes('-')) {
+                    TOC_arr[i] = TOC_arr[i].replace('-', '&nbsp;&nbsp;'.repeat(TOC_arr[i].indexOf('-')));
+                }
+                if (TOC_arr[i].includes('*')) {
+                    TOC_arr[i] = TOC_arr[i].replace('*', '&nbsp;&nbsp;'.repeat(TOC_arr[i].indexOf('*')));
+                }
+                if (TOC_arr[i].includes('+')) {
+                    TOC_arr[i] = TOC_arr[i].replace('+', '&nbsp;&nbsp;'.repeat(TOC_arr[i].indexOf('+')));
+                }
+            }
+            TOC = TOC_arr.join('  \n');
+            console.log(TOC);
 
             return (
                 <div>
@@ -168,7 +223,7 @@ export class Page extends Component<PageProps, PageState> {
                                 })
                             }} />
                         <ReactMarkdown
-                            source={toc(postTOC, { slugify: this.customSlug }).content}
+                            source={TOC}
                         />
                         <ReactMarkdown
                             source={postTOC}

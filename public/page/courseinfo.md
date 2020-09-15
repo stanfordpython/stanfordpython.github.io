@@ -1,7 +1,7 @@
 # CS 41 Course Information
 
 ## Contents
-[[TOC]]
+[[TOC_NO_BULLET]]
 
 This is an unofficial course information handout for CS 41 in Winter 2020. It is subject to change at any time before the course begins. Consider it a general overview of the logistics of the course.
 
