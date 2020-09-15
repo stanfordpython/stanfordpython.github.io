@@ -8,6 +8,12 @@ function obfuscate( name: string, domain:string, em_name:string ) {
     return { __html: name + ' (' + em_name + '@' + domain + ')'}; 
 }
 
+function email_both( fname1: string, fname2: string, domain:string, em_name1:string, em_name2:string ) { 
+    // Creates obfuscated hyperlink to email both Parth and Michael
+    // eslint-disable-next-line
+    return { __html: ' <a href=' + '"mailto:' + em_name1 + '@' + domain + ';' + em_name2 + '@' + domain + '">' + 'Email ' + fname1 + ' and ' + fname2 + '</a>'}; 
+}
+
 const CourseInfo: FunctionComponent<{}> = () => {
     let essentialLinks: JSX.Element[] = []; 
     for (let [key, value] of Object.entries(courseInfoLinks)) {
@@ -43,6 +49,7 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <dd className="col-md-9">
                     <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
                     <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
+                    <div dangerouslySetInnerHTML={email_both("Parth", "Michael", "stanford.edu", "psarin", "coopermj")}/>
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
