@@ -3,6 +3,36 @@ import moment from "moment";
 
 import Table from "react-bootstrap/Table";
 
+interface AssignmentCellProps {
+    title: string,
+    link: string | null,
+    highlight?: boolean
+}
+
+const AssignmentCell: FunctionComponent<AssignmentCellProps> = 
+    ({ title, link, highlight }: AssignmentCellProps) => {
+    
+    let cellStyle: CSSProperties = {};
+    if (highlight) {
+        cellStyle={
+            backgroundColor: "#e6e0f3",
+        }
+    }
+
+    if (link === null) {
+        return (
+            <td style={cellStyle} valign="top">
+                <p>{title}</p>
+            </td>
+      );
+    }
+    return (
+          <td style={cellStyle} valign="top">
+              <a href={link}>{title}</a>
+          </td>
+    );
+}
+
 interface ScheduleCellProps {
     title: string,
     description: string,
@@ -43,12 +73,14 @@ interface ScheduleRow {
     dates: {
         start: moment.Moment,
         end: moment.Moment
-    }
+    },
+    assignments: string,
+    assignmentLink: string
 }
 
 // @ts-ignore
 const ScheduleRow: FunctionComponent<ScheduleRow> = 
-    ({ num, title, visible, days, dates }: ScheduleRow) => {
+    ({ num, title, visible, days, dates, assignments, assignmentLink }: ScheduleRow) => {
     
     // If not visible, return
     if (!visible) {
@@ -77,6 +109,11 @@ const ScheduleRow: FunctionComponent<ScheduleRow> =
                     />
                 ))
             }
+            <AssignmentCell 
+                title={assignments}
+                link={assignmentLink}
+                highlight={highlight}
+            />
         </tr>
     );
 }
@@ -149,6 +186,7 @@ export class Schedule extends Component<{}, ScheduleState> {
                 <td>Week</td>
                 <td>Tuesday</td>
                 <td>Thursday</td>
+                <td>Assignment</td>
             </tr>
                 {
                     // @ts-ignore
@@ -161,6 +199,8 @@ export class Schedule extends Component<{}, ScheduleState> {
                             visible={scheduleData.visible}
                             days={scheduleData.days}
                             dates={scheduleData.dates}
+                            assignments={scheduleData.assignments}
+                            assignmentLink={scheduleData.assignmentLink}
                         />    
                     ))
                 }
