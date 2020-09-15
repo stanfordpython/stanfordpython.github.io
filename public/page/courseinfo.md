@@ -10,8 +10,8 @@ This is an unofficial course information handout for CS 41 in Winter 2020. It is
 Welcome to Python! This 2-unit course will teach you the fundamentals and contemporary usage of Python, with a focus on developing best practices in writing Python and exploring the extensible and unique parts of the language.
 
 ## Instructors
-🦄 Parth Sarin [psarin@stanford.edu](mailto:psarin@stanford.edu)  
-🐘 Michael Cooper [coopermj@stanford.edu](mailto:coopermj@stanford.edu)
+🦄 Parth Sarin (psarin@stanford.edu)  
+🐘 Michael Cooper (coopermj@stanford.edu)
 
 ## Website
 This is the course website: https://stanfordpython.com/

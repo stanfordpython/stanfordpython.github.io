@@ -189,10 +189,13 @@ export class Page extends Component<PageProps, PageState> {
         }
         else if (this.state.md.includes(TOC_nobullets)) {
             // Then we render the TOC indented without bullets
+            // eslint-disable-next-line
             var preTOC: string = this.state.md.slice(0, this.state.md.indexOf(TOC_nobullets));
+            // eslint-disable-next-line
             var postTOC: string = this.state.md.slice(this.state.md.indexOf(TOC_nobullets) + TOC_nobullets.length);
             
             // Remove the automatic bullet from the TOC; keep the indent
+            // eslint-disable-next-line
             var TOC: string = toc(postTOC, { slugify: this.customSlug }).content;
             var TOC_arr: string[] = TOC.split("\n");
             var i = 0;

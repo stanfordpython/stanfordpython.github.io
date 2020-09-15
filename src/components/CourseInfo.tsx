@@ -4,6 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 function obfuscate( name: string, domain:string, em_name:string ) { 
     // Citation: Dan Jurafsky for this function.
+    // eslint-disable-next-line
     return { __html: name + ' (<a href="mai' + 'lto:' + em_name + '@' + domain + '">' + em_name + '@' + domain + '</' + 'a>)'}; 
 }
 
