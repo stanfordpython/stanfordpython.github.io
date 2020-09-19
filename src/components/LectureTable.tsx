@@ -91,7 +91,7 @@ export class LectureData extends Component<{}, LectureDataState> {
         super(props);
 
         this.state = {
-            highlight: 0
+            highlight: -1
         }
     }
 
@@ -114,7 +114,13 @@ export class LectureData extends Component<{}, LectureDataState> {
             }
         }
 
-        this.setState({ lectureData, highlight: i });
+        // Only highlight a row if date is less than 10 days away
+        if (moment().diff(lectureData[i].date, "days") >= -10) {
+            this.setState({ lectureData, highlight: i });
+        }
+        else {
+            this.setState({ lectureData });
+        }
     }
 
     render () {
