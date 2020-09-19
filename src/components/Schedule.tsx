@@ -179,7 +179,7 @@ export class Schedule extends Component<{}, ScheduleState> {
 
         return (
             <div className="scheduledata-container">
-            <h2>Course Schedule</h2>
+            <h4>Course Schedule</h4>
             <Table bordered hover className="scheduleTable">
             <tbody>
             <tr style={{fontWeight: "bold"}}>
