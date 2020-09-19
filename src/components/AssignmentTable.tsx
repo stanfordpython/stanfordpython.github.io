@@ -31,9 +31,17 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
     // Is there code?
     let starterCodeLink: JSX.Element | null;
     if (!starterCode || starterCode === "#") {
-        starterCodeLink = null;
+        starterCodeLink = <p>N/A</p>;
     } else {
         starterCodeLink = (<a href={starterCode}>Starter Code</a>);
+    }
+
+    // Only add a hyperlink if there's an assignment spec linked
+    let specLink: JSX.Element | null;
+    if (!spec || spec === "#") {
+        specLink = <div>Assignment {assignmentNumber}: {title}</div>;
+    } else {
+        specLink = <a href={spec}>Assignment {assignmentNumber}: {title}</a>;
     }
 
     // How many days from now is it due?
@@ -42,7 +50,7 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
     
     return (
           <tr style={rowStyle}>
-            <td><a href={spec}>Assignment {assignmentNumber}: {title}</a></td>
+            <td>{specLink}</td>
             <td>{starterCodeLink}</td>
             <td>{formattedDate} ({dueFromNow})</td>
           </tr>
