@@ -30,16 +30,24 @@ const Lab: FunctionComponent<LabRowProps> =
     // Is it past due date? Then post solutions.
     let solutionsElem: JSX.Element | null;
     if (moment() < date || solutions === "#" || solutions === null) {
-        solutionsElem = null;
+        solutionsElem = <p>N/A</p>;
     } else {
         solutionsElem = (<a href={solutions}>Solutions</a>);
+    }
+
+    // Is Starter Code linked?
+    let starterCodeLink: JSX.Element | null;
+    if (!code || code === "#") {
+        starterCodeLink = <p>N/A</p>;
+    } else {
+        starterCodeLink = (<a href={code}>Starter Code</a>);
     }
 
     return (
           <tr style={rowStyle}>
             <td>{week}</td>
             <td>{topic}</td>
-            <td><a href={code}>Starter Code</a></td>
+            <td>{starterCodeLink}</td>
             <td>{solutionsElem}</td>
           </tr>
     );
@@ -55,7 +63,7 @@ export class LabData extends Component<{}, LabDataState> {
         super(props);
 
         this.state = {
-            highlight: 0
+            highlight: -1
         }
     }
 
@@ -78,7 +86,13 @@ export class LabData extends Component<{}, LabDataState> {
             }
         }
 
-        this.setState({ labData, highlight: i });
+        // Only highlight first row if date is less than a week away
+        if (moment().diff(labData[i], "days") <= 7) {
+            this.setState({ labData, highlight: i });
+        }
+        else {
+            this.setState({ labData });
+        }
     }
 
     render () {
