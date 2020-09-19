@@ -31,11 +31,7 @@ const CourseInfo: FunctionComponent<{}> = () => {
             practices in writing Python and exploring the extensible and 
             unique parts of Python that make it such a powerful language.
         </p>
-        <h4>Essential Links</h4>
-        <ListGroup horizontal className="lead">
-            {essentialLinks}
-        </ListGroup>
-        <h4>Basic Info</h4>
+        <h4>At A Glance</h4>
             <dl className="lead row">
                 <dt className="text-right col-md-3">Date / Time</dt>
                 <dd className="col-md-9">
@@ -66,6 +62,10 @@ const CourseInfo: FunctionComponent<{}> = () => {
                     </a> (contribute!)
                 </dd>
             </dl>
+        <h4>Essential Links</h4>
+        <ListGroup horizontal className="lead">
+            {essentialLinks}
+        </ListGroup>
     </div>
     );
 }
