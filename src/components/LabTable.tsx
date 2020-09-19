@@ -30,7 +30,7 @@ const Lab: FunctionComponent<LabRowProps> =
     // Is it past due date? Then post solutions.
     let solutionsElem: JSX.Element | null;
     if (moment() < date || solutions === "#" || solutions === null) {
-        solutionsElem = <p>N/A</p>;
+        solutionsElem = <div>N/A</div>;
     } else {
         solutionsElem = (<a href={solutions}>Solutions</a>);
     }
@@ -38,7 +38,7 @@ const Lab: FunctionComponent<LabRowProps> =
     // Is Starter Code linked?
     let starterCodeLink: JSX.Element | null;
     if (!code || code === "#") {
-        starterCodeLink = <p>N/A</p>;
+        starterCodeLink = <div>N/A</div>;
     } else {
         starterCodeLink = (<a href={code}>Starter Code</a>);
     }

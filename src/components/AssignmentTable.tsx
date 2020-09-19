@@ -31,7 +31,7 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
     // Is there code?
     let starterCodeLink: JSX.Element | null;
     if (!starterCode || starterCode === "#") {
-        starterCodeLink = <p>N/A</p>;
+        starterCodeLink = <div>N/A</div>;
     } else {
         starterCodeLink = (<a href={starterCode}>Starter Code</a>);
     }

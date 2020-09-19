@@ -36,7 +36,7 @@ const Lecture: FunctionComponent<LectureRowProps> =
     // Are condensed slides linked?
     let condensedLink: JSX.Element | null;
     if (!condensed || condensed === "#") {
-        condensedLink = <p>N/A</p>;
+        condensedLink = <div>N/A</div>;
     } else {
         condensedLink = (<a href={condensed}>Condensed Slides</a>);
     }
@@ -52,7 +52,7 @@ const Lecture: FunctionComponent<LectureRowProps> =
     // Is video linked?
     let videoLink: JSX.Element | null;
     if (!video || video === "#") {
-        videoLink = <p>N/A</p>;
+        videoLink = <div>N/A</div>;
     } else {
         videoLink = (<a href={video}>Video</a>);
     }
@@ -60,7 +60,7 @@ const Lecture: FunctionComponent<LectureRowProps> =
     // Is there code?
     let codeLink: JSX.Element | null;
     if (!code || code === "#") {
-        codeLink = <p>N/A</p>;
+        codeLink = <div>N/A</div>;
     } else {
         codeLink = (<a href={code}>Code</a>);
     }
