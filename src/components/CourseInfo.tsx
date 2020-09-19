@@ -8,10 +8,14 @@ function obfuscate( name: string, domain:string, em_name:string ) {
     return { __html: name + ' (' + em_name + '@' + domain + ')'}; 
 }
 
-function email_both( fname1: string, fname2: string, domain:string, em_name1:string, em_name2:string ) { 
+function email_both(msg: string, domain:string, em_name1:string, 
+                    em_name2:string) { 
     // Creates obfuscated hyperlink to email both Parth and Michael
     // eslint-disable-next-line
-    return { __html: ' <a href=' + '"mailto:' + em_name1 + '@' + domain + ',' + em_name2 + '@' + domain + '">' + 'Email ' + fname1 + ' and ' + fname2 + '</a>'}; 
+    return { 
+        __html: ' <a href=' + '"mai' + 'lto:' + em_name1 + '@' + domain + ',' 
+                + em_name2 + '@' + domain + '">' + msg + '</a>'
+    }; 
 }
 
 const CourseInfo: FunctionComponent<{}> = () => {
@@ -45,11 +49,19 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <dd className="col-md-9">
                     <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
                     <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
-                    <div dangerouslySetInnerHTML={email_both("Parth", "Michael", "stanford.edu", "psarin", "coopermj")}/>
+                    <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "coopermj")}/>
                 </dd>
 
                 <dt className="text-right col-md-3">Course Staff</dt>
-                <dd className="col-md-9">We're currently looking for TAs! Email us if you're interested!</dd>
+                <dd className="col-md-9">
+                    We're currently looking for TAs! 
+                    <span dangerouslySetInnerHTML={email_both(
+                        "Email us", 
+                        "stanford.edu", 
+                        "psarin", "coopermj"
+                    )} />
+                    &nbsp;if you're interested!
+                </dd>
 
                 <dt className="text-right col-md-3">Prereqs</dt>
                 <dd className="col-md-9">CS106B/X or equivalent</dd>
@@ -58,7 +70,7 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <dd className="col-md-9">
                     <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">
                         <span role="img" aria-label="unicorn face">🦄</span> 
-                        CS 41
+                        &nbsp;CS 41
                     </a> (contribute!)
                 </dd>
             </dl>
