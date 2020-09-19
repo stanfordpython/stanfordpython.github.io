@@ -82,7 +82,7 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
         }
 
         // Only highlight first row if date is less than a week away
-        if (moment().diff(assignmentData[i].due, "days") >= -7) {
+        if (moment().diff(assignmentData[i].due, "days") >= -20) {
             this.setState({ assignmentData, highlight: i });
         }
         else {
