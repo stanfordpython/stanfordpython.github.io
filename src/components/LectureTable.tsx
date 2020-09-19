@@ -36,23 +36,23 @@ const Lecture: FunctionComponent<LectureRowProps> =
     // Are condensed slides linked?
     let condensedLink: JSX.Element | null;
     if (!condensed || condensed === "#") {
-        condensedLink = null;
+        condensedLink = <p>N/A</p>;
     } else {
         condensedLink = (<a href={condensed}>Condensed Slides</a>);
     }
 
-    // Are condensed slides linked?
+    // Are full slides linked?
     let fullLink: JSX.Element | null;
     if (!full || full === "#") {
         fullLink = null;
     } else {
-        fullLink = (<a href={full}>Full Slides</a>);
+        fullLink = <div><a href={full}>Full Slides</a></div>;
     }
 
     // Is video linked?
     let videoLink: JSX.Element | null;
     if (!video || video === "#") {
-        videoLink = null;
+        videoLink = <p>N/A</p>;
     } else {
         videoLink = (<a href={video}>Video</a>);
     }
@@ -60,7 +60,7 @@ const Lecture: FunctionComponent<LectureRowProps> =
     // Is there code?
     let codeLink: JSX.Element | null;
     if (!code || code === "#") {
-        codeLink = null;
+        codeLink = <p>N/A</p>;
     } else {
         codeLink = (<a href={code}>Code</a>);
     }
@@ -72,7 +72,7 @@ const Lecture: FunctionComponent<LectureRowProps> =
             <td>{title}</td>
             <td>{formattedDate}</td>
             <td>{condensedLink}
-                <br></br>
+                
                 {fullLink}
             </td>
             <td>{videoLink}</td>
