@@ -1,42 +1,58 @@
 [
     {
         "week": 2,
-        "topic": "Data Structures",
-        "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-2/data-structures-part-1.ipynb",
-        "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-2.py",
-        "date": "2021-01-21 11:59:59 PM",
+        "topic": "Data Structures Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-08 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 3,
+        "topic": "Object-Oriented Programming Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-15 11:59:59 PM",
         "visible": true
     },
     {
         "week": 4,
-        "topic": "Functions and Functional Programming",
-        "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-4/functions-and-fp-part-1.ipynb",
-        "solutions": "https://github.com/stanfordpython/python-labs/blob/master/solutions/lab-4.py",
-        "date": "2021-01-21 11:59:59 PM",
+        "topic": "Functions Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-22 11:59:59 PM",
         "visible": true
     },
     {
         "week": 5,
-        "topic": "Python and the Web",
-        "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-5/wallscraper-notebook.ipynb",
-        "solutions": "#",
-        "date": "2021-01-21 11:59:59 PM",
+        "topic": "Functional Programming Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-29 11:59:59 PM",
         "visible": true
     },
     {
         "week": 6,
-        "topic": "NumPy and Object-Oriented Programming",
-        "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-6/lab6-code-numpy.ipynb",
-        "solutions": "https://github.com/stanfordpython/python-labs/tree/master/solutions/lab-6",
-        "date": "2021-01-21 11:59:59 PM",
+        "topic": "Web Requests Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-05-06 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 7,
+        "topic": "Standard Libraries Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-05-13 11:59:59 PM",
         "visible": true
     },
     {
         "week": 8,
-        "topic": "Python Libraries and Machine Learning",
-        "code": "https://github.com/stanfordpython/python-labs/blob/master/notebooks/lab-8/sl-tpl-ml-part-1.ipynb",
-        "solutions": "#",
-        "date": "2021-01-21 11:59:59 PM",
+        "topic": "Third-Party Packages Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-05-20 11:59:59 PM",
         "visible": true
     }
 ]
