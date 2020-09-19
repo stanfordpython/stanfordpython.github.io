@@ -11,7 +11,7 @@ function obfuscate( name: string, domain:string, em_name:string ) {
 function email_both( fname1: string, fname2: string, domain:string, em_name1:string, em_name2:string ) { 
     // Creates obfuscated hyperlink to email both Parth and Michael
     // eslint-disable-next-line
-    return { __html: ' <a href=' + '"mailto:' + em_name1 + '@' + domain + ';' + em_name2 + '@' + domain + '">' + 'Email ' + fname1 + ' and ' + fname2 + '</a>'}; 
+    return { __html: ' <a href=' + '"mailto:' + em_name1 + '@' + domain + ',' + em_name2 + '@' + domain + '">' + 'Email ' + fname1 + ' and ' + fname2 + '</a>'}; 
 }
 
 const CourseInfo: FunctionComponent<{}> = () => {
