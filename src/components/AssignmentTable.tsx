@@ -56,10 +56,10 @@ interface AssignmentDataState {
 
 export class AssignmentData extends Component<{}, AssignmentDataState> {
     constructor(props: {}) {
-        super({});
+        super(props);
 
         this.state = {
-            highlight: 0
+            highlight: -1
         }
     }
 
@@ -81,7 +81,14 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             }
         }
 
-        this.setState({ assignmentData, highlight: i });
+        // Only highlight first row if date is less than a week away
+        if (moment().diff(assignmentData[i].due, "days") >= -7) {
+            this.setState({ assignmentData, highlight: i });
+        }
+        else {
+            this.setState({ assignmentData });
+        }
+
     }
 
     render () {

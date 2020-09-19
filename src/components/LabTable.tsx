@@ -87,7 +87,7 @@ export class LabData extends Component<{}, LabDataState> {
         }
 
         // Only highlight first row if date is less than a week away
-        if (moment().diff(labData[i], "days") <= 7) {
+        if (moment().diff(labData[i].date, "days") >= -7) {
             this.setState({ labData, highlight: i });
         }
         else {
