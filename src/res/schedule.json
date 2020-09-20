@@ -183,7 +183,7 @@
                 "title": "Third-Party Packages",
                 "date": "2020-02-19",
                 "active": true,
-                "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and the develpment of third-party Python packages, after which we provide a survey of some of of the most popular and useful third-party Python packages.."
+                "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and the develpment of third-party Python packages, after which we provide a survey of some of of the most popular and useful third-party Python packages."
             },
             {
                 "title": "Third-Party Packages Lab",
