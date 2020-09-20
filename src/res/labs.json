@@ -38,22 +38,6 @@
         "solutions": "",
         "date": "2021-05-06 11:59:59 PM",
         "visible": true
-    },
-    {
-        "week": 7,
-        "topic": "Standard Libraries Lab",
-        "code": "",
-        "solutions": "",
-        "date": "2021-05-13 11:59:59 PM",
-        "visible": true
-    },
-    {
-        "week": 8,
-        "topic": "Third-Party Packages Lab",
-        "code": "",
-        "solutions": "",
-        "date": "2021-05-20 11:59:59 PM",
-        "visible": true
     }
 ]
 
