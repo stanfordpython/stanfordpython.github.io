@@ -89,12 +89,12 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             }
         }
 
-        // Only highlight first row if date is less than a week away
-        if (moment().diff(assignmentData[i].due, "days") >= -20) {
-            this.setState({ assignmentData, highlight: i });
+        // Only highlight first row if date is less than two weeks away
+        if (i === 0 && moment().diff(assignmentData[i].due, "days") <= -14) {
+            this.setState({ assignmentData });
         }
         else {
-            this.setState({ assignmentData });
+            this.setState({ assignmentData, highlight: i });
         }
 
     }
