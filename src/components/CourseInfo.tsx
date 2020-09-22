@@ -5,6 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 function obfuscate( name: string, domain:string, em_name:string ) { 
     // Citation: Dan Jurafsky for this function.
     // eslint-disable-next-line
+    // @ts-ignore
     return { __html: name + ' (' + em_name + '@' + domain + ')'}; 
 }
 
@@ -12,6 +13,7 @@ function email_both(msg: string, domain:string, em_name1:string,
                     em_name2:string) { 
     // Creates obfuscated hyperlink to email both Parth and Michael
     // eslint-disable-next-line
+    // @ts-ignore
     return { 
         __html: ' <a href=' + '"mai' + 'lto:' + em_name1 + '@' + domain + ',' 
                 + em_name2 + '@' + domain + '">' + msg + '</a>'
