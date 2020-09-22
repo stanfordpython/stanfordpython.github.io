@@ -13,12 +13,12 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Packages
       uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+      with:
+        cmd: install
     - name: Build page
       uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
+      with:
+        cmd: build
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
