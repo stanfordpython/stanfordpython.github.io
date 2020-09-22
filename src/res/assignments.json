@@ -1,0 +1,34 @@
+[
+    {
+        "num": 0,
+        "title": "Welcome to Python!",
+        "spec": "",
+        "starterCode": "#",
+        "due": "2021-01-21 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "num": 1,
+        "title": "Cryptography",
+        "spec": "",
+        "starterCode": "#",
+        "due": "2021-02-04 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "num": 2,
+        "title": "TBA 🙃",
+        "spec": "",
+        "starterCode": "#",
+        "due": "2021-02-21 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "num": 3,
+        "title": "Final Project",
+        "spec": "",
+        "starterCode": "#",
+        "due": "2021-03-09 11:59:59 PM",
+        "visible": true
+    }
+]

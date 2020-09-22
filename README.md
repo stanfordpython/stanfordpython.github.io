@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## CS41 Course Website
 
 Course website for CS41, Stanford's introductory Python course.
@@ -60,3 +61,9 @@ The resources folder is possibly the most important folder.
 #### `CNAME`
 
 The CNAME file is used to redirect stanfordpython.github.io to stanfordpython.com, a domain owned by the course staff.
+=======
+# CS 41 Website
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c747d59b6c684003957f4765acaf2f4e)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stanfordpython/new-website&amp;utm_campaign=Badge_Grade)
+
+This is our new website, welcome!
+>>>>>>> 3558f12e8623d6192d834e2da810e3d67ad1eec6

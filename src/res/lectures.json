@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Welcome to Python!",
+        "date": "2021-03-30",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Python Basics",
+        "date": "2021-04-01",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Data Structures",
+        "date": "2021-04-06",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Object-Oriented Python",
+        "date": "2021-04-13",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Functions",
+        "date": "2021-04-20",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Python and the Web",
+        "date": "2021-04-27",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Functional Programming",
+        "date": "2021-05-04",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Standard Libraries",
+        "date": "2021-05-11",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "Third-Party Packages",
+        "date": "2021-05-18",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    },
+    {
+        "title": "TBD",
+        "date": "2021-05-25",
+        "condensed": "",
+        "full": "",
+        "video": "",
+        "visible": true,
+        "code": "#"
+    }
+]

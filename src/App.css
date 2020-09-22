@@ -1,0 +1,32 @@
+/* SITE WIDE */
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+  background-color: white;
+  padding-bottom: 150px;
+}
+
+h2,
+h3,
+h4,
+blockquote {
+  margin-top: 30px !important;
+}
+
+/* HOME PAGE */
+#logo {
+  width: 180px;
+  max-width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+  background-image: linear-gradient(to right, #a18cd1 0%, #c56dac 100%);
+}
+
+.navbar-brand,n
+.navbar-nav .nav-link {
+  color: #bbb;
+  &:hover {
+    color: white;
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "week": 2,
+        "topic": "Data Structures Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-08 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 3,
+        "topic": "Object-Oriented Programming Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-15 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 4,
+        "topic": "Functions Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-22 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 5,
+        "topic": "Functional Programming Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-04-29 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 6,
+        "topic": "Web Requests Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2021-05-06 11:59:59 PM",
+        "visible": true
+    }
+]
+
+
