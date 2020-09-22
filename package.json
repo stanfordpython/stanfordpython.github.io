@@ -17,6 +17,7 @@
     "@types/uslug": "^1.0.0",
     "bootstrap": "^4.5.0",
     "esnext": "^3.3.1",
+    "gh-pages": "^3.1.0",
     "markdown-toc-unlazy": "^1.0.1",
     "moment": "^2.27.0",
     "react": "^16.13.1",
@@ -36,6 +37,8 @@
     "uslug": "^1.0.4"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
