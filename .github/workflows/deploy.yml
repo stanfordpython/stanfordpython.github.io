@@ -19,10 +19,10 @@ jobs:
       uses: borales/actions-yarn@v2.0.0
       with:
         cmd: build
+      env:
+        CI: ""
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
-env:
-    CI: ""
