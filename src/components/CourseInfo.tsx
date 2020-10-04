@@ -37,22 +37,22 @@ const CourseInfo: FunctionComponent<{}> = () => {
         </p>
         <h4>At A Glance</h4>
             <dl className="lead row">
-                <dt className="text-right col-md-3">Date / Time</dt>
+                <dt className="text-md-right col-md-3">Date / Time</dt>
                 <dd className="col-md-9">
                     Tuesday &amp; Thursday @ 2:30pm PT to 3:50pm PT
                 </dd>
 
-                <dt className="text-right col-md-3">Location</dt>
+                <dt className="text-md-right col-md-3">Location</dt>
                 <dd className="col-md-9">Remote @ TBD</dd>
 
-                <dt className="text-right col-md-3">Instructors</dt>
+                <dt className="text-md-right col-md-3">Instructors</dt>
                 <dd className="col-md-9">
                     <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
                     <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
                     <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "coopermj")}/>
                 </dd>
 
-                <dt className="text-right col-md-3">Course Staff</dt>
+                <dt className="text-md-right col-md-3">Course Staff</dt>
                 <dd className="col-md-9">
                     We're currently looking for TAs! 
                     <span dangerouslySetInnerHTML={email_both(
@@ -63,10 +63,10 @@ const CourseInfo: FunctionComponent<{}> = () => {
                     &nbsp;if you're interested!
                 </dd>
 
-                <dt className="text-right col-md-3">Prereqs</dt>
+                <dt className="text-md-right col-md-3">Prereqs</dt>
                 <dd className="col-md-9">CS106B/X or equivalent</dd>
 
-                <dt className="text-right col-md-3">Spotify Playlist</dt>
+                <dt className="text-md-right col-md-3">Spotify Playlist</dt>
                 <dd className="col-md-9">
                     <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">
                         <span role="img" aria-label="unicorn face">🦄</span> 
