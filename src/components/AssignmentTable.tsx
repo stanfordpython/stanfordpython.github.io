@@ -48,11 +48,16 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
     const dueFromNow: string = due.fromNow();
     const formattedDate: string = due.format("MMMM Do YYYY @ h:mma");
     
+    const localDate: string = due.local().format("MMMM Do YYYY @ h:mma");
+    
     return (
           <tr style={rowStyle}>
             <td>{specLink}</td>
             <td>{starterCodeLink}</td>
-            <td>{formattedDate} ({dueFromNow})</td>
+            <td>{formattedDate} {<b>PST</b>} ({dueFromNow})<br></br>
+                {localDate} <b>Local Time</b>
+            </td>
+
           </tr>
     );
 }
