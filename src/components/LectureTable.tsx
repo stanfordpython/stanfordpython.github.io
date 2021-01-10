@@ -65,7 +65,8 @@ const Lecture: FunctionComponent<LectureRowProps> =
         codeLink = (<a href={code}>Code</a>);
     }
 
-    const formattedDate: string = date.format("MMMM Do YYYY");
+    const localdate = moment(date).local()
+    const formattedDate: string = localdate.format("MMMM Do YYYY");
 
     return (
           <tr style={rowStyle}>
