@@ -54,13 +54,11 @@ const CourseInfo: FunctionComponent<{}> = () => {
 
                 <dt className="text-md-right col-md-3">Course Staff</dt>
                 <dd className="col-md-9">
-                    We're currently looking for TAs! 
-                    <span dangerouslySetInnerHTML={email_both(
-                        "Email us", 
-                        "stanford.edu", 
-                        "psarin", "coopermj"
-                    )} />
-                    &nbsp;if you're interested!
+                    <div>Antonio Ferris</div>
+                    <div>Elizabeth Fitzgerald</div>
+                    <div>Jose Francisco</div>
+                    <div>Max Pike</div>
+                    <div>Theo Culhane</div>
                 </dd>
 
                 <dt className="text-md-right col-md-3">Prereqs</dt>
