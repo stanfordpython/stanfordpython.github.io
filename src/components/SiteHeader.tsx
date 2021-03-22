@@ -14,7 +14,7 @@ const SiteHeader: FunctionComponent<{}> = () => {
                 <h1>CS 41: The Python Programming Language</h1>
                 <div className="lead" id="subtitle-header">
                 Tuesday & Thursday @ 2:30pm - 3:50pm<br />
-                Join URL: <a href="https://www.youtube.com/watch?v=ulsLI029rH0">See you in Spring!</a>
+                Join URL: <a href="https://canvas.stanford.edu/courses/136265/external_tools/5384">Zoom Canvas Page</a>
                 <br />
                 Contribute to our&nbsp;
                 <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=tOdALf44SAOcCvW6P7M5Qw">

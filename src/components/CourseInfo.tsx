@@ -42,9 +42,6 @@ const CourseInfo: FunctionComponent<{}> = () => {
                     Tuesday &amp; Thursday @ 2:30pm PT to 3:50pm PT
                 </dd>
 
-                <dt className="text-md-right col-md-3">Location</dt>
-                <dd className="col-md-9">Remote @ TBD</dd>
-
                 <dt className="text-md-right col-md-3">Instructors</dt>
                 <dd className="col-md-9">
                     <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
