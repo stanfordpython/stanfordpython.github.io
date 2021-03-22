@@ -36,11 +36,12 @@ const AssignmentCell: FunctionComponent<AssignmentCellProps> =
 interface ScheduleCellProps {
     title: string,
     description: string,
-    highlight?: boolean
+    highlight?: boolean,
+    showDescription?: boolean
 }
 
 const ScheduleCell: FunctionComponent<ScheduleCellProps> = 
-    ({ title, description, highlight }: ScheduleCellProps) => {
+    ({ title, description, highlight, showDescription }: ScheduleCellProps) => {
     
     let cellStyle: CSSProperties = {};
     if (highlight) {
@@ -53,7 +54,7 @@ const ScheduleCell: FunctionComponent<ScheduleCellProps> =
           <td style={cellStyle} valign="top">
               <b>{title}</b>
               <br></br>
-              {description}
+              {showDescription ? description : null}
           </td>
   );
 }
@@ -106,6 +107,7 @@ const ScheduleRow: FunctionComponent<ScheduleRow> =
                         title={day.title}
                         description={day.description}
                         highlight={highlight}
+                        showDescription={moment() >= dates.start}
                     />
                 ))
             }
