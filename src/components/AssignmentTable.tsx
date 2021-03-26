@@ -7,7 +7,7 @@ interface AssignmentRowProps {
     assignmentNumber: number,
     spec: string,
     starterCode: string,
-    due: moment.Moment,
+    due: moment.Moment | null,
     visible: boolean,
     highlight?: boolean
 }
@@ -44,21 +44,20 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
         specLink = <a href={spec}>Assignment {assignmentNumber}: {title}</a>;
     }
 
-    // How many days from now is it due?
-    const dueFromNow: string = due.fromNow();
-    const formattedDate: string = due.format("MMMM Do YYYY @ h:mma");
-    
-    const localDate: string = due.local().format("MMMM Do YYYY @ h:mma z");
-    
     return (
-          <tr style={rowStyle}>
-            <td>{specLink}</td>
-            <td>{starterCodeLink}</td>
-            <td>{formattedDate} {<b>PST</b>} ({dueFromNow})<br></br>
-                {localDate}
+        <tr style={rowStyle}>
+        <td>{specLink}</td>
+        <td>{starterCodeLink}</td>
+        {
+            due
+            ? <td>
+                <b>Local Time:</b> {due.local().format("MMMM Do YYYY @ h:mma z")}<br />
+                <b>PDT:</b> {due.format("MMMM Do YYYY @ h:mma")}<br />
+                ({due.fromNow()})
             </td>
-
-          </tr>
+            : <td>Coming soon™</td>
+        }
+        </tr>
     );
 }
 
@@ -81,11 +80,12 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
         assignmentData = assignmentData.map(
             <AssignmentRowProps,> ({ due, ...v }: {due: string}) => {
             return {
-                due: moment(due, "YYYY-MM-DD HH:mm:ss A"),
+                due: due === "#" ? null : moment(due, "YYYY-MM-DD HH:mm:ss A"),
                 ...v
             }
         })
 
+        // Find the next assignment that's due
         let i;
         for (i = 0; i < assignmentData.length; i++) {
             const due = assignmentData[i].due;
@@ -94,12 +94,15 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             }
         }
 
+        // Is it too far away?
+        const nearEnough = moment().diff(assignmentData[i].due, "days") >= -14;
+
         // Only highlight first row if date is less than two weeks away
-        if (i === 0 && moment().diff(assignmentData[i].due, "days") <= -14) {
-            this.setState({ assignmentData });
+        if (nearEnough) {
+            this.setState({ assignmentData, highlight: i });
         }
         else {
-            this.setState({ assignmentData, highlight: i });
+            this.setState({ assignmentData });
         }
 
     }

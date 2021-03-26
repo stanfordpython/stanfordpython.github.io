@@ -4,7 +4,7 @@
         "title": "Welcome to Python!",
         "spec": "",
         "starterCode": "#",
-        "due": "2021-04-08 11:59:59 PM",
+        "due": "#",
         "visible": true
     },
     {
@@ -12,7 +12,7 @@
         "title": "Cryptography",
         "spec": "",
         "starterCode": "#",
-        "due": "2021-04-22 11:59:59 PM",
+        "due": "#",
         "visible": true
     },
     {
@@ -20,7 +20,7 @@
         "title": "TBA 🙃",
         "spec": "",
         "starterCode": "#",
-        "due": "2021-05-06 11:59:59 PM",
+        "due": "#",
         "visible": true
     },
     {
