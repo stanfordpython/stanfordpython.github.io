@@ -18,6 +18,15 @@ blockquote {
   max-width: 100%;
 }
 
+ul.essential-links {
+  font-size: 14pt;
+}
+
+dl.at-a-glance dt,
+dl.at-a-glance dd {
+  margin-top: 15px;
+}
+
 /* NAVBAR */
 .navbar {
   background-image: linear-gradient(to right, #a18cd1 0%, #c56dac 100%);

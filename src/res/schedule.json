@@ -148,7 +148,7 @@
                 "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we teach students to explore Python's standard libraries. We first cover the basics of reading documentation, then we delve into the the rich depth and diversity of libraries that Python has to offer. We explore pdb, Python's debugging library, and move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
             },
             {
-                "title": "Raspberry Pi Car Competition",
+                "title": "TBD",
                 "date": "2021-05-13",
                 "description": "In lab groups, students will program a Raspberry Pi to navigate a maze and, next week, will compete against each other to see who can complete the maze fastest."
             }
@@ -171,7 +171,7 @@
                 "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and the develpment of third-party Python packages, after which we provide a survey of some of of the most popular and useful third-party Python packages."
             },
             {
-                "title": "Raspberry Pi Car Competition",
+                "title": "TBD",
                 "date": "2021-05-20",
                 "description": "This is the Raspberry Pi Car Competition! Today, students will compete against other teams to finish the maze fastest. The winning team gets a special prize, on us. 🙃"
             }

@@ -22,7 +22,7 @@ const CourseInfo: FunctionComponent<{}> = () => {
     let essentialLinks: JSX.Element[] = []; 
     for (let [key, value] of Object.entries(courseInfoLinks)) {
         essentialLinks.push(
-            <ListGroup.Item action key={key} href={value}>{key}</ListGroup.Item>
+            <><a href={value}>{key}</a><br /></>
         );
     }
 
@@ -35,44 +35,43 @@ const CourseInfo: FunctionComponent<{}> = () => {
             practices in writing Python and exploring the extensible and 
             unique parts of Python that make it such a powerful language.
         </p>
-        <h4>At A Glance</h4>
-            <dl className="lead row">
-                <dt className="text-md-right col-md-3">Date / Time</dt>
-                <dd className="col-md-9">
-                    Tuesday &amp; Thursday @ 2:30pm PT to 3:50pm PT
-                </dd>
+        <dl className="lead row at-a-glance">
+            <dt className="text-md-right col-md-2">Date / Time</dt>
+            <dd className="col-md-10">
+                Tuesday &amp; Thursday @ 2:30pm PT to 3:50pm PT
+            </dd>
 
-                <dt className="text-md-right col-md-3">Instructors</dt>
-                <dd className="col-md-9">
-                    <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
-                    <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
-                    <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "coopermj")}/>
-                </dd>
+            <dt className="text-md-right col-md-2">Instructors</dt>
+            <dd className="col-md-10">
+                <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
+                <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
+                <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "coopermj")}/>
+            </dd>
 
-                <dt className="text-md-right col-md-3">Course Staff</dt>
-                <dd className="col-md-9">
-                    <div>Antonio Ferris</div>
-                    <div>Elizabeth Fitzgerald</div>
-                    <div>Jose Francisco</div>
-                    <div>Max Pike</div>
-                    <div>Theo Culhane</div>
-                </dd>
+            <dt className="text-md-right col-md-2">Course Staff</dt>
+            <dd className="col-md-10">
+                <div>Antonio Ferris</div>
+                <div>Elizabeth Fitzgerald</div>
+                <div>Jose Francisco</div>
+                <div>Max Pike</div>
+                <div>Theo Culhane</div>
+            </dd>
 
-                <dt className="text-md-right col-md-3">Prereqs</dt>
-                <dd className="col-md-9">CS106B/X or equivalent</dd>
+            <dt className="text-md-right col-md-2">Prereqs</dt>
+            <dd className="col-md-10">CS106B/X or equivalent</dd>
 
-                <dt className="text-md-right col-md-3">Spotify Playlist</dt>
-                <dd className="col-md-9">
-                    <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">
-                        <span role="img" aria-label="unicorn face">🦄</span> 
-                        &nbsp;CS 41
-                    </a> (contribute!)
-                </dd>
-            </dl>
-        <h4>Essential Links</h4>
-        <ListGroup horizontal className="lead">
-            {essentialLinks}
-        </ListGroup>
+            <dt className="text-md-right col-md-2">Spotify Playlist</dt>
+            <dd className="col-md-10">
+                <a href="https://open.spotify.com/playlist/1pn8cUoKsLlOfX7WEEARz4?si=jKogUQTsSDmqu6RbSBGfGA">
+                    <span role="img" aria-label="unicorn face">🦄</span> 
+                    &nbsp;CS 41
+                </a> (contribute!)
+            </dd>
+            <dt className="text-md-right col-md-2">Essential Links</dt>
+            <dd className="col-md-10">
+                {essentialLinks}
+            </dd>
+        </dl>
     </div>
     );
 }
