@@ -1,7 +1,7 @@
-# CS 41 Course Information
+# CS 41 Syllabus
 
 ## Contents
-[[TOC_NO_BULLET]]
+[[TOC]]
 
 This is the course information handout for CS 41 in Spring 2021. We'll try not to change this too much but consider it a general overview of the logistics of the course.
 
@@ -31,6 +31,17 @@ Lectures will be held Tuesday and Thursday, 2:30PM - 3:50PM PST on Zoom.
 ## Units
 CS 41 is offered for 2 units on a Credit / No Credit basis. We expect this course to take 6-8 hours per week, including time you spend in lecture. There will be plenty of supplemental materials provided if you are interested in spending more time learning Python.
 
+## COVID-19 Accommodations
+This is a stressful time for everyone, students, TAs, and instructors alike. We've modified the curriculum quite a bit to be accommodating to the intense, undue burdens that we're all feeling right now. Here's a list of some of the ways we've changed the course:
+* We've Marie Kondo'd the curriculum, keeping only what brings us joy
+* We've extended the deadlines for many assignments
+* We've changed the grading policy for assignments to focus more on feedback
+* We're focusing more on group work this quarter—hopefully this will help enhance your work product while also lightening everyone's workload
+* We've incorporated much more student voice in the curriculum—a lot more of the course is in your control
+* We've designed a much more generous late day policy
+
+We're very open to incorporating additional accommodations; just let us know what you need!
+
 ## Auditing
 We welcome any and all auditors to CS 41. Please email us if you plan to audit this course so we can share the Zoom link with you to audit live.
 
@@ -50,7 +61,7 @@ There will be four assignments in this course. Each is expected to take fewer th
 There are no exams in this course!
 
 ## Grading
-Each assignment will be assessed on both functionality and style, on a checkmark scale (as with other introductory computer science courses at Stanford). 
+Some assignments will be assessed on both functionality and style, on a checkmark scale (as with other introductory computer science courses at Stanford). We won't assign grades to the other assignments and you'll just receive feedback.
 
 In order to receive credit for this course, you must average a check in both functionality and style over the course of the quarter. If you are in danger of receiving no credit for this course, we will inform you in a timely manner so that you have ample time to remedy the situation.
 
