@@ -2,7 +2,7 @@
     {
         "num": 0,
         "title": "Welcome to Python!",
-        "spec": "https://github.com/stanfordpython/python-assignments/tree/main/assign0",
+        "spec": "https://github.com/stanfordpython/python-assignments/blob/main/assign0/README.md",
         "starterCode": "#",
         "due": "2021-04-09 11:59:59 PM",
         "visible": true
