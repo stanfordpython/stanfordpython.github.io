@@ -9,6 +9,19 @@ This is the course information handout for CS 41 in Spring 2021. We'll try not t
 
 Welcome to Python! This 2-unit course will teach you the fundamentals and contemporary usage of Python, with a focus on applying best practices in writing Python and building meaningful projects under the supervision of the course staff.
 
+## Learning Goals
+
+After CS 41, students will be able to…
+
+1. Compare and contrast Python’s language design with other languages they’ve seen before.
+2. Determine whether or not Python is an appropriate language to write a program in.
+3. Implement a significant project in Python.
+4. Translate code written in other languages into Python, especially code that doesn’t rely on third-party libraries.
+5. Select the appropriate data structure for a program written in Python. Recognize when Python does not have the appropriate built-in data structure for a problem.
+6. Design and implement custom Python objects (classes) for Python programs to augment Python’s object functionalities.
+7. Interact with external applications, like web APIs, using Python to send requests and process responses.
+8. Apply standard libraries and third-party packages to domain-relevant problems.
+
 ## Instructors
 🦄 Parth Sarin (psarin@stanford.edu)  
 🐘 Michael Cooper (coopermj@stanford.edu)
