@@ -2,9 +2,9 @@
     {
         "title": "Welcome to Python!",
         "date": "2021-03-30",
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/1-condensed.pdf",
+        "full": "/lecture/1-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc14abb-f9c1-4076-822b-acfb018343c6",
         "visible": true,
         "code": "#"
     },
