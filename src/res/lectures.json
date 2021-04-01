@@ -11,8 +11,8 @@
     {
         "title": "Python Basics",
         "date": "2021-04-01",
-        "condensed": "",
-        "full": "",
+        "condensed": "/lecture/2-condensed.pdf",
+        "full": "/lecture/2-full.pdf",
         "video": "",
         "visible": true,
         "code": "#"
