@@ -2,8 +2,8 @@
     {
         "title": "Welcome to Python!",
         "date": "2021-03-30",
-        "condensed": "/lecture/1-condensed.pdf",
-        "full": "/lecture/1-full.pdf",
+        "condensed": "/lecture/1.1-condensed.pdf",
+        "full": "/lecture/1.1-full.pdf",
         "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc14abb-f9c1-4076-822b-acfb018343c6",
         "visible": true,
         "code": "#"
@@ -11,11 +11,11 @@
     {
         "title": "Python Basics",
         "date": "2021-04-01",
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/1.2-condensed.pdf",
+        "full": "/lecture/1.2-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bd4a6a5-89d8-4aad-932a-acfe00297b5f",
         "visible": true,
-        "code": "#"
+        "code": "https://edstem.org/us/courses/2850/workspaces/pAw6HseHgBZUPzAjbC3cjIwme4yNHfy8"
     },
     {
         "title": "Data Structures",
