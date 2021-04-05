@@ -121,3 +121,6 @@ Here's some information about the problems in the handout:
 5. **Triad Phrases** is a problem about string slicing. It's a really cute problem about string slicing, especially for people who are interested in linguistics and text analysis.
 
 6. **Pascal's Triangle** is meant to show students an unusual application of the `zip` command. Note that students probably won't naturally come up with the solution in the solutions file. How do you want to get them there? Is the solution even something that you want students to see/implement?
+
+## [Fill Out the Post-Reflection](https://forms.gle/8L18K5EQJrpuE7pPA)
+It should take ~10 minutes.
