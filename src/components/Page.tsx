@@ -161,27 +161,31 @@ export class Page extends Component<PageProps, PageState> {
             return (
                 <div>
                     <div className="content" id="content">
-                    <ReactMarkdown
+                        <ReactMarkdown
                             source={preTOC}
+                            escapeHtml={false}
                             renderers={{
                                 code: CodeBlock,
                                 heading: (props) => Header({
                                     scrollTo: this.state.scrollTo,
                                     ...props
                                 })
-                            }} />
+                            }}
+                        />
                         <ReactMarkdown
                             source={TOC}
                         />
                         <ReactMarkdown
                             source={postTOC}
+                            escapeHtml={false}
                             renderers={{
                                 code: CodeBlock,
                                 heading: (props) => Header({
                                     scrollTo: this.state.scrollTo,
                                     ...props
                                 })
-                            }} />
+                            }}
+                        />
                     </div>
                 </div>
 
@@ -218,6 +222,7 @@ export class Page extends Component<PageProps, PageState> {
                     <div className="content" id="content">
                     <ReactMarkdown
                             source={preTOC}
+                            escapeHtml={false}
                             renderers={{
                                 code: CodeBlock,
                                 heading: (props) => Header({
@@ -230,6 +235,7 @@ export class Page extends Component<PageProps, PageState> {
                         />
                         <ReactMarkdown
                             source={postTOC}
+                            escapeHtml={false}
                             renderers={{
                                 code: CodeBlock,
                                 heading: (props) => Header({
@@ -254,7 +260,9 @@ export class Page extends Component<PageProps, PageState> {
                                     scrollTo: this.state.scrollTo,
                                     ...props
                                 })
-                            }} />
+                            }}
+                            escapeHtml={false}
+                        />
                     </div>
                 </div>
             );
