@@ -1,4 +1,4 @@
-# The Python Data Model
+# The Python data model
 
 <style>
 .container {
@@ -8,16 +8,16 @@
 
 [[TOC]]
 
-Most of the things we've interacted with in Python world are ***objects***. I don't mean that in a colloquial sense—Python has a very precise definition of an "object." In Lecture 3, we'll build our own custom objects, so before class, let's take a moment to talk about what objects are.
+Most of the things we've interacted with in the Python world are ***objects***. I don't mean that in a colloquial sense—Python has a very precise definition of an "object." In Lecture 3, we'll build our own custom objects, so before lecture, let's take a moment to talk about what objects are.
 
 ## Everything is an object
-In Python, we saw how we can inspect the type of an object using the `type` command.
+In Python, we saw how we can inspect the type of an object using the `type` function.
 
 ```python
 type(3) # => int
 ```
 
-The `isinstance` command is similar. It takes two parameters—first, something we're testing, and second, a type—and returns `True` if the first parameter is an instance of the type and `False` otherwise. So, the above code tells us that `3` is an integer, and indeed:
+The `isinstance` function is similar. It takes two parameters—first, something we're testing, and second, a type—and returns `True` if the first parameter is an instance of the type and `False` otherwise. So, the above code tells us that `3` is an integer, and indeed:
 
 ```python
 isinstance(3, int) # => True
@@ -39,8 +39,8 @@ isinstance(None, object)      # => True
     <h4 class="alert-heading mt-1">One object can be an instance of multiple types</h4>
     <hr />
     <p>Wait a minute... Didn't we just say <code>3</code> was an <code>int</code>? How can it also be an <code>object</code>?</p> 
-    <p>We'll talk about this more in class but one object can be an instance of multiple types. This is called inheritance, and it's a way of transferring the properties of one type onto other types.</p>
-    <p class="mb-1">For example, in Python, booleans are actually a sub-type of integers. Under the hood, <code>True</code> is 1 and <code>False</code> is 0. This means we can do integer-like operations with booleans: <code>(True + 1) * 10 + 5</code> returns <code>25</code>. Similarly, <code>isinstance(False, int)</code> is <code>True</code>.</p>
+    <p>We'll talk about this more in class but one object can be an instance of multiple types. This is called inheritance, and it's a way for the properties of one type to be applied to other types.</p>
+    <p class="mb-1">For example, in Python, booleans are actually a sub-type of integers. Under the hood, <code>True</code> is 1 and <code>False</code> is 0. This means (even though we'd never do this) we <i>could</i> do integer-like operations with booleans: <code>(True + 1) * 10 + 5</code> returns <code>25</code>. Similarly, <code>isinstance(False, int)</code> is <code>True</code>.</p>
 </div>
 
 We've seen more objects, though! Functions are objects...
@@ -60,7 +60,7 @@ import math
 isinstance(math, object) # => True
 ```
 
-Even types are objects!
+Even types themselves are objects!
 
 ```python
 isinstance(int, object)  # => True
@@ -71,20 +71,20 @@ At this point you may be kind of unimpressed. I've just told you that many of ou
 
 ## Objects have value, type, and identity
 
-All objects have three properties: value, type and identity.
-
 ### Value
 
-All objects have some value, which is just whatever the object is meant to represent. The object's value takes up some space on your computer, which you can see using the `.__sizeof__` method.
+All objects represent some value which takes up some space on your computer. You can display the size of an object using the `sys.sizeof` method.
 
 ```python
-(41).__sizeof__()      # => 28 (bytes)
-[1, 2, 3].__sizeof__() # => 104 (bytes)
+import sys
+
+sys.sizeof(41)        # => 28 (bytes)
+sys.sizeof([1, 2, 3]) # => 104 (bytes)
 ```
 
 ### Type
 
-All objects have a type, which you can see using the `type` function.
+All objects have a type, which you can display using the `type` function.
 
 ```python
 type(True) # => bool
@@ -93,7 +93,7 @@ type(True) # => bool
 Objects can be instances of multiple types. To see all of the types that an object is an instance of, you can look at the `__mro__` attribute of its type.
 
 ```python
-type(True).__mro__ # => (bool, int, object)
+bool.__mro__ # => (bool, int, object)
 ```
 
 No matter the primary type of an object, the `__mro__` tuple will always contain `object` because everything is an object in Python.
@@ -101,19 +101,19 @@ No matter the primary type of an object, the `__mro__` tuple will always contain
 
 ### Identity
 
-Identity is the trickiest of the three properties to understand. It can be helpful to think of identity as an object's location in memory, though this isn't entirely accurate. For the purposes of this discussion, it's good enough.
+Identity is the trickiest of the three properties to understand. The identity of an object is a unique number that identifies it. Most of the time, this unique number is the object's location in your computer's memory, so (even though that's not always true) we'll treat the identity and the memory location as interchangeable in this discussion.
 
-When you create an object, it is stored somewhere in memory. That address will never change throughout the lifetime of the object, and you can access it using the `id` function.
+When Python creates an object, it is stored somewhere in memory. That address will never change throughout the lifetime of the object, and you can access it using the `id` function.
 
 ```python
 x = [1, 2, 3]
 
 # these numbers will be different if you re-run the code:
 id(x)      # => 4398104832
-hex(id(x)) # => '0x10625c100'
+hex(id(x)) # => '0x10625c100' (the memory address)
 ```
 
-The `is` command allows you to compare the *identity* of two objects (are these two objects stored at the same memory address?). For example,
+The `is` keyword allows you to compare the *identity* of two objects (are these two objects stored at the same memory address?). For example,
 
 ```python
 x = [1, 2, 3]
@@ -136,7 +136,9 @@ x == y # => True
 x is y # => True
 ```
 
-Okay, so how are these examples different? When `x` and `y` have the same identity, they point to the same object, so modifying the value of that object will be reflected in both variables.
+Okay, but what does this mean? Why should I care if `x` and `y` have the same identity?
+
+When `x` and `y` have the same identity, they point to the same object, so modifying the value of that object will be reflected in both variables.
 
 ```python
 x = [1, 2, 3]
@@ -155,7 +157,7 @@ But, in the first example, where the two are different, this behavior doesn't ha
 x = [1, 2, 3]
 y = [1, 2, 3]
 
-# modify the shared object
+# only modify one object
 x.append(4)
 
 x # => [1, 2, 3, 4]
@@ -167,7 +169,7 @@ y # => [1, 2, 3]
     <h4 class="alert-heading mt-1">Common misconception</h4>
     <hr />
     <p>A very common error that happens in Python occurs from a misconception about identity. Say you have some list, <code>lst</code>, and you want to make an independent copy of that list. If you create a new variable <code>copy = lst</code>, you haven't really copied the list. Just like in our example, <code>copy</code> will point to the same location as <code>lst</code>.</p>
-    <p class="mb-1">To do this correctly, you can set <code>copy = lst.copy()</code>.</p>
+    <p class="mb-1">To do this correctly, you can set <code>copy = lst.copy()</code> or use the slightly sneaky trick <code>copy = lst[:]</code>, which creates a "full slice" of the list.</p>
 </div>
 
 ## Objects and mutability
@@ -185,7 +187,7 @@ x # => 74
 y # => 41 (y is unchanged)
 ```
 
-But on the other hand, the seemingly identitical code for lists behaves differently.
+But on the other hand, the analogous code for lists behaves differently.
 
 ```python
 x = [1, 2, 3]
@@ -198,7 +200,7 @@ x # => [1, 2, 3, 4]
 y # => [1, 2, 3, 4] (y is changed)
 ```
 
-What's going on? Integers are **immutable** while lists are **mutable**.
+The different behavior occurs because integers are **immutable** while lists are **mutable**.
 
 All objects are either mutable or immutable. Remember how we said objects have value, type, and identity? "Mutable" means that an object's value can change over time (like a list changes when you append to it) and "immutable" means that the value is fixed.
 
@@ -213,7 +215,7 @@ id(y) # => 4346613296
 
 x += 33
 
-id(x) # => 4346802832
+id(x) # => 4346802832 (changed)
 id(y) # => 4346613296
 
 x # => 74
@@ -233,7 +235,7 @@ id(y) # => 4378526208
 
 x += [4]
 
-id(x) # => 4378526208
+id(x) # => 4378526208 (didn't change)
 id(y) # => 4378526208
 
 x # => [1, 2, 3, 4]
@@ -244,13 +246,13 @@ y # => [1, 2, 3, 4]
 
 ### Modifying an object from a function
 
-This behavior crops up frequently when you're passing an object to a function. Instead of pass-by-copy or pass-by-reference, Python passes all parameters by "object-reference". It gives the function a reference to the object and the function can modify the original object if it's mutable, but otherwise the changes won't perpetuate.
+This behavior crops up frequently when you're passing an object to a function. Instead of pass-by-copy or pass-by-reference, Python passes all parameters by "object-reference". It gives the function a reference to the object and the function can modify the original object if and only if it's mutable.
 
-So, functions can't modify integers...
+So, functions can't modify the caller's integer variables...
 
 ```python
 def modify(num):
-    num += 33 # just like y += 33 in the earlier example
+    num += 33 # just like x += 33 in the earlier example
 
 x = 41
 modify(x)
@@ -261,7 +263,7 @@ print(x) # 41 (not modified)
 
 ```python
 def modify(lst):
-    lst += [4] # just like y += [4] in the earlier example
+    lst += [4] # just like x += [4] in the earlier example
 
 x = [1, 2, 3]
 modify(x)
