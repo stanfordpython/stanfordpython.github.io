@@ -169,7 +169,7 @@ y # => [1, 2, 3]
     <h4 class="alert-heading mt-1">Common misconception</h4>
     <hr />
     <p>A very common error that happens in Python occurs from a misconception about identity. Say you have some list, <code>lst</code>, and you want to make an independent copy of that list. If you create a new variable <code>copy = lst</code>, you haven't really copied the list. Just like in our example, <code>copy</code> will point to the same location as <code>lst</code>.</p>
-    <p class="mb-1">To do this correctly, you can set <code>copy = lst.copy()</code> or use the slightly sneaky trick <code>copy = lst[:]</code>, which creates a "full slice" of the list.</p>
+    <p class="mb-1">There are two ways to do this correctly, depending on what you want. You can either create a "shallow copy" or a "deep copy". See the last section in this file for a description and comparison.</p>
 </div>
 
 ## Objects and mutability
@@ -202,7 +202,7 @@ y # => [1, 2, 3, 4] (y is changed)
 
 The different behavior occurs because integers are **immutable** while lists are **mutable**.
 
-All objects are either mutable or immutable. Remember how we said objects have value, type, and identity? "Mutable" means that an object's value can change over time (like a list changes when you append to it) and "immutable" means that the value is fixed.
+All objects are either mutable or immutable. Remember how we said objects have value, type, and identity? "Mutable" means that an object's value can change after declaration (like a list changes when you append to it) and "immutable" means that the value is fixed.
 
 Let's inspect our examples a bit more...
 
@@ -222,7 +222,7 @@ x # => 74
 y # => 41
 ```
 
-Even though `x` and `y` start out by referencing the same object, when we add 33, *a new object is created* and `x` is reassigned to point to that object. `y` remains pointing at the old object.
+Even though `x` and `y` start out as references to the same object, when we add 33, *a new object is created* and `x` is reassigned to point to that object. `y` remains pointing at the old object.
 
 By contrast...
 
@@ -242,7 +242,21 @@ x # => [1, 2, 3, 4]
 y # => [1, 2, 3, 4]
 ```
 
-...when `x` and `y` are lists, adding 4 to the end of the list does not create a new object.
+...when `x` and `y` are lists, appending 4 to the end of the list does not create a new object.
+
+There's one important piece of clarification: every operation on an immutable object will create a new object; *some* operations on mutable objects create new objects and others don't. It's not true that any operation on a mutable object creates a new object.
+
+```python
+x = [1, 2, 3]
+id(x) # => 4539869440
+
+x = x + [4]
+id(x) # => 4539685504
+
+x # => [1, 2, 3, 4]
+```
+
+This shows how `lst += [4]` behaves differently than `lst = lst + [4]`. The former does not create a new object but the latter does.
 
 ### Modifying an object from a function
 
@@ -286,3 +300,81 @@ This means that in your programs, if you have a list, you can pass it between fu
 | Dictionary | `dict`           | ✓          |
 | Set        | `set`            | ✓          |
 | Tuple      | `tuple`          | ✗          |
+
+## Nested objects and copies (optional)
+
+Tuples are immutable and lists are mutable, so what happens if you put a list inside of a tuple? The behavior can be kind of sneaky because tuples store *references* to the objects contained within them, and those references can't change. The objects, however, can change.
+
+Let's see what happens when we try to change a tuple's reference.
+
+```python
+t = (1, [2, 3], [5, 6, 7])
+
+t[1] = [2, 3, 4]
+# TypeError: 'tuple' object does not support item assignment
+```
+
+The issue here is because the list `[2, 3, 4]` is a new object which we're trying to replace the old object with. On the other hand, if we modified the list without trying to replace it, everything would work fine.
+
+
+```python
+t = (1, [2, 3], [5, 6, 7])
+
+t[1].append(4)
+t # => (1, [2, 3, 4], [5, 6, 7])
+```
+
+This also brings us to two different ways to make a copy of an object. We mentioned earlier that this code does not actually make a copy:
+
+```python
+lst = [1, [2, 3], 5]
+clone = lst
+
+lst.append(6)
+
+lst   # => [1, [2, 3], 5, 6]
+clone # => [1, [2, 3], 5, 6] (changed)
+```
+
+To correctly copy the object, you can either make a "shallow copy" or a "deep copy". Summarizing from the [Python documentation](https://docs.python.org/3/library/copy.html):
+
+* A *shallow copy* constructs a new object and then inserts references into it to the objects found in the original.
+* A *deep copy* constructs a new object and then, recursively, inserts copies into it of the objects found in the original. 
+
+Basically, a deep copy makes copies of the inner objects as well, while a shallow copy does not. So, if we make a shallow copy of `lst` from the example above, the two lists will be independent except for `lst[1]`:
+
+```python
+import copy
+
+lst = [1, [2, 3], 5]
+clone = copy.copy(lst) # makes a shallow copy
+
+lst.append(6)
+
+lst   # => [1, [2, 3], 5, 6]
+clone # => [1, [2, 3], 5]        (unchanged)
+
+lst[1].append(4)
+
+lst   # => [1, [2, 3, 4], 5, 6]
+clone # => [1, [2, 3, 4], 5]     (changed)
+```
+
+On the other hand, a deep copy would make a new copy of `lst[1]` as well:
+
+```python
+import copy
+
+lst = [1, [2, 3], 5]
+clone = copy.deepcopy(lst) # makes a deep copy
+
+lst.append(6)
+
+lst   # => [1, [2, 3], 5, 6]
+clone # => [1, [2, 3], 5]        (unchanged)
+
+lst[1].append(4)
+
+lst   # => [1, [2, 3, 4], 5, 6]
+clone # => [1, [2, 3], 5]        (unchanged)
+```
