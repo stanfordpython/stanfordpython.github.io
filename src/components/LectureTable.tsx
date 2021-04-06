@@ -6,6 +6,10 @@ interface LectureRowProps {
     title: string,
     date: moment.Moment,
     // URL props:
+    handout?: {
+        title: string,
+        url: string,
+    },
     condensed: string,
     full: string,
     video: string,
@@ -17,7 +21,7 @@ interface LectureRowProps {
 }
 
 const Lecture: FunctionComponent<LectureRowProps> =
-    ({title, date, condensed, full, video, visible, code, active, 
+    ({title, handout, date, condensed, full, video, visible, code, active, 
         highlight}: LectureRowProps) => {
 
     if (!visible) {
@@ -70,7 +74,12 @@ const Lecture: FunctionComponent<LectureRowProps> =
 
     return (
           <tr style={rowStyle}>
-            <td>{title}</td>
+            <td>
+                {title}
+                {handout 
+                ? (<><br /><i>Reading:</i> <a href={handout.url}>{handout.title}</a></>)
+                : null}
+            </td>
             <td>{formattedDate}</td>
             <td>{condensedLink}
                 
@@ -110,13 +119,13 @@ export class LectureData extends Component<{}, LectureDataState> {
 
         let i;
         for (i = 0; i < lectureData.length; i++) {
-            if (moment() < lectureData[i].date) {
+            if (moment().isSameOrBefore(lectureData[i].date, 'day')) {
                 break;
             }
         }
 
         // Only highlight first row if date is less than a week away
-        if (i === 0 && moment().diff(lectureData[i].date, "days") <= -7) {
+        if (i === 0 && moment().diff(lectureData[i].date, "days") >= -7) {
             this.setState({ lectureData });
         }
         else {
@@ -148,15 +157,8 @@ export class LectureData extends Component<{}, LectureDataState> {
                     (
                         <Lecture
                             key={index}
-                            title={lectureData.title}
-                            date={lectureData.date}
-                            condensed={lectureData.condensed}
-                            full={lectureData.full}
-                            video={lectureData.video}
-                            code={lectureData.code}
-                            visible={lectureData.visible}
-                            active={lectureData.active}
                             highlight={index === this.state.highlight}
+                            {...lectureData}
                         />    
                     ))
                 }

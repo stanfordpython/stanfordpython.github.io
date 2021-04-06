@@ -29,6 +29,10 @@
     {
         "title": "Object-Oriented Python",
         "date": "2021-04-13",
+        "handout": {
+            "title": "The Python data model",
+            "url": "/#/page/handout/data-model"
+        },
         "condensed": "",
         "full": "",
         "video": "",
