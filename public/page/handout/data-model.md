@@ -119,6 +119,9 @@ The `is` command allows you to compare the *identity* of two objects (are these 
 x = [1, 2, 3]
 y = [1, 2, 3]
 
+id(x) # => 4490234752
+id(y) # => 4490680128
+
 x == y # => True
 x is y # => False
 ```
