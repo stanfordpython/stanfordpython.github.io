@@ -146,6 +146,21 @@ export class Page extends Component<PageProps, PageState> {
             );
         }
 
+        const CustomMarkdown = (props: any) => (
+            <ReactMarkdown
+                escapeHtml={false}
+                renderers={{
+                    code: CodeBlock,
+                    table: (props) => (<table className="table">{props.children}</table>),
+                    heading: (props) => Header({
+                        scrollTo: this.state.scrollTo,
+                        ...props
+                    })
+                }}
+                {...props}
+            />
+        );
+
         // Check for the string "[[TOC]]" in the text. If it exists,
         // render a TOC there indexing all content after [[TOC]]; if not,
         // render just the content without the table of contents.
@@ -161,30 +176,14 @@ export class Page extends Component<PageProps, PageState> {
             return (
                 <div>
                     <div className="content" id="content">
-                        <ReactMarkdown
+                        <CustomMarkdown
                             source={preTOC}
-                            escapeHtml={false}
-                            renderers={{
-                                code: CodeBlock,
-                                heading: (props) => Header({
-                                    scrollTo: this.state.scrollTo,
-                                    ...props
-                                })
-                            }}
                         />
                         <ReactMarkdown
                             source={TOC}
                         />
-                        <ReactMarkdown
+                        <CustomMarkdown
                             source={postTOC}
-                            escapeHtml={false}
-                            renderers={{
-                                code: CodeBlock,
-                                heading: (props) => Header({
-                                    scrollTo: this.state.scrollTo,
-                                    ...props
-                                })
-                            }}
                         />
                     </div>
                 </div>
@@ -220,29 +219,15 @@ export class Page extends Component<PageProps, PageState> {
             return (
                 <div>
                     <div className="content" id="content">
-                    <ReactMarkdown
+                        <CustomMarkdown
                             source={preTOC}
-                            escapeHtml={false}
-                            renderers={{
-                                code: CodeBlock,
-                                heading: (props) => Header({
-                                    scrollTo: this.state.scrollTo,
-                                    ...props
-                                })
-                            }} />
+                        />
                         <ReactMarkdown
                             source={TOC}
                         />
-                        <ReactMarkdown
+                        <CustomMarkdown
                             source={postTOC}
-                            escapeHtml={false}
-                            renderers={{
-                                code: CodeBlock,
-                                heading: (props) => Header({
-                                    scrollTo: this.state.scrollTo,
-                                    ...props
-                                })
-                            }} />
+                        />
                     </div>
                 </div>
 
@@ -252,16 +237,8 @@ export class Page extends Component<PageProps, PageState> {
             return (
                 <div>
                     <div className="content" id="content">
-                        <ReactMarkdown
+                        <CustomMarkdown
                             source={this.state.md}
-                            renderers={{
-                                code: CodeBlock,
-                                heading: (props) => Header({
-                                    scrollTo: this.state.scrollTo,
-                                    ...props
-                                })
-                            }}
-                            escapeHtml={false}
                         />
                     </div>
                 </div>

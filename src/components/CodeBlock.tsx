@@ -2,7 +2,7 @@
 
 import React, { FunctionComponent } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 interface CodeProps {
   language?: string,
@@ -12,7 +12,7 @@ interface CodeProps {
 const CodeBlock: FunctionComponent<CodeProps> = 
   ({ language, value }: CodeProps) => {
   return (
-    <SyntaxHighlighter language={language} style={atomDark}>
+    <SyntaxHighlighter language={language} style={darcula}>
       {value}
     </SyntaxHighlighter>
   )
