@@ -151,7 +151,13 @@ Though dictionary comprehensions may look a little more intimidating at first, t
 {i:i**2 for i in range(10) if i**2 % 2 != 0}
 ```
 
-## Problems \[35-60 mins\]
+### Suggestions for Presenting Comprehensions
+
+* Students should see the formal syntax of list comprehensions (the ones that use abstract functions and iterators like `{f(k):g(v) for k, v in iterable if condition(k, v)}`), so that they can map the formal syntax to the examples that they see. We've put together some visuals [in this Keynote presentation](https://drive.google.com/file/d/1iahOpGaBxB7QHyaoTSzYCSQdR9YzlnlD/view?usp=sharing) that you might find helpful.
+* Examples are _awesome_ - especially with comprehensions, lots of little examples can go a long way in building understanding. Leverage the problems in the lab handout to this effect, and if you're looking for more comprehensions problems, [our archive](https://github.com/stanfordpython/python-labs/blob/master/archive/notebooks-win19/lab2-datastructures-notebook.ipynb) contains a few extra comprehensions problems (in addition to those we've included in this lab notebook).
+* We'd recommend taking 5 minutes or so presenting the formal syntax of list comprehensions, either from the slides, or using a code demo, along with a couple examples. Feel free to use the above writeup of list comprehensions - and the visuals in the Keynote - as a guide for how this presentation might go. After that, we'd recommend having your students spend 10-15 minutes working through the comprehensions problems from this lab in small groups.
+
+## Problems \[35-45 mins\]
 There are two files in [the section workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
 yourself.
 
