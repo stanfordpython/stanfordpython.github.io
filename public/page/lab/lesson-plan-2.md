@@ -99,6 +99,14 @@ Students may have questions about their assignment, so it might be worth taking 
 
 In Tuesday's lecture, Michael didn't have time to cover comprehensions, so in this lab, we're going to ask you to discuss the motivation and syntax behind comprehensions. What follows is a suggestion of what to teach, and how to teach it - you should feel free to modify the below based on your section and their comfort with comprehensions as you teach it.
 
+### How to teach comprehensions
+
+* Students should see the formal syntax of list comprehensions, so that they can map the formal syntax to the examples that they see. We've put together some visuals [in this Keynote presentation](https://drive.google.com/file/d/1iahOpGaBxB7QHyaoTSzYCSQdR9YzlnlD/view?usp=sharing) that you might find helpful.
+* Examples are _awesome_ - especially with comprehensions, lots of little examples can go a long way in building understanding. Leverage the problems in the lab handout to this effect, and if you're looking for more comprehensions problems, [our archive](https://github.com/stanfordpython/python-labs/blob/master/archive/notebooks-win19/lab2-datastructures-notebook.ipynb) contains a few extra comprehensions problems (in addition to those we've included in this lab notebook).
+* We'd recommend taking 5 minutes or so presenting the formal syntax of list comprehensions, either from the slides, or using a code demo, along with a couple examples. Feel free to use the above writeup of list comprehensions - and the visuals in the Keynote - as a guide for how this presentation might go. After that, we'd recommend having your students spend 10-15 minutes working through the comprehensions problems from this lab in small groups.
+
+The rest of this section will be an overview of comprehensions themselves, so that you can be comfortable with them when presenting to your students.
+
 ### What are comprehensions? Why are they important?
 
 Comprehensions are a condensed syntax to construct collections with certain properties. This is best illustrated with an example.
@@ -111,9 +119,8 @@ for i in range(10):
         odd_square_below_100.append(i**2)
 ```
 
-Though this code will get the job done, it's a bit cumbersome - the list we have asked ourselves to construct almost seems _too simple_ to require four lines of code to build.
+Though this code will get the job done, it's a bit cumbersome. A list comprehension to construct the following list might appear as follows.
 
-A list comprehension to construct the following list might appear as follows.
 ```python
 odd_square_below_100 = [i**2 for i in range(10) if i**2 % 2 != 0]
 ```
@@ -130,7 +137,7 @@ In the general case, list comprehensions use the following syntax:
 
 This square brackets in the syntax indicate that we are constructing a list. The expression inside the square brackets indicates that the list is to be composed of the function `f`, applied to elements of `iterable` for which `condition(x)` holds. 
 
-In the above example, we've used `i` instead of `x` as our loop variable. We can then see that `f(x)` is `x**2`, `iterable` is `range(10)`, and `condition(x)` is `i**2 % 2 != 0`.
+In the above example, we used `i` instead of `x` as our loop variable. We can then see that `f` is `i**2`, `iterable` is `range(10)`, and the `condition` is `i**2 % 2 != 0`.
 
 A set comprehension can be defined in the same way as a list comprehension, except that curly braces - rather than square brackets - are used to indicate that a set is being defined.
 
@@ -150,11 +157,6 @@ Though dictionary comprehensions may look a little more intimidating at first, t
 {i:i**2 for i in range(10) if i**2 % 2 != 0}
 ```
 
-### Suggestions for Presenting Comprehensions
-
-* Students should see the formal syntax of list comprehensions (the ones that use abstract functions and iterators like `{f(k):g(v) for k, v in iterable if condition(k, v)}`), so that they can map the formal syntax to the examples that they see. We've put together some visuals [in this Keynote presentation](https://drive.google.com/file/d/1iahOpGaBxB7QHyaoTSzYCSQdR9YzlnlD/view?usp=sharing) that you might find helpful.
-* Examples are _awesome_ - especially with comprehensions, lots of little examples can go a long way in building understanding. Leverage the problems in the lab handout to this effect, and if you're looking for more comprehensions problems, [our archive](https://github.com/stanfordpython/python-labs/blob/master/archive/notebooks-win19/lab2-datastructures-notebook.ipynb) contains a few extra comprehensions problems (in addition to those we've included in this lab notebook).
-* We'd recommend taking 5 minutes or so presenting the formal syntax of list comprehensions, either from the slides, or using a code demo, along with a couple examples. Feel free to use the above writeup of list comprehensions - and the visuals in the Keynote - as a guide for how this presentation might go. After that, we'd recommend having your students spend 10-15 minutes working through the comprehensions problems from this lab in small groups.
 
 ## Problems \[remaining time (20-50 mins, depending)\]
 There are two files in [the section workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
