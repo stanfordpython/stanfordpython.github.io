@@ -20,9 +20,9 @@
     {
         "title": "Data Structures",
         "date": "2021-04-06",
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/2-condensed.pdf",
+        "full": "/lecture/2-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=571949ac-9cb3-4ddf-b54a-ad0300068e17",
         "visible": true,
         "code": "#"
     },
