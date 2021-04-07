@@ -4,6 +4,8 @@ Welcome to section, everyone! Thanks so much for volunteering your time to make 
 
 That said, here's one idea for how you might plan your section.
 
+[[TOC]]
+
 ## Pre-Section Preparation
 Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own. You can edit this copy and use it during section. You're welcome to share your screen and talk through the problems, move the problems to a slide deck, ask students to make their own forks of the workspace, ...
 
@@ -158,7 +160,7 @@ Though dictionary comprehensions may look a little more intimidating at first, t
 ```
 
 
-## Problems \[remaining time (20-50 mins, depending)\]
+## Problems \[remaining time (20-50 mins)\]
 There are two files in [the section workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
 yourself.
 
