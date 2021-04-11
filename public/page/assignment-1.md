@@ -285,6 +285,8 @@ Alternatively, there are some digital resources that can make gorgeous visualiza
 * [RAWGraphs.io](https://rawgraphs.io/) is the first result for "online data visualization" on Google so it might be good
 * Python has [a lot of data visualization libraries](https://mode.com/blog/python-data-visualization-libraries/) - in particular, [`seaborn`](http://seaborn.pydata.org/index.html) is a good library for making beautiful visualizations with few lines of code
 
+Regardless of how you visualize the data, be sure to include alt text with your visualization.
+
 # Submitting
 
 <div class="alert alert-danger">
