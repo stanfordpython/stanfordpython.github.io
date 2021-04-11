@@ -287,6 +287,10 @@ Alternatively, there are some digital resources that can make gorgeous visualiza
 
 # Submitting
 
+<div class="alert alert-danger">
+    <span>This assignment will be submitted in groups. <b>Only one member of your group should submit the assignment!</b> Please, that's very important! On the backend, we'll combine your submission based on who was in your group and if there are multiple submissions from your group, some might get overwritten.</span>
+</div>
+
 ## Cryptography
 Submit the following files to Paperless:
 
@@ -308,7 +312,7 @@ In addition, submit your data set, your visualization, and any other files you c
 ## Groups
 Take a moment to reflect on group work. After this point, it'll be a bit more challenging to change groups, so if you'd like to change your groups for any reason, now is the time to let us know. Email your TA with any thoughts/questions/concerns you might have. Although it's rare, people occasionally have significant problems with their group. It's best for everyone to make that known—don't suffer in silence!
 
-If you've been finalizing your group, and haven't told us what your final project group is yet, submit a file to Paperless called `group.txt` which has the names of your group members and their SUNet IDs.
+Submit a file called `contributors.txt` with a list of all of the group members who worked on this assignment. If you've been finalizing your group and worked on this project individually, `contributors.txt` will only have your name in it. Now, though, you should have a newly-formed group: submit another file to Paperless called `group.txt` which has the names of your group members and their SUNet IDs. If you worked on this project in a group, you only need to submit `contributors.txt`.
 
 # Credit
 Much thanks to Sam Redmond (@sredmond), Sherman Leung (@skleung), Python Tutorial, Learn Python the Hard Way, Google Python, MIT OCW 6.189, Project Euler, and Wikipedia's list of ciphers.
