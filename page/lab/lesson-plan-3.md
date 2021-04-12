@@ -34,7 +34,7 @@ In class, we talked about **Object-Oriented Programming**. It was motivated thro
 Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://stanfordpython.com/#/page/assignment-1). If the students don't have a group, we're allowing them to complete this assignment individually with the requirement that they find a group by the end of the assignment.
 
 
-## Problems \[65 mins\]
+## Problems \[55 mins\]
 
 ### Designing Basic Classes
 This is the most important section in this handout. It targets the overall learning goal for this class—that students, confronted with a programming problem, can identify or design the appropriate data structure to solve the problem in Python. We've created a bunch of "common" situations for which a programmer might need to create a data structure and this activity walks students through creating it.
@@ -179,4 +179,8 @@ shows how booleans inherit from integers, so we can do integer-like operations o
 (True + 1) * 10 + 5 # => 25
 ```
 
-Here's a collection of slides explaining more of the syntax of inheritance if you want to teach it in section: <>.
+Here's a collection of slides explaining more of the syntax of inheritance if you want to teach it in section: @Jose will send these.
+
+## Group Work [10 min]
+
+I'd encourage you to allow your students to work in their groups for the last ten minutes if the entire group is in the same section. This way, they can check in on their progress in Assignment 1. I think that's a much-needed, relaxing break for everyone this week!
