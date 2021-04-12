@@ -165,7 +165,29 @@ This is a little misleading, though, because if `a.__add__(b)` returns `NotImple
 The problems in this section are mostly mathematical (`Polynomial` and `Vector`), but musical notes is a really nice deviation from that trend! The type of letter wrapping that is done in `MusicNote` is **very useful** for the Caesar cipher on their assignment.
 
 ### Exceptions
-@Michael, could you fill this in?
+So far, students have seen basic exceptions in the context of validating user input. Below is the example that we reviewed in Lecture 1:
+```python
+while True:
+    try:
+        course = int(input("What class are you in? "))
+        if course == 41:
+            print("You're in the right place!")
+        else:
+            print("Go find the right Zoom link!")
+        break
+    except ValueError:
+        print("Please enter a course number.")
+```
+
+We've put together a few slides which review what we've seen so far in class, and which introduce `try`/`except` in Python in more complete detail, including discussing catching multiple different exceptions, and the `else`/`finally` blocks.
+
+The slide/discussion on catching everything is important: catching all errors can be dangerous, as a decent amount of Python's functionality is handled through exceptions. E.g. catching all errors would catch exceptions like `KeyboardInterrupt` and `SystemExit` (which, since they are now being caught, may make it difficult to exit the script). It is typically better to only catch the specific exceptions that you are concerned about given the code you have written.
+
+Slides can be found here:
+* [Exceptions (Keynote Presentation)](/lab/Lab3_try_except.key)
+* [Exceptions (PDF)](/lab/Lab3_try_except.pdf)
+
+There are two exercises on exceptions in the lab: in the first, students are asked to evaluate a `try`/`except`/`else`/`finally` block to observe the behaviour of the block under different error conditions: this should solidify their understanding of the `else`/`finally` blocks, as distinct from, say, out-dented code beneath a `try`/`except` block. In the second, students are asked to run code blocks which raise a wide variety of Python errors: this is designed to give students an understanding of common errors in Python, so that they understand which errors to consider catching in the code that they write.
 
 ### Inheritance
 We covered inheritance at a conceptual level in the [Lecture 3 handout](http://stanfordpython.com/#/page/handout/data-model). We've talked about how an object can be an instance of multiple types and how the `__mro__` method reveals all of the types of an object.
