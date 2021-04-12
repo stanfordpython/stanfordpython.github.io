@@ -179,8 +179,8 @@ shows how booleans inherit from integers, so we can do integer-like operations o
 (True + 1) * 10 + 5 # => 25
 ```
 
-Here's a collection of slides explaining more of the syntax of inheritance if you want to teach it in section: @Jose will send these.
+Here's a collection of slides explaining more of the syntax of inheritance if you want to teach it in section: [powerpoint](/lab/inheritance.pptx), [pdf](/lab/inheritance.pdf).
 
-## Group Work [10 min]
+## Group Work \[10 min\]
 
 I'd encourage you to allow your students to work in their groups for the last ten minutes if the entire group is in the same section. This way, they can check in on their progress in Assignment 1. I think that's a much-needed, relaxing break for everyone this week!
