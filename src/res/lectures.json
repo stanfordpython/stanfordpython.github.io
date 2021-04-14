@@ -33,11 +33,11 @@
             "title": "The Python data model",
             "url": "/#/page/handout/data-model"
         },
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/3-condensed.pdf",
+        "full": "/lecture/3-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2b64a4da-845c-4528-a264-ad09017e8421",
         "visible": true,
-        "code": "#"
+        "code": "https://edstem.org/us/courses/2850/workspaces/pYMjgUq3kmdLNasBmkxu8AFOTB6xDbpm"
     },
     {
         "title": "Functions",
