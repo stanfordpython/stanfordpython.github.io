@@ -284,6 +284,11 @@ Alternatively, there are some digital resources that can make gorgeous visualiza
 * [Flourish](https://flourish.studio/) is a good interactive visualization tool for some pre-set visualizations ([examples](https://flourish.studio/examples/)); I think this is what the Stanford Daily uses...
 * [RAWGraphs.io](https://rawgraphs.io/) is the first result for "online data visualization" on Google so it might be good
 * Python has [a lot of data visualization libraries](https://mode.com/blog/python-data-visualization-libraries/) - in particular, [`seaborn`](http://seaborn.pydata.org/index.html) is a good library for making beautiful visualizations with few lines of code
+* You can also build your data visualization in Google Slides or in a sketching app on a tablet
+
+If you're looking for inspiration on how to visualize your data, Stefanie and Georgina suggest finding the *story* in your data. What do you want to visualize? In our example, the natural instinct might be to visualize the daily amount of trash that Michael and I threw away, but is that really the most interesting? If you saw a visualization like that, you might infer that we threw less trash away on weekends than weekdays, but the inspiration for the project was really about the trash at the dining hall... Instead, a visualization of the origins of the trash would probably be more compelling.
+
+I also asked our staff for different internet repositories for data visualizations. People suggested [/r/DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/) as a nice place to find inspiration.
 
 Regardless of how you visualize the data, be sure to include alt text with your visualization.
 
