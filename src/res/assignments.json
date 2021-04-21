@@ -17,6 +17,14 @@
     },
     {
         "num": 2,
+        "title": "Final Project Proposal",
+        "spec": "https://forms.gle/McvNiTtc2L5St5NC7",
+        "starterCode": "#",
+        "due": "2021-04-30 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "num": 3,
         "title": "TBA 🙃",
         "spec": "",
         "starterCode": "#",
@@ -24,7 +32,7 @@
         "visible": true
     },
     {
-        "num": 3,
+        "num": 4,
         "title": "Final Project",
         "spec": "",
         "starterCode": "#",
