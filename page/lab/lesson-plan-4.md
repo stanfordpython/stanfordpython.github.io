@@ -2,6 +2,14 @@
 
 [[TOC]]
 
+<div align="center">
+	<h1>
+		<b>
+			<a href="https://edstem.org/us/courses/2850/workspaces/p6hfgD4nKeuxhtCcccSPSOCmXkhWA3d2">Lab Notebook Link</a>
+		</b>
+	<h1>
+</div>
+
 ## Pre-Section Preparation
 Visit the [Ed Workspace]() and fork it to make a copy that you own.
 
