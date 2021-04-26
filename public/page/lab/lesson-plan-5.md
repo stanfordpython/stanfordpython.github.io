@@ -46,6 +46,41 @@ I'd strongly suggest you put people into their project groups for this portion o
 It can be complicated to set up APIs, so you should float around to make sure that people aren't having too much trouble. 
 
 ### Website Building \[20 mins\]
+
+#### Anagrams Solution Code
+There isn't much "solution code" for this lab, so I'll just include the little that there is here. This is one way to implement the anagrams flask route which builds a dictionary of anagrams and stores that in RAM so that whenever a user accesses a route, it doesn't have to re-compute the anagram.
+
+Instead, your students may choose to re-compute the anagram each time the route is accessed. This is fine, but you should explain the efficiency of their code and nudge them towards making the code more efficient.
+
+```python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+ANAGRAMS = {}
+with open('words.txt', 'r') as f:
+    for word in f:
+        word = word.strip()
+        key = ''.join(sorted(word))
+
+        if key not in ANAGRAMS:
+            ANAGRAMS[key] = []
+        ANAGRAMS[key].append(word)
+
+
+def get_anagrams(letters):
+    letters = letters.lower()
+    key = ''.join(sorted(letters))
+    return ANAGRAMS[key]
+
+
+@app.route('/<letters>', methods=['GET'])
+def anagram(letters):
+    return jsonify(get_anagrams(letters))
+```
+
+#### Extending Lecture
+
 There are roughly two different directions you could take this portion of the lesson, and it's basically up to you.
 
 1. *Option 1: Deploy an API.* We've put together these slides (TODO: Jose) which walk through how to deploy a flask application to the internet. This sets up a final project direction which some students might appreciate.
