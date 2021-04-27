@@ -51,11 +51,11 @@
     {
         "title": "Python and the Web",
         "date": "2021-04-27",
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/5-condensed.pdf",
+        "full": "/lecture/5-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c26142a-444d-4448-9bbd-ad17017a7e34",
         "visible": true,
-        "code": "#"
+        "code": "https://edstem.org/us/courses/2850/workspaces/pbvMChdiOAq8FgROiitLD2j7RSfiadcw"
     },
     {
         "title": "Functional Programming",
