@@ -1,5 +1,19 @@
 # Assignment 2: Quest for the Unicorn!
-**Due: Midnight, Friday, May 14, 2021**
+**Due: Midnight, Friday, May 21, 2021**
+<style>
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 
 ## Overview
 In Tuesday's lecture, we witnessed the shocking kidnapping of Unicornelius, our much-beloved CS 41 course mascot. Fortunately, the kidnapper left some clues as to Unicornelius' whereabouts - using your knowledge of Python, can you help solve the clues and locate our missing friend?
@@ -8,10 +22,11 @@ In Tuesday's lecture, we witnessed the shocking kidnapping of Unicornelius, our 
 
 ## Assignment Overview
 
-### Essential Background
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/reVwR6jjtVY">
-</iframe>
+<div class="videoWrapper">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/reVwR6jjtVY">
+    </iframe>
+</div>
 
 ## Assignment Description
 
@@ -19,7 +34,12 @@ In this assignment, you will work with your project teams to help Pop Tart find 
 
 The assignment will consist of the following components.
 
-<img src="imgs/quest_for_the_unicorn_paths.png" alt="An image of the various paths through Assignment 2." width="80%"/>
+<img 
+    src="/img/quest_for_the_unicorn_paths.png" 
+    class="d-block mx-auto"
+    alt="Different paths to the unicorn: the assignment begins with an individual pre-quiz, after which you get a group ID. Then you can complete one of two paths and finally finish a post-quiz." 
+    width="80%"
+/>
 
 ### Individual Pre-Quiz
 
@@ -39,13 +59,15 @@ After completing the assignment, you will be asked to complete an individual pos
 
 ## Getting Started
 
-<h2 align="center">
+<p align="center" class="h2">
     <a href="https://prequiz.unicornsarethebest.com">Complete the pre-quiz and obtain your Group ID here!</a>
-</h2>
+</p>
 
+## Submitting
 
-# Credit
+Submit this assignment on [Paperless](https://paperless.stanford.edu). You should submit **every file you created** for this assignment. There are some portions that you might want to do in the interactive interpreter—for those puzzles, you should submit the text of your interactive interpreter, so we can see how you interacted with the puzzle.
 
-This assignment wouldn't have been possible without so much support from our wonderful TAs: Antonio Ferriss, Elizabeth Fitzgerald, and Jose Francisco were instrumental in designing and implementing much of the core infrastructure of this assignment.
+As before, only one member of the group should submit the assignment, with a file called `groups.txt` that tells us how we should stitch together the assignment in the backend.
 
-This assignment was partially inspired by Sam Redmond's "Quest for the Holy Grail" assignment, featured in previous offerings of CS 41.
+## Credit
+This assignment wouldn't have been possible without so much support from our wonderful TAs: Antonio Ferris and Elizabeth Fitzgerald designed and implemented all of Path 2. Jose Francisco was instrumental in designing part of Path 1. Parth and Michael rapidly threw together much of the infrastructure for this assignment, so you can blame them when it breaks. Finally, this assignment was partially inspired by Sam Redmond's "Quest for the Holy Grail" assignment, featured in previous offerings of CS 41.
