@@ -83,8 +83,12 @@ def anagram(letters):
 
 There are roughly two different directions you could take this portion of the lesson, and it's basically up to you.
 
-1. *Option 1: Deploy an API.* We've put together these slides (TODO: Jose) which walk through how to deploy a flask application to the internet. This sets up a final project direction which some students might appreciate.
-2. *Option 2: Pretty websites with `render_template`.* APIs are really cool, but if students want to build "prettier" websites, they need to write HTML and CSS code, and use flask to serve those files. We've included some problems about this, if that's where you'd like to take this portion of the lab.
+1. *Option 1: Deploy an API.* We've put together [these slides](/lab/lab5-deployment.pdf) which walk through how to deploy a flask application to the internet. This sets up a final project direction which some students might appreciate.
+
+   If you're going to follow this option, you should have a terminal open alongside the slides and walk through the instructions in the deck. Before section, make sure all of the dependencies are installed: `pip install gunicorn flask` and install Heroku CLI by following the instructions at [this link](https://devcenter.heroku.com/articles/heroku-cli).
+
+
+1. *Option 2: Pretty websites with `render_template`.* APIs are really cool, but if students want to build "prettier" websites, they need to write HTML and CSS code, and use flask to serve those files. We've included some problems about this, if that's where you'd like to take this portion of the lab.
 
 ## Group Work \[20 min\]
 
@@ -94,5 +98,5 @@ There are roughly two different directions you could take this portion of the le
 
 We're scheduling more time for group work today. This is going to be the trend in the future - we'd like to allocate more and more classtime for final projects (and the assignment). Remind students that the [project proposal](https://forms.gle/McvNiTtc2L5St5NC7) is due tomorrow.
 
-## No weekly reflection this week!
-Enjoy your weekend :)
+## No weekly reflection; just submit your attendance
+Attendance form: <https://forms.gle/xp6amjQLzutPeE1N9>. Enjoy your weekend :)
