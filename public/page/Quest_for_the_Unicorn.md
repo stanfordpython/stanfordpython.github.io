@@ -9,20 +9,23 @@ In Tuesday's lecture, we witnessed the shocking kidnapping of Unicornelius, our 
 ## Assignment Overview
 
 ### Essential Background
-<!-- [![A video of Unicornelius being Kidnapped, and Pop Tart deciding to go on a quest to rescue them.](https://img.youtube.com/vi/orRECxwCecM/0.jpg)](https://www.youtube.com/watch?v=orRECxwCecM) -->
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/reVwR6jjtVY">
+</iframe>
 
 ## Assignment Description
 
-In this assignment, you will work in your project teams to find Unicornelius.
+In this assignment, you will work with your project teams to help Pop Tart find Unicornelius.
 
-The assignment will consist of the following components:
+The assignment will consist of the following components.
 
+<img src="imgs/quest_for_the_unicorn_paths.png" alt="An image of the various paths through Assignment 2." width="80%"/>
 
 ### Individual Pre-Quiz
 
 To help us evaluate this assignment for use in future offerings of CS 41, we've implemented a short pre-quiz and post-quiz for this assignment. The pre-quiz is not a graded component of the course, but please do give it your best effort, as it will give us important data as we work to continue improving this assignment for future offerings of CS 41.
 
-Once everyone in your project group has completed the pre-quiz, you will receive a _Group ID_, which will be your group's identifier which you use to sign into the rest of the stages of this assignment.
+Once everyone in your project group has completed the pre-quiz, you will receive a _Group ID_, a numeric identifier which your group will use to sign into the subsequent stages of this assignment.
 
 ### Paths to Unicornelius
 
@@ -34,6 +37,15 @@ We aren't going to reveal much more about the paths, though, as - much like a re
 
 After completing the assignment, you will be asked to complete an individual post-quiz, so that we can assess how well the assignment met its learning objectives. Much like the pre-quiz, this quiz will not be graded, but it will provide us with valuable data in improving this assignment for future offerings of CS 41.
 
+## Getting Started
+
+<h2 align="center">
+    <a href="https://prequiz.unicornsarethebest.com">Complete the pre-quiz and obtain your Group ID here!</a>
+</h2>
+
 
 # Credit
 
+This assignment wouldn't have been possible without so much support from our wonderful TAs: Antonio Ferriss, Elizabeth Fitzgerald, and Jose Francisco were instrumental in designing and implementing much of the core infrastructure of this assignment.
+
+This assignment was partially inspired by Sam Redmons's "Quest for the Holy Grail" assignment, featured in previous offerings of CS 41.
