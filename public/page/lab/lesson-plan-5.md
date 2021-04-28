@@ -9,6 +9,8 @@
 ## Pre-Section Preparation
 Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU) and fork it to make a copy that you own.
 
+The section is in two parts—it starts with APIs and then the second half is about flask. There are two directions you could take the second half of section: you could talk about deploying a flask app on Heroku or you could talk about `render_template` and HTML. You should prepare for one or both of these directions beforehand by reading the lesson plan and preparing to teach that portion as needed.
+
 ## Community Building \[5 mins\]
 Here are some ideas for community building activities:
 * Ask everyone a Would You Rather question; there's a list in [this folder](https://drive.google.com/drive/folders/1SobifNwo_dPMA_dO78IUVUuyATwlqF9N?usp=sharing)
