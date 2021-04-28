@@ -20,13 +20,35 @@ In Tuesday's lecture, we witnessed the shocking kidnapping of Unicornelius, our 
 
 [[TOC]]
 
-## Assignment Overview
+## Essential Background
+
+<p>Pop Tart - our other CS 41 course mascot, and EIA (Elephant Intelligence Agency) agent, embarks on a quest to recover Unicornelius.</p>
 
 <div class="videoWrapper">
     <iframe width="420" height="315"
     src="https://www.youtube.com/embed/AdpagIOFhTo">
     </iframe>
 </div>
+
+<p>Pop Tart runs - huffing and puffing - in the direction of the nearest dark magical forces, in the hopes that they will provide him with a clue as to the whereabouts of the missing unicorn.</p>
+
+<p>As he walks through the grasslands of Elephantland on his way to Unicornville, he suddenly senses movement nearby, and hears a soft voice whisper: "What'sssssssss up?"</p>
+
+<p>Jumping in startled fear, he finds himself face-to-face with none other than Misssss Slithers, a notoriously ruthless member of the infamous Python Mafia.</p>
+
+<p>"I ssssssee you're looking for the missing unicorn," Misssss Slithers hissed, knowingly.</p>
+
+<p>"I am!" cried Pop Tart. "You don't suppose the Python Mafia's got Unicornelius, do you?"</p>
+
+<p>"I sssssssuspect... they are behind this." Misssss Slithers replied.</p>
+
+<p>"W- why would they do this?" Pop Tart asked, stunned. "And more importantly - why are <i>you</i> telling me this?!"</p>
+
+<p>"What I sssssuspect you don't know, is that I've had a resssssssssssent falling out with the Mafia. They and I no longer ssssssee eye to eye. Ever since I was posted for five years' of Mafia duty in Gary, Indiana, I haven't been their biggest ssssssupporter, shall we sssssay."</p>
+
+<p>The snake continued, "I am willing to help you on your little sssssssearch. I suspect Unicornelius has been taken to Mafia headquarterssssssss... and I worry what dreadful future awaits them there."</p>
+
+<p>"We have to go there immediately!" Pop Tart cried, and the two set off in the direction of Mafia headquarters.</p>
 
 ## Assignment Description
 
