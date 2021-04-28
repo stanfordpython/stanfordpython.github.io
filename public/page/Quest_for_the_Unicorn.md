@@ -48,4 +48,4 @@ After completing the assignment, you will be asked to complete an individual pos
 
 This assignment wouldn't have been possible without so much support from our wonderful TAs: Antonio Ferriss, Elizabeth Fitzgerald, and Jose Francisco were instrumental in designing and implementing much of the core infrastructure of this assignment.
 
-This assignment was partially inspired by Sam Redmons's "Quest for the Holy Grail" assignment, featured in previous offerings of CS 41.
+This assignment was partially inspired by Sam Redmond's "Quest for the Holy Grail" assignment, featured in previous offerings of CS 41.
