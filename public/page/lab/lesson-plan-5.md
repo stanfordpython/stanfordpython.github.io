@@ -120,6 +120,7 @@ Here's the solution code for the basic (url slug-based) anagram renderer:
 ```python
 @app.route('/<letters>', methods=['GET'])
 def anagram(letters):
+    anagrams = get_anagrams(letters)
     return render_template("anagrams.html", anagrams=anagrams)
 ```
 
