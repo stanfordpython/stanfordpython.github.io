@@ -104,5 +104,5 @@ There are roughly two different directions you could take this portion of the le
 
 We're scheduling more time for group work today. This is going to be the trend in the future - we'd like to allocate more and more classtime for final projects (and the assignment). Remind students that the [project proposal](https://forms.gle/McvNiTtc2L5St5NC7) is due tomorrow.
 
-## No weekly reflection; just submit your attendance
-Attendance form: <https://forms.gle/xp6amjQLzutPeE1N9>. Enjoy your weekend :)
+## Weekly Reflection
+Attendance form and weekly reflection (the reflection should be short): <https://forms.gle/xp6amjQLzutPeE1N9>. Enjoy your weekend :)
