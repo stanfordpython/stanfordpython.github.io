@@ -123,7 +123,7 @@ def anagram(letters):
     return render_template("anagrams.html", anagrams=anagrams)
 ```
 
-And for the web form component, here's the solution code for the `anagram_word` function. For this function, students will also want to modify `index` so that it points to the web form - but no further modifications will be necessary.
+And for the web form component, here's the solution code for the `anagram_word` function. For this function, students will also want to modify `index` so that it points to the web form (at `start.html`) - but no further modifications will be necessary.
 ```python
 
 @app.route('/anagram', methods=['POST'])
