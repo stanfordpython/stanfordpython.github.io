@@ -16,7 +16,7 @@
         "visible": true
     },
     {
-        "num": 3.1,
+        "num": null,
         "title": "Final Project Proposal",
         "spec": "https://forms.gle/McvNiTtc2L5St5NC7",
         "starterCode": "#",
@@ -25,10 +25,10 @@
     },
     {
         "num": 2,
-        "title": "TBA 🙃",
-        "spec": "",
+        "title": "Quest for the Unicorn",
+        "spec": "/#/page/assignment-2",
         "starterCode": "#",
-        "due": "#",
+        "due": "2021-05-21 11:59:59 PM",
         "visible": true
     },
     {

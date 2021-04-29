@@ -4,7 +4,7 @@ import Table from "react-bootstrap/Table";
 
 interface AssignmentRowProps {
     title: string,
-    assignmentNumber: number,
+    num: number | null,
     spec: string,
     starterCode: string,
     due: moment.Moment | null,
@@ -13,7 +13,7 @@ interface AssignmentRowProps {
 }
 
 const Assignment: FunctionComponent<AssignmentRowProps> =
-    ({title, assignmentNumber, spec, starterCode, due, visible, highlight}: AssignmentRowProps) => {
+    ({title, num, spec, starterCode, due, visible, highlight}: AssignmentRowProps) => {
     
     if (!visible) {
         return null;
@@ -38,10 +38,11 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
 
     // Only add a hyperlink if there's an assignment spec linked
     let specLink: JSX.Element | null;
+    let assignmentText = num === null ? "" : `Assignment ${num}: `;
     if (!spec || spec === "#") {
-        specLink = <div>Assignment {assignmentNumber}: {title}</div>;
+        specLink = <div>{assignmentText}{title}</div>;
     } else {
-        specLink = <a href={spec}>Assignment {assignmentNumber}: {title}</a>;
+        specLink = <a href={spec}>{assignmentText}{title}</a>;
     }
 
     return (
@@ -129,7 +130,7 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
                     (
                         <Assignment
                             key={index}
-                            assignmentNumber={index}
+                            num={assignmentData.num}
                             title={assignmentData.title}
                             spec={assignmentData.spec}
                             starterCode={assignmentData.starterCode}
