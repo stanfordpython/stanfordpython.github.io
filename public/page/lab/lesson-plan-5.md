@@ -11,7 +11,11 @@ Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pNTgfKaan
 
 The section is in two parts—it starts with APIs and then the second half is about flask. There are two directions you could take the second half of section: you could talk about deploying a flask app on Heroku or you could talk about `render_template` and HTML. You should prepare for one or both of these directions beforehand by reading the lesson plan and preparing to teach that portion as needed.
 
-## Community Building \[5 mins\]
+## Community Building & Announcement \[5 mins\]
+<div class="alert alert-success">
+    <span><b>Important Announcement:</b> Theo and Antonio will be holding a Github tutorial session on Monday at 2:30pm PT at <a href="https://stanford.zoom.us/j/92936476672?pwd=bG1ueU5KZUxiMDEzUjV1OTk1d1pQdz09">https://stanford.zoom.us/j/92936476672?pwd=bG1ueU5KZUxiMDEzUjV1OTk1d1pQdz09</a>. Don't publicize this but the session will be recorded—just letting you know in case someone asks.</span>
+</div>
+
 Here are some ideas for community building activities:
 * Ask everyone a Would You Rather question; there's a list in [this folder](https://drive.google.com/drive/folders/1SobifNwo_dPMA_dO78IUVUuyATwlqF9N?usp=sharing)
 * Have people sign up to lead a community building activity each week by adding their name to a Google Doc; then, each week, they'll be in charge of doing some sort of icebreaker during the first 5 minutes of section or so
