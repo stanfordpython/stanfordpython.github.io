@@ -10,30 +10,30 @@
     {
         "week": 3,
         "topic": "Object-Oriented Programming Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/2850/workspaces/phrEyIUB3O2HJdgK99clSsIDLJTW8UbZ",
+        "solutions": "https://edstem.org/us/courses/2850/workspaces/phrEyIUB3O2HJdgK99clSsIDLJTW8UbZ",
         "date": "2021-04-15 11:59:59 PM",
         "visible": true
     },
     {
         "week": 4,
         "topic": "Functions Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/2850/workspaces/p6hfgD4nKeuxhtCcccSPSOCmXkhWA3d2",
+        "solutions": "https://edstem.org/us/courses/2850/workspaces/p6hfgD4nKeuxhtCcccSPSOCmXkhWA3d2",
         "date": "2021-04-22 11:59:59 PM",
         "visible": true
     },
     {
         "week": 5,
-        "topic": "Functional Programming Lab",
-        "code": "",
-        "solutions": "",
+        "topic": "Web Requests Lab",
+        "code": "https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU",
+        "solutions": "https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU",
         "date": "2021-04-29 11:59:59 PM",
         "visible": true
     },
     {
         "week": 6,
-        "topic": "Web Requests Lab",
+        "topic": "Functional Programming Lab",
         "code": "",
         "solutions": "",
         "date": "2021-05-06 11:59:59 PM",
