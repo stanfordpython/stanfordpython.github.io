@@ -94,7 +94,46 @@ There are roughly two different directions you could take this portion of the le
    If you're going to follow this option, you should have a terminal open alongside the slides and walk through the instructions in the deck. Before section, make sure all of the dependencies are installed: `pip install gunicorn flask` and install Heroku CLI by following the instructions at [this link](https://devcenter.heroku.com/articles/heroku-cli).
 
 
-1. *Option 2: Pretty websites with `render_template`.* APIs are really cool, but if students want to build "prettier" websites, they need to write HTML and CSS code, and use flask to serve those files. We've included some problems about this, if that's where you'd like to take this portion of the lab.
+2. *Option 2: Pretty websites with `render_template`.* APIs are really cool, but if students want to build "prettier" websites, they need to write HTML and CSS code, and use flask to serve those files. We've included some problems about this, if that's where you'd like to take this portion of the lab.
+
+Here's some solution code for Option 2, using the anagrammer as the backbone of the web application.
+```html
+<!-- File: anagrams.html -->
+
+{% extends "base.html" %}
+
+{% block main %}
+<body>
+    <div class="container mt-2">
+        <!-- Take the variables you've obtained from
+        your backend, pass them in here, and display them
+        to the user! -->
+        {% for anagram in anagrams %}
+            <p>{{ anagram }}<br></p>
+        {% endfor %}
+    </div>
+</body>
+{% endblock main %}
+```
+
+Here's the solution code for the basic (url slug-based) anagram renderer:
+```python
+@app.route('/<letters>', methods=['GET'])
+def anagram(letters):
+    anagrams = get_anagrams(letters)
+    return render_template("anagrams.html", anagrams=anagrams)
+```
+
+And for the web form component, here's the solution code for the `anagram_word` function. For this function, students will also want to modify `index` so that it points to the web form (at `start.html`) - but no further modifications will be necessary.
+```python
+
+@app.route('/anagram', methods=['POST'])
+def anagram_word():
+    word = request.form.get('anagram-word', '').lower().strip()
+    anagrams = get_anagrams(word)
+    return render_template("anagrams.html", anagrams=anagrams)
+
+```
 
 ## Group Work \[20 min\]
 
