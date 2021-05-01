@@ -102,101 +102,101 @@
                 "description": "We'll begin with one of the most exciting applications of Python: it interacts so well with the internet. We'll start with using Python to query and parse websites. After that, we'll transition to server-side web development and discuss how to build websites backed by Python. This lecture is the most demo-heavy of the quarter and by the end, we'll build an full-fledged web application, backed by Python."
             },
             {
-                "title": "Web Requests Lab",
+                "title": "Python & the Web Lab",
                 "date": "2021-04-29",
-                "description": "This is an open-ended lab session. Students can choose to implement a Reddit Wallpaper Scraper (a former CS 41 assignment) to gain practice with Python's web requests framework, work on Assignment 2, or work on final projects. It's getting to be midterm season, and we don't want students to be unduly stressed: therefore for this lab, students have the option of working on course deliverables with TAs and Course Staff present to help answer questions."
+                "description": "This is an open-ended lab session. Students begin by exploring the API Resource sheet we've put together and interacting with APIs online. Then, they'll transition to building and deploying a Flask application. Optionally, students can implement an HTML component to their web application."
             }
         ],
         "dates": {
             "start": "2021-04-26",
             "end": "2021-04-30"
         },
-        "assignments": "Assignment 2 - TBA 🙃",
+        "assignments": "Assignment 2 - Quest for the Unicorn",
         "assignmentLink": null
     },
     {
         "num": 6,
+        "title": "Python and the Web, Continued",
+        "days": [
+            {
+                "title": "Python and the Web, Continued",
+                "date": "2021-05-04",
+                "description": "By popular request, we're continuing this lecture with a focus on the topics that people expressed interest in on the mid-quarter feedback form. We're going to do a deep dive into building a web app and really tease Flask apart as a library, to how it works. We'll use the requests library as an introduction to this topic and end the lecture by making and deploying our own Flask apps."
+            },
+            {
+                "title": "Python and the Web Lab",
+                "date": "2021-05-06",
+                "description": "This lab will build on the previous lab session by beginning with the same problem as the last one ended with: students will implement (or revisit) the flask application that they built to display a list of anagrams to the user. Then, we'll augment this by moving other Python features and assignments into the Flask app format. Optionally, students will set up their own accounts on pythonanywhere.com and build a personal application."
+            }
+        ],
+        "visible": true,
+        "dates": {
+            "start": "2021-05-03",
+            "end": "2021-05-07"
+        },
+        "assignments": "Assignment 2 - Quest for the Unicorn",
+        "assignmentLink": null
+    },
+    {
+        "num": 7,
         "title": "Functional Programming",
         "visible": true,
         "days": [
             {
                 "title": "Functional Programming",
-                "date": "2021-05-04",
+                "date": "2021-05-11",
                 "description": "We first discuss functional programming's place in the landscape of programming paradigms - what makes this different from Java and C++ - and then introduce the concept of higher-order functions through map and filter, and anonymous lambda functions. We'll understand iterators, generator expressions, and generators as core ideas in functional programming, and briefly talk about where these tools could show up in Python. Lastly, we'll go over decorators - an amazing application of functional programming ideas to solve common programming problems."
             },
             {
                 "title": "Functional Programming Lab",
-                "date": "2021-05-06",
-                "description": "In this lab, students will leverage their knowledge of functions and FP to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
-            }
-        ],
-        "dates": {
-            "start": "2021-05-03",
-            "end": "2021-05-07"
-        },
-        "assignments": "Assignment 2 - TBA 🙃",
-        "assignmentLink": null
-    },
-    {
-        "num": 7,
-        "title": "Standard Libraries",
-        "visible": true,
-        "days": [
-            {
-                "title": "Standard Libraries",
-                "date": "2021-05-11",
-                "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we teach students to explore Python's standard libraries. We first cover the basics of reading documentation, then we delve into the the rich depth and diversity of libraries that Python has to offer. We explore pdb, Python's debugging library, and move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
-            },
-            {
-                "title": "TBD",
                 "date": "2021-05-13",
-                "description": "In lab groups, students will program a Raspberry Pi to navigate a maze and, next week, will compete against each other to see who can complete the maze fastest."
+                "description": "In this lab, students will leverage their knowledge of functions and FP to explore the new programming paradigm that we've found in Python. We'll practice with map, filter, and lambda, and then explore functools.reduce and the operator module for more depth. As a thought experiment, we briefly discuss how to convert iterative Python code to functional code, and then practice with iterators and generators, using the itertools module to build power operators from linear algebra in under ten lines of Python. Closure semantics are also reviewed as a preview for the main event - writing decorators!"
             }
         ],
         "dates": {
             "start": "2021-05-10",
             "end": "2021-05-12"
         },
-        "assignments": "Final Project",
+        "assignments": "Assignment 2 - Quest for the Unicorn",
         "assignmentLink": null
     },
     {
         "num": 8,
-        "title": "Third-Party Packages",
+        "title": "Standard Libraries",
         "visible": true,
         "days": [
             {
-                "title": "Third-Party Packages",
+                "title": "Standard Libraries",
                 "date": "2021-05-18",
-                "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and the develpment of third-party Python packages, after which we provide a survey of some of of the most popular and useful third-party Python packages."
+                "description": "To many, the most important feature of a programming language is not syntax or program flow, but rather the work that prior programmers have put in to make routine computations straightforward. In this lecture, we teach students to explore Python's standard libraries. We first cover the basics of reading documentation, then we delve into the the rich depth and diversity of libraries that Python has to offer. We explore pdb, Python's debugging library, and move into specialized containers, regex tools, customizable iterators, and system-level interactions. If there's time, we explore temporal modules, like timeit and datetime, and libraries for file compression."
             },
             {
                 "title": "TBD",
                 "date": "2021-05-20",
-                "description": "This is the Raspberry Pi Car Competition! Today, students will compete against other teams to finish the maze fastest. The winning team gets a special prize, on us. 🙃"
+                "description": "In lab groups, students will program a Raspberry Pi to navigate a maze and, next week, will compete against each other to see who can complete the maze fastest."
             }
         ],
         "dates": {
             "start": "2021-05-17",
             "end": "2021-05-21"
         },
-        "assignments": "Final Project",
+        "assignments": "Assignment 2 - Quest for the Unicorn, Final Project",
         "assignmentLink": null
     },
     {
         "num": 9,
-        "title": "Python in the Real World",
+        "title": "Third-Party Packages",
         "visible": true,
         "days": [
             {
-                "title": "TBD",
+                "title": "Third-Party Packages",
                 "date": "2021-05-25",
-                "description": ""
+                "description": "Though the Python standard libraries contain a substantial number of useful tools, the Python community has also built up a series of third-party libraries for various applications. In this lecture, we introduce students to Pypi.org and the develpment of third-party Python packages, after which we provide a survey of some of of the most popular and useful third-party Python packages."
             },
             {
                 "title": "TBD",
                 "date": "2021-05-27",
-                "description": ""
+                "description": "This is the Raspberry Pi Car Competition! Today, students will compete against other teams to finish the maze fastest. The winning team gets a special prize, on us. 🙃"
             }
         ],
         "dates": {

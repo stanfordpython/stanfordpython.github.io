@@ -58,7 +58,7 @@
         "code": "https://edstem.org/us/courses/2850/workspaces/pbvMChdiOAq8FgROiitLD2j7RSfiadcw"
     },
     {
-        "title": "Functional Programming",
+        "title": "Python and the Web, Continued",
         "date": "2021-05-04",
         "condensed": "",
         "full": "",
@@ -67,7 +67,7 @@
         "code": "#"
     },
     {
-        "title": "Standard Libraries",
+        "title": "Functional Programming",
         "date": "2021-05-11",
         "condensed": "",
         "full": "",
@@ -76,7 +76,7 @@
         "code": "#"
     },
     {
-        "title": "Third-Party Packages",
+        "title": "Standard Libraries",
         "date": "2021-05-18",
         "condensed": "",
         "full": "",
@@ -85,7 +85,7 @@
         "code": "#"
     },
     {
-        "title": "TBD",
+        "title": "Third-Party Packages",
         "date": "2021-05-25",
         "condensed": "",
         "full": "",
