@@ -60,11 +60,11 @@
     {
         "title": "Python and the Web, Continued",
         "date": "2021-05-04",
-        "condensed": "",
-        "full": "",
-        "video": "",
+        "condensed": "/lecture/6-condensed.pdf",
+        "full": "/lecture/6-full.pdf",
+        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c49cc0b-6b97-4ae3-8129-ad1e0180dadc",
         "visible": true,
-        "code": "#"
+        "code": "/lecture/6-code.zip"
     },
     {
         "title": "Functional Programming",
