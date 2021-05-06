@@ -238,6 +238,7 @@ def submit_via_form():
 ```
 
 ## Weekly Reflection
-Attendance form and weekly reflection (the reflection should be short): 
 
+<h2 align="center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOlL-C900XzmhOcF-bRbWp-nIvbmR3k_bqHxHcps4RBb-pDg/viewform?usp=sf_link">Attendance form and weekly reflection (this is a super short one!)</a></h2>
+<br>
 Enjoy your weekend! 🎉
