@@ -160,7 +160,53 @@ filter(lambda x: x.isnumeric(), lst)
 ## Problems \[45-50 mins\]
 You'll notice that we don't have group work time anymore! It seems that groups aren't always in the same section enough for us to plan around that, so we've cut that time to focus more on the problems.
 
-<!-- TODO: Finish -->
+**Note**: Some people don't like Saturn, so this time teams have the option of writing their code in `workbook.py` instead of `workbook.saturn`.
+
+<div class="alert alert-info">
+    <span>I'd suggest that for the first two sections, you pick which problems you'd like your students to do. Doing all of them or leaving students to go through them without more guidance is probably a bad idea</span>
+</div>
+
+### Decorators
+
+These decorators can get quite tricky. **`timeit`** is the most straightforward as it's something we've done before but haven't written as a decorator. I've seen **LRU Cache** before as an example interview problem, and it's definitely a practical problem, but you might want to walk through this with your section if that's the route you decide to take. **Better Debugging** can be complex or simple, depending on what your students want to go for. At its most complex, you can call `inspect.signature(fn).bind(*args, **kwargs)` to get the binding of arguments to the names of those arguments in the signature of `fn` which is quite cool!
+
+### Generators
+
+I'd suggest you pick one or two of these. If you pick **Inorder Tree Traversal**, I'd suggest doing **Iterating over Classes with Magic Methods** at the end because that problem is essentially the same as the tree traversal problem but implemented as `__init__` on the class instead.
+
+Of these, I'm a huge fan of **Cartesian Product**. It's fun and applied and you can use it to introduce the recursive subtlety here. Ideally you'd probably want to do this:
+
+```python
+for var1 in lst1:
+    for var2 in lst2:
+        ...
+            for varn in lstn:
+                yield (var1, var2, ..., varn)
+```
+
+However, because you can't nest an arbitrary number of `for` loops, you have to use recursion. This becomes a really cool example of why functions-within-functions are useful and how we can build internally recursive generators. I'd highly recommend it, but it does take time.
+
+If you're looking for something faster and easier, **Triangle Generator** is a cute and straightforward problem.
+
+### Linear Algebra (Challenge)
+
+This section is only accessible to folks who know linear algebra, but if they do, it's really cool. I'd suggest you familiarize yourself with the solution and let students who want to explore this on their own do so.
+
+### Infinite Streams
+
+I was struggling a lot to think about infinite streams of data, but it turns out there are a lot of good examples in the EE context. If students find that interesting, this is a very neat example of how you might build a generator in Python to determine when something is zero-crossing. You can also mention that - even though we didn't talk about this - a similar concept might be applied in more general signal analysis or other situations where we want to process a signal element by element (genome sequencing, etc.).
+
+The Pythonic value of this stuff is...less interesting, but I wanted to include at least one of these problems.
+
+### Lambda, Map, Filter, and Reduce
+
+All of these problems are "busy work." None of them build on each other, and they're all just drills to make sure you know the material. I'd recommend spending a little bit of time here and moving on if your students know it or spending more time if they're struggling.
+
+### Iterators
+
+Here we dive into some of the weirdness of iterators (namely that they get consumed as they're used up). This concept is important for students to grasp, so if you get here, you should definitely talk about that. After mentioning that, I'd recommend you just explore `itertools` unless you did the tree traversal problem from earlier, in which case the magic methods section will be more rewarding.
+
+### 
 
 ## Let students out 10 minutes early
 Because why not? It's week 7—let's give people their time back 😊
