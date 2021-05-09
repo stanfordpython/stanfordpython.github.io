@@ -85,6 +85,11 @@ next(g) # => 16
 
 This can be useful for doing things like membership checking. For example, you might check if `desired_value in (expensive_operation(elem) for elem in collection)`.
 
+Generators are especially useful to represent
+
+1. Arbitrarily large collections of data
+2. Streams of data where the current state of the data is important in determining the next state of the data (i.e. you need to frequently "pause" the function in the middle of execution)
+
 ### Functions as Objects
 This shouldn't be too confusing, but we used it as a way to segue into the idea of decorators. Briefly: because functions are objects, you can pass them into functions as parameters and return them from functions.
 
