@@ -69,8 +69,8 @@
     {
         "title": "Functional Programming",
         "date": "2021-05-11",
-        "condensed": "",
-        "full": "",
+        "condensed": "/lecture/7-condensed.pdf",
+        "full": "/lecture/7-full.pdf",
         "video": "",
         "visible": true,
         "code": "#"
