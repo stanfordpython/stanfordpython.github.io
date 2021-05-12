@@ -34,9 +34,17 @@
     {
         "week": 6,
         "topic": "Python & the Web, Continued Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/2850/workspaces/pRVlcoJfBrEB7ut5dKjbFI1aB1SvIwMN",
+        "solutions": "https://edstem.org/us/courses/2850/workspaces/pRVlcoJfBrEB7ut5dKjbFI1aB1SvIwMN",
         "date": "2021-05-06 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "week": 7,
+        "topic": "Functional Programming",
+        "code": "https://edstem.org/us/courses/2850/workspaces/p2DbNM2ycZt6iMpxsyVLGrspUqpmgliU",
+        "solutions": "https://edstem.org/us/courses/2850/workspaces/p2DbNM2ycZt6iMpxsyVLGrspUqpmgliU",
+        "date": "2021-05-13 11:59:59 PM",
         "visible": true
     }
 ]
