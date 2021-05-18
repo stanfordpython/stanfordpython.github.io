@@ -1,4 +1,4 @@
-# Lesson Plan: Functional Programming (Week 7)
+# Lesson Plan: Python Standard Libraries (Week 8)
 
 [[TOC]]
 
@@ -440,6 +440,7 @@ Because we've already covered these libraries, we focus on going more in depth w
 These new libraries problems definitely require some knowledge of context but the point is just to showcase seome of the cool things Python can do and point people towards the documentation.
 
 * `base64` is probably my favorite problem - we've encrypted a neat message in binary and base64
+* the undisclosed library (which is really `graphlib`) is a close second - did you know Python can do topological sorting for you??
 * `contextlib.redirect_stdout` is incredibly useful for moving between strings and integers - this is used to capture the printed output of other functions
 * `wave` is used in a slightly artificial way here, but the library is really neat and allows you to break `.wav` files into frames
 * `threading` is super useful and we use it in a small example to download images
