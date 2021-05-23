@@ -32,11 +32,18 @@
         "visible": true
     },
     {
+        "num": null,
+        "title": "Final Project Video",
+        "spec": "https://forms.gle/2gbam1kihvCgZiiJ9",
+        "due": "2021-06-01 11:59:59 PM",
+        "visible": true
+    },
+    {
         "num": 3,
         "title": "Final Project",
-        "spec": "",
+        "spec": "https://cs198.stanford.edu/paperless/CS/41/assignments/677",
         "starterCode": "#",
-        "due": "2021-06-03 11:59:59 PM",
+        "due": "2021-06-04 11:59:59 PM",
         "visible": true
     }
 ]
