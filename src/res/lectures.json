@@ -87,10 +87,10 @@
     {
         "title": "Third-Party Packages",
         "date": "2021-05-25",
-        "condensed": "",
-        "full": "",
+        "condensed": "/lecture/9-condensed.pdf",
+        "full": "/lecture/9-full.pdf",
         "video": "",
         "visible": true,
-        "code": "#"
+        "code": "/lecture/lecture-9.zip"
     }
 ]
