@@ -30,7 +30,91 @@ In lecture, we focused our discussion mostly on third-party packages for data sc
 * `numpy`/`scipy`
 * `matplotlib`/`seaborn`
 
-We talked about all of these libraries at a high level, giving 1-2 examples of each, so don't expect that we've covered everything there is to know about any of these libraries: the main takeaway should be a high level overview of what each of these libraries are for, and from there, students should be able to look into the documentaton for each library to figure out how to use it. This lab will give students more practice with that.
+Specifically, in lecture, we spent most of the time discussing a dataset of rappers that Parth had curated: the dataset included the name of each rapper, as well as (concatenated) all the lyrics of their top ten hits in a CSV file. One exercise that we did was use Pandas to calculate the rappers with the greatest uniqueness/variance in their lyrics, as follows:
+```python
+def count_words(lyric: str):
+    words = lyric.split()
+    return len(words)
+def count_unique_words(lyrics: str):
+    lyrics = set(lyrics.split())
+    return len(lyrics)
+
+# Add two additional columns: one with num_words, one with num_unique_words
+rappers = pd.read_csv('rappers/rappers.csv')
+rappers['num_words'] = rappers.lyrics.apply(count_words)
+rappers['num_unique_words'] = rappers.lyrics.apply(count_unique_words)
+
+# Calculate ratio of unique to total words: add as a new column
+rappers['perc_unique'] = rappers['num_unique_words'] / rappers['num_words']
+```
+
+We could then do things like filter the dataset, for example, by finding all rappers with a uniqueness score of greater than 0.5, or by name, as follows:
+```python
+rappers.perc_unique > .5
+```
+```python
+rappers[rappers.artist == 'kendrick lamar']
+```
+
+From here, we learned how to create plots of this data in `seaborn`, as follows:
+```python
+# Seaborn setup code
+import seaborn as sns
+sns.set_theme()
+
+# Creating a swarm plot
+sns.swarmplot(x=rappers["perc_unique"], size=10)
+```
+
+As another plotting activity, we plotted a scatter plot of how rapper popularity varies as a function of uniqueness score. We did so by merging another `DataFrame`, containing metadata (age, popularity, etc.) about each rapper, with the current `DataFrame` (based on rapper name), and producing a scatter plot from that data:
+
+```python
+rapper_metadata = pd.read_csv('rappers/rapper-metadata.csv')
+all_rapper_info = pd.merge(rappers, rapper_metadata, on='artist')
+sns.scatterplot(data=all_rapper_info, x='perc_unique', y='popularity', s=70)
+```
+
+We then moved onto `numpy`, specifically, we explored the ways in which a `numpy` array's properties differ from that of a `list`, and cases inw hich that might be desirable:
+```python
+# The heights of the TAs
+heights = [6, 5 + 11/12, 5 + 9/12, 5 + 9/12, 5 + 8/12, 6 + 2/12]
+
+# Convert to inches
+heights = np.array(heights)
+heights *= 12 # You can't do this with a list!
+
+# Summary statistics:
+heights.mean()
+heights.std()
+
+# Fancier things
+np.log(heights)
+```
+
+The last example-driven component of lecture was using `scipy` to run a regression model on the rapper scatterplot that we created earlier. We did so as follows:
+```python
+import scipy.stats as st
+
+result = st.linregress(all_rapper_info.perc_unique, all_rapper_info.popularity)
+```
+
+From here, to estimate the popularity of a new rapper whose uniqueness score is known, we can just use $y = mx + b$ with the slope and intercept properties of our regression line, as follows:
+```python
+result.slope * .32 + result.intercept # => 81
+```
+
+We can also visualize the regression easily using `seaborn`:
+```python
+sns.regplot(
+	data=all_rapper_info,
+	x='perc_unique',
+	y='popularity'
+)
+```
+
+At the very end of lecture, Michael gave a quick overview of machine learning - it was really high level and hand-wavy, but mostly was designed to level-set everyone for Problem 1 of this lab.
+
+As you can see, although we discussed these libraries at a high level, giving 1-2 examples of each, don't expect that we've covered everything there is to know about any of these libraries in detail: the main takeaway should be a high level overview of what each of these libraries are for, and from there, students should be able to look into the documentaton for each library to figure out how to use it. This lab will give students more practice with that.
 
 In this lab, we've offloaded much more of the problem setup to the notebook: as such, this lesson plan is going to be a bit more sparse, in that it will provide a high-level overview of the problems and the motivations behind them. As the solutions are often split into many cells across the notebooks, those, too, have been left for you in `solutions.ipynb`, rather than here.
 
