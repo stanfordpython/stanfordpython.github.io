@@ -95,16 +95,23 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             }
         }
 
-        // Is it too far away?
-        const nearEnough = moment().diff(assignmentData[i].due, "days") >= -14;
+        if (i < assignmentData.length) {
+            // If i <= assignmentData.length, it means there are no valid
+            // assignments to highlight.
 
-        // Only highlight first row if date is less than two weeks away
-        if (nearEnough) {
-            this.setState({ assignmentData, highlight: i });
+            // Is it too far away?
+            const nearEnough = moment().diff(assignmentData[i].due, "days") >= -14;
+
+            // Only highlight first row if date is less than two weeks away
+            if (nearEnough) {
+                this.setState({ assignmentData, highlight: i });
+            }
+            else {
+                this.setState({ assignmentData });
+            }
         }
-        else {
-            this.setState({ assignmentData });
-        }
+
+
 
     }
 
