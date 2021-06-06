@@ -106,11 +106,11 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             if (nearEnough) {
                 this.setState({ assignmentData, highlight: i });
             }
-            else {
-                this.setState({ assignmentData });
-            }
-        }
 
+        }
+        else {
+            this.setState({ assignmentData });
+        }
 
 
     }
