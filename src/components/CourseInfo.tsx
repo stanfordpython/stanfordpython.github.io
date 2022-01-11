@@ -42,8 +42,8 @@ const CourseInfo: FunctionComponent<{}> = () => {
             <dt className="text-md-right col-md-2">Instructors</dt>
             <dd className="col-md-10">
                 <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
-                <div dangerouslySetInnerHTML={obfuscate("Michael Cooper", "stanford.edu", "coopermj")}/>
-                <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "coopermj")}/>
+                <div dangerouslySetInnerHTML={obfuscate("Tara Jones", "stanford.edu", "tarabeth")}/>
+                <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "tarabeth")}/>
             </dd>
 
             <dt className="text-md-right col-md-2">Office Hours</dt>
