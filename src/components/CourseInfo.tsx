@@ -43,24 +43,24 @@ const CourseInfo: FunctionComponent<{}> = () => {
             <dd className="col-md-10">
                 <div dangerouslySetInnerHTML={obfuscate("Parth Sarin", "stanford.edu", "psarin")}/>
                 <div dangerouslySetInnerHTML={obfuscate("Tara Jones", "stanford.edu", "tarabeth")}/>
-                <div dangerouslySetInnerHTML={email_both("Email Parth and Michael", "stanford.edu", "psarin", "tarabeth")}/>
+                <div dangerouslySetInnerHTML={email_both("Email Parth and Tara", "stanford.edu", "psarin", "tarabeth")}/>
             </dd>
 
             <dt className="text-md-right col-md-2">Office Hours</dt>
             <dd className="col-md-10">
-                <div>Michael: Tuesdays, 9am-10am PT</div>
-                <div>Parth: Thursdays, 1pm-2pm PT</div>
+                <div>Tara: TBD</div>
+                <div>Parth: TBD/div>
                 <div><a href="https://web.stanford.edu/class/cs41/restricted/office-hours.html">Join Office Hours</a></div>
             </dd>
 
-            <dt className="text-md-right col-md-2">Course Staff</dt>
+          {/*  <dt className="text-md-right col-md-2">Course Staff</dt>
             <dd className="col-md-10">
                 <div>Antonio Ferris</div>
                 <div>Elizabeth Fitzgerald</div>
                 <div>Jose Francisco</div>
                 <div>Max Pike</div>
                 <div>Theo Culhane</div>
-            </dd>
+            </dd>*/}
 
             <dt className="text-md-right col-md-2">Prereqs</dt>
             <dd className="col-md-10">CS106B/X or equivalent</dd>
