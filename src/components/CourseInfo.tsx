@@ -46,20 +46,21 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <div dangerouslySetInnerHTML={email_both("Email Parth and Tara", "stanford.edu", "psarin", "tarabeth")}/>
             </dd>
 
-            <dt className="text-md-right col-md-2">Office Hours</dt>
+            {/* <dt className="text-md-right col-md-2">Office Hours</dt>
             <dd className="col-md-10">
                 <div>Tara: TBD</div>
                 <div>Parth: TBD</div>
-                <div><a href="https://web.stanford.edu/class/cs41/restricted/office-hours.html">Join Office Hours</a></div>
-            </dd>
+            </dd> */}
 
             <dt className="text-md-right col-md-2">Course Staff</dt>
             <dd className="col-md-10">
-                <div>Antonio Ferris</div>
+                <div>TBD</div>
+                    <div dangerouslySetInnerHTML={email_both("Interested in TAing? Reach out!", "stanford.edu", "psarin", "tarabeth")}></div>
+                {/* <div>Antonio Ferris</div>
                 <div>Elizabeth Fitzgerald</div>
                 <div>Jose Francisco</div>
                 <div>Max Pike</div>
-                <div>Theo Culhane</div>
+                <div>Theo Culhane</div> */}
             </dd>
 
             <dt className="text-md-right col-md-2">Prereqs</dt>
