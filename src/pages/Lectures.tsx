@@ -24,7 +24,7 @@ const Lectures: FunctionComponent = () => (
             a helpful learning resource, and hopefully they improve 
             the CS41 experience for you!
         </p>
-        <LectureData />
+       {/*<LectureData />*/}
     </div>
 
 )

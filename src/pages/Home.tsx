@@ -8,7 +8,6 @@ const Home: FunctionComponent = () => (
     <div className="home">
         <SiteHeader />
         <CourseInfo />
-        <Schedule/>
     </div>
 )
 

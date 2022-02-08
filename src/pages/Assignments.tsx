@@ -15,7 +15,7 @@ const Assignments: FunctionComponent = () => (
             material, so enjoy! We hope you have fun completing these 
             assignments.
         </p>
-        <AssignmentData />
+       {/* <AssignmentData />*/}
     </div>
 );
 
