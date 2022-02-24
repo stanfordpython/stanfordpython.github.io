@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { LabData } from "../components/LabTable";
+// import { LabData } from "../components/LabTable";
 
 const Labs: FunctionComponent = () => (
     <div className="labs">
