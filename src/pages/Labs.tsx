@@ -8,7 +8,7 @@ const Labs: FunctionComponent = () => (
         <p>
             Labs in CS41 provide a hands-on opportunity to experiment with the 
             Python concepts presented in lectures. Although students work on 
-            these labs during an 80-minute class period, it would take much 
+            these labs during an 90-minute class period, it would take much 
             longer to fully complete a lab. Each lab comes with a number of 
             challenge problems that will take even the experiences programmer 
             nontrivial time. Labs are collaborative and open-ended, frequently 
