@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { Schedule } from "../components/Schedule";
+// import { Schedule } from "../components/Schedule";
 import SiteHeader from "../components/SiteHeader";
 import CourseInfo from "../components/CourseInfo";
 import { Alert } from "react-bootstrap";
@@ -23,7 +23,6 @@ const Home: FunctionComponent = () => (
         </Alert>
         <SiteHeader />
         <CourseInfo />
-        <Schedule/>
     </div>
 )
 

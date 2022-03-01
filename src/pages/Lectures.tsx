@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { LectureData } from "../components/LectureTable";
+// import { LectureData } from "../components/LectureTable";
 
 const Lectures: FunctionComponent = () => (
     <div className="lectures">
@@ -14,17 +14,7 @@ const Lectures: FunctionComponent = () => (
             Slides are heavily animated, so both the compressed and 
             full versions of the slide decks are uploaded.
         </p>
-
-        <p>
-            We've provided these recordings by recording each Zoom
-            meeting, which comes with its own limitations. In
-            particular, these recordings aren't professional so
-            please excuse background noise, incorrect
-            transcriptions, etc etc. Our goal is that the videos are 
-            a helpful learning resource, and hopefully they improve 
-            the CS41 experience for you!
-        </p>
-        <LectureData />
+       {/*<LectureData />*/}
     </div>
 
 )

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { LabData } from "../components/LabTable";
+// import { LabData } from "../components/LabTable";
 
 const Labs: FunctionComponent = () => (
     <div className="labs">
@@ -23,7 +23,7 @@ const Labs: FunctionComponent = () => (
             working knowledge of Python - after all, what better way to learn 
             Python than to practice it?
         </p>
-        <LabData />
+      {/*  <LabData />*/}
     </div>
 );
 
