@@ -41,17 +41,16 @@ const CourseInfo: FunctionComponent<{}> = () => {
                 <div dangerouslySetInnerHTML={email_both("Email Parth and Tara", "stanford.edu", "psarin", "tarabeth")}/>
             </dd>
 
-            {/* <dt className="text-md-right col-md-2">Office Hours</dt>
+            <dt className="text-md-right col-md-2">Office Hours</dt>
             <dd className="col-md-10">
-                <div>Tara: TBD</div>
-                <div>Parth: TBD</div>
-            </dd> */}
+                    <div>Parth: <a href="https://calendly.com/psarin/office-hours" rel="noopener noreferrer" target="_blank">Calendly</a></div>
+                <div>Tara: <a href="mailto:tarabeth@stanford.edu">Email</a></div>
+            </dd>
 
             <dt className="text-md-right col-md-2">Course Staff</dt>
             <dd className="col-md-10">
                 <div>Theo Culhane</div>
                 <div>Elizabeth Fitzgerald</div>
-                <div>Mel Guo</div>
                 <div>Arpit Ranasaria</div>
             </dd>
 
