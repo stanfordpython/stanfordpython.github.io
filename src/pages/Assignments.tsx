@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-// import { AssignmentData } from "../components/AssignmentTable";
+import { AssignmentData } from "../components/AssignmentTable";
 
 const Assignments: FunctionComponent = () => (
     <div className="assignments">
@@ -15,7 +15,7 @@ const Assignments: FunctionComponent = () => (
             material, so enjoy! We hope you have fun completing these 
             assignments.
         </p>
-       {/* <AssignmentData />*/}
+       <AssignmentData />
     </div>
 );
 

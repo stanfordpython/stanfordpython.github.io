@@ -43,14 +43,15 @@ const CourseInfo: FunctionComponent<{}> = () => {
 
             <dt className="text-md-right col-md-2">Office Hours</dt>
             <dd className="col-md-10">
-                    <div>Parth: <a href="https://calendly.com/psarin/office-hours" rel="noopener noreferrer" target="_blank">Calendly</a></div>
-                <div>Tara: <a href="mailto:tarabeth@stanford.edu">Email</a></div>
+                <div>Parth: <a href="https://calendly.com/psarin/office-hours" rel="noopener noreferrer" target="_blank">Calendly</a></div>
+                <div>Tara: <a href="https://calendly.com/tarabethjones/cs41" rel="noopener noreferrer" target="_blank">Calendly</a></div>
             </dd>
 
             <dt className="text-md-right col-md-2">Course Staff</dt>
             <dd className="col-md-10">
                 <div>Theo Culhane</div>
                 <div>Elizabeth Fitzgerald</div>
+                <div>Shounak Ray</div>
                 <div>Arpit Ranasaria</div>
             </dd>
 

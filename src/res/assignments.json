@@ -1,49 +1,50 @@
 [
     {
+        "num": null,
+        "title": "Python Installation Instructions",
+        "spec": "/#/page/install-python",
+        "starterCode": "",
+        "due": null,
+        "visible": true
+    },
+    {
         "num": 0,
         "title": "Welcome to Python!",
-        "spec": "https://github.com/stanfordpython/python-assignments/blob/main/assign0/README.md",
-        "starterCode": "#",
-        "due": "2021-04-09 11:59:59 PM",
+        "spec": "",
+        "starterCode": "",
+        "due": "2022-04-07 5:00:00 PM",
         "visible": true
     },
     {
         "num": 1,
         "title": "Dear Cryptography",
-        "spec": "/#/page/assignment-1",
-        "starterCode": "https://edstem.org/us/courses/2850/workspaces/pkOUaMelNywvN84xelqruMB2W9PcRpCl",
-        "due": "2021-04-23 11:59:59 PM",
+        "spec": "",
+        "starterCode": "",
+        "due": "2022-04-21 5:00:00 PM",
         "visible": true
     },
     {
         "num": null,
         "title": "Final Project Proposal",
-        "spec": "https://forms.gle/McvNiTtc2L5St5NC7",
-        "starterCode": "#",
-        "due": "2021-04-30 11:59:59 PM",
-        "visible": true
+        "spec": "",
+        "starterCode": "",
+        "due": "",
+        "visible": false
     },
     {
         "num": 2,
-        "title": "Quest for the Unicorn",
-        "spec": "/#/page/assignment-2",
-        "starterCode": "#",
-        "due": "2021-05-21 11:59:59 PM",
-        "visible": true
-    },
-    {
-        "num": null,
-        "title": "Final Project Video",
-        "spec": "https://forms.gle/2gbam1kihvCgZiiJ9",
-        "due": "2021-06-01 11:59:59 PM",
+        "title": "???",
+        "spec": "",
+        "starterCode": "",
+        "due": "2022-05-12 5:00:00 PM",
         "visible": true
     },
     {
         "num": 3,
         "title": "Final Project",
-        "spec": "/#/page/final-project",
-        "starterCode": "#",
-        "due": "2021-06-04 11:59:59 PM",
+        "spec": "",
+        "starterCode": "",
+        "due": "2022-05-30 5:00:00 PM",
         "visible": true
     }
 ]

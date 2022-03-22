@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-// import { LectureData } from "../components/LectureTable";
+import { LectureData } from "../components/LectureTable";
 
 const Lectures: FunctionComponent = () => (
     <div className="lectures">
@@ -14,7 +14,7 @@ const Lectures: FunctionComponent = () => (
             Slides are heavily animated, so both the compressed and 
             full versions of the slide decks are uploaded.
         </p>
-       {/*<LectureData />*/}
+       <LectureData />
     </div>
 
 )

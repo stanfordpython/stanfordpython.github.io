@@ -31,7 +31,7 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
     // Is there code?
     let starterCodeLink: JSX.Element | null;
     if (!starterCode || starterCode === "#") {
-        starterCodeLink = <div>N/A</div>;
+        starterCodeLink = null;
     } else {
         starterCodeLink = (<a href={starterCode}>Starter Code</a>);
     }
@@ -50,13 +50,11 @@ const Assignment: FunctionComponent<AssignmentRowProps> =
         <td>{specLink}</td>
         <td>{starterCodeLink}</td>
         {
-            due
+            due?.isValid()
             ? <td>
-                <b>Local Time:</b> {due.local().format("MMMM Do YYYY @ h:mma z")}<br />
-                <b>PDT:</b> {due.format("MMMM Do YYYY @ h:mma")}<br />
-                ({due.fromNow()})
+                {due.format("MMMM Do YYYY @ h:mma")} ({due.fromNow()})
             </td>
-            : <td>Coming soon™</td>
+            : <td></td>
         }
         </tr>
     );
@@ -86,6 +84,7 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
             }
         })
 
+        
         // Find the next assignment that's due
         let i;
         for (i = 0; i < assignmentData.length; i++) {
@@ -94,17 +93,19 @@ export class AssignmentData extends Component<{}, AssignmentDataState> {
                 break;
             }
         }
-
+        
         if (i < assignmentData.length) {
             // If i <= assignmentData.length, it means there are no valid
             // assignments to highlight.
-
+            
             // Is it too far away?
             const nearEnough = moment().diff(assignmentData[i].due, "days") >= -14;
-
+            
             // Only highlight first row if date is less than two weeks away
             if (nearEnough) {
                 this.setState({ assignmentData, highlight: i });
+            } else {
+                this.setState({ assignmentData });
             }
 
         }
