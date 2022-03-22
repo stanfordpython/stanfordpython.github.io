@@ -1,96 +1,96 @@
 [
     {
         "title": "Welcome to Python!",
-        "date": "2021-03-30",
+        "date": "2022-03-29",
         "condensed": "/lecture/1.1-condensed.pdf",
         "full": "/lecture/1.1-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5bc14abb-f9c1-4076-822b-acfb018343c6",
-        "visible": true,
-        "code": "/#/page/lecture1_code"
+        "video": "",
+        "visible": false,
+        "code": "#"
     },
     {
         "title": "Python Basics",
-        "date": "2021-04-01",
+        "date": "2022-03-31",
         "condensed": "/lecture/1.2-condensed.pdf",
         "full": "/lecture/1.2-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bd4a6a5-89d8-4aad-932a-acfe00297b5f",
-        "visible": true,
-        "code": "https://edstem.org/us/courses/2850/workspaces/pAw6HseHgBZUPzAjbC3cjIwme4yNHfy8"
+        "video": "",
+        "visible": false,
+        "code": "#"
     },
     {
         "title": "Data Structures",
-        "date": "2021-04-06",
+        "date": "2022-04-05",
         "condensed": "/lecture/2-condensed.pdf",
         "full": "/lecture/2-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=571949ac-9cb3-4ddf-b54a-ad0300068e17",
-        "visible": true,
+        "video": "",
+        "visible": false,
         "code": "#"
     },
     {
         "title": "Object-Oriented Python",
-        "date": "2021-04-13",
+        "date": "2022-04-12",
         "handout": {
             "title": "The Python data model",
             "url": "/#/page/handout/data-model"
         },
         "condensed": "/lecture/3-condensed.pdf",
         "full": "/lecture/3-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2b64a4da-845c-4528-a264-ad09017e8421",
-        "visible": true,
-        "code": "https://edstem.org/us/courses/2850/workspaces/pYMjgUq3kmdLNasBmkxu8AFOTB6xDbpm"
-    },
-    {
-        "title": "Functions",
-        "date": "2021-04-20",
-        "condensed": "/lecture/4-condensed.pdf",
-        "full": "/lecture/4-full.pdf",
         "video": "",
-        "visible": true,
+        "visible": false,
         "code": "#"
     },
     {
-        "title": "Python and the Web",
-        "date": "2021-04-27",
-        "condensed": "/lecture/5-condensed.pdf",
-        "full": "/lecture/5-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c26142a-444d-4448-9bbd-ad17017a7e34",
-        "visible": true,
-        "code": "https://edstem.org/us/courses/2850/workspaces/pbvMChdiOAq8FgROiitLD2j7RSfiadcw"
+        "title": "Functions",
+        "date": "2022-04-19",
+        "condensed": "/lecture/4-condensed.pdf",
+        "full": "/lecture/4-full.pdf",
+        "video": "",
+        "visible": false,
+        "code": "#"
     },
     {
-        "title": "Python and the Web, Continued",
-        "date": "2021-05-04",
+        "title": "Python and the Web, APIs",
+        "date": "2022-04-26",
+        "condensed": "/lecture/5-condensed.pdf",
+        "full": "/lecture/5-full.pdf",
+        "video": "",
+        "visible": false,
+        "code": "#"
+    },
+    {
+        "title": "Python and the Web, Server-side Python",
+        "date": "2022-05-03",
         "condensed": "/lecture/6-condensed.pdf",
         "full": "/lecture/6-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c49cc0b-6b97-4ae3-8129-ad1e0180dadc",
-        "visible": true,
-        "code": "/lecture/6-code.zip"
+        "video": "",
+        "visible": false,
+        "code": "#"
     },
     {
         "title": "Functional Programming",
-        "date": "2021-05-11",
+        "date": "2022-05-10",
         "condensed": "/lecture/7-condensed.pdf",
         "full": "/lecture/7-full.pdf",
         "video": "",
-        "visible": true,
+        "visible": false,
         "code": "#"
     },
     {
         "title": "Standard Libraries",
-        "date": "2021-05-18",
+        "date": "2022-05-17",
         "condensed": "",
         "full": "",
         "video": "",
-        "visible": true,
+        "visible": false,
         "code": "#"
     },
     {
-        "title": "Third-Party Packages",
-        "date": "2021-05-25",
+        "title": "TBD",
+        "date": "2022-05-24",
         "condensed": "/lecture/9-condensed.pdf",
         "full": "/lecture/9-full.pdf",
-        "video": "https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9767acfc-629e-4f44-893a-ad33017f49fc",
-        "visible": true,
-        "code": "/lecture/lecture-9.zip"
+        "video": "",
+        "visible": false,
+        "code": "#"
     }
 ]
