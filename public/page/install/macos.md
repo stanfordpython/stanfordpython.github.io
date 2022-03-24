@@ -37,23 +37,23 @@ For the remainder of this setup document, we assume that you have a basic famili
 The main takeaway is the following: If you something of the following form in this guide (you'll see this quite a few times!):
 
 ```
-psarin$ command
+parth$ command
 ```
 
 Then copy and paste the command into your command line prompt. 
 
 Two quick notes:
 
-1. The text before the `$` can vary. It is not necessarily your username. In this case, we are assuming that the username is `psarin` and that is the text which is shown before the `$` at your command prompt. (On the terminal below, for example, the text before the prompt includes more than just the username, including the current directory).
+1. The text before the `$` can vary. It is not necessarily your username. In this case, we are assuming that the username is `parth` and that is the text which is shown before the `$` at your command prompt. (On the terminal below, for example, the text before the prompt includes more than just the username, including the current directory).
 2. Below is a quick example of how you may go about running the commands immediately following this list. This is designed to clear up any ambiguity related to running commands at the command line. 
 
 
 Open up a command line prompt (likely using Terminal), and run the following commands:
 
 ```
-psarin$ which python3
+parth$ which python3
 /Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-psarin$ python3 --version
+parth$ python3 --version
 Python 3.10.3
 ```
 
@@ -62,13 +62,13 @@ If you see the output shown above, then Python 3.10.3 was installed correctly on
 Let's celebrate by writing some code! Run the following from a command prompt. You should see the following output, which leaves you at an interactive prompt, at which you can write Python code.
 
 ```
-psarin$ python3
+parth$ python3
 Python 3.10.3 (v3.10.3:a342a49189, Mar 16 2022, 09:34:18) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello world!")
 Hello world!
 >>> quit()
-psarin$ 
+parth$ 
 ```
 
 Try writing some Python (perhaps `print("Hello world!")`) in the interactive interpreter! When you're done, you can exit the interactive interpreter by entering `quit()` at the Python command prompt or by pressing CTRL+D.
@@ -96,9 +96,9 @@ We've correctly installed Python, so next we will create a virtual environment. 
 Specifically, we will create a folder named `cs41-env` in your computer's home folder. The configuration of our virtual environment will live entirely inside of this folder.
 
 ```
-psarin$ python3 --version
+parth$ python3 --version
 Python 3.10.3
-psarin$ python3 -m venv ~/cs41-env
+parth$ python3 -m venv ~/cs41-env
 ```
 
 If these two lines execute without error, you have successfully created a virtual environment named `cs41-env`.
@@ -110,21 +110,21 @@ If these two lines execute without error, you have successfully created a virtua
 For a given terminal session, a virtual environment is either active or inactive at any moment in time. To activate our virtual environment, you will need to run
 
 ```
-psarin$ source ~/cs41-env/bin/activate
-(cs41-env) psarin$
+parth$ source ~/cs41-env/bin/activate
+(cs41-env) parth$
 ```
 
 *Note: If your shell is `tcsh` or `csh`, you will have to run `source ~/cs41-env/bin/activate.csh` instead. If your shell is `fish`, you will have to run `. ~/cs41-env/bin/activate.fish` instead.*
 
-Observe that our command prompt, which previously was `psarin$`, now is `(cs41-env) psarin$`. This is one method by which you can see whether a virtual environment is activated.
+Observe that our command prompt, which previously was `parth$`, now is `(cs41-env) parth$`. This is one method by which you can see whether a virtual environment is activated.
 
 ### Deactivating a virtual environment
 
 Deactivating a virtual environment is easy. From an activated environment, simply run
 
 ```
-(cs41-env) psarin$ deactivate
-psarin$
+(cs41-env) parth$ deactivate
+parth$
 ```
 
 Don't worry if you deactivate from an inactive environment. Nothing bad will happen, although you might see a `-bash: deactivate: command not found` error message, which you can safely ignore.
@@ -134,29 +134,29 @@ Don't worry if you deactivate from an inactive environment. Nothing bad will hap
 Let's reactivate our virtual environment to see what's different when a virtual environment is active.
 
 ```
-psarin$ source ~/cs41-env/bin/activate
-(cs41-env) psarin$ which python3
-/Users/psarin/cs41-env/bin/python3
-(cs41-env) psarin$ which python
-/Users/psarin/cs41-env/bin/python
-(cs41-env) psarin$ which pip3
-/Users/psarin/cs41-env/bin/pip3
-(cs41-env) psarin$ which pip
-/Users/psarin/cs41-env/bin/pip
+parth$ source ~/cs41-env/bin/activate
+(cs41-env) parth$ which python3
+/Users/parth/cs41-env/bin/python3
+(cs41-env) parth$ which python
+/Users/parth/cs41-env/bin/python
+(cs41-env) parth$ which pip3
+/Users/parth/cs41-env/bin/pip3
+(cs41-env) parth$ which pip
+/Users/parth/cs41-env/bin/pip
 ```
 
-It looks like all of our python-related commands are now located inside of the virtual environment. That's a good thing! You can confirm this by seeing that `/Users/psarin/cs41-env/bin:` is the first entry of the string printed by running `echo $PATH`.
+It looks like all of our python-related commands are now located inside of the virtual environment. That's a good thing! You can confirm this by seeing that `/Users/parth/cs41-env/bin:` is the first entry of the string printed by running `echo $PATH`.
 
 Moreover, observe that:
 
 ```
-(cs41-env) psarin$ python3 --version
+(cs41-env) parth$ python3 --version
 Python 3.10.3
-(cs41-env) psarin$ python --version
+(cs41-env) parth$ python --version
 Python 3.10.3
-(cs41-env) psarin$ pip3 --version
+(cs41-env) parth$ pip3 --version
 pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pip (python 3.10)
-(cs41-env) psarin$ pip --version
+(cs41-env) parth$ pip --version
 pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pip (python 3.10)
 ```
 
@@ -165,7 +165,7 @@ The big takeaway is that, inside our active virtual environment, the commands `p
 For example, when the virtual environment is active, we can enter an interactive Python 3 prompt simply by running:
 
 ```
-psarin$ python
+parth$ python
 Python 3.10.3 (v3.10.3:1a79785e3e, Feb 19 2021, 09:06:10) 
 [Clang 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -179,13 +179,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 Next, we'll install useful Python packages that will serve us over the duration of this course. Let's first make sure that we're have activated the virtual environment.
 
 ```
-psarin$ source ~/cs41-env/bin/activate
+parth$ source ~/cs41-env/bin/activate
 ```
 
 Now, we'll update `pip`, Python's builtin package manager, just to make sure it's on the latest version (it should be).
 
 ```
-(cs41-env) psarin$ pip install --upgrade pip
+(cs41-env) parth$ pip install --upgrade pip
 Requirement already up-to-date: pip in ./cs41-env/lib/python3.10/site-packages (21.0.1)
 ```
 
@@ -194,7 +194,7 @@ After, we'll install the suite of Jupyter tools and some additional useful packa
 *Really, really make sure that you have activated `cs41-env` before running this line!*
 
 ```
-(cs41-env) psarin$ pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
+(cs41-env) parth$ pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 ```
 
 This will produce a huge amount of output, as Python is downloading these third-party libraries and tools from the internet and storing them inside our virtual environment. These packages will be available when our virtual environment is active, but will not necessarily be available if our virtual environment is inactive. For this reason, it's important to always have an active virtual environment when working on code for this class.
@@ -257,9 +257,9 @@ In this course, we always assume that you are operating in an active virtual env
 If you want to automatically enable the `cs41-env` virtual environment every time you start a new interactive session, you can add a command to your shell's startup script. In most cases, this will be `~/.bash_profile` or `~/.bashrc`, which are different but in ways that are not important to us right now. Run:
 
 ```
-psarin$ echo "# Activate virtual environment for CS41." >> ~/.bash_profile
-psarin$ echo "source ~/cs41-env/bin/activate" >> ~/.bash_profile
-psarin$ tail -n 2 ~/.bash_profile
+parth$ echo "# Activate virtual environment for CS41." >> ~/.bash_profile
+parth$ echo "source ~/cs41-env/bin/activate" >> ~/.bash_profile
+parth$ tail -n 2 ~/.bash_profile
 # Activate virtual environment for CS41.
 source ~/cs41-env/bin/activate
 ```
