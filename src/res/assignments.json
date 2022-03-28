@@ -8,6 +8,14 @@
         "visible": true
     },
     {
+        "num": null,
+        "title": "Project Group Sign-Up",
+        "spec": "https://docs.google.com/spreadsheets/d/16uG_NyN62knf2V8-2dzvsAjxnjyL9T3SwRLrqs9fzek/edit#gid=0",
+        "starterCode": "",
+        "due": "2022-04-04 5:00:00 PM",
+        "visible": true
+    },
+    {
         "num": 0,
         "title": "Welcome to Python!",
         "spec": "",
