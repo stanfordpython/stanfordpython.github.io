@@ -4,7 +4,6 @@
         "date": "2022-03-29",
         "condensed": "/lecture/1.1-condensed.pdf",
         "full": "/lecture/1.1-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -13,7 +12,6 @@
         "date": "2022-03-31",
         "condensed": "/lecture/1.2-condensed.pdf",
         "full": "/lecture/1.2-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -22,7 +20,6 @@
         "date": "2022-04-05",
         "condensed": "/lecture/2-condensed.pdf",
         "full": "/lecture/2-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -35,7 +32,6 @@
         },
         "condensed": "/lecture/3-condensed.pdf",
         "full": "/lecture/3-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -44,7 +40,6 @@
         "date": "2022-04-19",
         "condensed": "/lecture/4-condensed.pdf",
         "full": "/lecture/4-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -53,7 +48,6 @@
         "date": "2022-04-26",
         "condensed": "/lecture/5-condensed.pdf",
         "full": "/lecture/5-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -62,7 +56,6 @@
         "date": "2022-05-03",
         "condensed": "/lecture/6-condensed.pdf",
         "full": "/lecture/6-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -71,7 +64,6 @@
         "date": "2022-05-10",
         "condensed": "/lecture/7-condensed.pdf",
         "full": "/lecture/7-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -80,7 +72,6 @@
         "date": "2022-05-17",
         "condensed": "",
         "full": "",
-        "video": "",
         "visible": false,
         "code": "#"
     },
@@ -89,7 +80,6 @@
         "date": "2022-05-24",
         "condensed": "/lecture/9-condensed.pdf",
         "full": "/lecture/9-full.pdf",
-        "video": "",
         "visible": false,
         "code": "#"
     }

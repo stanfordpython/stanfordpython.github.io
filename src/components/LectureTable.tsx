@@ -12,7 +12,6 @@ interface LectureRowProps {
     },
     condensed: string,
     full: string,
-    video: string,
     code: string,
     // Display props:
     visible: boolean,
@@ -21,7 +20,7 @@ interface LectureRowProps {
 }
 
 const Lecture: FunctionComponent<LectureRowProps> =
-    ({title, handout, date, condensed, full, video, visible, code, active, 
+    ({title, handout, date, condensed, full, visible, code, active, 
         highlight}: LectureRowProps) => {
 
     if (!visible) {
@@ -53,14 +52,6 @@ const Lecture: FunctionComponent<LectureRowProps> =
         fullLink = <div><a href={full}>Full Slides</a></div>;
     }
 
-    // Is video linked?
-    let videoLink: JSX.Element | null;
-    if (!video || video === "#") {
-        videoLink = <div>N/A</div>;
-    } else {
-        videoLink = (<a href={video}>Video</a>);
-    }
-
     // Is there code?
     let codeLink: JSX.Element | null;
     if (!code || code === "#") {
@@ -85,7 +76,6 @@ const Lecture: FunctionComponent<LectureRowProps> =
                 
                 {fullLink}
             </td>
-            <td>{videoLink}</td>
             <td>{codeLink}</td>
           </tr>
     );
@@ -147,7 +137,6 @@ export class LectureData extends Component<{}, LectureDataState> {
                         <th>Title</th>
                         <th>Date</th>
                         <th>Slides</th>
-                        <th>Video</th>
                         <th>Code</th>
                     </tr>
                 </thead>
