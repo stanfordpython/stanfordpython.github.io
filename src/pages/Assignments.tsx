@@ -8,9 +8,9 @@ const Assignments: FunctionComponent = () => (
         <p>
             Assignments in CS41 are a chance to show us what you've learned in 
             the course! As a 2-unit CR/NC course, we don't want anyone to be 
-            unduly stressed about the assignments. Grades are given on the 
-            checkmark scale, and more importantly, submitted solutions will 
-            receive style feedback from the course staff. We think assignments 
+            unduly stressed about the assignments. We will not assign an evaluative
+            mark to any of the assignments in this course. Instead, we will give you 
+            extensive feedback on your work. We think assignments 
             are an opportunity to challenge yourself to really learn the 
             material, so enjoy! We hope you have fun completing these 
             assignments.
