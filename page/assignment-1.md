@@ -1,5 +1,5 @@
 # Assignment 1: Dear Cryptography (Dear Data + Cryptography)
-**Due: Midnight, Friday of Week 4 (April 23, 2020)**
+**Due: 5pm on Thursday of Week 4 (April 21st, 2022)**
 
 ## Overview
 In this assignment, you will build a cryptography suite that implements two different cryptosystems: the Caesar cipher and the Vigenere cipher. Then, you'll use Python to represent some data you care about! This is our first assignment in groups (🎉) so a sub-goal is to get to know your classmates and work on a fun mini-project together.
@@ -291,6 +291,18 @@ If you're looking for inspiration on how to visualize your data, Stefanie and Ge
 I also asked our staff for different internet repositories for data visualizations. People suggested [/r/DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/) as a nice place to find inspiration.
 
 Regardless of how you visualize the data, be sure to include alt text with your visualization.
+# Group Norms
+
+We want these group projects to be a postive experience for all members on the team. As a part of your first group assignment, please create a list of 5 or more group norms for the quarter. In lecture 2, we went over some examples of group norms and why they are important. Try to write norms that cover the following areas, and try to make them specfic!
+
+Group Norm Themes:
+
+  1. Communication Style: How can your group communicate to eachtoher in a way that promotes respect and teamwork?
+  2. Communication Logistics: Will you email? Text? What hours do you think are reasoable to expect work from teamates?
+  3. Work Split: How will you decide who does what?
+  4. Decision Making: When you team disagrees, how will you deal with this?
+
+  Please submit a file called 'group_norms.txt' where you and your team write one sentence about each of your norms.
 
 # Submitting
 
@@ -320,6 +332,8 @@ In addition, submit your data set, your visualization, and any other files you c
 Take a moment to reflect on group work. After this point, it'll be a bit more challenging to change groups, so if you'd like to change your groups for any reason, now is the time to let us know. Email your TA with any thoughts/questions/concerns you might have. Although it's rare, people occasionally have significant problems with their group. It's best for everyone to make that known—don't suffer in silence!
 
 Submit a file called `contributors.txt` with a list of all of the group members who worked on this assignment. If you've been finalizing your group and worked on this project individually, `contributors.txt` will only have your name in it. Now, though, you should have a newly-formed group: submit another file to Paperless called `group.txt` which has the names of your group members and their SUNet IDs. If you worked on this project in a group, you only need to submit `contributors.txt`.
+
+Also, make sure to subnit your 'group_norms.txt' document.
 
 # Credit
 Much thanks to Sam Redmond (@sredmond), Sherman Leung (@skleung), Python Tutorial, Learn Python the Hard Way, Google Python, MIT OCW 6.189, Project Euler, and Wikipedia's list of ciphers.
