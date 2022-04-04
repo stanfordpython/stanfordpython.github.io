@@ -6,6 +6,24 @@ In this assignment, you will build a cryptography suite that implements two diff
 
 Note: It's always a good idea to get started early, in case you run into unexpected difficulties down the line. Dear data requires some planning!
 
+but first...
+
+# Group Norms
+
+Please do this before you start the rest of the assignment!
+
+We want these group projects to be a postive experience for all members on the team. As a part of your first group assignment, please create a list of 5 or more group norms for the quarter. In lecture 2, we went over some examples of group norms and why they are important. Try to write norms that cover the following areas, and try to make them specfic!
+
+Group Norm Themes:
+
+  1. Communication Style: How can your group communicate to eachtoher in a way that promotes respect and teamwork?
+  2. Communication Logistics: Will you email? Text? What hours do you think are reasoable to expect work from teamates?
+  3. Work Split: How will you decide who does what?
+  4. Decision Making: When you team disagrees, how will you deal with this?
+
+Please submit a file called 'group_norms.txt' where you and your team write one sentence about each of your norms.
+
+
 [[TOC]]
 
 # Cryptography suite
@@ -291,18 +309,6 @@ If you're looking for inspiration on how to visualize your data, Stefanie and Ge
 I also asked our staff for different internet repositories for data visualizations. People suggested [/r/DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/) as a nice place to find inspiration.
 
 Regardless of how you visualize the data, be sure to include alt text with your visualization.
-# Group Norms
-
-We want these group projects to be a postive experience for all members on the team. As a part of your first group assignment, please create a list of 5 or more group norms for the quarter. In lecture 2, we went over some examples of group norms and why they are important. Try to write norms that cover the following areas, and try to make them specfic!
-
-Group Norm Themes:
-
-  1. Communication Style: How can your group communicate to eachtoher in a way that promotes respect and teamwork?
-  2. Communication Logistics: Will you email? Text? What hours do you think are reasoable to expect work from teamates?
-  3. Work Split: How will you decide who does what?
-  4. Decision Making: When you team disagrees, how will you deal with this?
-
-  Please submit a file called 'group_norms.txt' where you and your team write one sentence about each of your norms.
 
 # Submitting
 
