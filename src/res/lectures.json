@@ -30,9 +30,9 @@
             "title": "The Python data model",
             "url": "/#/page/handout/data-model"
         },
-        "condensed": "/lecture/3-condensed.pdf",
-        "full": "/lecture/3-full.pdf",
-        "visible": false,
+        "condensed": "",
+        "full": "",
+        "visible": true,
         "code": "#"
     },
     {
