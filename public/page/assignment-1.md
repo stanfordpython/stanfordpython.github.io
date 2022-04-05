@@ -1,49 +1,43 @@
 # Assignment 1: Dear Cryptography (Dear Data + Cryptography)
-**Due: 5pm on Thursday of Week 4 (April 21st, 2022)**
+> Due: Thursday, April 21st, 2022 at 5pm PT
 
 ## Overview
 In this assignment, you will build a cryptography suite that implements two different cryptosystems: the Caesar cipher and the Vigenere cipher. Then, you'll use Python to represent some data you care about! This is our first assignment in groups (🎉) so a sub-goal is to get to know your classmates and work on a fun mini-project together.
 
 Note: It's always a good idea to get started early, in case you run into unexpected difficulties down the line. Dear data requires some planning!
 
-but first...
-
-# Group Norms
-
-Please do this before you start the rest of the assignment!
-
-We want these group projects to be a postive experience for all members on the team. As a part of your first group assignment, please create a list of 5 or more group norms for the quarter. In lecture 2, we went over some examples of group norms and why they are important. Try to write norms that cover the following areas, and try to make them specfic!
-
-Group Norm Themes:
-
-  1. Communication Style: How can your group communicate to eachtoher in a way that promotes respect and teamwork?
-  2. Communication Logistics: Will you email? Text? What hours do you think are reasoable to expect work from teamates?
-  3. Work Split: How will you decide who does what?
-  4. Decision Making: When you team disagrees, how will you deal with this?
-
-Please submit a file called 'group_norms.txt' where you and your team write one sentence about each of your norms.
-
-
 [[TOC]]
 
+# Group norms and expectations
+
+Before you start the rest of the assignment, take some time to discuss norms and expectations with your group. We're hoping this will be a genuine, meaningful experience for you to talk openly about how you plan to collaborate with each other. At the same time, we're not your parents and we trust that you're able to work with each other well. We hope you'll treat this more like an opportunity to get to know each other better! Feel free to heavily adapt this portion of the assignment to your needs and your group's needs.
+
+Some general advice, as you're discussing norms and expectations, is to reflect on positive and negative group experiences you've had in the past. What has worked well? How could you have prevented bad experiences? What are some practices you could bring to the CS 41 group? 
+
+Here are some topic areas you should discuss—but you're welcome to talk about other areas as well:
+
+  1. **Communication logistics**: How will your group communicate logistically? Email? Text? How will you set up deadlines and what times of the day is it reasonable to expect work? Will you have a regular meeting? What time? How will you set this meeting up, week-to-week?
+  2. **Communication style**: What norms will you set around communication to promote respect and teamwork?
+  3. **Work split**: How will you decide who does what?
+  4. **Decision making**: When your team disagrees, what's the plan? (For this, it's especially important to reflect on past experiences)
+
+Please submit a file called `group_norms.txt` where you write about each of those norms and expectations.
+
+
 # Cryptography suite
+
+<div class="alert alert-success">
+    <h4 class="alert-heading mt-1">Getting started</h4>
+    <hr />
+    <p class="mb-1">One person in the group should go to <a target="_blank" href="https://edstem.org/us/courses/20141/workspaces/pcFk4gsvJTqfn6xpE6FgZfLAaTYVi4t0">this workspace on Ed</a> and create a fork of it. Add your teammates to the workspace and use it as a place to collaborate on code.</p>
+</div>
+
 ## Starter files
 
 We've provided starter files as a skeleton for this assignment. Here's an overview of what's in it:
 
 1. `crypto.py` is the primary file you will modify for the cryptography section. It will implement all the functions to decrypt/encrypt strings.
-2. `design.txt` is where you'll record some design decisions you're making.
-3. `tests/` folder contains test input and output (for Caesar, it's formatted as `{input}:{output}` and for Vigenere it's formatted as `{input}:{key}:{output}`)
-
-<div class="alert alert-success">
-    <h4 class="alert-heading mt-1">Getting started</h4>
-    <hr />
-    <p class="mb-1">One person in the group should go to <a target="_blank" href="https://edstem.org/us/courses/2850/workspaces/pkOUaMelNywvN84xelqruMB2W9PcRpCl">this workspace on Ed</a> and create a fork of it. Add your teammates to the workspace and use it as a place to collaborate on code.</p>
-</div>
-
-<div class="alert alert-info">
-    <span>Full disclosure: this is not how people generally collaborate on code in groups. A common tool for group code collaboration is called <code>git</code>, which we'll cover a bit later in this class. For now, Ed is a great way to collaborate on the first part of this assignment.</span>
-</div>
+2. `tests/` folder contains test input and output (for Caesar, it's formatted as `{input}:{output}` and for Vigenere it's formatted as `{input}:{key}:{output}`)
 
 ## General tips
 
@@ -188,15 +182,6 @@ Another list of non-exhaustive tests are available at `tests/vigenere-tests.txt`
 
 You can use the functions `ord` and `chr` which convert strings of length one to and from their ASCII numerical equivalents. For example, `ord('A') == 65`, `ord('B') == 66`, ..., `ord('Z') == 90`, and `chr(65) == 'A'`, `chr(66) == 'B'`, ..., `chr(90) == 'Z'`. For an extra challenge, try to implement these functions purely functionally.
 
-## Design
-
-Please submit a short design document (`design.txt`) describing your approach to each of the parts of the assignment. "Short" means just a few sentences (1-3) per part discussing the rationale behind your decision to implement this program in the way you did. Consider answering the following questions:
-
-1. What data structures did you use to handle transformation of data?
-2. What Pythonic ideas or strategies did you incorporate in your approach, if any?
-
-Again, by "short" we really mean that you shouldn't take more than, say, fifteen minutes filling out this document. 
-
 ## Extensions
 We've got some extensions for this part of the assignment - most of them are other ciphers that you could decrypt, so if you're interested in that sort of thing, send us an email and we can send you extensions. We're not including them here because, quite frankly, we think the next part of the assignment is much cooler than any of the cryptography extensions.
 
@@ -240,15 +225,15 @@ To be clear, you should all be collecting data *on the same variables at the sam
 ## Step 2: Collect data
 This step is what it sounds like. We'd recommend you make a shared Google sheet and add a column which you use to track which team member made the data entry. Then, start tracking the data!
 
-For example, if I was working on this assignment with Michael, our table setup might look something like:
+For example, if I was working on this assignment with Tara, our table setup might look something like:
 
 | team_member | date | time    | weight | material | origin            |
 |-------------|------|---------|--------|----------|-------------------|
 | Parth       | 4/8  | 12:00pm | 120    | plastic  | dining hall       |
-| Michael     | 4/8  | 1:25pm  | 91     | compost  | spoiled leftovers |
+| Tara        | 4/8  | 1:25pm  | 91     | compost  | spoiled leftovers |
 
 ## Step 3: Analyze the data in Python
-Once you've got the data, we'd like you to analyze the data in Python. At this point, you should also finalize the questions you're investigating and figure out what kind of analyses you'd like to do in Python. You can compute some basic statistics (e.g., "How much plastic do I throw away every day on average?") or some more complicated ones (e.g., "What's the discrete KS test statistic of Michael's daily trash weight compared to mine?").
+Once you've got the data, we'd like you to analyze the data in Python. At this point, you should also finalize the questions you're investigating and figure out what kind of analyses you'd like to do in Python. You should start by figuring out some basic numbers (e.g., "How much plastic do I throw away every day on average?", "How does Tara's daily trash weight compare to mine?").
 
 ### Import the data
 The easiest way to do this is to convert the file to a CSV and then import it using the [`csv` library](https://docs.python.org/3/library/csv.html).
@@ -304,11 +289,9 @@ Alternatively, there are some digital resources that can make gorgeous visualiza
 * Python has [a lot of data visualization libraries](https://mode.com/blog/python-data-visualization-libraries/) - in particular, [`seaborn`](http://seaborn.pydata.org/index.html) is a good library for making beautiful visualizations with few lines of code
 * You can also build your data visualization in Google Slides or in a sketching app on a tablet
 
-If you're looking for inspiration on how to visualize your data, Stefanie and Georgina suggest finding the *story* in your data. What do you want to visualize? In our example, the natural instinct might be to visualize the daily amount of trash that Michael and I threw away, but is that really the most interesting? If you saw a visualization like that, you might infer that we threw less trash away on weekends than weekdays, but the inspiration for the project was really about the trash at the dining hall... Instead, a visualization of the origins of the trash would probably be more compelling.
+If you're looking for inspiration on how to visualize your data, Stefanie and Georgina suggest finding the *story* in your data. What do you want to visualize? In our example, the natural instinct might be to visualize the daily amount of trash that Tara and I threw away, but is that really the most interesting? If you saw a visualization like that, you might infer that we threw less trash away on weekends than weekdays, but the inspiration for the project was really about the trash at the dining hall... Instead, a visualization of the origins of the trash would probably be more compelling.
 
 I also asked our staff for different internet repositories for data visualizations. People suggested [/r/DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/) as a nice place to find inspiration.
-
-Regardless of how you visualize the data, be sure to include alt text with your visualization.
 
 # Submitting
 
@@ -320,7 +303,6 @@ Regardless of how you visualize the data, be sure to include alt text with your 
 Submit the following files to Paperless:
 
 1. Your modified `crypto.py`
-2. The `design.txt` file documenting your design decisions
 
 ## Dear data
 Submit a text file (link to a Google doc, text file, PDF, etc.) that has the answer to four questions:
@@ -335,11 +317,9 @@ The first three questions are the ["Three Prime Questions" of the Quantified Sel
 In addition, submit your data set, your visualization, and any other files you created for this part of the assignment. All of these files should be submitted to Paperless.
 
 ## Groups
+Submit the `group_norms.txt` file to Paperless.
+
 Take a moment to reflect on group work. After this point, it'll be a bit more challenging to change groups, so if you'd like to change your groups for any reason, now is the time to let us know. Email your TA with any thoughts/questions/concerns you might have. Although it's rare, people occasionally have significant problems with their group. It's best for everyone to make that known—don't suffer in silence!
-
-Submit a file called `contributors.txt` with a list of all of the group members who worked on this assignment. If you've been finalizing your group and worked on this project individually, `contributors.txt` will only have your name in it. Now, though, you should have a newly-formed group: submit another file to Paperless called `group.txt` which has the names of your group members and their SUNet IDs. If you worked on this project in a group, you only need to submit `contributors.txt`.
-
-Also, make sure to subnit your 'group_norms.txt' document.
 
 # Credit
 Much thanks to Sam Redmond (@sredmond), Sherman Leung (@skleung), Python Tutorial, Learn Python the Hard Way, Google Python, MIT OCW 6.189, Project Euler, and Wikipedia's list of ciphers.
