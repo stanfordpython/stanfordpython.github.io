@@ -7,9 +7,9 @@ That said, here's one idea for how you might plan your section.
 [[TOC]]
 
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own. You can edit this copy and use it during section. You're welcome to share your screen and talk through the problems, move the problems to a slide deck, ask students to make their own forks of the workspace, ...
+Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own. You can edit this copy and use it during section. You're welcome to share your screen and talk through the problems, move the problems to a slide deck, ask students to make their own forks of the workspace, ...
 
-## Introductions \[10 mins\]
+## Introductions \[15 mins\]
 Spend a good amount of time on introductions! It really goes a long way towards creating an atmosphere in your section where people feel comfortable engaging in the material. It might seem trivial now, but it'll matter more in Week 8 (when everything's stressful) if people feel comfortable in your section.
 
 Here are some ideas for introductions/icebreakers:
@@ -18,25 +18,10 @@ Here are some ideas for introductions/icebreakers:
 * Have people sign up to lead a community building activity each week by adding their name to a Google Doc; then, each week, they'll be in charge of doing some sort of icebreaker during the first 5 minutes of section or so
 * Ask people to send you their favorite meme/video/song/picture/... and share during section
 
-## Cocktail Parties \[15 mins\]
-<div class="alert alert-danger">
-    <span>This section is only for folks who have students who aren't in groups - Antonio, Theo, and Jose</span>
-</div>
-
-If you have asynchronous students, they may not be in project groups yet. Spend the next 15 minutes of class assigning them to project groups. There are a few different ways to do this, and you may have your own approach, but I'd recommend "cocktail parties." Here's how to run a project cocktail party:
-* Tell students they have to form project groups of 2-4 students and you're going to help them do that; we're going to go into breakout rooms and people should chat about potential final project ideas with the goal of forming groups
-* Create a Google Doc where people can write down their project groups, name their project group (e.g., Team Unicorn), and write down the topic they want to work on 
-* Assign people to breakout rooms of 3-4 students for 5 minutes
-* Re-do the above step, assigning people to breakout rooms again with 3-4 different people, for 5 minutes
-* Give students some time to reflect, message each other, and finalize their groups
-
-<div class="alert alert-warning">
-    <span>At the end of section, <b>message Parth the groups on Slack</b>. Each group should have a list of students, a team name, and a tentative topic (can be broad).</span>
-</div>
 
 ## Concept Review \[10-20 mins\]
 <div class="alert alert-info">
-    <span>Parth and Michael will be free during your section, so if something urgent comes up (a Python setup issue, a quesiton about the assignment) and you can't refer it to Ed, you can slack us and we will answer or come to your section</span>
+    <span>Parth and Tara will be free during your section, so if something urgent comes up (a Python setup issue, a quesiton about the assignment) and you can't refer it to Ed, you can slack us and we will answer or come to your section</span>
 </div>
 
 Design some activity where students have to recall some of the stuff they learned during lecture. It can be simple (e.g. "Here are some of the concepts we learned during lecture; let's review some of them") or more complex (e.g. "Make a concept map or visual representation of this concept"). Either way, try to make it formative—make sure you're not just assigning busy work and that the *process of doing the activity* will actually result in learning.
@@ -55,59 +40,66 @@ def is_prime(n):
 ```
 
 We also talked about strings and files and built a chatbot that can provide the definitions for words in the dictionary.
-```python
-def get_definition(guess):
-    """
-    Reads a file called 'definitions.txt' line-by-line to extract a the meaning
-    of the parameter (guess). Each line in 'definitions.txt' should be
-    formatted like {word}:{meaning}, because this function splits each line at
-    the first colon.
 
-    Returns the meaning (string) if the word is in the file or None otherwise.
-    """
-    with open('definitions.txt', 'r') as f:
+```python
+def is_word(guess):
+    with open(WORDS_FILE, 'r') as f:
         for line in f:
-            line = line[:-1]
+            line = line.strip()
+            if line == guess:
+                return True
+    return False
+
+
+def get_definition(guess):
+    with open(DEFINITIONS_FILE, 'r') as f:
+        for line in f:
+            line = line.strip()
             colon_idx = line.find(':')
 
             word = line[:colon_idx]
             meaning = line[colon_idx + 1:]
 
-            if word == guess:
+            if guess == word:
                 return meaning
 
 
-def chatbot():
-    print("I'm Webster, your friendly dictionary chatbot!")
-    print("Enter a word and I'll tell you the definition.")
+def main():
+    """
+    A chatbot which repeatedly prompts the user for a word and checks if it's in
+    the dictionary.
+    """
+    print("Hi! My name is Parth, your friendly dictionary chatbot.")
+    print("Enter a word and I'll tell you if it's in the dictionary.")
 
     while True:
-        guess = input("> ")
-        meaning = get_definition(guess)
+        word = input("> ")
+        word = word.lower()
+        word = word.strip(' ?!')
 
-        if meaning is None:
-            # we didn't use `is None` in class, but students should be able to
-            # figure it out
-            print("That's not a word!")
+        # conditionally, breaking out of the loop
+        if word == '':
+            break
+
+        # doing something with that input
+        if is_word(word):
+            definition = get_definition(word)
+            print(f"Yes! {word} is a word! The definition is: {definition}.")
         else:
-            print(f"That means '{meaning}'.")
+            print(f"No! {word} is not a word.")
+
+
+if __name__ == '__main__':
+    main()
 ```
 
-And, Michael talked about tuples, lists, dictionaries, and sets.
+And, Tara talked about tuples, lists, dictionaries, and sets.
 
-Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://github.com/stanfordpython/python-assignments/blob/main/assign0/README.md).
+Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://stanfordpython.com/#/page/assignment-0).
 
-## Comprehensions \[10-15 mins\]
+## Comprehensions Review \[5-10 mins\]
 
-In Tuesday's lecture, Michael didn't have time to cover comprehensions, so in this lab, we're going to ask you to discuss the motivation and syntax behind comprehensions. What follows is a suggestion of what to teach, and how to teach it - you should feel free to modify the below based on your section and their comfort with comprehensions as you teach it.
-
-### How to teach comprehensions
-
-* Students should see the formal syntax of list comprehensions, so that they can map the formal syntax to the examples that they see. We've put together some visuals [in this Keynote presentation](https://drive.google.com/file/d/1iahOpGaBxB7QHyaoTSzYCSQdR9YzlnlD/view?usp=sharing) that you might find helpful.
-* Examples are _awesome_ - especially with comprehensions, lots of little examples can go a long way in building understanding. Leverage the problems in the lab handout to this effect, and if you're looking for more comprehensions problems, [our archive](https://github.com/stanfordpython/python-labs/blob/master/archive/notebooks-win19/lab2-datastructures-notebook.ipynb) contains a few extra comprehensions problems (in addition to those we've included in this lab notebook).
-* We'd recommend taking 5 minutes or so presenting the formal syntax of list comprehensions, either from the slides, or using a code demo, along with a couple examples. Feel free to use the above writeup of list comprehensions - and the visuals in the Keynote - as a guide for how this presentation might go. After that, we'd recommend having your students spend 10-15 minutes working through the comprehensions problems from this lab in small groups.
-
-The rest of this section will be an overview of comprehensions themselves, so that you can be comfortable with them when presenting to your students.
+In Tuesday's lecture, Tara covered the basics of comprehensions and had the students write some basic ones of their own. It will be important to review this material for it can be challenging and scary at first!
 
 ### What are comprehensions? Why are they important?
 
@@ -160,8 +152,8 @@ Though dictionary comprehensions may look a little more intimidating at first, t
 ```
 
 
-## Problems \[remaining time (20-50 mins)\]
-There are two files in [the section workspace](https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
+## Problems \[remaining time (60ish mins)\]
+There are two files in [the section workspace](https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
 yourself.
 
 Here's some information about the problems in the handout:
