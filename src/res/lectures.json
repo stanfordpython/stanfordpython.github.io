@@ -18,9 +18,9 @@
     {
         "title": "Data Structures",
         "date": "2022-04-05",
-        "condensed": "/lecture/2-condensed.pdf",
-        "full": "/lecture/2-full.pdf",
-        "visible": false,
+        "condensed": "/lecture/lecture2-compressed.pdf",
+        "full": "/lecture/lecture-2-full.pdf",
+        "visible": true,
         "code": "#"
     },
     {
