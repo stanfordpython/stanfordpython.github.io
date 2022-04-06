@@ -9,17 +9,25 @@ That said, here's one idea for how you might plan your section.
 ## Pre-Section Preparation
 Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own. You can edit this copy and use it during section. You're welcome to share your screen and talk through the problems, move the problems to a slide deck, ask students to make their own forks of the workspace, ...
 
-## Introductions \[15 mins\]
+## Introductions \[10 mins\]
 Spend a good amount of time on introductions! It really goes a long way towards creating an atmosphere in your section where people feel comfortable engaging in the material. It might seem trivial now, but it'll matter more in Week 8 (when everything's stressful) if people feel comfortable in your section.
 
 Here are some ideas for introductions/icebreakers:
-* Have everyone introduce themselves by describing their slide in [this deck](https://docs.google.com/presentation/d/1tSWBibH_AJv4qpqV7J0aAwfyN30u6nrg-rcEgN1yXco/edit)
 * Ask everyone a Would You Rather question; there's a list in [this folder](https://drive.google.com/drive/folders/1SobifNwo_dPMA_dO78IUVUuyATwlqF9N?usp=sharing)
 * Have people sign up to lead a community building activity each week by adding their name to a Google Doc; then, each week, they'll be in charge of doing some sort of icebreaker during the first 5 minutes of section or so
 * Ask people to send you their favorite meme/video/song/picture/... and share during section
 
+## Dear Data \[30 mins\]
+A main goal of this section is for groups to get familiar with Dear Data and start to plan their data collection. Please familarize yourself with the [Assignment 1 Handout](https://stanfordpython.com/#/page/assignment-1#inspiration) and make sure to watch [this video](https://www.youtube.com/watch?v=mMJ2wrB8b2Q). Feel free to use the [following slides] (https://docs.google.com/presentation/d/1Htc9D4BDkx9_JgEVQJbtF1W6ouG9mPdXW6mp7r_64RY/edit?usp=sharing) to help the students understand the assignment.
 
-## Concept Review \[10-20 mins\]
+After introducing the assignment, plan a group by group brainstorming activity with visual aids. This can include using a whiteboard, using sticky notes, or whatever comes most natural to you. Use this time to brainstorm different concepts to collect about, what variables would be interesting, and what visualizing them could look like. Have your groups brainstorm for around 10 minuites before focusing on one idea and narrowing down the details about it. 
+
+Make sure before leaving section that each group has:
+* their idea finalized
+* a shared document with their teammates to collect data
+
+
+## Concept Review \[10 mins\]
 <div class="alert alert-info">
     <span>Parth and Tara will be free during your section, so if something urgent comes up (a Python setup issue, a quesiton about the assignment) and you can't refer it to Ed, you can slack us and we will answer or come to your section</span>
 </div>
@@ -152,7 +160,7 @@ Though dictionary comprehensions may look a little more intimidating at first, t
 ```
 
 
-## Problems \[remaining time (60ish mins)\]
+## Problems \[remaining time (30ish mins)\]
 There are two files in [the section workspace](https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru): `workbook.saturn` and `solutions.saturn`. If you haven't used Saturn before, it's Ed's implementation of Jupyter Notebook. As it sounds, the workbook has problems and the solutions file has solutions to those problems. It's up to you if you want to give both of these files to students; otherwise, you'll have to split them up
 yourself.
 
