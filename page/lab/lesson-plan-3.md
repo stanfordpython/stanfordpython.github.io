@@ -1,28 +1,16 @@
 # Lesson Plan: OOP (Week 3)
 
-Welcome to section, everyone! Thanks so much for volunteering your time to make CS 41 a reality. The purpose of this lesson plan is to help you organize your section and decide which topics you'll cover and how. **Everything here is a suggestion:** your students want to spend time with you, so use this as a springboard!
-
-That said, here's one idea for how you might plan your section.
-
 [[TOC]]
 
 ## Pre-Section Preparation
-Same as last time. Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/p6Pw5MmeBGxICT1Yw8WpgEqpNCUX2bHC) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own.
+Same as last time. Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pHofrPx7vuJfOghAYr2mCEwopd8NJsWR) and fork it (by clicking on the toolbar button that has two arrows diverging) to make a copy that you own.
 
 ## Community Building \[5 mins\]
-Here are some ideas for community building activities:
-* Ask everyone a Would You Rather question; there's a list in [this folder](https://drive.google.com/drive/folders/1SobifNwo_dPMA_dO78IUVUuyATwlqF9N?usp=sharing)
-* Have people sign up to lead a community building activity each week by adding their name to a Google Doc; then, each week, they'll be in charge of doing some sort of icebreaker during the first 5 minutes of section or so
-* Ask people to send you their favorite meme/video/song/picture/... and share during section
-* Ask people to DM you a fun fact about themselves and then share the fun fact and have them guess whose it was.
+Be sure to explain this game before doing it!
 
+Ask everyone to write down a fun fact about themselves privately on a slip of paper. Then, collect all of the fun facts and read them out loud and ask students to guess who the fact belongs to. Reveal the correct answers at the end.
 
 ## Concept Review \[10 mins\]
-Take some time to go over anything people have questions about. As a reminder...
-* ...try to make this time formative: don't just ask "what is a class?" but rather, design activities that merely completing will result in learning.
-* ...if you get a logistical question: try not to give the wrong answer if you're not sure and refer students to Ed.
-* ...if you get a question you don't know the answer to: there's a lot of value in showing students how to explore the Python world and get answers to their own questions; you can also slack Parth.
-
 In class, we talked about **Object-Oriented Programming**. It was motivated through an example involving students and classes at Stanford. We built data structures to represent students and courses and then we represented both as classes, modeling relationships between them using the class methods.
 
 <details>
@@ -31,10 +19,10 @@ In class, we talked about **Object-Oriented Programming**. It was motivated thro
 </details>
 <br />
 
-Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://stanfordpython.com/#/page/assignment-1). If the students don't have a group, we're allowing them to complete this assignment individually with the requirement that they find a group by the end of the assignment.
+Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://stanfordpython.com/#/page/assignment-1). 
 
 
-## Problems \[55 mins\]
+## Problems \[40 mins\]
 
 ### Designing Basic Classes
 This is the most important section in this handout. It targets the overall learning goal for this class—that students, confronted with a programming problem, can identify or design the appropriate data structure to solve the problem in Python. We've created a bunch of "common" situations for which a programmer might need to create a data structure and this activity walks students through creating it.
@@ -45,9 +33,9 @@ You'll notice that the assignment workbook is not very descriptive for these pro
 2. Collate these and coax them towards a reasonable implementation. For the recipe example, we've implemented another `Ingredient` class and the `Recipe` stores a `dict` mapping `Ingredient`s to amounts (stored as a number). You might coax your section towards the idea that each ingredient needs an amount associated with it and then brainstorm data structures.
 3. Write the code at whatever level of complexity that you've arrived at from (1) and (2).
 
-This strategy means that you should familiarize yourself with the solution code and think of "breakpoints" - if your section can't get to the (very high) level of complexity that we've implemented, what's a reasonable stopping point before they reach there?
+This strategy means that you should familiarize yourself with the solution code and think of "breakpoints" - if your section can't get to the level of complexity that we've implemented, what's a reasonable stopping point before they reach there?
 
-I'd recommend that you have students brainstorm step (1) on a Google Slides document like [this one](https://docs.google.com/presentation/d/1nGjYDZp6x6ummO_V6Dw15hBUH2aoqBeca7tYXrllkFA/edit), but it's up to you. Then, you could sketch out the design on another slide while students share out from breakout rooms. Finally, you could hop over to Ed to write the code.
+I'd recommend that you break students into group and have them brainstorm step (1) on a the whiteboard. After, you could sketch out the design on an empty section of the board while students share what they made. Finally, you could hop over to Ed to write the code.
 
 #### To Do List
 I'd suggest the To Do list problem as a very basic problem which doesn't implement too many functions and where each of the classes are fairly short. The idea is that each to do belongs to a to do list - each to do list has a topic, so you can keep track of multiple to do lists. The to do list is basically just a container for to do items, which implements some filtering functionality.
@@ -81,7 +69,7 @@ shopping.add(cat_food)
 ```
 
 #### Tournament
-The `Player` and `Tournament` classes help you manage a tournament of people (imagine like a high school debate competition... too nerdy?). Each `Player` might have a few metadata properties (name, age), but the most important thing about this class is the `rating` attribute and how it's managed. The `Tournament` class manages the `rating` attribute on the children, which is a big difference in Python compared to other languages (all attributes are public).
+The `Player` and `Tournament` classes help you manage a tournament of people (like a high school debate competition). Each `Player` might have a few metadata properties (name, age), but the most important thing about this class is the `rating` attribute and how it's managed. The `Tournament` class manages the `rating` attribute on the children, which is a big difference in Python compared to other languages (all attributes are public).
 
 Also note that we've implemented comparison magic methods on the `Player` objects; this is so that we can sort them down below!
 
@@ -164,31 +152,6 @@ This is a little misleading, though, because if `a.__add__(b)` returns `NotImple
 
 The problems in this section are mostly mathematical (`Polynomial` and `Vector`), but musical notes is a really nice deviation from that trend! The type of letter wrapping that is done in `MusicNote` is **very useful** for the Caesar cipher on their assignment.
 
-### Exceptions
-So far, students have seen basic exceptions in the context of validating user input. Below is the example that we reviewed in Lecture 1:
-```python
-while True:
-    try:
-        course = int(input("What class are you in? "))
-        if course == 41:
-            print("You're in the right place!")
-        else:
-            print("Go find the right Zoom link!")
-        break
-    except ValueError:
-        print("Please enter a course number.")
-```
-
-We've put together a few slides which review what we've seen so far in class, and which introduce `try`/`except` in Python in more complete detail, including discussing catching multiple different exceptions, and the `else`/`finally` blocks.
-
-The slide/discussion on catching everything is important: catching all errors can be dangerous, as a decent amount of Python's functionality is handled through exceptions. E.g. catching all errors would catch exceptions like `KeyboardInterrupt` and `SystemExit` (which, since they are now being caught, may make it difficult to exit the script). It is typically better to only catch the specific exceptions that you are concerned about given the code you have written.
-
-Slides can be found here:
-* [Exceptions (Keynote Presentation)](/lab/Lab3_try_except.key)
-* [Exceptions (PDF)](/lab/Lab3_try_except.pdf)
-
-There are two exercises on exceptions in the lab: in the first, students are asked to evaluate a `try`/`except`/`else`/`finally` block to observe the behaviour of the block under different error conditions: this should solidify their understanding of the `else`/`finally` blocks, as distinct from, say, out-dented code beneath a `try`/`except` block. In the second, students are asked to run code blocks which raise a wide variety of Python errors: this is designed to give students an understanding of common errors in Python, so that they understand which errors to consider catching in the code that they write.
-
 ### Inheritance
 We covered inheritance at a conceptual level in the [Lecture 3 handout](http://stanfordpython.com/#/page/handout/data-model). We've talked about how an object can be an instance of multiple types and how the `__mro__` method reveals all of the types of an object.
 
@@ -203,6 +166,6 @@ shows how booleans inherit from integers, so we can do integer-like operations o
 
 Here's a collection of slides explaining more of the syntax of inheritance if you want to teach it in section: [powerpoint](/lab/inheritance.pptx), [pdf](/lab/inheritance.pdf).
 
-## Group Work \[10 min\]
+## Group Work \[25 min\]
 
-I'd encourage you to allow your students to work in their groups for the last ten minutes if the entire group is in the same section. This way, they can check in on their progress in Assignment 1. I think that's a much-needed, relaxing break for everyone this week!
+I'd encourage you to allow your students to work in their groups on Assignment 1. They should be in the midst of data collection for Dear Data and they should be well underway with their cryptography assignment.
