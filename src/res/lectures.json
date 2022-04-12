@@ -30,10 +30,10 @@
             "title": "The Python data model",
             "url": "/#/page/handout/data-model"
         },
-        "condensed": "",
-        "full": "",
+        "condensed": "/lecture/3-condensed.pdf",
+        "full": "/lecture/3-full.pdf",
         "visible": true,
-        "code": "#"
+        "code": "https://edstem.org/us/courses/20141/workspaces/pO9Fi5l4UccPgM1XKoel3K7R5s4mbYez"
     },
     {
         "title": "Functions",
