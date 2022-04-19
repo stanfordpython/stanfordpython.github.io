@@ -2,49 +2,49 @@
     {
         "week": 2,
         "topic": "Data Structures Lab",
-        "code": "https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/p83ckOmKDW3ojOUCtOtAPiSomXitcbED",
-        "date": "2021-04-08 11:59:59 PM",
-        "visible": false
+        "code": "https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru",
+        "solutions": "https://edstem.org/us/courses/20141/workspaces/pv4UmiB0x8CWst1CLWxxZHgZ1JLtEAru",
+        "date": "2022-04-07 11:59:59 PM",
+        "visible": true
     },
     {
         "week": 3,
         "topic": "Object-Oriented Programming Lab",
-        "code": "https://edstem.org/us/courses/2850/workspaces/phrEyIUB3O2HJdgK99clSsIDLJTW8UbZ",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/phrEyIUB3O2HJdgK99clSsIDLJTW8UbZ",
-        "date": "2021-04-15 11:59:59 PM",
+        "code": "",
+        "solutions": "",
+        "date": "2022-04-14 11:59:59 PM",
         "visible": false
     },
     {
         "week": 4,
         "topic": "Functions Lab",
-        "code": "https://edstem.org/us/courses/2850/workspaces/p6hfgD4nKeuxhtCcccSPSOCmXkhWA3d2",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/p6hfgD4nKeuxhtCcccSPSOCmXkhWA3d2",
-        "date": "2021-04-22 11:59:59 PM",
+        "code": "",
+        "solutions": "",
+        "date": "2022-04-21 11:59:59 PM",
         "visible": false
     },
     {
         "week": 5,
-        "topic": "Python & the Web Lab",
-        "code": "https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU",
-        "date": "2021-04-29 11:59:59 PM",
+        "topic": "Python & the Web, APIs Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2022-04-28 11:59:59 PM",
         "visible": false
     },
     {
         "week": 6,
-        "topic": "Python & the Web, Continued Lab",
-        "code": "https://edstem.org/us/courses/2850/workspaces/pRVlcoJfBrEB7ut5dKjbFI1aB1SvIwMN",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/pRVlcoJfBrEB7ut5dKjbFI1aB1SvIwMN",
-        "date": "2021-05-06 11:59:59 PM",
+        "topic": "Python & the Web, Server-Side Lab",
+        "code": "",
+        "solutions": "",
+        "date": "2022-05-05 11:59:59 PM",
         "visible": false
     },
     {
         "week": 7,
         "topic": "Functional Programming",
-        "code": "https://edstem.org/us/courses/2850/workspaces/p2DbNM2ycZt6iMpxsyVLGrspUqpmgliU",
-        "solutions": "https://edstem.org/us/courses/2850/workspaces/p2DbNM2ycZt6iMpxsyVLGrspUqpmgliU",
-        "date": "2021-05-13 11:59:59 PM",
+        "code": "",
+        "solutions": "",
+        "date": "2022-05-12 11:59:59 PM",
         "visible": false
     }
 ]

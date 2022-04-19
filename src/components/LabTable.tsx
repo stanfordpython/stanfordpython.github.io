@@ -5,7 +5,6 @@ import Table from "react-bootstrap/Table";
 interface LabRowProps {
     week: string,
     topic: string,
-    code: string,
     solutions: string | null,
     date: moment.Moment,
     visible: boolean,
@@ -13,7 +12,7 @@ interface LabRowProps {
 }
 
 const Lab: FunctionComponent<LabRowProps> = 
-    ({week, topic, code, solutions, date, visible, highlight}: LabRowProps) => {
+    ({week, topic, solutions, date, visible, highlight}: LabRowProps) => {
     if (!visible) {
         return null;
     }
@@ -35,19 +34,10 @@ const Lab: FunctionComponent<LabRowProps> =
         solutionsElem = (<a href={solutions}>Solutions</a>);
     }
 
-    // Is Starter Code linked?
-    let starterCodeLink: JSX.Element | null;
-    if (!code || code === "#") {
-        starterCodeLink = <div>N/A</div>;
-    } else {
-        starterCodeLink = (<a href={code}>Starter Code</a>);
-    }
-
     return (
           <tr style={rowStyle}>
             <td>{week}</td>
             <td>{topic}</td>
-            <td>{starterCodeLink}</td>
             <td>{solutionsElem}</td>
           </tr>
     );
@@ -81,9 +71,9 @@ export class LabData extends Component<{}, LabDataState> {
 
         let i;
         for (i = 0; i < labData.length; i++) {
-            if (moment() < labData[i].date) {
+            if (moment() < labData[i].date) {
                 break;
-            }
+            }
         }
 
         // Only highlight first row if date is less than a week away
@@ -108,7 +98,6 @@ export class LabData extends Component<{}, LabDataState> {
                     <tr>
                         <th>Week</th>
                         <th>Topic</th>
-                        <th>Starter Code</th>
                         <th>Solutions</th>
                     </tr>
                 </thead>
@@ -120,7 +109,6 @@ export class LabData extends Component<{}, LabDataState> {
                             key={index}
                             week={labData.week}
                             topic={labData.topic}
-                            code={labData.code}
                             solutions={labData.solutions}
                             date={labData.date}
                             visible={labData.visible}
