@@ -34,7 +34,15 @@
     {
         "num": null,
         "title": "Final Project Proposal",
-        "spec": "",
+        "spec": "https://forms.gle/kaeYqUJfAei4xKRe9",
+        "starterCode": "",
+        "due": "2022-04-30 11:59:59 PM",
+        "visible": true
+    },
+    {
+        "num": null,
+        "title": "Mid-Quarter Feedback Form",
+        "spec": "https://forms.gle/ddj6yr8yH23W72mD9",
         "starterCode": "",
         "due": "",
         "visible": false

@@ -1,20 +1,13 @@
 # Lesson Plan: Python & the Web (Week 5)
 
-<div class="alert alert-warning">
-    <span>During this section, we're going to release the mid-quarter evaluation. Please remember to send out that link at the end of your section! <b>Here's the link: <a href="https://forms.gle/YALoSfo4eMs1taDF8">https://forms.gle/YALoSfo4eMs1taDF8</a>.</b></span>
-</div>
-
 [[TOC]]
 
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pNTgfKaanIsFo7fbEUSfpKID3T0x5RcU) and fork it to make a copy that you own.
+Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pihihq14oVn7GT76m8uucoUfUrhbAlLi) and fork it to make a copy that you own. 
 
-The section is in two parts—it starts with APIs and then the second half is about flask. There are two directions you could take the second half of section: you could talk about deploying a flask app on Heroku or you could talk about `render_template` and HTML. You should prepare for one or both of these directions beforehand by reading the lesson plan and preparing to teach that portion as needed.
+Also, add questions for your students to the [mid-quarter feedback form](https://docs.google.com/forms/d/1-UWQy_eoUH1oqeEdp-jRIknjOeQOwNyOVmibXip9hGw/edit). Remember that our students aren't necessarily trained in giving good feedback. For every question you ask, have a concrete sense of what you're going to change, based on the answers they might give. Use question types (numeric, multiple choice, text, etc.) to make sure you're getting responses that you can use.
 
-## Community Building & Announcement \[5 mins\]
-<div class="alert alert-success">
-    <span><b>Important Announcement:</b> Theo and Antonio will be holding a Github tutorial session on Monday at 2:30pm PT at <a href="https://stanford.zoom.us/j/92936476672?pwd=bG1ueU5KZUxiMDEzUjV1OTk1d1pQdz09">https://stanford.zoom.us/j/92936476672?pwd=bG1ueU5KZUxiMDEzUjV1OTk1d1pQdz09</a>. Don't publicize this but the session will be recorded—just letting you know in case someone asks.</span>
-</div>
+## Community Building \[10 mins\]
 
 Here are some ideas for community building activities:
 * Ask everyone a Would You Rather question; there's a list in [this folder](https://drive.google.com/drive/folders/1SobifNwo_dPMA_dO78IUVUuyATwlqF9N?usp=sharing)
@@ -22,126 +15,25 @@ Here are some ideas for community building activities:
 * Ask people to send you their favorite meme/video/song/picture/... and share during section
 * Ask people to DM you a fun fact about themselves and then share the fun fact and have them guess whose it was.
 * Ask people to share the last picture they took on their phone (that they're comfortable with) and share about it.
-* Play a (short) game like skribbl.io!
+* Play a (short) game like <https://skribbl.io>!
 
 
-## Concept Review \[10 mins\]
+## Concept Review \[5 mins\]
 There aren't too many concepts to review this time. We started with a conceptual review of how the internet works—if you'd like to brush up on this, we essentially covered sections 2, 7, and 9 of [this whitepaper](http://www.theshulers.com/whitepapers/internet_whitepaper/index.html) about how the internet works. Then we talked about APIs, which probably won't be too confusing—they basically just allow you to build code that interacts with external applications, be that a database, an app, some code that another person made, etc.
 
-After that, we actually made some requests. We talked about the `headers` of a request payload, and how that can be used to authenticate with a web API. Then in the second half of the class, we talked about `flask` and how to build a web server.
+## Reddit Wallscraper \[40 mins\]
+The headline for this week's lesson is the "Reddit Wallscraper" which has student scrape a sub-reddit to download pretty wallpapers for their computer. If they're having trouble coming up with a final project, we've had students convert this into a final project in the past (but we strongly discourage that!). 
 
-The flask routing syntax can be a bit confusing because we haven't seen decorators yet. Here's a simple app:
+## Project Work Time \[20 mins\]
+Send everyone the following link: <https://forms.gle/RYPmGKHrNoDQ5WzJ7> (also linked on the website). By 5pm on Saturday, they should submit their proposal for their final project. All of the questions are optional, and the purpose is more for them than it is for us. We're just looking to give them feedback on their assignment, based on what is helpful for them!
 
-```python
-from flask import Flask
+## Mid-Quarter Feedback \[10 mins\]
+For the last ten minutes of class, have students fill out the Mid-Quarter feedback form: <https://forms.gle/ddj6yr8yH23W72mD9> (also linked on the website).
 
-app = Flask(__name__)
-
-@app.route('/', methods=['GET'])
-def index():
-    return 'Hello world'
-```
-
-The `@app.route` decorator tells flask how to handle routing. We also talked about how to return JSON information from a route (hence building an API). In section, you should certainly cover the anagrammer problem because it's a nice extension of this material. From there you could take it in a few different directions—either talk about hosting or talk about "prettier" flask applications using `render_template`.
-
-## Problems \[45 mins\]
-
-### API Exploration \[15 mins\]
-I'd strongly suggest you put people into their project groups for this portion of the problem set, and invite pepople to explore different APIs. We've added some to [this Google Doc](https://docs.google.com/document/d/1VwhCO8bCsIrIkpZ7BMQmnhz9p-qtA7dqmuIZmdt-VG4/edit) and, as students find more, they should keep adding them to that resource sheet. You should also invite them to explore APIs that might be helpful for their final project—almost everybody can find an API that'll be able to help.
-
-It can be complicated to set up APIs, so you should float around to make sure that people aren't having too much trouble. 
-
-### Website Building \[20 mins\]
-
-#### Anagrams Solution Code
-There isn't much "solution code" for this lab, so I'll just include the little that there is here. This is one way to implement the anagrams flask route which builds a dictionary of anagrams and stores that in RAM so that whenever a user accesses a route, it doesn't have to re-compute the anagram.
-
-Instead, your students may choose to re-compute the anagram each time the route is accessed. This is fine, but you should explain the efficiency of their code and nudge them towards making the code more efficient.
-
-```python
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-ANAGRAMS = {}
-with open('words.txt', 'r') as f:
-    for word in f:
-        word = word.strip()
-        key = ''.join(sorted(word))
-
-        if key not in ANAGRAMS:
-            ANAGRAMS[key] = []
-        ANAGRAMS[key].append(word)
-
-
-def get_anagrams(letters):
-    letters = letters.lower()
-    key = ''.join(sorted(letters))
-    return ANAGRAMS[key]
-
-
-@app.route('/<letters>', methods=['GET'])
-def anagram(letters):
-    return jsonify(get_anagrams(letters))
-```
-
-#### Extending Lecture
-
-There are roughly two different directions you could take this portion of the lesson, and it's basically up to you.
-
-1. *Option 1: Deploy an API.* We've put together [these slides](/lab/lab5-deployment.pdf) which walk through how to deploy a flask application to the internet. This sets up a final project direction which some students might appreciate.
-
-   If you're going to follow this option, you should have a terminal open alongside the slides and walk through the instructions in the deck. Before section, make sure all of the dependencies are installed: `pip install gunicorn flask` and install Heroku CLI by following the instructions at [this link](https://devcenter.heroku.com/articles/heroku-cli).
-
-
-2. *Option 2: Pretty websites with `render_template`.* APIs are really cool, but if students want to build "prettier" websites, they need to write HTML and CSS code, and use flask to serve those files. We've included some problems about this, if that's where you'd like to take this portion of the lab.
-
-Here's some solution code for Option 2, using the anagrammer as the backbone of the web application.
-```html
-<!-- File: anagrams.html -->
-
-{% extends "base.html" %}
-
-{% block main %}
-<body>
-    <div class="container mt-2">
-        <!-- Take the variables you've obtained from
-        your backend, pass them in here, and display them
-        to the user! -->
-        {% for anagram in anagrams %}
-            <p>{{ anagram }}<br></p>
-        {% endfor %}
-    </div>
-</body>
-{% endblock main %}
-```
-
-Here's the solution code for the basic (url slug-based) anagram renderer:
-```python
-@app.route('/<letters>', methods=['GET'])
-def anagram(letters):
-    anagrams = get_anagrams(letters)
-    return render_template("anagrams.html", anagrams=anagrams)
-```
-
-And for the web form component, here's the solution code for the `anagram_word` function. For this function, students will also want to modify `index` so that it points to the web form (at `start.html`) - but no further modifications will be necessary.
-```python
-
-@app.route('/anagram', methods=['POST'])
-def anagram_word():
-    word = request.form.get('anagram-word', '').lower().strip()
-    anagrams = get_anagrams(word)
-    return render_template("anagrams.html", anagrams=anagrams)
-
-```
-
-## Group Work \[20 min\]
-
-<div class="alert alert-info">
-    <span>I'd suggest you send out the mid-quarter feedback form now, before you send people into group work breakout rooms. Here's the link to share: <a href="https://forms.gle/YALoSfo4eMs1taDF8">https://forms.gle/YALoSfo4eMs1taDF8</a></span>
-</div>
-
-We're scheduling more time for group work today. This is going to be the trend in the future - we'd like to allocate more and more classtime for final projects (and the assignment). Remind students that the [project proposal](https://forms.gle/McvNiTtc2L5St5NC7) is due tomorrow.
 
 ## Weekly Reflection
-Attendance form and weekly reflection (the reflection should be short): <https://forms.gle/xp6amjQLzutPeE1N9>. Enjoy your weekend :)
+
+This week's two-person conversation is between **Theo and Elizabeth**. Discuss how the quarter has been going so far, challenges you're facing in your section, and report back with ideas!
+
+For everyone, please send a message in the TA group chat before Monday responding to the following:
+> We've talked about how feedback should be student-centered. Hopefully you have a rough sense of the individual goals that your students have for taking this class. What are they?
