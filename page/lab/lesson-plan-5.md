@@ -24,6 +24,8 @@ There aren't too many concepts to review this time. We started with a conceptual
 ## Reddit Wallscraper \[40 mins\]
 The headline for this week's lesson is the "Reddit Wallscraper" which has student scrape a sub-reddit to download pretty wallpapers for their computer. If they're having trouble coming up with a final project, we've had students convert this into a final project in the past (but we strongly discourage that!). 
 
+**Important note:** The code will not work on Ed (because Ed blocks requests), but students can download the file to their local machine (right click on the sidebar and click "Download").
+
 ## Project Work Time \[20 mins\]
 Send everyone the following link: <https://forms.gle/RYPmGKHrNoDQ5WzJ7> (also linked on the website). By 5pm on Saturday, they should submit their proposal for their final project. All of the questions are optional, and the purpose is more for them than it is for us. We're just looking to give them feedback on their assignment, based on what is helpful for them!
 
