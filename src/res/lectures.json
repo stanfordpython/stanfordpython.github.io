@@ -46,10 +46,14 @@
     {
         "title": "Python and the Web, APIs",
         "date": "2022-04-26",
+        "handout": {
+            "title": "API Resource Sheet",
+            "url": "https://docs.google.com/document/d/1OPJNHruioRUyT6UMn3jHG_ePPu1EFUTSe5Kvf5zUnf4/edit"
+        },
         "condensed": "/lecture/5-condensed.pdf",
         "full": "/lecture/5-full.pdf",
-        "visible": false,
-        "code": "#"
+        "visible": true,
+        "code": "https://edstem.org/us/courses/20141/workspaces/pT9G9Ta6tYh2O1OhxVR6Vl2xu7pC0tJb"
     },
     {
         "title": "Python and the Web, Server-side Python",
