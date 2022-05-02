@@ -126,7 +126,7 @@
             {
                 "title": "Python and the Web, Server-side Lab",
                 "date": "2022-05-05",
-                "description": "This lab will build on the previous lab session by beginning with the same problem as the last one ended with: students will implement (or revisit) the flask application that they built to display a list of anagrams to the user. Then, we'll augment this by moving other Python features and assignments into the Flask app format. Optionally, students will set up their own accounts on pythonanywhere.com and build a personal application."
+                "description": "This lab will build on the previous lab session by building a Flask app which manages data locally. Then, we'll augment this by moving other Python features and assignments into the Flask app format. Optionally, students will set up their own accounts on pythonanywhere.com and build a personal application."
             }
         ],
         "visible": true,

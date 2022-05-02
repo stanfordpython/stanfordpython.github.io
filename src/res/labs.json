@@ -10,10 +10,10 @@
     {
         "week": 3,
         "topic": "Object-Oriented Programming Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/20141/workspaces/pO9Fi5l4UccPgM1XKoel3K7R5s4mbYez",
+        "solutions": "https://edstem.org/us/courses/20141/workspaces/pO9Fi5l4UccPgM1XKoel3K7R5s4mbYez",
         "date": "2022-04-14 11:59:59 PM",
-        "visible": false
+        "visible": true
     },
     {
         "week": 4,
@@ -26,16 +26,16 @@
     {
         "week": 5,
         "topic": "Python & the Web, APIs Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/20141/workspaces/pihihq14oVn7GT76m8uucoUfUrhbAlLi",
+        "solutions": "https://edstem.org/us/courses/20141/workspaces/pihihq14oVn7GT76m8uucoUfUrhbAlLi",
         "date": "2022-04-28 11:59:59 PM",
-        "visible": false
+        "visible": true
     },
     {
         "week": 6,
         "topic": "Python & the Web, Server-Side Lab",
-        "code": "",
-        "solutions": "",
+        "code": "https://edstem.org/us/courses/20141/workspaces/paet6LZnIplKXLz0B14XvQMAynn98nVu",
+        "solutions": "https://edstem.org/us/courses/20141/workspaces/paet6LZnIplKXLz0B14XvQMAynn98nVu",
         "date": "2022-05-05 11:59:59 PM",
         "visible": false
     },

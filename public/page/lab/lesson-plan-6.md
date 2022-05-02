@@ -1,21 +1,15 @@
-# Lesson Plan: Python & the Web, Continued (Week 6)
+# Lesson Plan: Python & the Web, Server-side (Week 6)
 
 [[TOC]]
 
-## Uh... Continued?
-
-During last week's Mid-Quarter Evaluation, we observed two relevant trends in the data. First, that students felt they had a weaker grasp of Python & the Web than the other topics that we'd covered and second, that students really wanted to go deeper into Python's ability to support web applications (the most requested topic for a "special topics" lecture at the end of quarter was deploying a Python application to the Internet using Heroku, AWS, Stanford hosting, etc.).
-
-For these reasons, we've decided to update the course schedule slightly to do Python & the Web "Part 2" this week, while the material from last week's Python & the Web lecture and lab are still fresh in everyone's minds.
-
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pRVlcoJfBrEB7ut5dKjbFI1aB1SvIwMN). Fork it to create your own copy.
+Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/paet6LZnIplKXLz0B14XvQMAynn98nVu). Fork it to create your own copy.
 
-Quite a few of the parts of this lab will come from last week. In last week's attendance form, we learned that last week's lab was long and that most of you didn't approach the end of the content: so we've moved some of last week's content ahead to this week, and added a bit of new content, to this week's lab.
+The first part of the lab will be about deploying a simple website: the goal of this part is for students to have a web application (even if it's just a "Hello, world!" one) running live on the Internet using [PythonAnywhere](https://www.pythonanywhere.com). 
 
-The first part of the lab will be about deploying a simple API: the goal of this part is for students to have a web application (even if it's just a "Hello, world!" one) running live on the Internet using [PythonAnywhere](https://www.pythonanywhere.com). After that, the lab will contain a menu of options from which students can choose: the more UX-inclined students can learn Jinja2 and `render_template`, while other options include writing more sophisticated backend code.
+After that, some more UX-inclined students can learn Jinja2 and `render_template`, while other options include writing more sophisticated backend code.
 
-We recognize that, relative to other labs, this lab might be a bit more demanding of you, in that you might not have as much prior familiarity with the material we are asking you to teach. We're going to try and scaffold the notebooks as best we can - to make things easier for you, and on the students - but please read the notebook; it'll help everyone. 😊
+Finally, before section, take a look at the [Mid-Quarter Feedback Form](https://docs.google.com/forms/d/1-UWQy_eoUH1oqeEdp-jRIknjOeQOwNyOVmibXip9hGw/edit#responses) and the [Project Proposals](https://docs.google.com/forms/d/11RgFJ2Aj89_oHFnUwThZCeZLV0anaE5aKjoLgcRogu4/edit#responses).
 
 ## Community Building \[5 mins\]
 
@@ -43,29 +37,25 @@ def greet(name):
     return f'Hello, {name}!'
 ```
 
-The string `'/<name>'` represents a general route pattern where the user types anything after the first slash. For example visiting `/michael` would call `greet('michael')`, visiting `/81` would call `greet('81')`, etc. Note that visiting `/michael/parth` would return a 404 error—`'/<name>'` only matches the *first* string that comes after the slash.
+The string `'/<name>'` represents a general route pattern where the user types anything after the first slash. For example visiting `/parth` would call `greet('parth')`, visiting `/81` would call `greet('81')`, etc. Note that visiting `/parth/tara` would return a 404 error—`'/<name>'` only matches the *first* string that comes after the slash.
 
 We also talked about building an API in Flask. Specifically, if you return a dictionary from a route function, Flask will automatically convert that into a JSON object.
 
 In the last half of the course, we covered `render_template` and using Flask to render HTML (this is called "templating"). Specifically, we set up the route `'/<wikipedia_page_name>'` and used that to create a word cloud of the words that appear on that Wikipedia page. We did that by...
 
-1. Querying the Wikipedia API (<https://en.wikipedia.org/w/api.php?action=query&format=json&titles=2021_Kentucky_Derby&prop=extracts&explaintext>, replace `2021_Kentucky_Derby` for any wikipedia title) and extracting the page text from there.
+1. Querying the Wikipedia API (<https://en.wikipedia.org/w/api.php?action=query&format=json&titles=Coachella_Valley_Music_and_Arts_Festival&prop=extracts&explaintext>, replace `Coachella_Valley_Music_and_Arts_Festival` for any wikipedia title) and extracting the page text from there.
 2. Using the `wordcloud` library to build SVG code for a wordcloud.
 3. Displaying that SVG code in a website.
 
 ## Problems \[45 mins\]
 
-<div class="alert alert-warning">
-    <span>In this portion of the lab, we'll be covering new things that we haven't talked about in class. Although we'll scaffold this heavily, you should read up on these beforehand to decide which paths you're comfortable with!</span>
-</div>
+This lab is divided into three parts. In Part 1, students will deploy a simple "Hello, World!" Flask application to the Internet using PythonAnywhere. In Part 2, students will implement nontrivial functionality into their application so that it accepts user input and adjusts its behavior according to what has previously been entered by users. In Part 3, students will have the option to develop their app further.
 
-This lab is divided into three parts. In Part 1, students will deploy a simple "Hello, World!" Flask application to the Internet using PythonAnywhere. In Part 2, students will implement nontrivial functionality into their application so that it accepts user input and adjusts its behaviour according to what has previously been entered by users. In Part 3, students will have the option to develop their app further in several different directions: they can choose to add functionality/API extensions, work with `render_template` and a bit of HTML/CSS to beautify their websites, or (in a bit more complicated of a path) work with web forms to enable user input from a form page, rather than through the app URL.
-
-### Part 1: Deployment \[20 mins\]
+### Part 1: Deployment
 
 Although many of the subsequent problems in lab are optional where students can pick-and-choose the direction they'd like to go in; however, we'd love it if you could make sure to go over this problem at the beginning of lab as it's going to set the stage for what follows.
 
-To prepare for this section of the lab, we'd recommend making an account on [PythonAnywhere](https://pythonanywhere.com) and following [these instructions](https://pythonhow.com/deploy-flask-web-app-pythonanywhere/) for deploying a simple Flask app. Here's the one that Michael wrote when practicing with PythonAnywhere (based closely off an example from Tuesday's lecture).
+To prepare for this section of the lab, we'd recommend making an account on [PythonAnywhere](https://pythonanywhere.com) and following [these instructions](https://pythonhow.com/deploy-flask-web-app-pythonanywhere/) for deploying a simple Flask app. Here's an example app:
 
 ```python
 from flask import Flask
@@ -100,7 +90,7 @@ messages = set()
 @app.route('/<msg>')
 def hello_world(msg):
     messages.add(msg.replace('+', ' '))
-    return f"Your message has been added to the bottle: {msg.replace('+', ' '}"
+    return f"Your message has been added to the bottle: {msg.replace('+', ' ')}"
 
 @app.route('/')
 def hello():
@@ -157,20 +147,20 @@ def bottle(msg):
 def display_messages():
     try:
         msg = messages.pop()
-
-        # From the tutorial linked from the lab on masked word clouds
-        bottle_mask = np.array(Image.open("bottle_img.png"))
-        wc = WordCloud(mask=bottle_mask)
-        img_data = wc.generate(msg).to_svg()
-
-        return render_template("bottle.html", msg=msg, bottle_img=img_data)
     except KeyError:
         return "The bottle is empty of messages!"
+
+     # From the tutorial linked from the lab on masked word clouds
+     bottle_mask = np.array(Image.open("bottle_img.png"))
+     wc = WordCloud(mask=bottle_mask)
+     img_data = wc.generate(msg).to_svg()
+
+     return render_template("bottle.html", msg=msg, bottle_img=img_data)
 ```
 
-### Part 3: A Menu of Extensions
+### Part 3: Extensions
 
-We've (pretty heavily) scaffolded an extension for this lab involving web forms - students are free to implement that extension, or work on another one of their choosing if time permits.
+We've scaffolded an extension for this lab involving web forms - students are free to implement that extension, or work on another one of their choosing if time permits.
 
 #### Web Forms
 
@@ -237,8 +227,10 @@ def submit_via_form():
     return f"Successfully added message: {form_data}"
 ```
 
-## Weekly Reflection
+## Final Project Work Time \[30 mins\]
 
-<h2 align="center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOlL-C900XzmhOcF-bRbWp-nIvbmR3k_bqHxHcps4RBb-pDg/viewform?usp=sf_link">Attendance form and weekly reflection (this is a super short one!)</a></h2>
-<br>
-Enjoy your weekend! 🎉
+For the last thirty minutes of class, I'd recommend that you reconvene and have your students work on their final project. It may be good if you can give them discrete deliverables to provide—you can review their project proposals and see what each of them will need.
+
+## Reflection
+
+It doesn't seem like folks are responding to the prompts in the chat—you're all pretty busy! So instead of messaging everyone, send Parth a check-in: how are you finding section so far? What's going well? What do you want to improve on?

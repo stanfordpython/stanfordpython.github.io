@@ -58,10 +58,10 @@
     {
         "title": "Python and the Web, Server-side Python",
         "date": "2022-05-03",
-        "condensed": "/lecture/6-condensed.pdf",
-        "full": "/lecture/6-full.pdf",
-        "visible": false,
-        "code": "#"
+        "condensed": "",
+        "full": "",
+        "visible": true,
+        "code": "/lecture/6-code.zip"
     },
     {
         "title": "Functional Programming",
