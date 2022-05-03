@@ -61,7 +61,11 @@
         "condensed": "",
         "full": "",
         "visible": true,
-        "code": "/lecture/6-code.zip"
+        "code": "/lecture/6-code.zip",
+        "handout": {
+            "title": "Scratchpad",
+            "url": "https://docs.google.com/document/d/17Q_pmtGCe2htl4byS_XZgGfU6TuRWUvXmoDUINp6UG8/edit?usp=sharing"
+        }
     },
     {
         "title": "Functional Programming",
