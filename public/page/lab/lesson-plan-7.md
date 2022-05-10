@@ -3,7 +3,7 @@
 [[TOC]]
 
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/p2DbNM2ycZt6iMpxsyVLGrspUqpmgliU) and fork it to create your own copy.
+Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pZj6H9a0FcnQruIvSbvvd7I3S3KgwBYu) and fork it to create your own copy.
 
 ## Community Building \[5 mins\]
 
@@ -17,9 +17,9 @@ Here are some ideas for community building activities (mostly these are the same
 * Build a trivia quiz (maybe from the trivia API?) and see if your students can figure it out.
 * Show and tell: ask everyone to get an object from their room that represents how they're feeling right now and share with the class.
 
-## Concept Review \[15-20 mins\]
+## Concept Review \[20 mins\]
 
-I've allocated 15-20 minutes for concept review this time because there's a lot more that people may be unfamiliar with this time around.
+I've allocated 20 minutes for concept review this time because there's a lot more that people may be unfamiliar with this time around.
 
 ### Iterators
 An iterator is...a thing that can be iterated over. It's kind of uninteresting on its own, but the idea is that when Python loops over, say, a list, it first builds an *iterator* from the list and loops over that. Once the iterator is complete, it raises `StopIteration` to signal that it's out of items.
@@ -162,10 +162,7 @@ Lambda functions are small, anonymous functions that are usually immediately pas
 filter(lambda x: x.isnumeric(), lst)
 ```
 
-## Problems \[45-50 mins\]
-You'll notice that we don't have group work time anymore! It seems that groups aren't always in the same section enough for us to plan around that, so we've cut that time to focus more on the problems.
-
-**Note**: Some people don't like Saturn, so this time teams have the option of writing their code in `workbook.py` instead of `workbook.saturn`.
+## Problems \[50 mins\]
 
 <div class="alert alert-info">
     <span>I'd suggest that for the first two sections, you pick which problems you'd like your students to do. Doing all of them or leaving students to go through them without more guidance is probably a bad idea</span>
@@ -213,8 +210,3 @@ Here we dive into some of the weirdness of iterators (namely that they get consu
 
 ### 
 
-## Let students out 10 minutes early
-Because why not? It's week 7—let's give people their time back 😊
-
-## [Weekly Reflection](https://forms.gle/5mvxfu5bJS3ZukJx7)
-Click the header link above to access this week's reflection. Have an absolutely lovely weekend everyone!
