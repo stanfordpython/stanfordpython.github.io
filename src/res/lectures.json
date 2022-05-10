@@ -70,9 +70,9 @@
     {
         "title": "Functional Programming",
         "date": "2022-05-10",
-        "condensed": "/lecture/7-condensed.pdf",
-        "full": "/lecture/7-full.pdf",
-        "visible": false,
+        "condensed": "/lecture/functional-programming.pdf",
+        "full": "/lecture/functional-programming.pdf",
+        "visible": true,
         "code": "#"
     },
     {
