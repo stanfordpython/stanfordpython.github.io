@@ -3,7 +3,7 @@
 [[TOC]]
 
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pV2SwkdsdA8XLUnzLZEi7pywcEJVuwob) and fork it to create your own copy.
+Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pojQOIOpHojdwBwigaY1ZIlb4b1awIuC) and fork it to create your own copy.
 
 ## Community Building \[5 mins\]
 
@@ -444,6 +444,3 @@ These new libraries problems definitely require some knowledge of context but th
 * `contextlib.redirect_stdout` is incredibly useful for moving between strings and integers - this is used to capture the printed output of other functions
 * `wave` is used in a slightly artificial way here, but the library is really neat and allows you to break `.wav` files into frames
 * `threading` is super useful and we use it in a small example to download images
-
-## [Weekly Reflection](https://forms.gle/FmL6poJcjfBSZpUFA)
-Click the header link above to access this week's reflection. Have an absolutely lovely weekend everyone!
