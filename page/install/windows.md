@@ -1,9 +1,5 @@
 # Installing Python on Windows
 
-## Contents
-
-[[TOC]]
-
 ## Overview
 
 Hello!
