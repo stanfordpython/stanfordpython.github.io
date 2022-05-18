@@ -23,6 +23,7 @@
         window.pyodide = await loadPyodide({
           stdout: (text) => window.py_outputs.push(text)
         });
+        window.pyodide.loadPackage(['numpy']);
       })();
     </script>
   </body>
