@@ -1,51 +1,7 @@
 # Lesson Plan: Python Standard Libraries (Week 8)
 
-[[TOC]]
-
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pojQOIOpHojdwBwigaY1ZIlb4b1awIuC) and fork it to create your own copy.
-
-## Game Plan
-I was not able to cover unit tests in class, so I would love if yall would do an introduction to this topic in your section. Also, I am going to leave around 30 mins for group project work!
-
-### `unittest [15 mins]`
-I think this is one of the most under-covered libraries in Python. Testing is so important but people don't really get strong exposure to it before they leave Stanford. To build a unit test...
-
-1. Create a class which inherits from `unittest.TestCase`
-2. Optionally add `setUp` and `tearDown` methods to set up the test and tidy up after the tests have been run
-3. Add methods that are named `test_<name>(self)` (where `<name>` is replaced with the name of the test), where each method represents one test
-4. Use `self.assert` methods to create assertions within the tests; see a full list in the [documentation of the TestCase class](https://docs.python.org/3/library/unittest.html#test-cases)
-5. Run the tests at the command line to run tests from modules, classes, or even individual test methods
-
-    ```
-    $ python -m unittest file1 file2
-    $ python -m unittest file.TestClass
-    $ python -m unittest file.TestClass.test_method
-    ```
-
-Here's a sample unit test from the documentation, which highlights some of the assertion methods:
-
-```python
-import unittest
-
-class TestStringMethods(unittest.TestCase):
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
-
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
-
-if __name__ == '__main__':
-    unittest.main()
-```
+Visit the [Ed Workspace](https://edstem.org/us/courses/2850/workspaces/pV2SwkdsdA8XLUnzLZEi7pywcEJVuwob) and fork it to create your own copy.
 
 ## Community Building \[5 mins\]
 
@@ -428,10 +384,47 @@ m.group(2)# => 'Newton'
 #### `re.findall`
 `re.findall(pattern, string)` applies the regex to the entire string and returns a list of matches. It doesn't support subgroups because it returns a list of strings, not a list of matches.
 
+### `unittest`
+I think this is one of the most under-covered libraries in Python. Testing is so important but people don't really get strong exposure to it before they leave Stanford. To build a unit test...
 
+1. Create a class which inherits from `unittest.TestCase`
+2. Optionally add `setUp` and `tearDown` methods to set up the test and tidy up after the tests have been run
+3. Add methods that are named `test_<name>(self)` (where `<name>` is replaced with the name of the test), where each method represents one test
+4. Use `self.assert` methods to create assertions within the tests; see a full list in the [documentation of the TestCase class](https://docs.python.org/3/library/unittest.html#test-cases)
+5. Run the tests at the command line to run tests from modules, classes, or even individual test methods
 
-## Problems \[45 mins\]
-Please start with the unit test problem :)
+    ```
+    $ python -m unittest file1 file2
+    $ python -m unittest file.TestClass
+    $ python -m unittest file.TestClass.test_method
+    ```
+
+Here's a sample unit test from the documentation, which highlights some of the assertion methods:
+
+```python
+import unittest
+
+class TestStringMethods(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    def test_isupper(self):
+        self.assertTrue('FOO'.isupper())
+        self.assertFalse('Foo'.isupper())
+
+    def test_split(self):
+        s = 'hello world'
+        self.assertEqual(s.split(), ['hello', 'world'])
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(TypeError):
+            s.split(2)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+## Problems \[45-50 mins\]
+There are two sections in this week's lab: first, we talk about the standard libraries that we have covered and we walk students through solving problems with them. Then, we introduce libraries they haven't seen before and we ask them to explore the documentation to learn about how they work and apply them to the problem.
 
 ### Libraries we've covered
 Because we've already covered these libraries, we focus on going more in depth with each of them.
@@ -450,6 +443,5 @@ These new libraries problems definitely require some knowledge of context but th
 * `wave` is used in a slightly artificial way here, but the library is really neat and allows you to break `.wav` files into frames
 * `threading` is super useful and we use it in a small example to download images
 
-
-
-## Group work \[rest of time\]
+## [Weekly Reflection](https://forms.gle/FmL6poJcjfBSZpUFA)
+Click the header link above to access this week's reflection. Have an absolutely lovely weekend everyone!

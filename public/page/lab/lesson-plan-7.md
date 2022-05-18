@@ -1,7 +1,5 @@
 # Lesson Plan: Functional Programming (Week 7)
 
-[[TOC]]
-
 ## Pre-Section Preparation
 Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/pZj6H9a0FcnQruIvSbvvd7I3S3KgwBYu) and fork it to create your own copy.
 

@@ -4,33 +4,26 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="CS 41 is Stanford's course on the Python programming language."
+      content="The home page for Stanford's CS 41, a course on the Python programming language"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link 
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" 
-      rel="stylesheet" 
-      type="text/css" 
-    />
-    <link 
-      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" 
-      rel="stylesheet" 
-      type="text/css"
-    />
-    <title>CS 41 - Hap.py Code</title>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+    <title>Stanford Python</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="text/javascript">
+      (async () => {
+        window.py_outputs = [];
+        window.pyodide = await loadPyodide({
+          stdout: (text) => window.py_outputs.push(text)
+        });
+      })();
+    </script>
   </body>
 </html>

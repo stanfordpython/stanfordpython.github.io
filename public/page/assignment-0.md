@@ -35,7 +35,7 @@ You will create and submit three Python files, named `coconuts.py`, `cheese.py`,
 
 A reasonable starter file might look like:
 
-```python
+```python:run
 #!/usr/bin/env python3
 """
 File: <filename>.py
@@ -69,28 +69,29 @@ You can assume that the user input is formatted correctly.
 
 ### Sample Runs
 
-Your program should be able to emulate the following sample runs. *Make sure to activate your virtual environment before executing these lines of code!* User input is ***bolded and italicized***:
+Your program should be able to emulate the following sample runs. *Make sure to activate your virtual environment before executing these lines of code!*.
 
-<pre><code>(cs41-env)$ python coconuts.py
-How many ounces of birds are carrying the coconuts? <b><i>5</i></b>
-How many pounds of coconuts are there? <b><i>1</i></b>
+```
+(cs41-env)$ python coconuts.py
+How many ounces of birds are carrying the coconuts? 5
+How many pounds of coconuts are there? 1
 No. Carrying the coconuts is impossible.
 
 (cs41-env)$ python coconuts.py
-How many ounces of birds are carrying the coconuts? <b><i>6.2</i></b>
-How many pounds of coconuts are there? <b><i>1.1</i></b>
+How many ounces of birds are carrying the coconuts? 6.2
+How many pounds of coconuts are there? 1.1
 Yes! Carrying the coconuts is possible.
 
 (cs41-env)$ python coconuts.py
-How many ounces of birds are carrying the coconuts? <b><i>17</i></b>
-How many pounds of coconuts are there? <b><i>3</i></b>
+How many ounces of birds are carrying the coconuts? 17
+How many pounds of coconuts are there? 3
 Yes! Carrying the coconuts is possible.
 
 (cs41-env)$ python coconuts.py
-How many ounces of birds are carrying the coconuts? <b><i>12.5</i></b>
-How many pounds of coconuts are there? <b><i>2.5</i></b>
+How many ounces of birds are carrying the coconuts? 12.5
+How many pounds of coconuts are there? 2.5
 No. Carrying the coconuts is impossible.
-</code></pre>
+```
 
 Submit the `coconuts.py` file, which should be the code for this segment of the assignment.
 
@@ -114,35 +115,36 @@ The user is also allowed to enter special questions. If the user enters either o
 
 Your program should be able to emulate the following sample runs. *Make sure to activate your virtual environment before executing these lines of code!*
 
-<pre><code>(cs41-env)$ python cheese.py
+```
+(cs41-env)$ python cheese.py
 Good morning. Welcome to the National Cheese Emporium!
-What would you like? <b><i>Red Windsor</i></b>
+What would you like? Red Windsor
 I'm afraid we don't have any Red Windsor.
-What would you like? <b><i>Lancashire</i></b>
+What would you like? Lancashire
 I'm afraid we don't have any Lancashire.
-What would you like? <b><i>cheddar</i></b>
+What would you like? cheddar
 I'm afraid we don't have any cheddar.
-What would you like? <b><i>Cheddar</i></b>
+What would you like? Cheddar
 We have Cheddar, yessir.
 
 (cs41-env)$ python cheese.py
 Good morning. Welcome to the National Cheese Emporium!
-What would you like? <b><i>Red Windsor</i></b>
+What would you like? Red Windsor
 I'm afraid we don't have any Red Windsor.
-What would you like? <b><i>cHeDdAr</i></b>
+What would you like? cHeDdAr
 I'm afraid we don't have any cHeDdAr.
-What would you like? <b><i>Have you in fact got any cheese here at all?</i></b>
+What would you like? Have you in fact got any cheese here at all?
 We have 3 cheese(s)!
 Muenster
 Cheddar
 Red Leicester
-What would you like? <b><i>exit</i></b>
+What would you like? exit
 I'm afraid we don't have any exit.
-What would you like? <b><i>LET ME OUT</i></b>
+What would you like? LET ME OUT
 I'm afraid we don't have any LET ME OUT.
-What would you like? <b><i>Cheddar</i></b>
+What would you like? Cheddar
 We have Cheddar, yessir.
-</code></pre>
+```
 
 For anything that is not detailed in the above specification, your program can behave in any way you'd like. For example, you can customize the prompts and messages.
 
@@ -169,15 +171,16 @@ This program is a simple user authentication chatbot who acts like a gatekeeper 
 
 Upon being asked for a name and passphrase, each traveller has two options: they may (a) provide a valid name and passphrase, or (b) bribe the guard - which allows them to add a new name and passphrase to the Book of Records - for a small fee.
 
-Here's what the chatbot looks like (user input is ***bolded and italicized***):
+Here's what the chatbot looks like:
 
-<pre><code>(cs41-env)$ python chatbot.py
+```
+(cs41-env)$ python chatbot.py
 Halt! Welcome to the Doors of Destiny. 
 Should you wish to proceed, you must identify yourself within the Book of Records. 
 
-Is your name present in our book? <b><i>yes</i></b>
-What is your name, traveller? <b><i>Michael</i></b>
-What is your passphrase? <b><i>parthsarin12345</i></b>
+Is your name present in our book? yes
+What is your name, traveller? Michael
+What is your passphrase? parthsarin12345
 Welcome through, peaceful soul!
 
 Halt! Welcome to the Doors of Destiny. 
@@ -187,47 +190,48 @@ Is your name present in our book? no
 Psst! I'm... not supposed to tell you this, but for a small... compensation... 
 I might be able to add you to the Book of Records without the Warden noticing. 
 
-Would you like to be added to the Book of Records? <b><i>yes</i></b>
+Would you like to be added to the Book of Records? yes
 Perfect! I've added you - but I don't come cheap! I charge 100 coins for my services. 
-Can you make the deposit? <b><i>yes</i></b>
+Can you make the deposit? yes
 Deposit successful! (You have 5532 coins remaining in your account).
 
-What is your name, then, traveller? <b><i>Michael</i></b>
-What is your passphrase? <b><i>parthsarin12345</i></b>
+What is your name, then, traveller? Michael
+What is your passphrase? parthsarin12345
 Welcome through the Doors of Destiny! And it's been a pleasure doing business with you.
 
 Halt! Welcome to the Doors of Destiny. 
 Should you wish to proceed, you must identify yourself within the Book of Records. 
 
-Is your name present in our book? <b><i>yes</i></b>
-What is your name, traveller? <b><i>Michael</i></b>
-What is your passphrase? <b><i>cs41isacoolclass</i></b>
+Is your name present in our book? yes
+What is your name, traveller? Michael
+What is your passphrase? cs41isacoolclass
 The passphrase you presented does not match our records! Guards - arrest this intruder!
-</code></pre>
+```
 
 ### Example 2: Simple Schedule
 
-This program is more like a virtual assistant (think Siri, Alexa, etc.), which allows users to schedule events and see their calendar. Here's a sample run for this program (note that this uses `MMDDYYYY` as an encoding scheme for dates, and that hours are represented as floating point numbers, so 14.5 means 2:30PM); once again, user input is ***bolded and italicized***:
+This program is more like a virtual assistant (think Siri, Alexa, etc.), which allows users to schedule events and see their calendar. Here's a sample run for this program (note that this uses `MMDDYYYY` as an encoding scheme for dates, and that hours are represented as floating point numbers, so 14.5 means 2:30PM):
 
-<pre><code>(cs41-env)$ python chatbot.py
+```
+(cs41-env)$ python chatbot.py
 Hello there, it's Hal, your friendly scheduling assistant! 
 
-Would you like to add a new event, or check an existing time slot? <b><i>add</i></b>
-What is the name of the event? <b><i>CS41 Lecture</i></b>
-On which day would you like to schedule the event? <b><i>03302021</i></b>
-What is the start time? <b><i>14.5</i></b>
-What is the end time? <b><i>16</i></b>
+Would you like to add a new event, or check an existing time slot? add
+What is the name of the event? CS41 Lecture
+On which day would you like to schedule the event? 03302021
+What is the start time? 14.5
+What is the end time? 16
 
 Successfully added the event to your day!
 
-Would you like to add a new event, or check an existing time slot? <b><i>check</i></b>
-On which day would you like to check for scheduled events? <b><i>03302021</i></b>
-What time would you like to check for availability? <b><i>15</i></b>
+Would you like to add a new event, or check an existing time slot? check
+On which day would you like to check for scheduled events? 03302021
+What time would you like to check for availability? 15
 At that time, you'll be busy with CS41 Lecture.
 
-Would you like to add a new event, or check an existing time slot? <b><i>open the pod bay doors</i></b>
+Would you like to add a new event, or check an existing time slot? open the pod bay doors
 I'm sorry Dave, I'm afraid I can't let you do that.
-</code></pre>
+```
 
 These chatbots are adorable and geeky! Feel free to bring your personality and passions to this part of the assignment. 😊
 

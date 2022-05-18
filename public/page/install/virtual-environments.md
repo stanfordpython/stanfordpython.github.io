@@ -1,7 +1,5 @@
 # Virtual Environments Primer
 
-[[TOC]]
-
 ## Using virtual environments
 
 Once you have a virtual environment set up for a project or for a course, there's only one important thing to remember. **Activate your virtual environment every time you open a new shell.** We'll see what this means and how to do this later in this document. For now, if you only take away one thing, it should be that you should run `source ~/cs41-env/bin/activate` every time you open a new shell. If you want to get fancy, you can even add this line to your shell startup script (like `~/.bashrc` or `~/.bash_profile`) so it is executed automatically on shell startup.

@@ -1,0 +1,7 @@
+.nav {
+  @apply relative top-0 left-0 w-full;
+  @apply bg-gradient-to-r from-purple-400 to-indigo-400;
+  @apply flex flex-row;
+  @apply p-3;
+  @apply text-gray-100 text-xl;
+}

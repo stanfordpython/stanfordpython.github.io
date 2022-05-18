@@ -1,0 +1,31 @@
+.table-of-contents {
+  @apply rounded;
+  @apply w-1/6 p-3;
+  @apply hidden md:block fixed right-0;
+  background-color: #f6f8fa;
+  /* overflow-y: scroll; */
+}
+
+.table-of-contents button {
+  @apply text-left;
+}
+
+.table-of-contents ul ul {
+  @apply ml-4;
+}
+
+.table-of-contents > ul > li {
+  @apply mt-2;
+}
+
+.page-body {
+  @apply w-11/12 md:w-2/3 mt-2 mx-auto;
+  @apply mb-32;
+}
+
+@media (min-width: 768px) {
+  .page-body {
+    margin-left: 8.333333333%;
+    margin-right: 25%;
+  }
+}

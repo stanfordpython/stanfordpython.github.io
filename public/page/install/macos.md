@@ -1,8 +1,5 @@
 # Installing Python on macOS
 
-## Contents
-[[TOC]]
-
 ## Overview
 
 Hello!

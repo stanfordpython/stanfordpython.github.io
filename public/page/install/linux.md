@@ -1,9 +1,5 @@
 # Installing Python on Linux
 
-## Contents
-
-[[TOC]]
-
 ## Overview
 
 Hello!

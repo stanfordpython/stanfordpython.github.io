@@ -1,8 +1,5 @@
 # CS 41 Syllabus
 
-## Contents
-[[TOC]]
-
 This is the course information handout for CS 41 in Spring 2022. We'll try not to change this too much but consider it a general overview of the logistics of the course.
 
 ## Course Overview
@@ -23,8 +20,8 @@ After CS 41, students will be able to…
 8. Apply standard libraries and third-party packages to domain-relevant problems.
 
 ## Instructors
-🦄 Parth Sarin (psarin@stanford.edu)  
-🐎 Tara Jones (tarabeth@stanford.edu)
+🦄 Parth Sarin (`psarin@stanford.edu`)  
+🐎 Tara Jones (`tarabeth@stanford.edu`)
 
 [Email Parth and Tara](mailto:psarin@stanford.edu,tarabeth@stanford.edu)
 

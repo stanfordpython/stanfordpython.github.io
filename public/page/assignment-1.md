@@ -1,12 +1,10 @@
 # Assignment 1: Dear Cryptography (Dear Data + Cryptography)
 > Due: Thursday, April 21st, 2022 at 5pm PT
 
-## Overview
+# Overview
 In this assignment, you will build a cryptography suite that implements two different cryptosystems: the Caesar cipher and the Vigenere cipher. Then, you'll use Python to represent some data you care about! This is our first assignment in groups (🎉) so a sub-goal is to get to know your classmates and work on a fun mini-project together.
 
 Note: It's always a good idea to get started early, in case you run into unexpected difficulties down the line. Dear data requires some planning!
-
-[[TOC]]
 
 # Group norms and expectations
 
