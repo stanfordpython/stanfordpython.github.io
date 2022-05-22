@@ -1,0 +1,74 @@
+[
+	{
+		"week": 1,
+		"topic": "Calentamiento",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 2,
+		"topic": "Estructuras",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 3,
+		"topic": "Funciones",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 4,
+		"topic": "La programación funcional",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 5,
+		"topic": "La progamación orientada a objetos",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 6,
+		"topic": "La biblioteca estándar",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 7,
+		"topic": "Herramientas de terceros",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 8,
+		"topic": "El ecosistema de Python",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"week": 8,
+		"topic": "Temas avanzadas",
+		"href": "#",
+		"solutions": "#",
+		"visible": true,
+		"active": false
+	}
+]

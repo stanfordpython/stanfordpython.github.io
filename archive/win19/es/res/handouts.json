@@ -1,0 +1,46 @@
+[
+	{
+		"uid": "0d686d7e-a33c-48ae-9426-5749a30e2c9a",
+		"num": 6,
+		"title": "What is a Virtual Environment?",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/virtualenv.md",
+		"visible": false
+	},
+	{
+		"uid": "834eebcc-5f74-4af8-a547-ac300bd79735",
+		"num": 5,
+		"title": "How to Submit Assignments",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/submitting-assignments.md",
+		"visible": false
+	},
+	{
+		"uid": "480d5b4a-8730-497d-a54a-84a20598964e",
+		"num": 4,
+		"title": "Installing Python for Windows",
+		"href": "https://docs.google.com/document/d/1tlARF6fipUhwmMru-hdL-avxLrYwPg1KVEIE3L73S48/edit?usp=sharing",
+		"visible": false
+	},
+	{
+		"uid":"2b200f15-eb7d-4d98-b31c-ec4e5445e694",
+		"num": 3,
+		"title": "Installing Python for MacOS/Linux",
+		"href": "https://github.com/stanfordpython/python-handouts/blob/master/installing-python.md",
+		"visible": false
+	},
+	{
+		"uid": "5b45ddef-f8a2-4a02-82ba-dcc3501a2e55",
+		"num": 2,
+		"title": "Plan de estudios",
+		"href": "https://docs.google.com/document/d/1YAZTqDnKiXvzVJPlVSssmD--3X9WH1TJj6iO_vyDHBo/edit?usp=sharing",
+		"visible": true
+	},
+	{
+		"uid": "87485456-17ac-40f2-a4d9-106563744860",
+		"num": 1,
+		"title": "Información del curso",
+		"href": "https://docs.google.com/document/d/1BFrUG5AHOj4FxPzRFrSN5G0VT373ng-hElxJ4CzHXDQ/edit?usp=sharing",
+		"visible": true
+	}
+
+	
+]
