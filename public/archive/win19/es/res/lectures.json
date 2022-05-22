@@ -1,0 +1,102 @@
+[
+	{
+		"uid": "7270fd96-4d21-4fea-a8f8-aac046bb4f5b",
+		"title": "¡Bienvenido a Python!",
+		"date": "2016-04-04",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "787e1fb9-f764-42cc-abd6-81895fcb5454",
+		"title": "Los principios básicos de Python",
+		"date": "2017-04-06",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "f8c44df5-339a-427a-bf89-1c4f6a463c74",
+		"title": "Estructuras de datos",
+		"date": "2017-04-11",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "6a2fb3a1-2a8f-4af7-b805-75e89f189b4d",
+		"title": "Funciones",
+		"date": "2017-04-18",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "e829c370-2813-4d10-aa5f-076f3ce8e296",
+		"title": "La programación funcional",
+		"date": "2017-04-25",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "d7caa8df-b4a5-4376-9002-d38921aef026",
+		"title": "La programación orientada a objetos",
+		"date": "2017-05-02",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "5cf135f4-ed01-4edf-92a6-08c3ba4f5a4f",
+		"title": "La biblioteca estándar",
+		"date": "2017-05-09",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "d967e8ba-6a22-4950-85d5-5e3ac6bb84b5",
+		"title": "Herramientas de terceros",
+		"date": "2017-05-16",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "a64dfc79-8da0-4c8f-aa0e-f2c09cd5ed4c",
+		"title": "El ecosistema de Python",
+		"date": "2017-05-23",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	},
+	{
+		"uid": "599b8465-88ff-4168-86b1-1a9c0411d94b",
+		"title": "Temas avanzadas",
+		"date": "2017-05-30",
+		"condensed": "#",
+		"full": "#",
+		"video": "#",
+		"visible": true,
+		"active": false
+	}
+]
