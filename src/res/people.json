@@ -10,23 +10,5 @@
     "subtitle": "instructor",
     "img": "/img/tara.png",
     "links": [{ "title": "calendly", "url": "https://calendly.com/tarabethjones/cs41" }]
-  },
-  {
-    "name": "theo culhane (he/him)",
-    "subtitle": "teaching assistant",
-    "img": "/img/theo.png",
-    "links": []
-  },
-  {
-    "name": "elizabeth fitzgerald (she/her)",
-    "subtitle": "teaching assistant",
-    "img": "/img/elizabeth.png",
-    "links": []
-  },
-  {
-    "name": "shounak ray (he/him)",
-    "subtitle": "teaching assistant",
-    "img": "/img/shounak.png",
-    "links": []
   }
 ]

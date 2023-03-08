@@ -1,5 +1,7 @@
 # CS 41 Syllabus
 
+***This information is currently being updated for Spring 2023. Hang tight!***
+
 This is the course information handout for CS 41 in Spring 2022. We'll try not to change this too much but consider it a general overview of the logistics of the course.
 
 ## Course Overview

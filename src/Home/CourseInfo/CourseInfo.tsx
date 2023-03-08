@@ -12,9 +12,9 @@ const CourseInfo = () => {
         </div>
         <div className="flex-1 flex flex-col items-start justify-center">
           <h1 className="text-4xl mb-2 font-normal">cs 41: the python programming language</h1>
-          <p className="text-slate-600 text-2xl">tuesdays &amp; thursdays, 3:15pm - 4:45pm, mcmurtry 350</p>
+          <p className="text-slate-600 text-2xl">tuesdays &amp; thursdays, 3:00pm - 4:20pm, 370-370</p>
           <p className="text-2xl">
-            <a href='https://edstem.org/us/courses/20141/' target="_blank" rel="noopener noreferrer" className={styles.link}>ed</a>, <a href="https://canvas.stanford.edu/courses/154418" target="_blank" rel="noopener noreferrer" className={styles.link}>canvas</a>, <Link to="/page/syllabus" className={styles.link}>syllabus</Link>
+            <Link to="/page/syllabus" className={styles.link}>syllabus</Link>
           </p>
         </div>
       </div>
