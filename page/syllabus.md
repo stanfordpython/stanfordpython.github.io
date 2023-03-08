@@ -1,5 +1,7 @@
 # CS 41 Syllabus
 
+***This information is currently being updated for Spring 2023. Hang tight!***
+
 This is the course information handout for CS 41 in Spring 2022. We'll try not to change this too much but consider it a general overview of the logistics of the course.
 
 ## Course Overview
@@ -10,14 +12,13 @@ Welcome to Python! This 2-unit course will teach you the fundamentals, implement
 
 After CS 41, students will be able to…
 
-1. Compare and contrast Python’s language design with other languages they’ve seen before.
-2. Determine whether or not Python is an appropriate language to write a program in.
-3. Implement a significant project in Python.
-4. Translate code written in other languages into Python, especially code that doesn’t rely on third-party libraries.
-5. Select the appropriate data structure for a program written in Python. Recognize when Python does not have the appropriate built-in data structure for a problem.
-6. Design and implement custom Python objects (classes) for Python programs to augment Python’s object functionalities.
-7. Interact with external applications, like web APIs, using Python to send requests and process responses.
-8. Apply standard libraries and third-party packages to domain-relevant problems.
+1. Compare and contrast Python’s language design with other languages they’ve seen before
+2. Determine whether or not Python is an appropriate language to write a program in
+3. Design the architecture of a Python project and implement it knowing which resources to consult as they go
+4. Work with a team more effectively by using pair programming resources and balancing work appropriately
+5. Identify the Python skills needed to interact with and augment others' digital or physical creations
+6. Approach new languages by comparing core features with Python and interpret the differences
+
 
 ## Instructors
 🦄 Parth Sarin (`psarin@stanford.edu`)  
