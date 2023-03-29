@@ -10,5 +10,23 @@
     "subtitle": "instructor",
     "img": "/img/tara.png",
     "links": [{ "title": "calendly", "url": "https://calendly.com/tarabethjones/cs41" }]
+  },
+  {
+    "name": "arpit ranasaria (he/him)",
+    "subtitle": "teaching assistant",
+    "img": "/img/arpit.jpg",
+    "links": []
+  },
+  {
+    "name": "chase joyner (he/him)",
+    "subtitle": "teaching assistant",
+    "img": "/img/chase.png",
+    "links": []
+  },
+  {
+    "name": "will fang (he/him)",
+    "subtitle": "teaching assistant",
+    "img": "/img/will.jpg",
+    "links": []
   }
 ]
