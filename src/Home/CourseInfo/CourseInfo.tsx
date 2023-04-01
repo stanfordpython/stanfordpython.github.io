@@ -14,7 +14,8 @@ const CourseInfo = () => {
           <h1 className="text-4xl mb-2 font-normal">cs 41: the python programming language</h1>
           <p className="text-slate-600 text-2xl">tuesdays &amp; thursdays, 3:00pm - 4:20pm, 370-370</p>
           <p className="text-2xl">
-            <Link to="/page/syllabus" className={styles.link}>syllabus</Link>
+            <Link to="/page/syllabus" className={styles.link}>syllabus</Link>,{" "}
+            <a href="https://open.spotify.com/playlist/516SuW4ejp801YaO9dSsd5?si=c1517d147d1d4c34&pt=5516fb04dd79f31570f9439e4fbd56bc" className={styles.link}>playlist</a>
           </p>
         </div>
       </div>
