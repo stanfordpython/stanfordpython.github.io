@@ -1,7 +1,6 @@
 # Assignment 0: Welcome to Python!
 > Due: Thursday, April 13, 2022 at 5pm PT
 
-[[TOC]]
 
 ## Overview
 
