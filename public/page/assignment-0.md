@@ -1,5 +1,5 @@
 # Assignment 0: Welcome to Python!
-> Due: Thursday, April 7, 2022 at 5pm PT
+> Due: Thursday, April 13, 2022 at 5pm PT
 
 [[TOC]]
 
@@ -19,7 +19,7 @@ Note: As this is Assignment 0, please get started early! We want to make sure th
 
 ## Installing Python
 
-If you haven't installed Python yet, follow our instructions for installing Python 3.10.3 and setting up a virtual environment. _It is important that you have Python 3.10.3 installed on your system, as some of the features we will be discussing later in the quarter are unique to this most recent version of Python._
+If you haven't installed Python yet, follow our instructions for installing Python 3.10.3 and setting up a virtual environment. _It is important that you have Python 3.10.3 installed on your system, as some of the features we will be discussing later in the quarter are unique to this version (or more recent versions) of Python._
 
 - For macOS users, follow [these instructions](/#/page/install/macos)
 - For Linux users, follow [these instructions](/#/page/install/linux)
@@ -306,7 +306,7 @@ Instead of always using the same prompts and responses, cycle through a list of 
 Allow the user to enter any input, and search for each of your cheeses, case-insensitively, in their input. That is, let the user ask: `"Any Norwegian Jarlsberger, per chance?"`.
 
 ### `chatbot`: Go Nuts!
-As you are likely well aware, building effective chatbots which can fluently converse with - and understand - humans is an open area of research in computer science. Though we've designed this assignment so that you implement a simple chatbot within a well-scoped set of requirements, there truly is no ceiling to where you can take this. As two starter ideas, though, we'd recommend adding new features to your chatbot within the theme you've defined, and seeing whether you can make your chatbot robust to imperfect input (in the calendar chatbot, for example, whether the user types `add` or `add event`, the outcome should be the same - how robust can you make your chatbot to such variability in user input?).
+As you are likely well aware, building effective chatbots which can fluently converse with - and understand - humans is an open area of research in computer science. Though we've designed this assignment so that you implement a simple chatbot within a well-scoped set of requirements, there truly is no ceiling to where you can take this (e.g., ChatGPT). As two starter ideas, though, we'd recommend adding new features to your chatbot within the theme you've defined, and seeing whether you can make your chatbot robust to imperfect input (in the calendar chatbot, for example, whether the user types `add` or `add event`, the outcome should be the same - how robust can you make your chatbot to such variability in user input?).
 
 
 ## Style Checks
