@@ -1,5 +1,5 @@
 # Assignment 1: Dear Cryptography (Dear Data + Cryptography)
-> Due: Thursday, April 21st, 2022 at 5pm PT
+> Due: Thursday, April 27th, 2023 at 5pm PT
 
 # Overview
 In this assignment, you will build a cryptography suite that implements two different cryptosystems: the Caesar cipher and the Vigenere cipher. Then, you'll use Python to represent some data you care about! This is our first assignment in groups (🎉) so a sub-goal is to get to know your classmates and work on a fun mini-project together.
@@ -24,11 +24,7 @@ Please submit a file called `group_norms.txt` where you write about each of thos
 
 # Cryptography suite
 
-<div class="alert alert-success">
-    <h4 class="alert-heading mt-1">Getting started</h4>
-    <hr />
-    <p class="mb-1">One person in the group should go to <a target="_blank" href="https://edstem.org/us/courses/20141/workspaces/pcFk4gsvJTqfn6xpE6FgZfLAaTYVi4t0">this workspace on Ed</a> and create a fork of it. Add your teammates to the workspace and use it as a place to collaborate on code.</p>
-</div>
+One person in the group should go to [this workspace on Ed](https://edstem.org/us/courses/38060/workspaces/pmmCt3qho0qdtA008cGfP8NW1U2gKEIT) and create a fork of it. Add your teammates to the workspace and use it as a place to collaborate on code.</p>
 
 ## Starter files
 
