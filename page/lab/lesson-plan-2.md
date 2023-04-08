@@ -1,4 +1,4 @@
-# Lesson Plan: Data Structures and Basics (Week 2)
+# Lesson Plan: Data Structures and OOP (Week 2)
 
 Welcome to section, everyone! The purpose of this lesson plan is to help you organize your section and decide which topics you'll cover and how. **Everything here is a suggestion:** your students want to spend time with you, so use this as a springboard!
 
@@ -76,15 +76,14 @@ def main():
     while True:
         word = input("> ")
         word = word.lower()
-        word = word.strip(' ?!')
 
         # conditionally, breaking out of the loop
-        if word == '':
+        if not word:
             break
 
         # doing something with that input
-        if is_word(word):
-            definition = get_definition(word)
+        definition = get_definition(word)
+        if definition:
             print(f"Yes! {word} is a word! The definition is: {definition}.")
         else:
             print(f"No! {word} is not a word.")
@@ -97,8 +96,6 @@ if __name__ == '__main__':
 Then, in Week 2, we talked about data structures and Object-Oriented Programming. It was motivated through an example involving students and classes at Stanford. We built data structures to represent students and courses and then we represented both as classes, modeling relationships between them using the class methods.
 
 We had a Student class with a .name, .sunet, .history, and .enrolled attributes. They are what they sound like; history and enrolled kept track of past and current courses that students had taken. We also had a Course class with name, department, quarter, and prerequisite attributes. We used magic methods to check if student in course.
-
-Students may have questions about their assignment, so it might be worth taking a moment to review [the spec](https://stanfordpython.com/#/page/assignment-0).
 
 ## Comprehensions Review \[5-10 mins\]
 
