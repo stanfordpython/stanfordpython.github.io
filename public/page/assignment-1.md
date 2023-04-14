@@ -288,10 +288,7 @@ If you're looking for inspiration on how to visualize your data, Stefanie and Ge
 I also asked our staff for different internet repositories for data visualizations. People suggested [/r/DataIsBeautiful](https://www.reddit.com/r/dataisbeautiful/) as a nice place to find inspiration.
 
 # Submitting
-
-<div class="alert alert-danger">
-    <span>This assignment will be submitted in groups. <b>Only one member of your group should submit the assignment!</b> Please, that's very important! On the backend, we'll combine your submission based on who was in your group and if there are multiple submissions from your group, some might get overwritten.</span>
-</div>
+This assignment will be submitted in groups. **Only one member of your group should submit the assignment!** Please, that's very important! On the backend, we'll combine your submission based on who was in your group and if there are multiple submissions from your group, some might get overwritten.
 
 ## Cryptography
 Submit the following files to Paperless:
