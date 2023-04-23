@@ -22,4 +22,4 @@ The headline for this week's lesson is the "Reddit Wallscraper" which has studen
 **Important note:** The code will not work on Ed (because Ed blocks requests), but students can download the file to their local machine (right click on the sidebar and click "Download").
 
 ## Group Work \[20 min\]
-The new assignment (`augment.py`) has just been released, so you might want to spend some time talking about it or giving students the option to work on it together.
+The new assignment (`augment.py`) has just been released and the first milestone is due on Tuesday at the end of class, so you might want to spend some time talking about it or giving students time to work on it together.
