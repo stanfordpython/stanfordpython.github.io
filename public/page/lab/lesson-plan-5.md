@@ -1,4 +1,4 @@
-# Lesson Plan: Python & the Web, Server-side (Week 6)
+# Lesson Plan: Python & the Web, Server-side 
 
 
 ## Pre-Section Preparation
