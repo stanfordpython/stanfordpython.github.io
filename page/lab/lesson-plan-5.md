@@ -1,9 +1,8 @@
 # Lesson Plan: Python & the Web, Server-side (Week 6)
 
-[[TOC]]
 
 ## Pre-Section Preparation
-Visit the [Ed Workspace](https://edstem.org/us/courses/20141/workspaces/paet6LZnIplKXLz0B14XvQMAynn98nVu). Fork it to create your own copy.
+Visit the Ed Workspace. Fork it to create your own copy.
 
 The first part of the lab will be about deploying a simple website: the goal of this part is for students to have a web application (even if it's just a "Hello, world!" one) running live on the Internet using [PythonAnywhere](https://www.pythonanywhere.com). 
 
