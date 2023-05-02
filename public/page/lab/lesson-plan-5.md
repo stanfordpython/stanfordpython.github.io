@@ -226,10 +226,7 @@ def submit_via_form():
     return f"Successfully added message: {form_data}"
 ```
 
-## Final Project Work Time \[30 mins\]
+## Final Project Proposal Work Time \[30 mins\]
 
-For the last thirty minutes of class, I'd recommend that you reconvene and have your students work on their final project. It may be good if you can give them discrete deliverables to provide—you can review their project proposals and see what each of them will need.
+For the last thirty minutes of class, I'd recommend that you reconvene and have your students work on their final project proposal. It may be good if you can give them discrete deliverables to provide—you can review their project proposals and see what each of them will need.
 
-## Reflection
-
-It doesn't seem like folks are responding to the prompts in the chat—you're all pretty busy! So instead of messaging everyone, send Parth a check-in: how are you finding section so far? What's going well? What do you want to improve on?
