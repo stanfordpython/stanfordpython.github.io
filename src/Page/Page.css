@@ -991,3 +991,9 @@
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
 }
+
+@media only screen and (min-width: 576px) {
+    .markdown-body img {
+        max-width: 40%;
+    }
+}
